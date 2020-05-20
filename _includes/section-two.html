@@ -1,6 +1,10 @@
+<!-- Two -->
 <section id="two" class="wrapper alt style2">
 
-    {% for post in site.posts limit:site.tiles-count %}{% if site.tiles-source == 'posts' %}
+    <p>test content</p>
+
+    {% for post in site.posts limit:site.tiles-count %}
+    <!-- {% if site.tiles-source == 'posts' %} -->
 
     <section class="spotlight">
         <div class="image">{% if post.image %}<img src="{% if site.featured-image-source %}{{ post.image | prepend: site.featured-image-source | absolute_url }}{% else %}{{ "" | absolute_url }}/assets/images/{{ post.image }}{% endif %}" alt="" />{% endif %}</div>
