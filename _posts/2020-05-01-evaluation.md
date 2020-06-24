@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Summary and Evaluation
-description: Sample description.
+description: Under construction!
 image: pic04.jpg
 ---
 

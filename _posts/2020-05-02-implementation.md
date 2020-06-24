@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Implementation
-description: Sample description.
+description: Under construction!
 image: pic03.jpg
 ---
 
