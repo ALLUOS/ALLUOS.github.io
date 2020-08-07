@@ -6,10 +6,12 @@ image: pic03.jpg
 ---
 
 # Overview
-1. Technical Arhcitecture
+1. Technical Architecture
 1. Telegram Integration
 1. Task Framework
+1. Proficiency Model
 1. Database
+1. Limitations
 
 ## Technical Architecture
 * Overview of repository content
@@ -32,3 +34,6 @@ image: pic03.jpg
 * Tables with columns 
 * Database connector module
 * When is which data written / extracted from the database?
+
+## Limitations / Outlook
+* Telegram UI limitations -> better to design own user interface?
