@@ -5,24 +5,37 @@ description: Under construction!
 image: pic03.jpg
 ---
 
-Test Strategy
+### Test Strategy
 
 A summary of the goals and straegies we used in our testin.
 1. Software testing in general
 2. Validation and Verification
 3. Test Methods we applied
 
-#Validation
+### Validation
 
-1. Planning of technical testing
-2. Test preparation
-3. Test execution
-4. Results
-5. Recommendation for future testing
+1. Goals
+2. Planning of technical testing
+3. Test preparation
+4. Test execution
+5. Results
+6. Recommendation for future testing
 
-#Verification
+### Verification
 
 1. Methods of Verification
 2. Expert interview
-  1. Results
-3.  
+  - Goals
+  - Questions
+  - Results
+3. Usability Testing 
+  - Goals
+  - Test group
+  - Pre-questionnaire
+  - Usability test
+  - Post-questionnaire
+  - Results
+  
+ ### Recommendation
+ 
+ 1. 
