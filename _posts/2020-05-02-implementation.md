@@ -32,7 +32,14 @@ Generally, the chosen architecture enabled us to quickly implement first task pr
 
 
 ## Telegram Integration
-* APIs used
+
+### python-telegram-bot for bot-user-interactions
+As we have decided to use a Telegram chatbot as our front-end and Python as programming language, we investigated different methods to manage the communication between the chatbot and the learning application. First, we explore the [Telegram Bot API]( https://core.telegram.org/bots/api), which is a HTTP-based interface for developers that want to build bots for telegram. It is developed and maintained by Telegram itself and offers all the methods that are currently available for Telegram bots. Nevertheless, we decided to not use the Telegram Bot API directly, because we do not want to do the HTTP calls and the corresponding error handling by ourself. Therefore, we decided to use a python library that wraps the Telegram Bot API. On the Telegram [Bot Code Examples]( https://core.telegram.org/bots/samples) site we found three Python wrapper: [python-telegram-bot]( https://github.com/python-telegram-bot/python-telegram-bot), [pyTelegramBotAPI]( https://github.com/eternnoir/pyTelegramBotAPI), and [AIOgram]( https://github.com/aiogram/aiogram). After a short investigation we decided to use the **python-telegram-bot** for the following reasons. First, it offers us all the elements of the Telegram Bot API and is actively maintained. Second, it implements a conversational handler that allows us to easily structure complex conversations. Third, the documentation is better than the documentation of the other wrappers. Last, some of the developers have already experience with it.
+
+### Telethon for group handling
+The downside of using a Telegram bot and the Telegram Bot API is that bots are not able to create groups or invite users to groups. Thus, we had to find a way to realize this feature. After some research we found a python package that wraps the standard [Telegram API]( https://core.telegram.org/#telegram-api), which allows the creation of groups and sending invitation to users. In order to use the Telegram API with the [**Telethon**]( https://github.com/LonamiWebs/Telethon) wrapper we needed a Telegram account to get access to the Telegram API. After setting up the Telegram account and register an application for this user, we were able to create groups and invite users to this group. 
+
+Missing:
 * Application states and handlers
 
 ## Task Framework
