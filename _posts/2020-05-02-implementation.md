@@ -14,9 +14,22 @@ image: pic03.jpg
 1. References
 
 ## Technical Architecture
-* Overview of repository content
-* Python + PostgreDB + JSON 
-* Config-files
+In this section we will provide a brief overview of the technical architecture that we relied on to build our application. All of our code is hosted in a [GitHub repository](https://github.com/ALLUOS/app) which also includes a step-by-step guide on starting the application. 
+
+In general, we used the model-view-controller (MVC) software design pattern to structure the implementation. Figure one gives an overview of the different application elements within this MVC design pattern. It also shows where the associated source code can be found in the repository.
+
+![Figure 1: Overview of Repository Content](https://github.com/ALLUOS/ALLUOS.github.io/blob/impl_master/assets/images/software_architecture_overview.png)*Figure 1: Overview of Repository Content*
+
+As we decided to use the Telegram application as the front-end for our application, the view element of our MVC design pattern has been reduced to an interface with two Telegram APIs. This will be further explained in the next section.
+
+Concerning the programming language, we relied on Python 3. This decision was made mostly due to Python being the common denominator in the programming experience of the implementation team. Given the pythonic tendencies of the Cognitive Science program, we also hope that this eases onboarding of new team members in future stages of the study project. 
+
+We employed an object-oriented approach to programming, especially in the controller module of our application. The task framework section will elaborate more on how this approach was used for the modeling of different tasks.
+
+A cloud-hosted PostgreSQL database serves as our data storage. PostgreSQL is a free and open-source relational database management system. For now the database is hosted on a free platform but we intend to migrate to a university server in the upcoming semester. Motivation for this change is both the limited capacity of the free hosting as well as the need for more management tools such as backups.
+
+Generally, the chosen architecture enabled us to quickly implement first task prototypes in the initial stages of the project. However, especially during later stages we found that small changes to the task design entailed quite a substantial changes to the implementation. For example, changes to the task data had to be reflected at least in the database, the functions that interact with the database, and the entity that refers to this data. For the next phase of the study project, we suggest to devote more time to fine-tuning a tasks design before greenlighting it for implementation. Also, we could think about employing a holistic model of the database entities in Python using a preexisting framework such as [SQLAlchemy](https://www.sqlalchemy.org/) to speed up adaptions to our data model. 
+
 
 ## Telegram Integration
 * APIs used
