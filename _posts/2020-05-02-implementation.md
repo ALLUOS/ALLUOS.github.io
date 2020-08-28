@@ -59,22 +59,22 @@ To handle the users interaction with the bot during the different tasks, i.e. th
 ## Task Framework
 This section aims to explain the implementation decisions and to describe the resulting components that have been implemented for the application’s task framework. In the next sections, we will cover the role and necessity of a `RoomManager`, as well as the structure and idea of different task classes, especially the `SequentialTask`. Lastly, this section is concluded with an outlook subsection, which discusses the current limitations of and possible additions to the task framework.
 
-It should be noted, that this part of the documentation solely documents the tasks of the application from a technical point of view. For a more detailed, conceptual description of the tasks, please refer to the Design chapter.
+It should be noted, that this part of the documentation solely documents the tasks of the application from a technical point of view. For a more detailed, conceptual description of the tasks, please refer to the [_Design_ chapter](https://alluos.github.io/2020/05/03/design.html).
 
 ### RoomManager
 The `RoomManager` is thought of as a host of the group of players. Since we decided on having some instance that controls the general task and game flow, we created the `RoomManager` class. Each game session gets assigned exactly one `RoomManager`
-instance, that handles the session. An object of the `RoomManager` class captures important meta information of the group of players, such as the number and names of active players (stored in `self._full_student_list`), the minimum amount of time after starting the bot (`self._min_time_for_students_to_join_in_sec`)  and the minimum number of players needed to start the game (‘self._min_number_of_students’), as well as a check, if all active participating students have given their consent to start the game (`can_execution_start()`). 
+instance, that handles the session. An object of the `RoomManager` class captures important meta information of the group of players, such as the number and names of active players (stored in `self._full_student_list`), the minimum amount of time after starting the bot (`self._min_time_for_students_to_join_in_sec`)  and the minimum number of players needed to start the game (`self._min_number_of_students`), as well as a check, if all actively participating students have given their consent to start the game (`can_execution_start()`). 
 
 ### Tasks
 During the design phase of our application, we were able to pin down a few requirements for the technical implementation of the tasks for our prototype. Amongst those main requirements have been:
 
 
-1. the enablement of collaborative task solving
-1. the ensuring of participation of each player
-1. an adaptive module that controls for user-specific task difficulty
-1. the possession of a winning condition
+1. The enablement of collaborative task solving
+1. The ensuring of participation of each player
+1. An adaptive module that controls for user-specific task difficulty
+1. The possession of a winning condition
 
-Since we decided that we will aim for one to two different tasks as the first milestone of the project, we chose to create an [abstract base class](https://docs.python.org/3/library/abc.html) `Task` for the tasks, which then can be further expanded depending on the type of task. The abstract base class `Task(ABC)` defines through abstract methods which properties every task to follow should inherit, such as getting the instructions for the respective task(`get_task_instructions()`).
+Since we decided to aim for one to two different tasks as the first milestone of the project, we chose to create an [abstract base class](https://docs.python.org/3/library/abc.html) `Task` for the tasks, which then can be further expanded depending on the type of task. The abstract base class `Task(ABC)` defines through abstract methods which minimal properties and functions every task to follow should inherit, such as getting the instructions for the respective task (`get_task_instructions()`).
 To capture the requirements 1-4 defined above, we implemented a subclass that inherits from `Task(ABC)`, namely the `SequentialTask(Task)`. 
 
 #### SequentialTask
@@ -82,13 +82,13 @@ To capture the requirements 1-4 defined above, we implemented a subclass that in
 
 After having successfully completed a round, the group gets awarded with one piece of the codeword `self.code`. This codeword consists of a series of random digits, which size corresponds to the number of players. This covers the winning condition in requirement 4). Additionally, after completing the whole task, the corresponding user proficiencies and the group’s proficiencies get updated according to the performance with the call of the function `update_proficiencies(correct)`.
 
-For the implementation of requirement 3), the adaptive module, please refer to the section Adaptive Module below.   
+For the implementation of requirement 3), the adaptive module, please refer to the section _Adaptive Module_ below.   
 
 ##### SentenceCorrection
 The `SentenceCorrection` class inherits from its superclass `SequentialTask`, in order to have all the sequential features. Since this class also has the property `self.selected_user`, it gets easy to implement the turn-taking for this task. The function `select_sentence()` selects a sentence from the corpus, based on the selected user’s proficiency `self.selected_user.get_grammar_proficiency()`. When the sentence gets send to the group, only answers of the selected user will be evaluated. This allows the other players to contribute by assisting the selected user, e.g. by giving hints to identify the error.
 
 ##### VocabularyDescription
-Similar to the `SentenceCorrection` class, he `VocabularyDescription` class also inherits from `SequentialTask` and selects the word to be described for the selected user based on their proficiency with the call of `select_word()`.
+Similar to the `SentenceCorrection` class, the `VocabularyDescription` class also inherits from `SequentialTask` and selects the word to be described for the selected user based on their proficiency with the call of `select_word()`.
 
 In contrast to the task above, now answers will only be evaluated by non-selected users. However, to prevent cheating, if the `self.selected_user` mentions the word itself in their description, they will receive a warning through the call of `get_word_warning()`.
 
