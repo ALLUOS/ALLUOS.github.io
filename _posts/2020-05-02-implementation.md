@@ -120,12 +120,12 @@ Therefore, we propose to devote more resources towards the adaptive model in the
 References
 
 ## Database
-###Introduction
+### Introduction
 The way the bot is designed we had to store data so it can be queried as and when possible. The bot also deals with user data and other essential data from telegram that we had to store, update and/or retrieve in real time. We realized that the data we have is relational in nature which means that we had pre-defined relationships in our data. For each table we have, every column represented a certain kind of data and the field in the column stored the value. Every row was a collection of data from all the columns for one datapoint / object / entity.  For example, 
 
 ![**Figure 4.1: Sentence Correction Data**](https://github.com/ALLUOS/ALLUOS.github.io/blob/impl_master/assets/images/sentence_data.png)
 
-###PostgreSQL and Features
+### PostgreSQL and Features
 We stored this data in [PostgreSQL]( https://www.postgresql.org/). Its is an open source relational management database. It is compatible with a wide range of programming language and futuristic it is easy to migrate between operating systems. It can handle multiple queries at a time. PostgreSQL adheres with the SQL standards better than other [SQL databases]( https://www.digitalocean.com/community/tutorials/sqlite-vs-mysql-vs-postgresql-a-comparison-of-relational-database-management-systems). 
 SQL databases allows you to assign each column with a data type which indicates which kind of data can be stored in each column. PostgreSQL allows to have several data types for example, (referring to data types used in sentence correction data shown in Figure 4.1) 
 
@@ -146,7 +146,7 @@ Example: `PRIMARY KEY` – It makes sure that there is no value in the column is
 
 `Array` represents that the column can have more than one value present. 
 
-###Tables Created for the project 
+### Tables Created for the project 
 
 
 
@@ -161,8 +161,8 @@ Example: `PRIMARY KEY` – It makes sure that there is no value in the column is
 |student_table |Data about each student using the bot|id, telegam_name, name|
 |task_table |Every Task Data| id, name, min_num_of_players, num_of_iteration|
 
-###Database Operators for Entities
-####Different Examples of Querying to Extract Data
+### Database Operators for Entities
+#### Different Examples of Querying to Extract Data
 1)	Querying data from a table: "SELECT * FROM sentence_correction_data;” 
 2)	Filtered Query based on certain columns. 
 Meaning if you want to extract data based on a certain value from a specific column.: "SELECT * FROM student_proficiency WHERE student_id = '%s';"
@@ -183,8 +183,8 @@ Following are a few important functions used to query data from the database. Mo
 | get_student_proficiency| Returns a proficiency object that is initialized with the values from the database|
 | get_all_tasks_for_number_of_participants | Returns a list of all tasks that can be started with the number of participants|
 
-###Bot and the Database Interaction
-####Database Connection Class
+### Bot and the Database Interaction
+#### Database Connection Class
 Step 1: We set the database configuration we would like to use.
 
 Step 2: In order to enable a connection to the database we store the necessary information in a dictionary
@@ -197,7 +197,7 @@ Step 5: We create another function in order to Close the given connection.
 
 One more function is create the parse the data once the connection is open. The data we query for any table is converted into a dataframe for further use. The function to extract a dataframe is `read_query_into_df`
 
-####Classes for Objects
+#### Classes for Objects
 
 We created classes for objects and created functions in them to get certain values from those objects. This allows to extract a certain value from the entire object rather than extracting all relational values of the entity. 
 
@@ -209,13 +209,13 @@ We created classes for objects and created functions in them to get certain valu
 |Task | Represents a task entity from the database| Tasks id, name, minimum number of users for the task, number of iterations | 
 |Word | Mapping of the word to proficiency| Get word and proficiency_sub_type|
 
-####Mapping Tasks to Database Tables and Entities
+#### Mapping Tasks to Database Tables and Entities
 
-####Sentence Correction Task
+#### Sentence Correction Task
 
 This task deals with the sentence correction data, task table and student proficiency data. Sentence Correction data to access the `get_random_sentence_based_on_sub_type_and_difficulty` function which allows the code to get a random sentence to use in the task. Task table to get the name of the task and student proficiency to update the change in proficiency after the task. It uses the sentence and subject class from the entities. 
 
-####Vocabulary Guessing
+#### Vocabulary Guessing
 
 This task deals with the vocab guessing table, student proficiency  and task table. The function of task and student proficiency is the same as of the sentence correction task. The vocab guessing table is use to get a random word based on the difficulty level and sub type. Word and student class is used from the entities. 
 
