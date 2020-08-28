@@ -33,30 +33,28 @@ Generally, the chosen architecture enabled us to quickly implement first task pr
 
 ## Telegram Integration
 
-### python-telegram-bot for bot-user-interactions
-As we have decided to use a Telegram chatbot as our front-end and Python as programming language, we investigated different methods to manage the communication between the chatbot and the learning application. First, we explore the [Telegram Bot API]( https://core.telegram.org/bots/api), which is a HTTP-based interface for developers that want to build bots for telegram. It is developed and maintained by Telegram itself and offers all the methods that are currently available for Telegram bots. Nevertheless, we decided to not use the Telegram Bot API directly, because we do not want to do the HTTP calls and the corresponding error handling by ourself. Therefore, we decided to use a python library that wraps the Telegram Bot API. On the Telegram [Bot Code Examples]( https://core.telegram.org/bots/samples) site we found three Python wrapper: [python-telegram-bot]( https://github.com/python-telegram-bot/python-telegram-bot), [pyTelegramBotAPI]( https://github.com/eternnoir/pyTelegramBotAPI), and [AIOgram]( https://github.com/aiogram/aiogram). After a short investigation we decided to use the **python-telegram-bot** for the following reasons. First, it offers us all the elements of the Telegram Bot API and is actively maintained. Second, it implements a conversational handler that allows us to easily structure complex conversations. Third, the documentation is better than the documentation of the other wrappers. Last, some of the developers have already experience with it.
+### Python-telegram-bot for Bot-user-interactions
+As we decided to use a Telegram chatbot as our front-end and Python as programming language, we investigated different methods to manage the communication between the chatbot and the learning application. First, we explored the [Telegram Bot API]( https://core.telegram.org/bots/api), which is a HTTP-based interface for developers that want to build bots for telegram. It is developed and maintained by Telegram itself and offers all the methods that are currently available for Telegram bots. Nevertheless, we decided to not use the Telegram Bot API directly, because we do not want to do the HTTP calls and the corresponding error handling by ourself. Therefore, we decided to use a python library that wraps the Telegram Bot API. On the Telegram [Bot Code Examples]( https://core.telegram.org/bots/samples) site we found three Python wrapper: [python-telegram-bot]( https://github.com/python-telegram-bot/python-telegram-bot), [pyTelegramBotAPI]( https://github.com/eternnoir/pyTelegramBotAPI), and [AIOgram]( https://github.com/aiogram/aiogram). After a short investigation we decided to use the **python-telegram-bot** for the following reasons. First, it offers us all the elements of the Telegram Bot API and is actively maintained. Second, it implements a conversational handler that allows us to easily structure complex conversations. Third, the documentation is better than the documentation of the other wrappers. Last, some of the developers had already experience with it.
 
-### Telethon for group handling
-The downside of using a Telegram bot and the Telegram Bot API is that bots are not able to create groups or invite users to groups. Thus, we had to find a way to realize this feature. After some research we found a python package that wraps the standard [Telegram API]( https://core.telegram.org/#telegram-api), which allows the creation of groups and sending invitation to users. In order to use the Telegram API with the [**Telethon**]( https://github.com/LonamiWebs/Telethon) wrapper we needed a Telegram account to get access to the Telegram API. After setting up the Telegram account and register an application for this user, we were able to create groups and invite users to this group. 
+### Telethon for Group Handling
+The downside of using a Telegram bot and the Telegram Bot API is that bots are not able to create groups or invite users to groups. Thus, we had to find a way to realize this feature. After some research we found a python package that wraps the standard [Telegram API]( https://core.telegram.org/#telegram-api), which allows the creation of groups and sending invitation to users. In order to use the Telegram API with the [Telethon]( https://github.com/LonamiWebs/Telethon) wrapper we needed a Telegram account to get access to the Telegram API. After setting up the Telegram account and register an application for this user, we were able to create groups and invite users to this group. 
 
-### Conversation handlers
+### Conversation Handlers
 To structure the conversations between the bot and the users we implemented different conversation handlers. By now we have implemented four different conversation handlers that all have a different purpose. 
+TODO: 
+- how use conversation handler?
+- entry points, states, fallbacks, transition between handlers
 
-#### Private chat handler
-The interaction between the bot and a user in a private chat is handled by the private chat handler. Its purpose is to register a user for the app, add or create the user to a group and tell the user the beginning of the story. It can also deal with some problems that may occur when creating the group. The different states and transitions are shown in the following figure.
+#### Private Chat Handler
+The interaction between the bot and a user in a private chat is handled by the private chat handler. Its purpose is to register a user for the app, add the user to a group or create a group, and tell the user the beginning of the story. It can also deal with some problems that may occur when creating the group. The different states and transitions are shown in the following figure.
 
 TODO: Add figure of private chat handler
 
-#### Room handler
-The room handler purpose is to lead the users from one task to the next task. Thereby the bot checks whether enough players are currently available and which tasks they can solve next. After the user have selected a task the related task handler is called. The different states and transitions can be found in the following figure.
+#### Room Handler
+The room handlers purpose is to lead the users from one task to the next task. Thereby the bot checks whether enough players are currently available and which tasks they can solve next. After the user have selected a task the related task handler is called. The different states and transitions can be found in the following figure.
 
-TODO: Add figure of room handler
-
-#### Task handlers
+#### Task Handlers
 To handle the users interaction with the bot during the different tasks, i.e. the sentence correction task and the vocabulary guessing task, we created a task handler per task. Both task handlers lead the users in a similar way through the conversation. First, they send a message to one of the active users containing the task they have to perform. Then, the handlers wait for the response of either a group member or the selected user. After receiving an answer, it is evaluated. Dependent on the outcome the user can correct his answer, move on to the next subtask, or if the whole task is completed the next user is selected. This procedure is continued until the task is fully finished. After finishing the complete task, the control is returned to the room handler.
-
-TODO: Add figures of sentence correction and vocabulary guessing handler
-
 
 ## Task Framework
 This section aims to explain the implementation decisions and to describe the resulting components that have been implemented for the application’s task framework. In the next sections, we will cover the role and necessity of a `RoomManager`, as well as the structure and idea of different task classes, especially the `SequentialTask`. Lastly, this section is concluded with an outlook subsection, which discusses the current limitations of and possible additions to the task framework.
