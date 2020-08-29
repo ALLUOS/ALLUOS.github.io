@@ -132,13 +132,13 @@ With our current model, we also put more emphasis on language skills that are no
 
 Therefore, we propose to devote more resources towards the adaptive model in the second semester of this study project. For the evaluation of the current model we would ideally need objective measures for the actual language competency of our users in order to compare those to our proficiency estimates. Moving forward from there, we should also track the user performance more closely depending on the sub-skill and difficulty. This data could prove very useful in the later fine-tuning of the adaptive difficulty.
 
-# Database
-## Introduction
+## Database
+### Introduction
 The way the bot is designed we had to store data so it can be queried as and when possible. The bot also deals with user data and other essential data from telegram that we had to store, update and/or retrieve in real time. We realized that the data we have is relational in nature which means that we had pre-defined relationships in our data. For each table we have, every column represented a certain kind of data and the field in the column stored the value. Every row was a collection of data from all the columns for one entity.  For example, 
 
 ![**Figure 3: Sentence Correction Data**](https://github.com/ALLUOS/ALLUOS.github.io/blob/impl_master/assets/images/sentence_data.png)*Figure 3: Sentence Correction Data*
 
-## SQL Features 
+### SQL Features 
 SQL databases allows you to assign each column with a data type which indicates which kind of data can be stored in each column. PostgreSQL allows to have several data types for example:
 
 Table 1: Data Type of the Sentence Correction Data
@@ -154,12 +154,12 @@ Table 1: Data Type of the Sentence Correction Data
 |error_words | TEXT ARRAY | NOT NULL|
 
 
-The Table 1 mentions constraints which limits the values that can be entered. Constraints are generally column specific, but some can be for the whole table. 
+Table 1 mentions constraints which limits the values that can be entered. Constraints are generally column specific, but some can be for the whole table. 
 Example: `PRIMARY KEY` – It makes sure that the values in the cells of that column are not empty or NULL and each entry is unique. Primary key is made of two constraints `NOT NULL` and `UNIQUE`.
 
 `Array` represents that the column can have more than one value present. For columns like `correct_answers` when we have more than one possible correct answer for a given sentence, we would like to store all the possible correct answer in that one cell. Example: If the sentence is "Do you want they to help you?" the correct answer is them but there are other correct answers as well like me, you or him which we would like to store as well.  
 
-## Tables Created for the Project 
+### Tables Created for the Project 
 
 
 Table 2: Tables Names and Descriptions
@@ -175,8 +175,8 @@ Table 2: Tables Names and Descriptions
 |student_table |Data about each student using the bot|id, telegram_name, name|Student|
 |task_table |Every task data| id, name, min_num_of_players, num_of_iteration|Task|
 
-## Database Operators for Entities
-### Different Examples of Querying to Extract Data
+### Database Operators for Entities
+We need different queries to extract data based on different use cases. The following are the examples of queries with example of use cases. 
 1)	Querying data from a table. We need such kind of queries to just explore the data and check the structure of the table.
 2)	Filtered Query based on certain columns. 
 Meaning if you want to extract data based on a certain value from a specific column. We need such queries when we need data (sentences or word) based on certain difficulty level OR if we need the proficiency level of a particular user 
@@ -188,12 +188,12 @@ Similar query functions are while inserting data in specific tables. We just use
 
 
 
-## Database Connection Class
+### Database Connection Class
 We defined a database connection class which connects with the database basedon the parameter. We set the database configuration required to connect with the database. We created a function to form this connection. Once the connection is created we can use functions like `get_random_sentence_based_on_sub_type_and_difficulty` function which allows the code to get a random sentence to use in the task based on the sub_type and difficulty level. Every Task is further mapped with entities to get certain data from the database. Like the sentence correction task is mapped to sentence and student entities. Its similiar for the vocabulary guessing task.  For more information refer the next subsection. 
 
 One more function is created that parses the data once the connection is open. The data we query for any table is converted into a dataframe for further use. The function to extract a dataframe is `read_query_into_df`
 
-## Entity Classes
+### Entity Classes
 
 We created classes for entities and created functions in them to get certain values from those entities. This allows to extract a certain value from the entire object rather than extracting all relational values of the entity. We have five entities. We have already seen that Task are mapped to entities and each entity is mapped to a table in the database. First entity is called Group which helps us to get the group id and the chat id of the groups performing taks. Second, is the Sentence entity which initiates the extraction of a sentence for the task. One of the important function in this class is the `is_correct` which determines whether the sentence is correct or not. We also have a function to get the proficiency level. Student is the next entity class which gives us information about the user for example, their id or name. It also helps to update their proficiency level when they complete their task. The next entity is called Task which helps to return information about the task, its id, name, minimum users required, etc. The entity class is the Word which has the mapping of the word and their proficiency level.
 
