@@ -132,105 +132,70 @@ With our current model, we also put more emphasis on language skills that are no
 
 Therefore, we propose to devote more resources towards the adaptive model in the second semester of this study project. For the evaluation of the current model we would ideally need objective measures for the actual language competency of our users in order to compare those to our proficiency estimates. Moving forward from there, we should also track the user performance more closely depending on the sub-skill and difficulty. This data could prove very useful in the later fine-tuning of the adaptive difficulty.
 
-## Database
-### Introduction
-The way the bot is designed we had to store data so it can be queried as and when possible. The bot also deals with user data and other essential data from telegram that we had to store, update and/or retrieve in real time. We realized that the data we have is relational in nature which means that we had pre-defined relationships in our data. For each table we have, every column represented a certain kind of data and the field in the column stored the value. Every row was a collection of data from all the columns for one datapoint / object / entity.  For example, 
+# Database
+## Introduction
+The way the bot is designed we had to store data so it can be queried as and when possible. The bot also deals with user data and other essential data from telegram that we had to store, update and/or retrieve in real time. We realized that the data we have is relational in nature which means that we had pre-defined relationships in our data. For each table we have, every column represented a certain kind of data and the field in the column stored the value. Every row was a collection of data from all the columns for one entity.  For example, 
 
-![**Figure 4.1: Sentence Correction Data**](https://github.com/ALLUOS/ALLUOS.github.io/blob/impl_master/assets/images/sentence_data.png)
+![**Figure 3: Sentence Correction Data**](https://github.com/ALLUOS/ALLUOS.github.io/blob/impl_master/assets/images/sentence_data.png)*Figure 3: Sentence Correction Data*
 
-### PostgreSQL and Features
-We stored this data in [PostgreSQL]( https://www.postgresql.org/). Its is an open source relational management database. It is compatible with a wide range of programming language and futuristic it is easy to migrate between operating systems. It can handle multiple queries at a time. PostgreSQL adheres with the SQL standards better than other [SQL databases]( https://www.digitalocean.com/community/tutorials/sqlite-vs-mysql-vs-postgresql-a-comparison-of-relational-database-management-systems). 
-SQL databases allows you to assign each column with a data type which indicates which kind of data can be stored in each column. PostgreSQL allows to have several data types for example, (referring to data types used in sentence correction data shown in Figure 4.1) 
+## SQL Features 
+SQL databases allows you to assign each column with a data type which indicates which kind of data can be stored in each column. PostgreSQL allows to have several data types for example:
+
+Table 1: Data Type of the Sentence Correction Data
 
 
-
-| Sentence Correction Column | Data Type | Constraints |
-| --- | --- | --- |
+| Column Name | Data Type | Constraints |
+| :-- | :-- | :-- |
 |id |SERIAL |PRIMARY KEY|
 |sub_type | SMALLINT | NOT NULL| 
-| difficulty_level | SMALLINT | NOT NULL |
-| sentence_corpus | TEXT | NOT NULL |
-| correct_answers | TEXT ARRAY | NOT NULL|
+|difficulty_level | SMALLINT | NOT NULL |
+|sentence_corpus | TEXT | NOT NULL |
+|correct_answers | TEXT ARRAY | NOT NULL|
 |error_words | TEXT ARRAY | NOT NULL|
 
 
-The Table above mentions constraints which limits the values that can be entered. Constraints are generally column specific but some can be for the whole table. 
-Example: `PRIMARY KEY` – It makes sure that there is no value in the column is empty or NULL and each entry is unique. Primary key in itself is made of two constraints `NOT NULL` and `UNIQUE` 
+The Table 1 mentions constraints which limits the values that can be entered. Constraints are generally column specific, but some can be for the whole table. 
+Example: `PRIMARY KEY` – It makes sure that the values in the cells of that column are not empty or NULL and each entry is unique. Primary key is made of two constraints `NOT NULL` and `UNIQUE`.
 
-`Array` represents that the column can have more than one value present. 
+`Array` represents that the column can have more than one value present. For columns like `correct_answers` when we have more than one possible correct answer for a given sentence, we would like to store all the possible correct answer in that one cell. Example: If the sentence is "Do you want they to help you?" the correct answer is them but there are other correct answers as well like me, you or him which we would like to store as well.  
 
-### Tables Created for the project 
+## Tables Created for the Project 
 
 
+Table 2: Tables Names and Descriptions
 
-|Table Names | Table Description | Columns in each table |
-| --- | --- | --- |
-|group_table |Data of every group for tasks| id, chat_id, invitation_url, invitation_code, current_task_id |
-|student_group_table |Connecting Data between student and group|student_id, group_id |
-|sentence_correction_data |Raw Data of the Sentence Correction Task|id,sub_type,difficultt_level, sentence_corpus, correct_answer, error_words|
-|vocabulary_guessing_task | Raw data of the Vocabulary Guessing Task|id, sub_type, word, difficulty|
-|student_proficiency_table |Mapping of each user and their proficiency | student_id, proficiency_id, value|
-|proficiency_table |This table has the mapping of the proficiency levels and ids| proficiency_domain, proficiency_id, proficiency_name|
-|student_table |Data about each student using the bot|id, telegam_name, name|
-|task_table |Every Task Data| id, name, min_num_of_players, num_of_iteration|
+|Table Name | Table Description | Table Columns |Entities|
+| :-- | :-- | :-- | :-- |
+|group_table |Data of every group for tasks| id, chat_id, invitation_url, invitation_code, current_task_id |Group|
+|student_group_table |Connecting data between student and group|student_id, group_id ||
+|sentence_correction_data |Raw data of the sentence correction task|id, sub_type, difficulty_level, sentence_corpus, correct_answer, error_words|Sentence|
+|vocabulary_guessing_task | Raw data of the vocabulary guessing task|id, sub_type, word, difficulty|Word|
+|student_proficiency_table |Mapping of each user and their proficiency | student_id, proficiency_id, value||
+|proficiency_table |This table has the mapping of the proficiency levels and ids| proficiency_domain, proficiency_id, proficiency_name||
+|student_table |Data about each student using the bot|id, telegram_name, name|Student|
+|task_table |Every task data| id, name, min_num_of_players, num_of_iteration|Task|
 
-### Database Operators for Entities
-#### Different Examples of Querying to Extract Data
-1)	Querying data from a table: "SELECT * FROM sentence_correction_data;” 
+## Database Operators for Entities
+### Different Examples of Querying to Extract Data
+1)	Querying data from a table. We need such kind of queries to just explore the data and check the structure of the table.
 2)	Filtered Query based on certain columns. 
-Meaning if you want to extract data based on a certain value from a specific column.: "SELECT * FROM student_proficiency WHERE student_id = '%s';"
+Meaning if you want to extract data based on a certain value from a specific column. We need such queries when we need data (sentences or word) based on certain difficulty level OR if we need the proficiency level of a particular user 
 3)	Limited Query. 
-Limiting your output to a specific number of outputs: "SELECT * FROM sentence_correction_data WHERE sub_type = %s LIMIT 1;"
-**Similar queries functions are used while inserting data in specific tables. We just use `Insert` instead of `Select`
+Limiting your output to a specific number of outputs. For example: when we need 1 random sentence from the sentence correction data. 
+
+Similar query functions are while inserting data in specific tables. We just use `Insert` instead of `Select`. The SQL insert statement helps to push the data in the database. Based on the query types above, we defined functions to parse data from the database into the corresponding Python entities. Example: 
+`get_student_proficiency` which returns the proficiency level of the users AND `get_sentence_information_from_df` which parses the information from the database into sentence corpus, one error word and one correct answer
 
 
-Following are a few important functions used to query data from the database. Most of the function names are self-explanatory. 
 
-|Function Name| Purpose of the Function|
-| --- | --- |
-| get_sentence_information_from_df| Parses the information from the database into sentence corpus, one error word and one correct answer|
-| get_random_sentence_based_on_sub_type_and_difficulty| Queries the data based on sub_type and difficulty_level and returns one sentence|
-| insert_proficiency_data| Inserts data in the proficiency table|
-| get_student| Queries students data based on their telegram_name and returns their id, telegram name and name|
-| rows_to_proficiency| Parses rows from database into Proficiency object|
-| get_student_proficiency| Returns a proficiency object that is initialized with the values from the database|
-| get_all_tasks_for_number_of_participants | Returns a list of all tasks that can be started with the number of participants|
+## Database Connection Class
+We defined a database connection class which connects with the database basedon the parameter. We set the database configuration required to connect with the database. We created a function to form this connection. Once the connection is created we can use functions like `get_random_sentence_based_on_sub_type_and_difficulty` function which allows the code to get a random sentence to use in the task based on the sub_type and difficulty level. Every Task is further mapped with entities to get certain data from the database. Like the sentence correction task is mapped to sentence and student entities. Its similiar for the vocabulary guessing task.  For more information refer the next subsection. 
 
-### Bot and the Database Interaction
-#### Database Connection Class
-Step 1: We set the database configuration we would like to use.
+One more function is created that parses the data once the connection is open. The data we query for any table is converted into a dataframe for further use. The function to extract a dataframe is `read_query_into_df`
 
-Step 2: In order to enable a connection to the database we store the necessary information in a dictionary
+## Entity Classes
 
-Step 3: Create a database configuration that does not use the options just in case.
-
-Step 4: We create a function to form a new connection to the database.
-
-Step 5: We create another function in order to Close the given connection. 
-
-One more function is create the parse the data once the connection is open. The data we query for any table is converted into a dataframe for further use. The function to extract a dataframe is `read_query_into_df`
-
-#### Classes for Objects
-
-We created classes for objects and created functions in them to get certain values from those objects. This allows to extract a certain value from the entire object rather than extracting all relational values of the entity. 
-
-|Class Name| Class Description| Arguments to extract values |
-| --- | --- | --- |
-| Group| Initializes a new group entity |  Groups id, chat_id, invitation_url, invitation_code| 
-|Sentence| Initiates the extraction of a sentence for the task| get_sentence, get all words, get error words, get proficiency sub level, check if the sentence is correct or not | 
-|Student | Initiates the extraction of information of the user | Users telegram id, internal user id, name, proficiency level, average of various proficiency, updating function for all proficiency |
-|Task | Represents a task entity from the database| Tasks id, name, minimum number of users for the task, number of iterations | 
-|Word | Mapping of the word to proficiency| Get word and proficiency_sub_type|
-
-#### Mapping Tasks to Database Tables and Entities
-
-#### Sentence Correction Task
-
-This task deals with the sentence correction data, task table and student proficiency data. Sentence Correction data to access the `get_random_sentence_based_on_sub_type_and_difficulty` function which allows the code to get a random sentence to use in the task. Task table to get the name of the task and student proficiency to update the change in proficiency after the task. It uses the sentence and subject class from the entities. 
-
-#### Vocabulary Guessing
-
-This task deals with the vocab guessing table, student proficiency  and task table. The function of task and student proficiency is the same as of the sentence correction task. The vocab guessing table is use to get a random word based on the difficulty level and sub type. Word and student class is used from the entities. 
+We created classes for entities and created functions in them to get certain values from those entities. This allows to extract a certain value from the entire object rather than extracting all relational values of the entity. We have five entities. We have already seen that Task are mapped to entities and each entity is mapped to a table in the database. First entity is called Group which helps us to get the group id and the chat id of the groups performing taks. Second, is the Sentence entity which initiates the extraction of a sentence for the task. One of the important function in this class is the `is_correct` which determines whether the sentence is correct or not. We also have a function to get the proficiency level. Student is the next entity class which gives us information about the user for example, their id or name. It also helps to update their proficiency level when they complete their task. The next entity is called Task which helps to return information about the task, its id, name, minimum users required, etc. The entity class is the Word which has the mapping of the word and their proficiency level.
 
 ## References
 Nebel, S., Beege, M., Schneider, S., & Rey, G. D. (2020). Competitive Agents and Adaptive Difficulty Within Educational Video Games. Frontiers in Education, 5. https://doi.org/10.3389/feduc.2020.00129
