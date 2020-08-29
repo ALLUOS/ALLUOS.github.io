@@ -136,12 +136,12 @@ Therefore, we propose to devote more resources towards the adaptive model in the
 ### Introduction
 The way the bot is designed we had to store data so it can be queried as and when possible. The bot also deals with user data and other essential data from telegram that we had to store, update and/or retrieve in real time. We realized that the data we have is relational in nature which means that we had pre-defined relationships in our data. For each table we have, every column represented a certain kind of data and the field in the column stored the value. Every row was a collection of data from all the columns for one entity.  For example, 
 
-![**Figure 3: Sentence Correction Data**](https://github.com/ALLUOS/ALLUOS.github.io/blob/impl_master/assets/images/sentence_data.png)*Figure 3: Sentence Correction Data*
+![**Figure 3: Sentence Correction Data**](https://github.com/ALLUOS/ALLUOS.github.io/blob/impl_master/assets/images/sentence_data.png)***Figure 3: Sentence Correction Data***
 
 ### SQL Features 
 SQL databases allows you to assign each column with a data type which indicates which kind of data can be stored in each column. PostgreSQL allows to have several data types for example:
 
-Table 1: Data Type of the Sentence Correction Data
+***Table 1: Data Type of the Sentence Correction Data***
 
 
 | Column Name | Data Type | Constraints |
@@ -162,7 +162,7 @@ Example: `PRIMARY KEY` – It makes sure that the values in the cells of that co
 ### Tables Created for the Project 
 
 
-Table 2: Tables Names and Descriptions
+***Table 2: Tables Names and Descriptions***
 
 |Table Name | Table Description | Table Columns |Entities|
 | :-- | :-- | :-- | :-- |
