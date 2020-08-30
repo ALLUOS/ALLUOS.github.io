@@ -8,7 +8,19 @@ image: pic04.jpg
 test
 ### Test Strategy
 
-A summary of the goals and straegies we used in our testin.
+To assess the application’s performance in full, it was decided to split the testing into technical testing and usability testing. The usability testing was further divided into performance and satisfaction subparts.
+
+### Usability Test Strategy Overview
+When testing usability, we aimed to find a testing group resembling the target audience as closely as possible, i.e. schoolchildren in the ages of 14 to 17 with English knowledge between pre-intermediate and upper-intermediate. Out initial idea was to remotely recruit 15 to 25 testers from a group of language course students who almost perfectly matched our ideal testing/target group. Given that no further adjustments between sessions based on the intermediary results was planned, the data from a testing group of this size more than sufficed to assess the application’s usability.
+Testers received two instruction sets, one with a short overview of our work and software/hardware requirements, distributed a few days before the test, and the other with the test instructions themselves, e.g. “Join the game” or “Play the error correction game”, distributed immediately before the test. To minimize misunderstanding, the second instruction set was accompanied by a short video session where testers could receive further necessary explanations to a degree that would not bias their testing activity. The testers were also asked to share their screen recordings with the test’s facilitator.
+The initial step of the usability test was a background questionnaire gathering information about testers’ age, English learning experience, computer literacy, previous e-learning experiences, etc., generating information to match a tester against our target audience. 
+The next step was the performance test. A common practice in usability testing is to assess the application’s performance based on its effectiveness and efficiency. However, choosing appropriate metrics to estimate them in a learning task presented a challenge because not all common approaches could work in a reasonable way. For example, a learning task’s goal is to transfer knowledge, even if it requires extra processing effort and delays from the user, it is therefore irrelevant how quick the user is with the task, provided they learn from it. 
+Diah et al. previously encountered the same issue with their learning application and chose success rate, defined as the proportion of successful trials to all trials, as their basic metric. We decided to recycle this approach in our usability tests and defined success and partial success criteria for the application’s two tasks, being worth 1 or 0.5 points accordingly. In the error correction task success meant 3 out of 4 users in the game room interacting throughout the task session and partial success was defined as 2 out of 4 active users in the session. Success in the word guessing task was defined as at least one description posted, followed by an incorrect guess and further description or by a correct guess, partial success was defined as either no description or no guesses posted. Though rough, success rate provides a general picture and answers the essential question of whether the users can even manage the required task. Its seeming sketchiness is also compensated for by low cost and straightforward interpretation.
+The second measure employed to test the application’s performance was the error count. It is calculated as the number of times when users performed erroneous actions per task session, such as giving out their secret word in the word guessing tasks or unnecessarily using the buttons/Telegram API. It shows if the users are mislead by the application’s flow and instructions and how much their understanding of the application overlaps with ours.
+The usability test was concluded with a satisfaction questionnaire that contained questions about the user’s experience overall and with separate tasks, their willingness to recommend such an application to their friend and basic understanding of the tasks’ goals. Both the opening and closing questionnaires were distributed via Google Forms.
+
+
+A summary of the goals and straegies we used in our testing.
 1. Software testing in general
 2. Validation and Verification
 3. Test Methods we applied
@@ -81,3 +93,7 @@ In our case the test cases consisted out of the following information:
 ## Test instructions
 
 The test instructions were derived from the test cases in such a way, that the software testing could be directly conducted from them. Rather then being a one to one mapping one test instructions could cover multiple test cases or a test case could be divided between several test instructions. Nevertheless the test instructions were created in such a manner, that all selected test cases are covered by them and they do thus cover the planned test space.
+
+### Conclusions 
+Concluding the usability tests, we should note that one of the biggest usability issues was possibly not the application’s design, but Telegram’s API commands employed to run tasks and arrange people into game rooms. We should possibly consider wrapping them into buttons or providing extensive instructions on how to operate them.
+
