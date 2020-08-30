@@ -7,7 +7,7 @@ image: pic04.jpg
 
 # Recommended Structure
 
-A summary of the goals and straegies we used in our testing.
+A summary of the goals and strategies we used in our testing.
 1. Software testing in general
 2. Validation and Verification
 3. Test Methods we applied
@@ -47,7 +47,8 @@ Here the actual article begins:
 1. Test Strategy
 2. Usability Test
  1. Strategy Overview
- 2. Conclusion
+ 2. Evaluation
+ 3. Outlook
 3. Technical Test
  1. Overview
  2. Test Dimensions
@@ -60,9 +61,11 @@ Here the actual article begins:
 
 To assess the application’s performance in full, it was decided to split the testing into technical testing and usability testing. The usability testing was further divided into performance and satisfaction subparts.
 
-##Usability Test
+### Usability Test
 
 ### Usability Test Strategy Overview
+
+
 When testing usability, we aimed to find a testing group resembling the target audience as closely as possible, i.e. schoolchildren in the ages of 14 to 17 with English knowledge between pre-intermediate and upper-intermediate. Out initial idea was to remotely recruit 15 to 25 testers from a group of language course students who almost perfectly matched our ideal testing/target group. Given that no further adjustments between sessions based on the intermediary results was planned, the data from a testing group of this size more than sufficed to assess the application’s usability.
 
 Testers received two instruction sets, one with a short overview of our work and software/hardware requirements, distributed a few days before the test, and the other with the test instructions themselves, e.g. “Join the game” or “Play the error correction game”, distributed immediately before the test. To minimize misunderstanding, the second instruction set was accompanied by a short video session where testers could receive further necessary explanations to a degree that would not bias their testing activity. The testers were also asked to share their screen recordings with the test’s facilitator.
@@ -76,10 +79,33 @@ The second measure employed to test the application’s performance was the erro
 
 The usability test was concluded with a satisfaction questionnaire that contained questions about the user’s experience overall and with separate tasks, their willingness to recommend such an application to their friend and basic understanding of the tasks’ goals. Both the opening and closing questionnaires were distributed via Google Forms.
 
-### Conclusions 
+### Evaluation
+
+
+As the guidance and instructions have been provided to the testing group and a video Q&A session, concerning questions about the performance test itself, has been conducted, the usability test has begun. As the first step of the testing procedure in order to collect some information about the testing group, participants were asked to fill in the pre-questionnaire about their background and experience in learning foreign languages with the help of apps or e-learning platforms, and using Telegram. Then participants, following the instructions have played each game (“Sentence Correction” and “Vocabulary guessing”) two rounds in Escapeling app. Testers have made screen recordings and provided us with them, screen recordings are used in order to evaluate the results afterwards. Finally, participants had to fill in the post-questionnaire to evaluate the tasks and rate the app in terms of their satisfaction with the tasks and Escapeling app in general and their willingness to use this app for further collaborative learning of the English language. 
+
+As Escapeling is designed for collaborative learning of English, games are supposed to be played in the group of 4 people. Participants have a common goal to solve the task and escape the room, so that they are allowed to communicate with each other in the group chat and contribute to the task success and help each other to progress in learning of the foreign language.  We recruited two groups of four people to conduct the test. 
+
+Examining the results of the pre-questionnaire, we extracted the following information about testers: representatives of our test groups are high school students in the age of 14-18 years old. Speaking of their English level, the pre-questionnaire has shown that 42.9 % of testers have upper-intermediate level of English, 28.6 % have intermediate level, and 28.6 % – pre-intermediate level. The majority of the group has prior-experience in using Telegram. The majority of participants have used before various language-learning apps as well, e.g. Duolingo, Reword, Drops, HelloTalk, PuzzleEnglish. Furthermore, 71.4 % of testers have shown their interest in using the app for collaborative language learning. 
+What performance results concerned, there were conducted two test sessions. Speaking of the Session 1, performance cannot be objectively graded because the app crashed during testing. Basic precondition to evaluate the performance appears to be a properly working app, hence, we have taken into consideration only results of the Session 2 for evaluation of user acceptance. To evaluate the success rate we calculated the proportion of completed successfully to all attempts. Errors were counted, as well. 
+
+So, success rate in the Task 1: 8.0/8 = 1. During the first task (“Error correction”) participants were asked to play twice (so that each participant had his/her turn twice). During the test all participants made a guess, whether the sentence was correct or not, tried to find the mistake in the sentence, and correct it. So that, the success rate in the first round is 1.0, and in the second as well. In total = 2.0. Success rate in the Task 2: 8.0/8 =1. During the second task (“Vocabulary guessing”) participants were asked to play again 2 rounds, so everyone has their turn twice. The task was completed successfully. All participants posted the description of the provided word, all of them made at least one guess, and the task was completed. Error count is 2. Most common error is naming the shown word in the Task 2 during the explanation of the word to the other participants of the group, as it violates the instructions. 
+
+Examining the results above, we can conclude that performance results are quite good; the results of the post-questionnaire confirm that as well. Participants were highly satisfied with the app and both tasks and majority of the group would highly recommend this app to their friends. So, based on tests, the application was accepted by the target user and mostly  met the requirements that have been set initially. 
+
+
+### Outlook
+
+
+An important point that has been seen  during the test procedure is that it became obvious that participants barely communicated with each other in the group chat, most of the time they were waiting for the messages and instructions from the bot. When they experienced some difficulties to give the correct answer, they were working individually. As the initial idea of the app is collaborative learning, some reminders and encouraging messages from the bot, when the silence in the chat lasts for a while, might be helpful to engage users to interact with each other more, as they have a common goal while completing the task and it will help them to practice language more in a natural way, communicating with peers.
+
+Another issue is that despite being provided with written and oral instructions some testers, especially those who had no prior experience with Telegram bots, got confused easily while using commands. So that, it might be a good idea to provide explicit instructions inside the bot (e.g. pin the message with the instructions in the chat). It will make the interface of our chatbot more user-friendly and will help players to remember how to use the bot. 
+
 Concluding the usability tests, we should note that one of the biggest usability issues was possibly not the application’s design, but Telegram’s API commands employed to run tasks and arrange people into game rooms. We should possibly consider wrapping them into buttons or providing extensive instructions on how to operate them.
 
 ### References
+
+
 Diah, N. M., Ismail, M., Ahmad, S., & Dahari, M. K. (2010). Usability testing for educational computer game using observation method. 2010 International Conference on Information Retrieval & Knowledge Management (CAMP). doi:10.1109/infrkm.2010.5466926
 
 Nielsen Norman Group. Why You Only Need to Test with 5 Users. Retrieved August 27, 2020, from https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/
