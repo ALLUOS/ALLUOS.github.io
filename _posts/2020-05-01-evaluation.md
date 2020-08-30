@@ -1,5 +1,6 @@
 ---
 layout: post
+bibliography: evluation.bib
 title: Summary and Evaluation
 description: Under construction!
 image: pic04.jpg
@@ -56,12 +57,13 @@ Here the actual article begins:
  4. Test Instructions
  5. Defects
  6. Results
+4. References
 
 ## Test Strategy
 
-To assess the application’s performance in full, it was decided to split the testing into technical testing and usability testing. The usability testing was further divided into performance and satisfaction subparts.
+The testing strategy we designed was inspired by the paper @jenkins2008software. He diferentiates between two goals of software testing: verification and validation. A test can either verify, that the specified requirements are fulfilled or validate that the application design serves the purpose of the application. As both goals come with there own methodology, we splitted our testing strategy along this line. One part of our group conducted a technical test to verify the implementation, the other part of our group conducted an usability test in order to validate the usefulness of the application as a group learning scenario for the english language. The usability testing was further divided into performance and satisfaction subparts.
 
-### Usability Test
+## Usability Test
 
 ### Usability Test Strategy Overview
 
@@ -102,17 +104,6 @@ An important point that has been seen  during the test procedure is that it beca
 Another issue is that despite being provided with written and oral instructions some testers, especially those who had no prior experience with Telegram bots, got confused easily while using commands. So that, it might be a good idea to provide explicit instructions inside the bot (e.g. pin the message with the instructions in the chat). It will make the interface of our chatbot more user-friendly and will help players to remember how to use the bot. 
 
 Concluding the usability tests, we should note that one of the biggest usability issues was possibly not the application’s design, but Telegram’s API commands employed to run tasks and arrange people into game rooms. We should possibly consider wrapping them into buttons or providing extensive instructions on how to operate them.
-
-### References
-
-
-Diah, N. M., Ismail, M., Ahmad, S., & Dahari, M. K. (2010). Usability testing for educational computer game using observation method. 2010 International Conference on Information Retrieval & Knowledge Management (CAMP). doi:10.1109/infrkm.2010.5466926
-
-Nielsen Norman Group. Why You Only Need to Test with 5 Users. Retrieved August 27, 2020, from https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/
-
-Tullis, T., & Albert, B. (2013). Measuring the user experience collecting, analyzing, and presenting usability metrics. Amsterdam, Netherlands: Elsevier.
- 
- 
  
 ## Technical Test
 
@@ -180,3 +171,12 @@ For each defect a corresponding github issue was created for the development tea
 ### Results
 
 After conducting the tests we detected ~15 defects, some of them were very similar or the same defects occuring on different setups. As a software test should detect all possible mistakes of a software we were surprised by the small quantity and will try to analyse our approach for optimisation. Especially, because the usability test, that was conducted shortly after revealed, that we missed defects the software had. Nevertheless we can conclude, that we tested a solidly build software being a good basis for further improvement of our project.
+
+
+## References
+
+Diah, N. M., Ismail, M., Ahmad, S., & Dahari, M. K. (2010). Usability testing for educational computer game using observation method. 2010 International Conference on Information Retrieval & Knowledge Management (CAMP). C
+
+Nielsen Norman Group. Why You Only Need to Test with 5 Users. Retrieved August 27, 2020, from https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/
+
+Tullis, T., & Albert, B. (2013). Measuring the user experience collecting, analyzing, and presenting usability metrics. Amsterdam, Netherlands: Elsevier.
