@@ -102,3 +102,12 @@ The test instructions were derived from the test cases in such a way, that the s
 ### Conclusions 
 Concluding the usability tests, we should note that one of the biggest usability issues was possibly not the application’s design, but Telegram’s API commands employed to run tasks and arrange people into game rooms. We should possibly consider wrapping them into buttons or providing extensive instructions on how to operate them.
 
+### References
+Diah, N. M., Ismail, M., Ahmad, S., & Dahari, M. K. (2010). Usability testing for educational computer game using observation method. 2010 International Conference on Information Retrieval & Knowledge Management (CAMP). doi:10.1109/infrkm.2010.5466926
+
+Nielsen Norman Group. Why You Only Need to Test with 5 Users. Retrieved August 27, 2020, from https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/
+
+Tullis, T., & Albert, B. (2013). Measuring the user experience collecting, analyzing, and presenting usability metrics. Amsterdam, Netherlands: Elsevier.
+
+
+
