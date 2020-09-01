@@ -142,6 +142,23 @@ For each defect a corresponding github issue was created. This issue was then us
 
 After conducting the tests we detected ~15 defects, some of them were very similar or even the same defect occuring on a different setup. As a software test should detect all possible mistakes of a software, we were surprised by the small quantity. For a future test we want to optimise our approach, analyzing why we detected so few defects. This is of special importance to us, because the usability test, that was conducted shortly after revealed, that we missed defects the software had. Nevertheless we can conclude, that we tested a solidly build software being a good basis for the further improvement of our project.
 
+Based on the results of the work done by our group, the following conclusions can be drawn.
+
+Positive:
+
+* conducting technical testing allows us to detect defects and bugs of the program and helps to prevent their occurrence in future development;
+* the use of freely distributed products makes it possible to use technologies for remote interaction of subjects of the educational process among all interested users;
+* the idea of remote interaction of all participants in the educational process, laid in the basis of the project, allows to reduce the time spent on staying in special institutions, which is especially important for additional improvement of language skills;
+* additional acquisition of skills in working with computer and information and communication electronic technologies by students;
+* optimization in volume and significant improvement in the quality of educational and methodological materials through the use of electronic media and constant updating of information;
+* more effective use of technical and organizational capabilities for the implementation of a flexible individual approach to training.
+
+Negative:
+
+* the lack of a stable high-speed Internet leads to high time costs to ensure effective remote interaction;
+* incomplete provision of the necessary computer skills by users, which can lead to disruption of the task;
+* at this stage, for constant remote interaction, a specialist observer is required who can restore the process when a technical error is detected;
+
 ## Prospects For The Next Semester
 
 The idea behind the project is unique in the education system and is to provide a user-friendly application for collaborative group activities. At the moment, the application is already a fairly high-quality product with many useful functions, but it still needs improvement. According to the analysis of the survey of all participants in the target groups of the project showed an increase in the interest in receiving remote communication services.
@@ -156,7 +173,7 @@ In the "Overview" section, you learned about the main difficulties encountered d
 
 The project opened up great opportunities for further research and development in the field of distance interaction and education, therefore we assume the following possible ways of product development:
 
-* Study, analysis, and application of didactic capabilities, properties and functions of Telegram;
+* Study, analysis, and application of didactic capabilities, properties, and functions of Telegram;
 * Development of a model for remote interaction of all participants;
 * Selection, organization, and structuring of the content of instructions in conjunction with the application;
 * Development of requirements for the creation of tasks;
