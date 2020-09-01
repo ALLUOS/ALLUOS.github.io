@@ -22,7 +22,7 @@ image: pic04.jpg
  - Test Instructions
  - Defects
  - Results
-4. Outlook
+4. Prospects For The Next Semester
 5. References
 
 ## Test Strategy
@@ -149,7 +149,7 @@ Positive:
 * conducting technical testing allows us to detect defects and bugs of the program and helps to prevent their occurrence in future development;
 * the use of freely distributed products makes it possible to use technologies for remote interaction of subjects of the educational process among all interested users;
 * the idea of remote interaction of all participants in the educational process, laid in the basis of the project, allows to reduce the time spent on staying in special institutions, which is especially important for additional improvement of language skills;
-* additional acquisition of skills in working with computer and information and communication electronic technologies by students;
+* additional acquisition of skills in working with computer and electronic communication technologies by users;
 * optimization in volume and significant improvement in the quality of educational and methodological materials through the use of electronic media and constant updating of information;
 * more effective use of technical and organizational capabilities for the implementation of a flexible individual approach to training.
 
@@ -161,13 +161,16 @@ Negative:
 
 ## Prospects For The Next Semester
 
+In retrospect, the only thing we could download to our mobile device was a ringtone. Now, users of mobile devices have a choice of thousands of programs that allow them to learn new languages. First there were applications designed for audio listening, later there were whole foreign language courses, and now there are popular applications with online chat, where people can try their communication in English at a new level.
+
 The idea behind the project is unique in the education system and is to provide a user-friendly application for collaborative group activities. At the moment, the application is already a fairly high-quality product with many useful functions, but it still needs improvement. According to the analysis of the survey of all participants in the target groups of the project showed an increase in the interest in receiving remote communication services.
 
 The project contributed to:
 * stimulating interest and enhancing the cognitive and communicative activity of students in the mainstream of the educational process;
-* formation of skills and development of communication skills on the Telegram platform.
+* formation and development of communication skills on the Telegram platform;
+* language acquisition.
 
-In the "Overview" section, you learned about the main difficulties encountered during usability testing, namely:
+In the "Overview" section of the "Usability Test" chapter, you learned about the main difficulties encountered during usability testing, namely:
 * Participants hardly communicate with each other but prefer to do everything on their own;
 * Difficulties in using the built-in commands and functions of the API Telegram.
 
@@ -182,6 +185,8 @@ The project opened up great opportunities for further research and development i
 * Methodology for organizing feedback and consultations for application users;
 * Solving problems of assessment and control in group learning.
 
+In general, all the tasks set during the meetings were achieved. There is no doubt that there is still room for improvement. The development of distance technologies in education is rapidly becoming popular. As a result, it can be noted that all listed possible improvements for distance group learning give an effect not only individually, but also together, which allows us to speak of the application as a qualitatively new form of education.
+
 
 ## References
 
@@ -195,7 +200,7 @@ Tullis, T., & Albert, B. (2013). Measuring the user experience collecting, analy
 | ------------- | -------------  | ------------- |
 | Test Strategy; Technical Testing | Luis, SP | 1138 |
 | ------------- | Victoria | ------------- |
-| ------------- | Ivan | ------------- |
+| Results; Prospects Of The Next Semester | Ivan, SP | 220;420 |
 | Test Strategy Intro;Usability Test Strategy Overview;Outlook;References | Maksim, SP |50;601;104;70|
 
 
