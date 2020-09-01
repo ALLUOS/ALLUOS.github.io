@@ -142,9 +142,32 @@ For each defect a corresponding github issue was created. This issue was then us
 
 After conducting the tests we detected ~15 defects, some of them were very similar or even the same defect occuring on a different setup. As a software test should detect all possible mistakes of a software, we were surprised by the small quantity. For a future test we want to optimise our approach, analyzing why we detected so few defects. This is of special importance to us, because the usability test, that was conducted shortly after revealed, that we missed defects the software had. Nevertheless we can conclude, that we tested a solidly build software being a good basis for the further improvement of our project.
 
-## Outlook
+## Prospects For The Next Semester
 
-*Missing*
+
+The idea behind the project is unique in the education system and is to provide a user-friendly application for collaborative group activities. At the moment, the application is already a fairly high-quality product with many useful functions, but it still needs improvement.
+The project contributed to:
+1. stimulating interest and enhancing the cognitive and cognitive activity of students in the mainstream of the educational process.
+2. formation of skills and development of communication skills on the Telegram platform;
+
+In the "Overview" section, you learned about the main difficulties encountered during usability testing, namely:
+1. Participants hardly communicate with each other but prefer to do everything on their own.
+2. Difficulties in using the built-in commands and functions of the API Telegram.
+
+Moreover, an analysis of the survey of all participants in the target groups of the project showed an increase in the interest of all target groups in receiving remote communication services.
+
+The project opened up great opportunities for further research and development in the field of distance interaction and education, therefore we assume the following possible ways of developing this product:
+
+Project prospects:
+
+1. Development of a model for remote interaction of all participants.
+2. Study, analysis, and application of didactic capabilities, properties and functions of Telegram.
+3. Selection, organization, and structuring of the content of instructions in conjunction with the application.
+4. Development of requirements for the creation of tasks.
+5. Study of the psychological characteristics of the interaction of all subjects of the educational process in conditions of distance interaction.
+6. Development of pedagogical technologies. (adding the learning side of the project)
+7. Methodology for organizing feedback and consultations for application users.
+8. Solving problems of assessment and control in group learning.
 
 ## References
 
