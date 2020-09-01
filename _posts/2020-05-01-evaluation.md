@@ -144,29 +144,25 @@ After conducting the tests we detected ~15 defects, some of them were very simil
 
 ## Prospects For The Next Semester
 
+The idea behind the project is unique in the education system and is to provide a user-friendly application for collaborative group activities. At the moment, the application is already a fairly high-quality product with many useful functions, but it still needs improvement. According to the analysis of the survey of all participants in the target groups of the project showed an increase in the interest in receiving remote communication services.
 
-The idea behind the project is unique in the education system and is to provide a user-friendly application for collaborative group activities. At the moment, the application is already a fairly high-quality product with many useful functions, but it still needs improvement.
 The project contributed to:
-* stimulating interest and enhancing the cognitive and cognitive activity of students in the mainstream of the educational process.
+* stimulating interest and enhancing the cognitive and communicative activity of students in the mainstream of the educational process;
 * formation of skills and development of communication skills on the Telegram platform.
 
 In the "Overview" section, you learned about the main difficulties encountered during usability testing, namely:
-* Participants hardly communicate with each other but prefer to do everything on their own.
+* Participants hardly communicate with each other but prefer to do everything on their own;
 * Difficulties in using the built-in commands and functions of the API Telegram.
 
-Also, an analysis of the survey of all participants in the target groups of the project showed an increase in the interest of all target groups in receiving remote communication services.
+The project opened up great opportunities for further research and development in the field of distance interaction and education, therefore we assume the following possible ways of product development:
 
-The project opened up great opportunities for further research and development in the field of distance interaction and education, therefore we assume the following possible ways of developing this product:
-
-Project prospects:
-
-* Development of a model for remote interaction of all participants.
-* Study, analysis, and application of didactic capabilities, properties and functions of Telegram.
-* Selection, organization, and structuring of the content of instructions in conjunction with the application.
-* Development of requirements for the creation of tasks.
-* Study of the psychological characteristics of the interaction of all subjects of the educational process in conditions of distance interaction.
-* Development of pedagogical technologies. (adding the learning side of the project)
-* Methodology for organizing feedback and consultations for application users.
+* Study, analysis, and application of didactic capabilities, properties and functions of Telegram;
+* Development of a model for remote interaction of all participants;
+* Selection, organization, and structuring of the content of instructions in conjunction with the application;
+* Development of requirements for the creation of tasks;
+* Study of the psychological characteristics of the interaction of all subjects of the educational process in conditions of distance interaction;
+* Development of pedagogical technologies (adding the learning side of the project);
+* Methodology for organizing feedback and consultations for application users;
 * Solving problems of assessment and control in group learning.
 
 
