@@ -188,6 +188,6 @@ Tullis, T., & Albert, B. (2013). Measuring the user experience collecting, analy
 | ------------- | Luis | ------------- |
 | ------------- | Victoria | ------------- |
 | ------------- | Ivan | ------------- |
-| Test Strategy Intro; Usability Test Strategy Overview; Outlook | Maksim, SP |50;601; 104|
+| Test Strategy Intro;Usability Test Strategy Overview;Outlook;References | Maksim, SP |50;601;104;70|
 
 
