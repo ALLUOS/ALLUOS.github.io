@@ -183,8 +183,10 @@ Nielsen Norman Group. Why You Only Need to Test with 5 Users. Retrieved August 2
 
 Tullis, T., & Albert, B. (2013). Measuring the user experience collecting, analyzing, and presenting usability metrics. Amsterdam, Netherlands: Elsevier.
 
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
+| Chapter  | Person&commitment level || Word count |  
+| ------------- | Luis || ------------- |
+| ------------- | Victoria || ------------- |
+| ------------- | Ivan || ------------- |
+| Test Strategy Intro; Usability Test Strategy Overview; Outlook | Maksim, SP ||50;601; 104; |
 
 
