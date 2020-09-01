@@ -93,7 +93,7 @@ What performance results concerned, there were conducted two test sessions. Spea
 
 So, success rate in the Task 1: 8.0/8 = 1. During the first task (“Error correction”) participants were asked to play twice (so that each participant had his/her turn twice). During the test all participants made a guess, whether the sentence was correct or not, tried to find the mistake in the sentence, and correct it. So that, the success rate in the first round is 1.0, and in the second as well. In total = 2.0. Success rate in the Task 2: 8.0/8 =1. During the second task (“Vocabulary guessing”) participants were asked to play again 2 rounds, so everyone has their turn twice. The task was completed successfully. All participants posted the description of the provided word, all of them made at least one guess, and the task was completed. Error count is 2. Most common error is naming the shown word in the Task 2 during the explanation of the word to the other participants of the group, as it violates the instructions. 
 
-Examining the results above, we can conclude that performance results are quite good; the results of the post-questionnaire confirm that as well. Participants were highly satisfied with the app and both tasks and majority of the group would highly recommend this app to their friends. So, based on tests, the application was accepted by the target user and mostly  met the requirements that have been set initially. 
+Examining the results above, we can conclude that performance results are quite good; the results of the post-questionnaire confirm that as well. Participants were highly satisfied with the app and both tasks and majority of the group would highly recommend this app to their friends. So, based on tests, the application was accepted by the target user and mostly met the requirements that have been set initially. 
 
 
 ### Outlook
@@ -102,6 +102,8 @@ Examining the results above, we can conclude that performance results are quite 
 An important point that has been seen  during the test procedure is that it became obvious that participants barely communicated with each other in the group chat, most of the time they were waiting for the messages and instructions from the bot. When they experienced some difficulties to give the correct answer, they were working individually. As the initial idea of the app is collaborative learning, some reminders and encouraging messages from the bot, when the silence in the chat lasts for a while, might be helpful to engage users to interact with each other more, as they have a common goal while completing the task and it will help them to practice language more in a natural way, communicating with peers.
 
 Another issue is that despite being provided with written and oral instructions some testers, especially those who had no prior experience with Telegram bots, got confused easily while using commands. So that, it might be a good idea to provide explicit instructions inside the bot (e.g. pin the message with the instructions in the chat). It will make the interface of our chatbot more user-friendly and will help players to remember how to use the bot. 
+
+Another possible improvement to the application's usability is clearly indicating when it crashes. Throughout the tests,not seeing whether the bot is still running sometimes caused misunderstanding, as the users were expecting a reaction that was impossible because the bot was offline. This could be implemented by simply sending an explicit error message when errors occur. 
 
 Concluding the usability tests, we should note that one of the biggest usability issues was possibly not the application’s design, but Telegram’s API commands employed to run tasks and arrange people into game rooms. We should possibly consider wrapping them into buttons or providing extensive instructions on how to operate them.
  
@@ -180,3 +182,9 @@ Diah, N. M., Ismail, M., Ahmad, S., & Dahari, M. K. (2010). Usability testing fo
 Nielsen Norman Group. Why You Only Need to Test with 5 Users. Retrieved August 27, 2020, from https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/
 
 Tullis, T., & Albert, B. (2013). Measuring the user experience collecting, analyzing, and presenting usability metrics. Amsterdam, Netherlands: Elsevier.
+
+---
+test: 1
+---
+
+
