@@ -197,7 +197,7 @@ Tullis, T., & Albert, B. (2013). Measuring the user experience collecting, analy
 | Chapter  | Person&commitment level | Word count |  
 | ------------- | -------------  | ------------- |
 | Test Strategy; Technical Testing | Luis, SP | 1138 |
-| Evaluation; Outlook; | Viktoriia, SP | ------------- |
+| Evaluation; Outlook; | Viktoriia, SP | 851 |
 | Results; Prospects Of The Next Semester | Ivan, SP | 220;420 |
 | Test Strategy Intro;Usability Test Strategy Overview;Outlook;References | Maksim, SP |50;601;104;70|
 
