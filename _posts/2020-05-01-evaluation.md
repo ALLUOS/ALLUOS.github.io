@@ -1,6 +1,17 @@
 ---
 layout: post
 title: Summary and Evaluation
+sections:
+ - title: Test Strategy
+   tag: \#strategy
+ - title: Usability Tests
+   tag: \#usability
+ - title: Technical Tests
+   tag: \#technical
+ - title: Outlook
+   tag: \#prospects
+ - title: References
+   tag: \#references
 description: Learn more about the project's testing strategy and outlook.
 image: pic04.jpg
 ---
@@ -13,10 +24,12 @@ image: pic04.jpg
 4. Prospects For The Next Semester
 5. References
 
+<div id="strategy"></div>
 ## Test Strategy
 
 The testing strategy we designed was inspired by the paper *A Software Testing Primer* (Jenkins, 2008). In the paper, Jenkins differentiates between two goals of software testing: verification and validation. A test can either verify that the specified requirements are fulfilled or validate that the application design serves the purpose of the application. As both goals come with their own methodology, we split our testing strategy along this line. One part of our group conducted a technical test to verify the implementation while the other conducted a usability test in order to validate the usefulness of the application as a group learning scenario for the English language. The usability test was further divided into performance and satisfaction subparts.
 
+<div id="usability"></div>
 ## Usability Test
 
 The below section describes the usability testing strategy and results.
@@ -63,6 +76,7 @@ Another possible improvement to the application's usability is clearly indicatin
 
 Concluding the usability tests, we should note that one of the biggest usability issues was possibly not the application’s design, but Telegram’s API commands employed to run tasks and arrange people into game rooms. The users, especially those who had no prior experience with Telegram bots, got confused easily and struggled to continue when they needed to employ a bot command. We should possibly consider wrapping them into buttons or providing extensive instructions on how to operate them  (e.g. pin the message with the instructions in the chat). It will make the interface of our chatbot more user-friendly and will help players remember how to use the bot.
 
+<div id="technical"></div>
 ## Technical Test
 
 The below section summarizes the technical testing strategy and results.
@@ -148,6 +162,7 @@ After conducting the tests we detected approximately 15 defects, some of them we
 * Incomplete provision of the necessary computer skills by users, which can lead to disruption of the task.
 * At this stage, for constant remote interaction, a specialist observer is required who can restore the process when a technical error is detected.
 
+<div id="prospects"></div>
 ## Prospects For The Next Semester
 
 Users of mobile devices can choose from thousands of programs that allow them to learn new languages, including applications designed for audio listening, entire foreign language courses, and even applications with online chat functionality where people can try their communication in English at a new level.
@@ -186,7 +201,7 @@ The idea behind the project is unique and the overall goal is to provide a user-
 
 In general, all the tasks set during the projects' meetings were achieved. There is no doubt that there is still room for improvement. The development of distance technologies in education is rapidly becoming popular. As a result, it can be noted that all listed possible improvements for distance group learning give an effect not only individually, but also together, which allows us to speak of the application as a qualitatively new form of education.
 
-
+<div id="references"></div>
 ## References
 
 Diah, N. M., Ismail, M., Ahmad, S., & Dahari, M. K. (2010). Usability testing for educational computer game using observation method. 2010 International Conference on Information Retrieval & Knowledge Management (CAMP).

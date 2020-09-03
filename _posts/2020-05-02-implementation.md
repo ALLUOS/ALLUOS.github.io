@@ -1,6 +1,19 @@
 ---
 layout: post
 title: Implementation
+sections:
+ - title: Technical Architecture
+   tag: \#architecture
+ - title: Telegram
+   tag: \#telegram
+ - title: Task Framework
+   tag: \#framework
+ - title: Adaptive Module
+   tag: \#adaptive
+ - title: Database
+   tag: \#database
+ - title: References
+   tag: \#references
 description: Learn more about the applications' implementation and technical architecture.
 image: pic03.jpg
 ---
@@ -13,7 +26,7 @@ image: pic03.jpg
 1. References
 
 
-
+<div id="architecture"></div>
 ## Technical Architecture
 
 In this section we will provide a brief overview of the technical architecture that we relied on to build our application. All of our code is hosted in a [GitHub repository](https://github.com/ALLUOS/app) which also includes a step-by-step guide on starting the application.
@@ -35,7 +48,7 @@ A cloud-hosted PostgreSQL database serves as our data storage. PostgreSQL is a f
 Generally, the chosen architecture enabled us to quickly implement first task prototypes in the initial stages of the project. However, especially during later stages we found that small changes to the task design entailed quite substantial changes to the implementation. For example, changes to the task data had to be reflected at least in the database, the functions that interact with the database, and the entity that refers to this data. For the next phase of the study project, we suggest to devote more time to fine-tuning a tasks design before greenlighting it for implementation. Also, we could think about employing a holistic model of the database entities in Python using a preexisting framework such as [SQLAlchemy](https://www.sqlalchemy.org/) to speed up adaptions to our data model.
 
 
-
+<div id="telegram"></div>
 ## Telegram Integration
 
 This section describes the technical components of the Telegram front-end integration, including relevant handlers required to realize the application's intended functionality.
@@ -65,7 +78,7 @@ To handle the users interaction with the bot during the different tasks, i.e. th
 The only way a task handler can be entered is through the room handler. In order to ensure that a task handler is not entered with an insufficient number of users we developed a custom filter to prevent this.
 
 
-
+<div id="framework"></div>
 ## Task Framework
 This section aims to explain the implementation decisions and to describe the resulting components that have been implemented for the application’s task framework. In the next sections, we will cover the role and necessity of a `RoomManager`, as well as the structure and idea of different task classes, especially the `SequentialTask`. Lastly, this section concludes with an outlook subsection, which discusses the current limitations of and possible additions to the task framework.
 
@@ -110,7 +123,7 @@ With our implementation of the `SequentialTask`, we set a very flexible code fou
 Additionally, we will be working on embedding the tasks more into the escape room scenario. Thus far, due to the lack of alternatives, we are stuck with two tasks which can be repeated as desired until the codeword is reached. After reaching and successfully entering the correct codeword, we return to the task selection screen, which initiates a new round. Thus, we will also work on an overall win-condition, which completes the escape room scenario.
 
 
-
+<div id="adaptive"></div>
 ## Adaptive Module
 
 Our implementation of the adaptive module of the language learning application relies on a model of the user’s proficiency. In this section we will briefly explain the model and then dive deeper into the implementation of the model, updating user proficiency, and the adaptive selection of the next task iteration. Finally, we reflect on drawbacks of adaptive modeling approach that we have taken.
@@ -146,7 +159,7 @@ With our current model, we also put more emphasis on language skills that are no
 Therefore, we propose to devote more resources towards the adaptive model in the second semester of this study project. For the evaluation of the current model we would ideally need objective measures for the actual language competency of our users in order to compare those to our proficiency estimates. Moving forward from there, we should also track the user performance more closely depending on the sub-skill and difficulty. This data could prove very useful in the later fine-tuning of the adaptive difficulty.
 
 
-
+<div id="database"></div>
 ## Database
 
 ### Introduction
@@ -212,7 +225,7 @@ One more function is created that parses the data once the connection is open. T
 We created classes for entities and created functions in them to get certain values from those entities. This allows one to extract a certain value from the entire object rather than extracting all relational values of the entity. We have five entities. We have already seen that Tasks are mapped to entities and each entity is mapped to a table in the database. The first entity is called *Group* and helps to get the group id and the chat id of the groups performing tasks. The second entity is the *Sentence* entity which initiates the extraction of a sentence for the task. One of the important functions in this class is `is_correct`, which determines whether a sentence is correct or not. We also have a function to get the proficiency level. *Student* is the next entity class which gives us information about the user for example, their id or name. It also helps to update their proficiency level when they complete their task. The next entity is called *Task* which helps to return information about the task, its id, name, minimum users required, etc. The final entity of mention is *Word*, which has the mapping of the word and its difficulty level.
 
 
-
+<div id="references"></div>
 ## References
 
 Nebel, S., Beege, M., Schneider, S., & Rey, G. D. (2020). Competitive Agents and Adaptive Difficulty Within Educational Video Games. Frontiers in Education, 5. https://doi.org/10.3389/feduc.2020.00129
