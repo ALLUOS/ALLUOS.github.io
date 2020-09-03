@@ -22,9 +22,11 @@
                             {% for post in site.posts limit:site.tiles-count %}{% if site.tiles-source == 'posts' %}
                             <li><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></li>
                             {% if post.title == "Overview" %}
+                            <ul>
                             {% for section in page.sections %}
-                            <li><a href="{{ section.tag | post.url | absolute_url }}">  {{ section.title }}</a></li>
+                            <li><a href="{{ section.tag | post.url | absolute_url }}">{{ section.title }}</a></li>
                             {% endfor %}
+                            </ul>
                             {% endif %}
                             {% endif %} {% endfor %}
                         </ul>
