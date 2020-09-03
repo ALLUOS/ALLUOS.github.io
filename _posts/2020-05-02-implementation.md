@@ -21,7 +21,7 @@ In this section we will provide a brief overview of the technical architecture t
 
 In general, we used the model-view-controller (MVC) software design pattern to structure the implementation. Figure one gives an overview of the different application elements within this MVC design pattern. It also shows where the associated source code can be found in the repository.
 
-![Figure 1: Overview of Repository Content](../assets/images/software_architecture_overview.png)*Figure 1: Overview of Repository Content*
+![Figure 1: Overview of Repository Content](https://github.com/ALLUOS/ALLUOS.github.io/raw/master/assets/images/software_architecture_overview.png)*Figure 1: Overview of Repository Content*
 
 As we decided to use the Telegram application as the front-end for our application, the view element of our MVC design pattern has been reduced to an interface with two Telegram APIs. This will be further explained in the section _Telegram Integration_.
 
@@ -51,7 +51,7 @@ To structure the conversations between the bot and the users we implemented diff
 #### Private Chat Handler
 The interaction between the bot and a user in a private chat is handled by the private chat handler. Its purpose is to register a user for the app, add the user to a group or create a group, and tell the user the beginning of the story. It can also deal with some problems that may occur when creating the group. The handler is started with the */start*-command sent to the bot in a private chat. Afterwards the user is guided through the conversation by the use of reply keyboards sent to the user. Figure 2 shows the general conversation flow of the private chat handler. For simplicity, error handling is not covered in the figure.
 
-![Figure 2: Conversation flow of the private chat handler including backend activities](../assets/images/PrivateChatInteraction.png)*Figure 2: Conversation flow of the private chat handler including backend activities*
+![Figure 2: Conversation flow of the private chat handler including backend activities](https://github.com/ALLUOS/ALLUOS.github.io/raw/master/assets/images/PrivateChatInteraction.png)*Figure 2: Conversation flow of the private chat handler including backend activities*
 
 #### Room Handler
 The room handlers’ purpose is to lead the users from one task to the next task. This handler is also started with the */start* command but only if the command is sent in a group chat. After starting the bot checks whether enough players are currently available and which tasks they can solve next. After the users have selected a task the related nested task handler is called.
@@ -115,7 +115,7 @@ Our implementation of the adaptive module of the language learning application r
 ### Language Proficiency Model
 The hierarchical model contains two language domains on the first level that reflect the main set of skills: Grammar and vocabulary (cf. Figure 3). The sentence correction tasks focuses on grammar skills whilst the vocabulary guessing task aims to augment the users' vocabulary. On the second level, the domains are subdivided into more granular sub-skills, e.g. relative clauses or gerunds in the grammar domain.
 
-![Figure 3: Graph visualization of the hierarchical difficulty model.](../assets/images/difficulty-model.png)
+![Figure 3: Graph visualization of the hierarchical difficulty model.](https://github.com/ALLUOS/ALLUOS.github.io/raw/master/assets/images/difficulty-model.png)
 
 *Figure 3: Graph visualization of the hierarchical difficulty model.*
 
@@ -149,7 +149,7 @@ Therefore, we propose to devote more resources towards the adaptive model in the
 ### Introduction
 Given the implementation design, it is necessary to store data for efficient retrieval during application runtime. The bot deals with user data and other essential data from Telegram that we had to store, update, and retrieve in real time. As the data is relational in nature, we structured these relationships in a backend PostgreSQL database. Each table in the database contains records and attributes which may be visualized as rows and columns (cf. Figure 4).
 
-![**Figure 4: Sentence Correction Data**](../assets/images/sentence_data.png)
+![**Figure 4: Sentence Correction Data**](https://github.com/ALLUOS/ALLUOS.github.io/raw/master/assets/images/sentence_data.png)
 
 *Figure 4: Sample database table entry from the sentence correction task table.*
 
