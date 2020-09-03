@@ -14,7 +14,7 @@ image: pic03.jpg
 1. References
 
 ## Technical Architecture
-In this section we will provide a brief overview of the technical architecture that we relied on to build our application. All of our code is hosted in a [GitHub repository](https://github.com/ALLUOS/app) which also includes a step-by-step guide on starting the application. 
+In this section we will provide a brief overview of the technical architecture that we relied on to build our application. All of our code is hosted in a [GitHub repository](https://github.com/ALLUOS/app) which also includes a step-by-step guide on starting the application.
 
 In general, we used the model-view-controller (MVC) software design pattern to structure the implementation. Figure one gives an overview of the different application elements within this MVC design pattern. It also shows where the associated source code can be found in the repository.
 
@@ -22,13 +22,13 @@ In general, we used the model-view-controller (MVC) software design pattern to s
 
 As we decided to use the Telegram application as the front-end for our application, the view element of our MVC design pattern has been reduced to an interface with two Telegram APIs. This will be further explained in the section _Telegram Integration_.
 
-Concerning the programming language, we relied on Python 3. This decision was made mostly due to Python being the common denominator in the programming experience of the implementation team. Given the pythonic tendencies of the Cognitive Science program, we also hope that this eases onboarding of new team members in future stages of the study project. 
+Concerning the programming language, we relied on Python 3. This decision was made mostly due to Python being the common denominator in the programming experience of the implementation team. Given the pythonic tendencies of the Cognitive Science program, we also hope that this eases onboarding of new team members in future stages of the study project.
 
 We employed an object-oriented approach to programming, especially in the controller module of our application. The task framework section will elaborate more on how this approach was used for the modeling of different tasks.
 
 A cloud-hosted PostgreSQL database serves as our data storage. PostgreSQL is a free and open-source relational database management system. For now the database is hosted on a free platform but we intend to migrate to a university server in the upcoming semester. Motivation for this change is both the limited capacity of the free hosting as well as the need for more management tools such as backups.
 
-Generally, the chosen architecture enabled us to quickly implement first task prototypes in the initial stages of the project. However, especially during later stages we found that small changes to the task design entailed quite substantial changes to the implementation. For example, changes to the task data had to be reflected at least in the database, the functions that interact with the database, and the entity that refers to this data. For the next phase of the study project, we suggest to devote more time to fine-tuning a tasks design before greenlighting it for implementation. Also, we could think about employing a holistic model of the database entities in Python using a preexisting framework such as [SQLAlchemy](https://www.sqlalchemy.org/) to speed up adaptions to our data model. 
+Generally, the chosen architecture enabled us to quickly implement first task prototypes in the initial stages of the project. However, especially during later stages we found that small changes to the task design entailed quite substantial changes to the implementation. For example, changes to the task data had to be reflected at least in the database, the functions that interact with the database, and the entity that refers to this data. For the next phase of the study project, we suggest to devote more time to fine-tuning a tasks design before greenlighting it for implementation. Also, we could think about employing a holistic model of the database entities in Python using a preexisting framework such as [SQLAlchemy](https://www.sqlalchemy.org/) to speed up adaptions to our data model.
 
 
 ## Telegram Integration
@@ -37,7 +37,7 @@ Generally, the chosen architecture enabled us to quickly implement first task pr
 As we decided to use a Telegram chatbot as our front-end and Python as programming language, we investigated different methods to manage the communication between the chatbot and the learning application. First, we explored the [Telegram Bot API]( https://core.telegram.org/bots/api), which is a HTTP-based interface for developers that want to build bots for telegram. It is developed and maintained by Telegram itself and offers all the methods that are currently available for Telegram bots. Nevertheless, we decided to not use the Telegram Bot API directly, because we do not want to do the HTTP calls and the corresponding error handling by ourself. Therefore, we decided to use a python library that wraps the Telegram Bot API. On the Telegram [Bot Code Examples]( https://core.telegram.org/bots/samples) site we found three Python wrapper: [python-telegram-bot]( https://github.com/python-telegram-bot/python-telegram-bot), [pyTelegramBotAPI]( https://github.com/eternnoir/pyTelegramBotAPI), and [AIOgram]( https://github.com/aiogram/aiogram). After a short investigation we decided to use the **python-telegram-bot** for the following reasons. First, it offers us all the elements of the Telegram Bot API and is actively maintained. Second, it implements a conversational handler that allows us to easily structure complex conversations. Third, the documentation is better than the documentation of the other wrappers. Last, some of the developers had already experience with it.
 
 ### Telethon for Group Handling
-The downside of using a Telegram bot and the Telegram Bot API is that bots are not able to create groups or invite users to groups. Thus, we had to find a way to realize this feature. After some research we found a python package that wraps the standard [Telegram API]( https://core.telegram.org/#telegram-api), which allows the creation of groups and sending invitation to users. In order to use the Telegram API with the [Telethon]( https://github.com/LonamiWebs/Telethon) wrapper we needed a Telegram account to get access to the Telegram API. After setting up the Telegram account and register an application for this user, we were able to create groups and invite users to this group. 
+The downside of using a Telegram bot and the Telegram Bot API is that bots are not able to create groups or invite users to groups. Thus, we had to find a way to realize this feature. After some research we found a python package that wraps the standard [Telegram API]( https://core.telegram.org/#telegram-api), which allows the creation of groups and sending invitation to users. In order to use the Telegram API with the [Telethon]( https://github.com/LonamiWebs/Telethon) wrapper we needed a Telegram account to get access to the Telegram API. After setting up the Telegram account and register an application for this user, we were able to create groups and invite users to this group.
 
 ### Conversation Handlers
 To structure the conversations between the bot and the users we implemented different conversation handlers. A conversation handler consists of four different collections of other handlers, e.g. message handlers and command handlers. The **entry points** list is used to instantiate the conversation and normally contains a command handler that reacts to commands like */start* send as a message to the bot. When a user sends a message to the bot, the conversation handler tries to find a matching handler within the list of entry points. A handler matches when the message passes the specified filter of the handler. If a matching handler is found, the callback function of that handler is executed that reacts to the message of the user. Thereby the function returns a value, which determines the state of the conversation handler. The second collection is a **states** dictionary that maps the different states of a conversation to a list of handlers. If a message is sent to the bot while the conversation is already instantiated, the conversation handler looks for a matching handler in the list of handlers associated to the current state it is in. If no matching handler is found, the conversation handler searches for a matching handler in the **fallbacks** list, which is the third collection. The last collection is a dictionary called **map_to_parent**. It is used in nested conversation handlers to map a specific state of the nested conversation handler to a state of the parent conversation handler. This allows the transition from the nested handler back to the parent handler. By now we have implemented four different conversation handlers that all have a different purpose.
@@ -48,12 +48,12 @@ The interaction between the bot and a user in a private chat is handled by the p
 ![Figure 2: Conversation flow of the private chat handler including backend activities](../assets/images/PrivateChatInteraction.png)*Figure 1: Conversation flow of the private chat handler including backend activities*
 
 #### Room Handler
-The room handlers’ purpose is to lead the users from one task to the next task. He is also started with the */start* command but just if the command is sent in a group chat. After starting the bot checks whether enough players are currently available and which tasks they can solve next. After the users have selected a task the related nested task handler is called. 
+The room handlers’ purpose is to lead the users from one task to the next task. He is also started with the */start* command but just if the command is sent in a group chat. After starting the bot checks whether enough players are currently available and which tasks they can solve next. After the users have selected a task the related nested task handler is called.
 
 #### Task Handlers
-To handle the users interaction with the bot during the different tasks, i.e. the sentence correction task and the vocabulary guessing task, we created a task handler per task. Both task handlers lead the users in a similar way through the conversation. First, they send a message to one of the active users containing the task they have to perform. Then, the handlers wait for the response of either a group member or the selected user. After receiving an answer, it is evaluated. Dependent on the outcome the user can correct his answer, move on to the next subtask, or if the task is completed the next user is selected. This procedure is continued until the task is fully finished. After finishing the complete task, the control is returned to the room handler. 
+To handle the users interaction with the bot during the different tasks, i.e. the sentence correction task and the vocabulary guessing task, we created a task handler per task. Both task handlers lead the users in a similar way through the conversation. First, they send a message to one of the active users containing the task they have to perform. Then, the handlers wait for the response of either a group member or the selected user. After receiving an answer, it is evaluated. Dependent on the outcome the user can correct his answer, move on to the next subtask, or if the task is completed the next user is selected. This procedure is continued until the task is fully finished. After finishing the complete task, the control is returned to the room handler.
 
-The only way a task handler can be entered is through the room handler. In order to ensure that a task handler is not entered with too less users available we developed a custom filter to prevent this. 
+The only way a task handler can be entered is through the room handler. In order to ensure that a task handler is not entered with too less users available we developed a custom filter to prevent this.
 
 ## Task Framework
 This section aims to explain the implementation decisions and to describe the resulting components that have been implemented for the application’s task framework. In the next sections, we will cover the role and necessity of a `RoomManager`, as well as the structure and idea of different task classes, especially the `SequentialTask`. Lastly, this section is concluded with an outlook subsection, which discusses the current limitations of and possible additions to the task framework.
@@ -62,7 +62,7 @@ It should be noted, that this part of the documentation solely documents the tas
 
 ### RoomManager
 The `RoomManager` is thought of as a host of the group of players. Since we decided on having some instance that controls the general task and game flow, we created the `RoomManager` class. Each game session gets assigned exactly one `RoomManager`
-instance, that handles the session. An object of the `RoomManager` class captures important meta information of the group of players, such as the number and names of active players (stored in `self._full_student_list`), the minimum amount of time after starting the bot (`self._min_time_for_students_to_join_in_sec`)  and the minimum number of players needed to start the game (`self._min_number_of_students`), as well as a check, if all actively participating students have given their consent to start the game (`can_execution_start()`). 
+instance, that handles the session. An object of the `RoomManager` class captures important meta information of the group of players, such as the number and names of active players (stored in `self._full_student_list`), the minimum amount of time after starting the bot (`self._min_time_for_students_to_join_in_sec`)  and the minimum number of players needed to start the game (`self._min_number_of_students`), as well as a check, if all actively participating students have given their consent to start the game (`can_execution_start()`).
 
 ### Tasks
 During the design phase of our application, we were able to pin down a few requirements for the technical implementation of the tasks for our prototype. Amongst those main requirements have been:
@@ -74,14 +74,14 @@ During the design phase of our application, we were able to pin down a few requi
 1. The possession of a winning condition
 
 Since we decided to aim for one to two different tasks as the first milestone of the project, we chose to create an [abstract base class](https://docs.python.org/3/library/abc.html) `Task` for the tasks, which then can be further expanded depending on the type of task. The abstract base class `Task(ABC)` defines through abstract methods which minimal properties and functions every task to follow should inherit, such as getting the instructions for the respective task (`get_task_instructions()`).
-To capture the requirements 1-4 defined above, we implemented a subclass that inherits from `Task(ABC)`, namely the `SequentialTask(Task)`. 
+To capture the requirements 1-4 defined above, we implemented a subclass that inherits from `Task(ABC)`, namely the `SequentialTask(Task)`.
 
 #### SequentialTask
 `SequentialTask(Task)` is a subclass of `Task(ABC)` which in turn is a superclass of various tasks, that all follow a sequential manner. As stated above, to ensure requirements 1) and 2), we created a sequential task scaffolding. This means, that each task consists of multiple rounds, in which each player takes once the active role of solving the main task, while the other players take a slightly more passive role, e.g. by assisting the active player to solve the task. Each `SequentialTask` has properties such as `self.all_users`, `self.remaining_users` and `self.selected_user`. Those properties enable the sequential handling of a task, in which each player gets the active role at least once.
 
 After having successfully completed a round, the group gets awarded with one piece of the codeword `self.code`. This codeword consists of a series of random digits, which size corresponds to the number of players. This covers the winning condition in requirement 4). Additionally, after completing the whole task, the corresponding user proficiencies and the group’s proficiencies get updated according to the performance with the call of the function `update_proficiencies(correct)`.
 
-For the implementation of requirement 3), the adaptive module, please refer to the section _Adaptive Module_ below.   
+For the implementation of requirement 3), the adaptive module, please refer to the section _Adaptive Module_ below.
 
 ##### SentenceCorrection
 The `SentenceCorrection` class inherits from its superclass `SequentialTask`, in order to have all the sequential features. Since this class also has the property `self.selected_user`, it gets easy to implement the turn-taking for this task. The function `select_sentence()` selects a sentence from the corpus, based on the selected user’s proficiency `self.selected_user.get_grammar_proficiency()`. When the sentence gets send to the group, only answers of the selected user will be evaluated. This allows the other players to contribute by assisting the selected user, e.g. by giving hints to identify the error.
@@ -97,14 +97,14 @@ Additionally, to increase difficulty, we implemented a time constraint for this 
 ### Outlook
 With our implementation of the `SequentialTask`, we set a very flexible code foundation for additional tasks, that are designed in the same manner. However, having to fit new tasks in this pattern might limit us in the conceptual designing of new tasks. To create more flexibility in the addition of new tasks and to broaden the scope of task patterns, we are going to try to implement another kind of task in the next semester, which not necessarily follows the sequential pattern.
 
-Additionally, we will be working on embedding the tasks more into the escape room scenario. Thus far, due to the lack of alternatives, we are stuck with two tasks which can be repeated as desired until the codeword is reached. After reaching and successfully entering the correct codeword, we return to the task selection screen, which initiates a new round. Thus, we will also work on an overall win-condition, which completes the escape room scenario. 
+Additionally, we will be working on embedding the tasks more into the escape room scenario. Thus far, due to the lack of alternatives, we are stuck with two tasks which can be repeated as desired until the codeword is reached. After reaching and successfully entering the correct codeword, we return to the task selection screen, which initiates a new round. Thus, we will also work on an overall win-condition, which completes the escape room scenario.
 
 
 ## Adaptive Module
 Our implementation of the adaptive module of the language learning application relies on a model of the user’s proficiency. In this section we will briefly explain the model and then dive deeper into the implementation of the model, updating user proficiency, and the adaptive selection of the next task iteration. Finally, we reflect on drawbacks of adaptive modeling approach that we have taken.
 
 ### Language Proficiency Model
-The hierarchical model contains two language domains on the first level that reflect the main set of skills: Grammar and vocabulary. The sentence correction tasks focuses on grammar skills whilst the vocabulary guessing task aims to augment the users' vocabulary. On the second level, the domains are subdivided into more granular single skills, e.g. relative clauses or gerunds in the grammar domain. 
+The hierarchical model contains two language domains on the first level that reflect the main set of skills: Grammar and vocabulary. The sentence correction tasks focuses on grammar skills whilst the vocabulary guessing task aims to augment the users' vocabulary. On the second level, the domains are subdivided into more granular single skills, e.g. relative clauses or gerunds in the grammar domain.
 
 For each subskill there are multiple task variations of different difficulties on a three-point scale (low – medium – high). For more information on the structure of this data, see the database section.
 
@@ -113,19 +113,19 @@ We implemented the hierarchical structure by creating an [enum](https://docs.pyt
 In order to adaptively navigate a task, we also need to store and change the proficiency of the users engaged in that task. Thus, each user object that we use in the backend contains an instance of the `Proficiency` class. This class mainly consists of two dictionaries for the language domains, where each member of the corresponding enum is used as a key and the user's proficiency for that particular subskill is stored as the value. Additionally, the average domain proficiency is also stored as a numerical user variable for performance sake. Singular and average values range from one to ten with the former being the lowest proficiency and the latter the highest. For proficiency storage over multiple sessions, please refer to the _Database_ section.
 
 ### Proficiency Updates
-When a group finishes a single task iteration, the proficiency of all users in the group is updated. The update is handled by the `update_proficiencies` function in the `Proficiency` class. This function takes a list of sub-skill enum members and updates the corresponding value based on a Boolean that indicates a correct or false answer to the task as well as another Boolean declaring a passive or active update. For passive group members we want softer updates compared to the selected active user. Thus, we use a step size of 0.25 for passive and 1.0 for active updates. In case of a correct answer, the step size is added to the proficiency and it is subtracted for an incorrect answer. We limit the result to be within our predefined range of one to ten. If a sub-skill had no value previously as the user has not yet participated in a task relevant to that sub-skill, an initial estimate of the proficiency is made based on the answer to the task. If it was correct, we estimate 7.5 as the proficiency. An incorrect response yields 2.5 as the initial proficiency estimate. After all sub-skill proficiencies have been updated, the domain averages are recalculated and stored in their respective variable. 
+When a group finishes a single task iteration, the proficiency of all users in the group is updated. The update is handled by the `update_proficiencies` function in the `Proficiency` class. This function takes a list of sub-skill enum members and updates the corresponding value based on a Boolean that indicates a correct or false answer to the task as well as another Boolean declaring a passive or active update. For passive group members we want softer updates compared to the selected active user. Thus, we use a step size of 0.25 for passive and 1.0 for active updates. In case of a correct answer, the step size is added to the proficiency and it is subtracted for an incorrect answer. We limit the result to be within our predefined range of one to ten. If a sub-skill had no value previously as the user has not yet participated in a task relevant to that sub-skill, an initial estimate of the proficiency is made based on the answer to the task. If it was correct, we estimate 7.5 as the proficiency. An incorrect response yields 2.5 as the initial proficiency estimate. After all sub-skill proficiencies have been updated, the domain averages are recalculated and stored in their respective variable.
 
 ### Task Selection
 For the adaptive selection of the next task iteration, two properties of the tasks have to be considered: Language sub-skill and difficulty. As we have no previous knowledge of the user’s sub-skill proficiencies, we made the choice to always prioritize tasks for unknown sub-skill proficiencies of the selected user. We randomly draw one sub-skill from a list of all keys that are without a value in the proficiency dictionary. The difficulty is always set to medium in this case. This enables us to create initial estimates of as outlined in the proficiency update section above.
 
-If all sub-skill proficiencies in the task’s domain are known for the active user, we randomly chose a sub-skill based on probability inverse to the corresponding proficiency. Thus, sub-skills that the user already excels in are selected less frequently than those the user might still need more practice with. In our implementation, we compute a draw probability based on the proficiency by subtracting the squared proficiency from 110 for each sub-skill. These probabilities are then re-normalized and used in the `random.choice` function of the [NumPy module](https://numpy.org/). 
+If all sub-skill proficiencies in the task’s domain are known for the active user, we randomly chose a sub-skill based on probability inverse to the corresponding proficiency. Thus, sub-skills that the user already excels in are selected less frequently than those the user might still need more practice with. In our implementation, we compute a draw probability based on the proficiency by subtracting the squared proficiency from 110 for each sub-skill. These probabilities are then re-normalized and used in the `random.choice` function of the [NumPy module](https://numpy.org/).
 
 Finally, the difficulty for the selected sub-skill is based on the user proficiency of that sub-skill and the domain average of that user. For this, we compute a weighted mean between the sub-skill proficiency and the domain average. Currently, we place more emphasis on the sub-skill proficiency by weighting the average with 0.5. Task difficulty is then chosen based on this mean proficiency. A proficiency of one to three results in a low, four to seven in a medium, and eight to ten in a high difficulty.
 
 A random sentence or word with the selected sub-skill and difficulty is then loaded from the database.
 
 ### Evaluation
-Although we put a lot of thought into the design and implementation of the adaptive module, there is no substantiated scientific model to back it up. While studies have shown that adaptive difficulty adjustments positively impact learning (Nebel et al., 2020; Sampayo-Vargas et al., 2013), the target difficulty has to strike the balance between being easy enough to motivate and – in the context of educational games – hard enough to optimize learning outcomes. We find it unlikely that our current adaptive module strikes that balances for a number of reasons: Task difficulty is only represented on three levels that have been assigned based on intuitions. The difficulty level of the current question does not affect the update strength. We did not evaluate the perceived difficulty of tasks from users in our target group and we did not relate this to our proficiency estimates or learning outcomes. 
+Although we put a lot of thought into the design and implementation of the adaptive module, there is no substantiated scientific model to back it up. While studies have shown that adaptive difficulty adjustments positively impact learning (Nebel et al., 2020; Sampayo-Vargas et al., 2013), the target difficulty has to strike the balance between being easy enough to motivate and – in the context of educational games – hard enough to optimize learning outcomes. We find it unlikely that our current adaptive module strikes that balances for a number of reasons: Task difficulty is only represented on three levels that have been assigned based on intuitions. The difficulty level of the current question does not affect the update strength. We did not evaluate the perceived difficulty of tasks from users in our target group and we did not relate this to our proficiency estimates or learning outcomes.
 
 With our current model, we also put more emphasis on language skills that are not strongly developed yet instead of fortifying existing strengths. While this serves the implicit educational goal of a good overall language knowledge, we should reassess of this is in fact the aim of our application.
 
@@ -133,13 +133,13 @@ Therefore, we propose to devote more resources towards the adaptive model in the
 
 ## Database
 ### Introduction
-The way the bot is designed we had to store data so it can be queried as and when possible. The bot also deals with user data and other essential data from telegram that we had to store, update and/or retrieve in real time. We realized that the data we have is relational in nature which means that we had pre-defined relationships in our data. For each table we have, every column represented a certain kind of data and the field in the column stored the value. Every row was a collection of data from all the columns for one entity.  For example, 
+The way the bot is designed we had to store data so it can be queried as and when possible. The bot also deals with user data and other essential data from telegram that we had to store, update and/or retrieve in real time. We realized that the data we have is relational in nature which means that we had pre-defined relationships in our data. For each table we have, every column represented a certain kind of data and the field in the column stored the value. Every row was a collection of data from all the columns for one entity.  For example,
 
 ![**Figure 3: Sentence Correction Data**](https://github.com/ALLUOS/ALLUOS.github.io/blob/impl_master/assets/images/sentence_data.png)
 
 ***Figure 3: Sentence Correction Data***
 
-### SQL Features 
+### SQL Features
 SQL databases allows you to assign each column with a data type which indicates which kind of data can be stored in each column. PostgreSQL allows to have several data types for example:
 
 ***Table 1: Data Type of the Sentence Correction Data***
@@ -148,19 +148,19 @@ SQL databases allows you to assign each column with a data type which indicates 
 | Column Name | Data Type | Constraints |
 | :-- | :-- | :-- |
 |id |SERIAL |PRIMARY KEY|
-|sub_type | SMALLINT | NOT NULL| 
+|sub_type | SMALLINT | NOT NULL|
 |difficulty_level | SMALLINT | NOT NULL |
 |sentence_corpus | TEXT | NOT NULL |
 |correct_answers | TEXT ARRAY | NOT NULL|
 |error_words | TEXT ARRAY | NOT NULL|
 
 
-Table 1 mentions constraints which limits the values that can be entered. Constraints are generally column specific, but some can be for the whole table. 
+Table 1 mentions constraints which limits the values that can be entered. Constraints are generally column specific, but some can be for the whole table.
 Example: `PRIMARY KEY` – It makes sure that the values in the cells of that column are not empty or NULL and each entry is unique. Primary key is made of two constraints `NOT NULL` and `UNIQUE`.
 
-`Array` represents that the column can have more than one value present. For columns like `correct_answers` when we have more than one possible correct answer for a given sentence, we would like to store all the possible correct answer in that one cell. Example: If the sentence is "Do you want they to help you?" the correct answer is them but there are other correct answers as well like me, you or him which we would like to store as well.  
+`Array` represents that the column can have more than one value present. For columns like `correct_answers` when we have more than one possible correct answer for a given sentence, we would like to store all the possible correct answer in that one cell. Example: If the sentence is "Do you want they to help you?" the correct answer is them but there are other correct answers as well like me, you or him which we would like to store as well.
 
-### Tables Created for the Project 
+### Tables Created for the Project
 
 
 ***Table 2: Tables Names and Descriptions***
@@ -177,20 +177,20 @@ Example: `PRIMARY KEY` – It makes sure that the values in the cells of that co
 |task_table |Every task data| id, name, min_num_of_players, num_of_iteration|Task|
 
 ### Database Operators for Entities
-We need different queries to extract data based on different use cases. The following are the examples of queries with example of use cases. 
+We need different queries to extract data based on different use cases. The following are the examples of queries with example of use cases.
 1)	Querying data from a table. We need such kind of queries to just explore the data and check the structure of the table.
-2)	Filtered Query based on certain columns. 
-Meaning if you want to extract data based on a certain value from a specific column. We need such queries when we need data (sentences or word) based on certain difficulty level OR if we need the proficiency level of a particular user 
-3)	Limited Query. 
-Limiting your output to a specific number of outputs. For example: when we need 1 random sentence from the sentence correction data. 
+2)	Filtered Query based on certain columns.
+Meaning if you want to extract data based on a certain value from a specific column. We need such queries when we need data (sentences or word) based on certain difficulty level OR if we need the proficiency level of a particular user
+3)	Limited Query.
+Limiting your output to a specific number of outputs. For example: when we need 1 random sentence from the sentence correction data.
 
-Similar query functions are while inserting data in specific tables. We just use `Insert` instead of `Select`. The SQL insert statement helps to push the data in the database. Based on the query types above, we defined functions to parse data from the database into the corresponding Python entities. Example: 
+Similar query functions are while inserting data in specific tables. We just use `Insert` instead of `Select`. The SQL insert statement helps to push the data in the database. Based on the query types above, we defined functions to parse data from the database into the corresponding Python entities. Example:
 `get_student_proficiency` which returns the proficiency level of the users AND `get_sentence_information_from_df` which parses the information from the database into sentence corpus, one error word and one correct answer
 
 
 
 ### Database Connection Class
-We defined a database connection class which connects with the database basedon the parameter. We set the database configuration required to connect with the database. We created a function to form this connection. Once the connection is created we can use functions like `get_random_sentence_based_on_sub_type_and_difficulty` function which allows the code to get a random sentence to use in the task based on the sub_type and difficulty level. Every Task is further mapped with entities to get certain data from the database. Like the sentence correction task is mapped to sentence and student entities. Its similiar for the vocabulary guessing task.  For more information refer the next subsection. 
+We defined a database connection class which connects with the database basedon the parameter. We set the database configuration required to connect with the database. We created a function to form this connection. Once the connection is created we can use functions like `get_random_sentence_based_on_sub_type_and_difficulty` function which allows the code to get a random sentence to use in the task based on the sub_type and difficulty level. Every Task is further mapped with entities to get certain data from the database. Like the sentence correction task is mapped to sentence and student entities. Its similiar for the vocabulary guessing task.  For more information refer the next subsection.
 
 One more function is created that parses the data once the connection is open. The data we query for any table is converted into a dataframe for further use. The function to extract a dataframe is `read_query_into_df`
 
@@ -202,3 +202,5 @@ We created classes for entities and created functions in them to get certain val
 Nebel, S., Beege, M., Schneider, S., & Rey, G. D. (2020). Competitive Agents and Adaptive Difficulty Within Educational Video Games. Frontiers in Education, 5. https://doi.org/10.3389/feduc.2020.00129
 
 Sampayo-Vargas, S., Cope, C. J., He, Z., & Byrne, G. J. (2013). The effectiveness of adaptive difficulty adjustments on students’ motivation and learning in an educational computer game. Computers & Education, 69, 452–462. https://doi.org/10.1016/j.compedu.2013.07.004
+
+...
