@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Implementation
-description: Under construction!
+description: Learn more about the applications' implementation and technical architecture.
 image: pic03.jpg
 ---
 
