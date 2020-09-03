@@ -23,7 +23,7 @@
                             <li><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></li>
                             {% if post.title == page.title %}
                             {% for section in page.sections %}
-                            <li><a href="{{ section.tag}}">- {{ section.title }}</a></li>
+                            <li><a href="{{ post.url | append:section.tag}}">- {{ section.title }}</a></li>
                             {% endfor %}
                             {% endif %}
                             {% endif %} {% endfor %}
