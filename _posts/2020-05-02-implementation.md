@@ -45,7 +45,7 @@ To structure the conversations between the bot and the users we implemented diff
 #### Private Chat Handler
 The interaction between the bot and a user in a private chat is handled by the private chat handler. Its purpose is to register a user for the app, add the user to a group or create a group, and tell the user the beginning of the story. It can also deal with some problems that may occur when creating the group. The handler is started with the */start*-command send to the bot in a private chat. Afterwards the user is guided through the conversation by the use of reply keyboards send to the user. Figure 2 shows the general conversation flow of the private chat handler. For reasons of simplicity, error handling is not covered in the figure.
 
-![Figure 2: Conversation flow of the private chat handler including backend activities](../assets/images/PrivateChatInteraction.png)*Figure 1: Conversation flow of the private chat handler including backend activities*
+![Figure 2: Conversation flow of the private chat handler including backend activities](../assets/images/PrivateChatInteraction.png)*Figure 2: Conversation flow of the private chat handler including backend activities*
 
 #### Room Handler
 The room handlers’ purpose is to lead the users from one task to the next task. He is also started with the */start* command but just if the command is sent in a group chat. After starting the bot checks whether enough players are currently available and which tasks they can solve next. After the users have selected a task the related nested task handler is called.
@@ -137,12 +137,10 @@ The way the bot is designed we had to store data so it can be queried as and whe
 
 ![**Figure 3: Sentence Correction Data**](../assets/images/sentence_data.png)
 
-***Figure 3: Sentence Correction Data***
+*Figure 3: Sentence Correction Data*
 
 ### SQL Features
 SQL databases allows you to assign each column with a data type which indicates which kind of data can be stored in each column. PostgreSQL allows to have several data types for example:
-
-***Table 1: Data Type of the Sentence Correction Data***
 
 
 | Column Name | Data Type | Constraints |
@@ -154,6 +152,7 @@ SQL databases allows you to assign each column with a data type which indicates 
 |correct_answers | TEXT ARRAY | NOT NULL|
 |error_words | TEXT ARRAY | NOT NULL|
 
+*Table 1: Data Type of the Sentence Correction Data*
 
 Table 1 mentions constraints which limits the values that can be entered. Constraints are generally column specific, but some can be for the whole table.
 Example: `PRIMARY KEY` – It makes sure that the values in the cells of that column are not empty or NULL and each entry is unique. Primary key is made of two constraints `NOT NULL` and `UNIQUE`.
@@ -161,9 +160,6 @@ Example: `PRIMARY KEY` – It makes sure that the values in the cells of that co
 `Array` represents that the column can have more than one value present. For columns like `correct_answers` when we have more than one possible correct answer for a given sentence, we would like to store all the possible correct answer in that one cell. Example: If the sentence is "Do you want they to help you?" the correct answer is them but there are other correct answers as well like me, you or him which we would like to store as well.
 
 ### Tables Created for the Project
-
-
-***Table 2: Tables Names and Descriptions***
 
 |Table Name | Table Description | Table Columns |Entities|
 | :-- | :-- | :-- | :-- |
@@ -176,7 +172,10 @@ Example: `PRIMARY KEY` – It makes sure that the values in the cells of that co
 |student_table |Data about each student using the bot|id, telegram_name, name|Student|
 |task_table |Every task data| id, name, min_num_of_players, num_of_iteration|Task|
 
+*Table 2: Tables Names and Descriptions*
+
 ### Database Operators for Entities
+
 We need different queries to extract data based on different use cases. The following are the examples of queries with example of use cases.
 1)	Querying data from a table. We need such kind of queries to just explore the data and check the structure of the table.
 2)	Filtered Query based on certain columns.
