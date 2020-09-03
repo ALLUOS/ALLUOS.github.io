@@ -5,7 +5,7 @@ description: Under construction!
 image: pic03.jpg
 ---
 
-# Overview
+## Contents
 1. Technical Architecture
 1. Telegram Integration
 1. Task Framework
@@ -18,7 +18,7 @@ In this section we will provide a brief overview of the technical architecture t
 
 In general, we used the model-view-controller (MVC) software design pattern to structure the implementation. Figure one gives an overview of the different application elements within this MVC design pattern. It also shows where the associated source code can be found in the repository.
 
-![Figure 1: Overview of Repository Content](https://github.com/ALLUOS/ALLUOS.github.io/blob/impl_master/assets/images/software_architecture_overview.png)*Figure 1: Overview of Repository Content*
+![Figure 1: Overview of Repository Content](../assets/images/software_architecture_overview.png)*Figure 1: Overview of Repository Content*
 
 As we decided to use the Telegram application as the front-end for our application, the view element of our MVC design pattern has been reduced to an interface with two Telegram APIs. This will be further explained in the section _Telegram Integration_.
 
@@ -135,7 +135,7 @@ Therefore, we propose to devote more resources towards the adaptive model in the
 ### Introduction
 The way the bot is designed we had to store data so it can be queried as and when possible. The bot also deals with user data and other essential data from telegram that we had to store, update and/or retrieve in real time. We realized that the data we have is relational in nature which means that we had pre-defined relationships in our data. For each table we have, every column represented a certain kind of data and the field in the column stored the value. Every row was a collection of data from all the columns for one entity.  For example,
 
-![**Figure 3: Sentence Correction Data**](https://github.com/ALLUOS/ALLUOS.github.io/blob/impl_master/assets/images/sentence_data.png)
+![**Figure 3: Sentence Correction Data**](../assets/images/sentence_data.png)
 
 ***Figure 3: Sentence Correction Data***
 
@@ -202,5 +202,3 @@ We created classes for entities and created functions in them to get certain val
 Nebel, S., Beege, M., Schneider, S., & Rey, G. D. (2020). Competitive Agents and Adaptive Difficulty Within Educational Video Games. Frontiers in Education, 5. https://doi.org/10.3389/feduc.2020.00129
 
 Sampayo-Vargas, S., Cope, C. J., He, Z., & Byrne, G. J. (2013). The effectiveness of adaptive difficulty adjustments on students’ motivation and learning in an educational computer game. Computers & Education, 69, 452–462. https://doi.org/10.1016/j.compedu.2013.07.004
-
-...
