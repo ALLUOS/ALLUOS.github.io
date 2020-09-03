@@ -24,7 +24,7 @@
                             {% if post.title == "Overview" %}
                             <ul>
                             {% for section in page.sections %}
-                            <li><a href="{{ section.tag | post.url | absolute_url }}">{{ section.title }}</a></li>
+                            <li><a href="{{ section.tag | post.url | absolute_url }}">- {{ section.title }}</a></li>
                             {% endfor %}
                             </ul>
                             {% endif %}
