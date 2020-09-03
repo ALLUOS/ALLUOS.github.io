@@ -4,7 +4,6 @@ title: Implementation
 description: Learn more about the applications' implementation and technical architecture.
 image: pic03.jpg
 ---
-
 ## Contents
 1. Technical Architecture
 1. Telegram Integration
