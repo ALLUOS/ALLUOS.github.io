@@ -7,7 +7,11 @@
         <nav id="nav">
             <ul>
                 <li class="special">
-                    <a href="#menu" class="menuToggle"><span>Menu</span></a>
+                    {% if page.layout == 'post' %}
+                        <a href="#menu" class="menuToggle"><span>Menu</span></a>
+                    {% else %}
+                        <a href="#menu" class="menuToggle"><span>Menu</span></a>
+                    {% endif %}
                     <div id="menu">
                         <ul>
                             {% for page in site.pages %} {% if page.layout == "default" %}
