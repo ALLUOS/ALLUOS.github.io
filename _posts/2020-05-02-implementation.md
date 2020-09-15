@@ -14,7 +14,7 @@ sections:
    tag: \#database
  - title: References
    tag: \#references
-description: Learn more about the applications' implementation and technical architecture.
+description: Learn more about the application's implementation and technical architecture.
 image: pic03.jpg
 ---
 ## Contents
