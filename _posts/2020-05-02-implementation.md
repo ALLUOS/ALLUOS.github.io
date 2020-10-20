@@ -29,7 +29,7 @@ image: pic03.jpg
 <div id="architecture"></div>
 ## Technical Architecture
 
-In this section we will provide a brief overview of the technical architecture that we relied on to build our application. All of our code is hosted in a [GitHub repository](https://github.com/ALLUOS/app) which also includes a step-by-step guide on starting the application.
+In this section we will provide a brief overview of the technical architecture that we relied on to build our application. All of our code is hosted in a GitHub repository which also includes a step-by-step guide on starting the application.
 
 In general, we used the model-view-controller (MVC) software design pattern to structure the implementation. Figure one gives an overview of the different application elements within this MVC design pattern. It also shows where the associated source code can be found in the repository.
 
