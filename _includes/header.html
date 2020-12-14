@@ -19,7 +19,7 @@
                             {% endif %} {% endfor %} {% for page in site.pages %} {% if page.layout == "page" %}
                             <li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
                             {% endif %} {% endfor %}
-                            {% for post in site.posts limit:site.tiles-count %}{% if site.tiles-source == 'posts' %}
+                            {% for post in site.posts %}{% if site.tiles-source == 'posts' %}
                             <li><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></li>
                             {% if post.title == page.title %}
                             {% for section in page.sections %}
