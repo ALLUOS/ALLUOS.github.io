@@ -23,9 +23,10 @@ The achievements module tackles one of the central problems of learning applicat
 Finally, achievements can also increase learning outcomes in learning games if employed thoughtfully (Blair et al., 2016). They also provide a means for tracking learning goals.
 
 ## Background
-Research on motivating role of achievements + learning
 
-Joana
+There are multiple reasons why we did decided on including achievements: First off, displaying learners streaks, the amount of days the played consecutively, has shown to help building up a habit of using the application regularly (Janukas & Kapelac, 2020). According to the Fogg behaviour model, hope and fear are key elements in the process of developing motivation (Foog, 2009). The fear of loosing the streak and the hope of achieving a new goal can motivate students to keep on using the application and therefore choose to continue learning (Fogg, 2009). On the other hand, giving learners some feedback in form of rewards can work as intrinsic incentives by eliciting emotions in the learners like fun or ambitions that would bind them to the application (Silic & Back, 2017).
+We decided to determine the amount of days played in a row after which the learners would gain new achievements based on empirical findings. In the language-learning application ‚Doulingo‘ Januakas & Kapelac (2020) found that 32 % percents of users kept their longest streak for over one month and 27% for one week. To build a habit in using an application, users usually take about 66 days (Lally et al., 2010). We also thought it would be important to use low-treshold milestones for users to get familiar with the achievement system and build up motivation from the beginning. Accordingly, the number of days we chose as milestones were 2,3,5,7,14,21,28,35,45,66 and 100 days. 
+Following the self-determination theory by Deci, Koester & Ryan (2001), it is important to foster students experienced competence and autonomy for the achievements or rewards to not undermine intrinsic motivation (Friedrich et al., 2020). Therefore it was important not to only have achievements in the form of a streak, but also as a feedback on achieved learning steps to support the intrinsic motivation of the learners. Therefore we also included an achievement for the amount of words users collected inside the application and scaffolded the presentation of these as well.
 
 ## MVP Definition
 What did we decide on for our achievements MVP (explanation of the two achievements + how do they tie in with the application)
@@ -75,6 +76,19 @@ Self-set goals
 ## References
 Blair, L., Bowers, C., Cannon-Bowers, J., & Gonzalez-Holland, E. (2016). Understanding the Role of Achievements in Game-Based Learning. International Journal of Serious Games, 3. https://doi.org/10.17083/ijsg.v3i4.114
 
+Deci, E. L., Koestner, R., & Ryan, R. M. (2001). Extrinsic rewards and intrinsic motivation in education: Reconsidered once again. Review of educational research, 71(1), 1-27.
+
+Fogg, B. J. (2009). A behavior model for persuasive design. In Proceedings of the 4th international Conference on Persuasive Technology (pp. 1-7).
+
+Friedrich, J., Becker, M., Kramer, F., Wirth, M., & Schneider, M. (2020). Incentive design and gamification for knowledge management. Journal of Business Research, 106, 341-352.
+
+Jankunas, R., & Kapelac, E. (2020). Motivation in language learning and fitness apps.
+
+Lally, P., Van Jaarsveld, C. H., Potts, H. W., & Wardle, J. (2010). How are habits formed: Modelling habit formation in the real world. European journal of social psychology, 40(6), 998-1009.
+
+
 Pham, X. L., & Chen, G. D. (2019). PACARD: A New Interface to Increase Mobile Learning App Engagement, Distributed Through App Stores. Journal of Educational Computing Research, 57(3), 618–645. https://doi.org/10.1177/0735633118756298
 
+
+Silic, M., & Back, A. (2017). Impact of gamification on user's knowledge-sharing practices: Relationships between work motivation, performance expectancy and work engagement. In Proceedings of the 50th Hawaii International Conference on System Sciences.
 
