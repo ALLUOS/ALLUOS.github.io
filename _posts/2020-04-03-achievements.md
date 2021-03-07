@@ -66,6 +66,16 @@ Tom
 Critical assessment of our MVP: What works, what doesn't? How would we view the achievements in retrospect -> Maybe the testing group can jump in here
 Everyone -> Bulletpoints
 
+
+Even though multiple researchers report achievements to be effective in fostering long-term interaction and improving user performance over a span of several weeks to several months, there is almost no evidence on the achievements‘  long term effects, and it needs to be further investigated (Zainuddin, 2020). This means we cannot be exactly sure if the initial positive effects will actually be maintained in longer term interaction and can only assume this is the case.
+
+Furthermore, most available studies fail to establish a theoretical framework that would explain the positive effects of achievements or other gamified elements on user performance/motivation. It is also important to notice that some studies have found achievements ineffective in the first place (Zainuddin, 2020). Therefore, it might be difficult to assess the role of achievements, when improvements occur in a learning application that has achievements as one of its components. 
+
+Another important consideration is that a vast majority of studies were tested on university students whose goals and internal motivation may, strictly speaking, substantially differ from that of school students (Zainuddin, 2020). Since our application’s target audience are teenagers, some of our theoretical considerations hold only under the assumption that experiences of students at a different education level are in line with those of school students and can be generalized to fit them too. 
+
+The last major consideration is that achievements might be effective only at boosting extrinsic motivation, i.e. motivation to get the achievements, rather than increase the more important intrinsic motivation, i.e. the motivation to actually learn from the gamified educational resource (Mekler, 2017). For us it could mean that we motivate the students to mechanically earn the achievements rather than learn and reflect on their study experience.
+
+
 ## Outlook
 What can be improved upon and what are next steps w.r.t. achievements e.g. visualization of user progress over time / additional achievements 
 Everyone -> Bulletpoints
@@ -73,6 +83,17 @@ Everyone -> Bulletpoints
 Other ways for long-term engagement: App updates, push notifications, social media, integrated evaluation
 
 Self-set goals
+
+It has been shown that fewer achievements might actually be more effective, therefore we might want to improve the existing achievements or consider other known gamification methods, rather than create multiple further achievements (Groening, 2019). A possible improvement could be to give the current achievements a more appealing visual representation, e.g. create stickers that will be sent to the user when they view their current achievements. These stickers could be sent to the group chat after successful game rounds too. This will not take too much space in the chat since we have only two achievement categories, namely, Streaks and Code Cracker achievements. If we don’t show all the levels for each achievement in retrospect, achievement display will take just two messages and might look more attractive than just a textual/emoji representation.
+
+Another area for possible improvement is unlockable content, which is another successful means of sustaining long-term engagement. In our app it is only present in the rudimentary form of code digits sent to the user as text after task completion. As in the case of achievements, we could make the codes look better by sending a bright picture with all the unlocked code digits (this would, however, require generating these pictures) or we could simply send a new digit not as text, but use a colorful sticker. Both ways offer an easy way to make the codes that are supposed to play an important role in the game a bit more “tangible”. The existing tasks, if deeper integrated into the narrative, could solve as unlockable content too, for example the players could be required to successfully complete Task A once to unlock Task B and so on.
+
+Moreover, since we already try to activate users‘ social comparison mechanisms via giving them “bragging rights” with their achievements being displayed after game rounds, we could work further in this direction and also display a leaderboard after each game. This could include game statistics, like how many messages/words were posted by each player as a measure of their activity, how many times they gave correct answers, how many code digits they brought to the team as a measure of their performance and how many achievements they got from this game round as a measure of their consistency. This would create space for more comparison and deeper emotional response from players that, in turn, has been reported to be associated with increased engagement and better results (Zainuddin, 2020).
+
+To sum up, we could consider improving the existing achievements with more appealing visual representations or integrating new gamification components that will serve the purpose we originally introduced achievements for, since this may be more effective than multiplying the achievements themselves. One possibility could be adding leaderboards that display game statistics for each player and encourage them to practice more and better. However, there exist many other possibilities to further improve user engagement.
+
+
+
 
 
 ## References
@@ -84,13 +105,18 @@ Fogg, B. J. (2009). A behavior model for persuasive design. In Proceedings of th
 
 Friedrich, J., Becker, M., Kramer, F., Wirth, M., & Schneider, M. (2020). Incentive design and gamification for knowledge management. Journal of Business Research, 106, 341-352.
 
+Groening, C., Binnewies, C. (2019). “Achievement unlocked!” - the impact of digital achievements as a gamification element on motivation and performance. Computers in Human Behavior, 97, 151-166. doi:10.1016/j.chb.2019.02.026
+
 Jankunas, R., & Kapelac, E. (2020). Motivation in language learning and fitness apps.
 
 Lally, P., Van Jaarsveld, C. H., Potts, H. W., & Wardle, J. (2010). How are habits formed: Modelling habit formation in the real world. European journal of social psychology, 40(6), 998-1009.
 
+Mekler, E. D., Brühlmann, F., Tuch, A. N., Opwis, K. (2017). Towards understanding the effects of individual gamification elements on intrinsic motivation and performance. Computers in Human Behavior, 71, 525-534. doi:10.1016/j.chb.2015.08.048
 
 Pham, X. L., & Chen, G. D. (2019). PACARD: A New Interface to Increase Mobile Learning App Engagement, Distributed Through App Stores. Journal of Educational Computing Research, 57(3), 618–645. https://doi.org/10.1177/0735633118756298
 
 
 Silic, M., & Back, A. (2017). Impact of gamification on user's knowledge-sharing practices: Relationships between work motivation, performance expectancy and work engagement. In Proceedings of the 50th Hawaii International Conference on System Sciences.
+
+Zainuddin, Z., Chu, S. K., Shujahat, M., &amp; Perera, C. J. (2020). The impact of gamification on learning and instruction: A systematic review of empirical evidence. Educational Research Review, 30, 100326. doi:10.1016/j.edurev.2020.100326
 
