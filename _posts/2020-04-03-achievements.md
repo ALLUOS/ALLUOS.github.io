@@ -39,7 +39,7 @@ The two achievements that were chosen are:
 
 - The *Streak counter* gives achievements for certain numbers of consecutive days on which the user opened the app. With this, we can track a users' consistency in returning to the app day after day. In order to make becoming invested in the streak easier, we kept the time intervals between each achievement fairly short early on and gradually increase the distance to make it harder to keep the streak alive later on.
 
-Achievements are displayed in two points of the application:
+We wanted to be able to display achievements at two points of the application:
 - In a private chat, where an option exists to view all completed and remaining achievements
 - In the group chat, where newly unlocked achievements will be shown after each completed task. We thought this could motivate users to invest more time in language learning, in order to complete achievements and have other people see their progress.
 
