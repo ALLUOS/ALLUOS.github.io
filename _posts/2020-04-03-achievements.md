@@ -31,9 +31,17 @@ We decided to determine the amount of days played in a row after which the learn
 Following the self-determination theory by Deci, Koester & Ryan (2001), it is important to foster students experienced competence and autonomy for the achievements or rewards to not undermine intrinsic motivation (Friedrich et al., 2020). Therefore it was important not to only have achievements in the form of a streak, but also as a feedback on achieved learning steps to support the intrinsic motivation of the learners. Therefore we also included an achievement for the amount of words users collected inside the application and scaffolded the presentation of these as well.
 
 ## MVP Definition
-What did we decide on for our achievements MVP (explanation of the two achievements + how do they tie in with the application)
+We decided on two achievements as our minimum viable product for this semester, as this would give us a good starting point to evaluate the overall usefulness through user feedback. It would also allow us to create a framework with a great deal of useful functions, making it easier to extend the module with further achievements in the future.
+Storing the required data proved to be relatively straightforward as well, as the database was already in place and all we had to do was update it with an additional data structure.
+The two achievements that were chosen are:
 
-Cedric
+- The *Code Cracker* achievement, where the user receives badges for a certain number of cracked codes. The performance on this achievement indicates the time that the user has spent in the application through the number of rounds they have completed.
+
+- The *Streak counter* gives achievements for certain numbers of consecutive days on which the user opened the app. With this, we can track a users' consistency in returning to the app day after day. In order to make becoming invested in the streak easier, we kept the time intervals between each achievement fairly short early on and gradually increase the distance to make it harder to keep the streak alive later on.
+
+Achievements are displayed in two points of the application:
+- In a private chat, where an option exists to view all completed and remaining achievements
+- In the group chat, where newly unlocked achievements will be shown after each completed task. We thought this could motivate users to invest more time in language learning, in order to complete achievements and have other people see their progress.
 
 ## Implementation
 Explanation of implementation of achievements
