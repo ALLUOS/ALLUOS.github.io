@@ -116,6 +116,21 @@ In contrast to the task above, now answers will only be evaluated by non-selecte
 
 Additionally, to increase difficulty, we implemented a time constraint for this task. Upon start, `set_time_reminders()` will initiate the reminders, that will be sent to the group regularly by the call of `get_time_info()`.
 
+##### DiscussionTask
+
+`Discussion(Task)` is a subclass of `Task(ABC)`, however, unlike the other two tasks, the discussion task is not sequential in nature and therefore does not inherit from `SequentialTask`. Nevertheless, we were still able to reuse a significant part of the methods already implemented in said class. 
+The task always starts off with the presentation of the text, which is retrieved from the database based on the users' proficiency. This is followed by three rounds of discussion. 
+At the start of each round a text-related question is sent and a timer is added to the job queue to determine when the round finishes, at which point a warning is sent, reminding users' to finish their discussion of the question.
+
+Since we don't have to select for a specific user, all user input can be handled in the same `handle_question` state. Word counts and participation for each user are stored in two dictionaries, which are required to satisfy the completion criteria of the task.
+After a message is sent, `update_word_counts(message, user)` is called in order to update those dictionaries with the new word counts.
+
+Following the third and final discussion round, three polls will be presented using reply keyboards and used along with the dictionaries by the `is_correct(self)` method to determine whether the task was successfully completed or not. Figure 3 shows a flow chart of the task up until the point where the users' have to input the code and choose the subsequent task.
+
+<img src="https://github.com/ALLUOS/ALLUOS.github.io/raw/master/assets/images/Discussion_Flowchart.png" alt="Figure 3: Flow of the discussion task including backend activities" width="700">
+
+*Figure 3: Flow of the discussion task including backend activities*
+
 
 ### Outlook
 With our implementation of the `SequentialTask`, we set a very flexible code foundation for additional tasks, that are designed in the same manner. However, having to fit new tasks in this pattern might limit us in the conceptual designing of new tasks. To create more flexibility in the addition of new tasks and to broaden the scope of task patterns, we are going to try to implement another kind of task in the next semester, which not necessarily follows the sequential pattern.
