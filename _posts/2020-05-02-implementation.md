@@ -127,7 +127,7 @@ After a message is sent, `update_word_counts(message, user)` is called in order 
 
 Following the third and final discussion round, three polls will be presented using reply keyboards and used along with the dictionaries by the `is_correct(self)` method to determine whether the task was successfully completed or not. Figure 3 shows a flow chart of the task up until the point where the users' have to input the code and choose the subsequent task.
 
-<img src="https://github.com/ALLUOS/ALLUOS.github.io/raw/master/assets/images/Discussion_Flowchart.png" alt="Figure 3: Flow of the discussion task including backend activities" width="700">
+<img src="https://github.com/ALLUOS/ALLUOS.github.io/blob/semester_two/assets/images/Discussion_Flowchart.png" alt="Figure 3: Flow of the discussion task including backend activities" width="700">
 
 *Figure 3: Flow of the discussion task including backend activities*
 
