@@ -65,10 +65,35 @@ The content of the student data dictionary is then persisted to the database tab
 The last row is used as a simple counter for the *Code Cracker* achievement whilst the first three rows store all information needed for the *Crew Rank* achievement. In order to track the current streak, we need to know the last date that the user engaged with the application `last_played`. If that date is exactly one day in the past when the user engages with the application, we increment the counter of the current streak `consecutive_days`and update `last_played` to the current date. If the date is in the past, we reset `consecutive_days` to one and update `last_played`. If the users re-opens the application on the same day, we do nothing. Finally we compare the current streak `consecutive_days` to the all-time longest streak `highest_streak` for that user and update the latter a new highscore has been achieved. This example illuminates how our simple data structure allows modeling of more complex achievements thanks to its flexibility.
 
 ### Achievement Framework
-How does the framework work and which functions does it provide?
-Benefit: Easy implementation of additional achievements (explanation of achievement base class and the concept of inheriting from it)
 
-Tom 
+Similar to our task framework, our achievement framework is designed in a way to enable a simple and efficient extension of the set of achievements by providing a common interface that all achievements share. We again make use of Python's [abstract base classes](https://docs.python.org/3/library/abc.html) to provide the mentioned shared interface in the `Achievement` class in `achievements.py`. This has the major benefit of simplifying the addition of future achievement types. To seamlessly add and integrate a new type of achievement one would simply create a new class for the new achievement type and make it inherit from our abstract base class `Achievement`, for instance `class NewAchievementType(Achievement)`
+
+In the next paragraphs, we will give an overview of the different components of the achievement framework, including the currently implemented types of achievements.
+
+#### `achievements.py`
+This file holds the abstract base class `Achievement` from which all subsequent achievement implementations shall inherit. The base class defines certain attributes in its constructor, which are thought to be shared across all achievement types. Those attributes include for example a name (`self.name`), a text that is displayed upon completion (`self.completion_text`), a text which displays the user progress of the achievement (`self.progress_text`), a corresponding emoji (`self.emoji`), a threshold which means completing the achievement when progressing beyond (`self.threshold`), a corresponding student (`self.student`) and a boolean value whether the achievement has been completed (`self.completed`).
+
+Besides typical getter-functions, the class also holds an important method to check whether the achievement has been completed by the student (`is_completed()`). This function checks if the progress of the achievement has passed the `self.threshold` and sets and returns `self.completed` accordingly. This method has been implemented in the base class since we thought that all achievements usually follow what we call the "progress-needs-to-pass-threshold" principle. We will see later, that modifications can and have been made to certain achievements by overriding the `is_completed()` method.
+
+A key method for all achievements, which depends on the inherent nature of the achievement type, is the measurement of the progress of the achievement. Since this may vary heavily depending on the kind of achievement, we declared the method `get_progress()` as an `@abstractmethod`, making it necessary to be implemented in the corresponding sub-classes inheriting from the base class.
+
+#### `streaks.py`
+This file contains the class for our _Streak_ or _Crew Rank_ achievement `ConsecutiveDaysStreak(Achievement)` which inherits from the `Achievement` base class. For this achievement, we do not need any additional attributes other than the ones we have declared in the base class. 
+
+However, as stated above, we need to implement the abstract method `get_progress()` in each new achievement sub-class. In this case, this means getting returning the value of `consecutive_days` from the database. But since the progress of this achievement is inherently highly dynamic by its definition (the user is expected to play on consecutive days and gets penalised for breaking the streak), we cannot only perform a database query for the value of `consecutive_days` but also have to check if the streak is still running and adjust or reset the value of `consecutive_days` when necessary. We, therefore, make use of Python's [_datetime_ module](https://docs.python.org/3/library/datetime.html) to compare the current date with the `last_played` date which is saved and continuously updated in the database.
+
+As mentioned above, the `ConsecutiveDaysStreak` class overrides also the `is_completed()` function from the base class. This is due to the fact, that the completion of this achievement is not solely dependent on the current streak, but also the highest streak ever achieved by the student. Otherwise, the student would lose all previously achieved streak achievements when forgetting to use the application just one day. Since we deemed this behaviour extremely undesired, we have overridden the respective `is_completed()` method in a way, that the completion for the `ConsecutiveDaysStreak` achievement now depends either on the current streak or the highest streak achieved by the user, whichever carries the higher value.
+
+#### `codeword_pieces.py`
+ 
+This file contains the class of our second achievement, the _Codeword Cracker_ achievement. The corresponding class is called `CodewordPiecesCollected(Achievement)` and again inherits from the `Achievement` base class. 
+
+The implementation of this achievement follows the implementation of the base class to a higher extent than the streak achievement does. This means, we only had to implement the `get_progress()` method which is a simple database query for the data field `codeword_pieces_collected` of the respective student. The definition of achievement completion follows the aforementioned "progress-needs-to-pass-threshold" principle, hence, we do not need to override the `is_completed()` method.
+
+#### `all_achievements.py`
+This file contains two functions that are used in the context of achievements, namely `set_achievement_list(filepath)` and `create_all_achievements(student)`.
+
+The former loads all achievements instances that we have currently created in the `achievement_info.json` into the global dictionary`achievement_json`. The latter, `create_all_achievements(student)`, creates a list of all achievements from `achievement_json` for the respective `student` and return the list.
 
 ## Discussion
 Critical assessment of our MVP: What works, what doesn't? How would we view the achievements in retrospect -> Maybe the testing group can jump in here
