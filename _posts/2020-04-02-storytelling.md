@@ -28,4 +28,4 @@ description: Learn more about the application's storytelling features.
 ## Structure
 
 <div id=“media”></div>
-## Media
+## Storyline delivery methods
