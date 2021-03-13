@@ -10,8 +10,8 @@ sections:
    tag: \#story
  - title: Structure
    tag: \#structure
- - title: Media
-   tag: \#media
+ - title: Storyline delivery methods
+   tag: \#delivery
 description: Learn more about the application's storytelling features.
 ---
 
@@ -27,5 +27,5 @@ description: Learn more about the application's storytelling features.
 <div id=“structure”></div>
 ## Structure
 
-<div id=“media”></div>
+<div id=“delivery”></div>
 ## Storyline delivery methods
