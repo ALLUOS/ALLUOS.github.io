@@ -47,6 +47,8 @@ The blocks that are completed:
 3)	Between Task 1-2 (Block 3)
 4)	Between Task 2-3 (Block 4)
 5)	Conclusion Escape (Block 5)
+
+
 The Blocks that are to be implemented in the coming semester: 
 1)	Before task 4 (Block 6)
 2)	Before task 5 (Block 7)
