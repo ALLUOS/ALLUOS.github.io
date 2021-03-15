@@ -2,7 +2,7 @@
 layout: post
 title: Storytelling
 sections:
- - title: Motivation
+ - title: Motivation for the change in storytelling
    tag: \#motivation
  - title: Characters
    tag: \#characters
@@ -19,11 +19,30 @@ description: Learn more about the application's storytelling features.
 
 <div id=“motivation”></div>
 
-## Motivation
+## Motivation for the change in storytelling
+
+Escapeling is an app for learning English as a foreign language, the main purpose of which is to provide the user with an opportunity for practice English skills with peers in a group format with the help of our app. 
+
+We would like to go away from boring scenarios and engage users throughout their language learning journey. Gamification of education is one of our main approaches, as we believe that it makes educational process more interesting and helps to keep users’ attention during task completion, especially in a group learning scenario, where all the users have to interact with each other in order to solve the task. That is why, there was made a decision to create a storyline, introduce characters and create different variants of the plot development. 
+
+In the summer semester’20 we chose a narrative scenario as one of the methods to make users learn a language effectively. According to this, escape scenario has been suggested, in which users are supposed to be abducted by Alien and escape by solving a few tasks together. Having solved each task correctly, users obtain a hint of the key that will help them. First of all, receiving a hint is a reward that helps to motivate users. Moreover, they can imagine at what point they are in the whole story and as they collect remaining hints, they will successfully complete the task.
+
+In the winter semester’20/21 we decided to make some changes and additions into the existing concept, preserving the idea of escape room in the collaborative learning scenario, however, we made a decision to improve narrative, introduce new characters, create different versions of a single escapeling session and add more visual material. 
+
+At this point of time we designed three tasks that help users to improve their English level. We decided to introduce such a narrative that will create the impression that all the tasks are connected between each other. Furthermore, we added new characters (Harriet and Elias) to make the storytelling more logical and interesting. There was made a decision to create different versions of a single escapeling session in order to give users an opportunity to use an application for learning a few times, even if the tasks have already been successfully completed. What is more, the use of emojis, an introductory video and pictures help to avoid sending large text messages to the user that makes the interface of the app more user-friendly and the learning process more interesting as it immerse users into the atmosphere of the game.
+
 
 <div id=“characters”></div>
 
 ## Characters
+
+This semester we made a decision to introduce new characters into our storyline. This allows us to keep users interested throughout the whole learning process, as it brings new turns and makes learning of the English language more engaging. Moreover, it helped us to make the structure of the storytelling more logical and coherent. In this section we would like to introduce our main characters.
+
+Aliens kidnapped four human beings from the Earth (a formed group of students) and put them on the alienship. Their plan is to take over the Earth, but for that then need to remove all the human beings that currently inhabit the Earth. Aliens managed to kidnap a few people and intend to interrogate them in order to find out the way how to remove people from the Earth and populate the Earth themselves. 
+
+Harriet is a human hacker from the Earth who manages to hack a signal from space and now she is on the line with users. She has to save humans and prevent the threat of human extinction. Harriet cannot allow aliens to remove people from Earth and populate the planet completely. But at first she has to make sure that those who are in contact with her now are really humans. Harriet agrees to send the escape codes as soon as a group, that Harriet communicating with, successfully fulfils the tasks only humans can solve, in particular language tasks. Successful task completion helps to identify who on the line with the hacker are, and Harriet sends the escape code for humans.
+
+Elias is a sympathetic alien who accompanies humans during their stay on the spaceship and guides users through the tasks. He is trustworthy and always ready to help. Some time ago he lived on the Earth and there learned one human language. He likes human beings and wants to assist to stop the evil plan of other aliens, that is why he helps humans to escape.
 
 <div id=“story”></div>
 
