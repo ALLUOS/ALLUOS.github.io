@@ -33,6 +33,7 @@ In addition to the main storyline of the escape scenario, several session varian
 The story variants are created to keep the story engaging and interesting for users who have already interacted with the application but want to go on with their learning experience, even for those, who have already successfully escaped. 
 
 <div id=“structure”></div>
+
 ## Block Structure
  
  
@@ -51,7 +52,9 @@ The signs that are denoting Success Message and Failure Message in other words a
 	Keeping in mind the Adaptive learning module and the possibilities of task list being increased we have devised a flow in such a way that allows the expansion of more blocks before the participants can escape. This would mean that the participants will have to take part in more than 3 tasks in a session. For now, we have shown 2 more block which indicates that the participants will have to do 5 tasks and not 3 to escape. This gives the participants the option to escape after 3 escapes or do 2 more tasks. In this case they do not have to start a new session and start with the introduction block all over again. 
 
 ### Block Description
-	This section we will talk about what every block will describes and what stage of story we are in during the sessions.
+
+This section we will talk about what every block will describes and what stage of story we are in during the sessions.
+
 #### Block 1 
 Is the introduction block. This block covers the overall plot and the backstory. It gives the basic understanding of the storyline to the participants. The summary of what is included in the introduction block is:
 The users of our app are a part of the group of humans who was tricked into joining the aliens on one of their spaceships. They thought they would be entering into a collaboration with the aliens, but they realized they’ve been tricked. Now, they must find their way out of the spaceship
