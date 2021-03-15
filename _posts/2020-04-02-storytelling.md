@@ -34,7 +34,9 @@ The story variants are created to keep the story engaging and interesting for us
 
 <div id=“structure”></div>
 ## Block Structure
- The structure of the story was divided into blocks. This was done in order to integrate the story with the tasks that are to be completed by the participants. The block is the representation of the stage of the escape the participants are in. The story right now is based on 5 blocks which allows the participants to take part in 3 tasks before they finish the learning process. The block flowchart basically shows the flow of the blocks and the blocks which are completed, and which are not.
+ 
+ 
+The structure of the story was divided into blocks. This was done in order to integrate the story with the tasks that are to be completed by the participants. The block is the representation of the stage of the escape the participants are in. The story right now is based on 5 blocks which allows the participants to take part in 3 tasks before they finish the learning process. The block flowchart basically shows the flow of the blocks and the blocks which are completed, and which are not.
 The blocks that are completed: 
 1)	Introduction (Block 1)
 2)	Before Task 1 (Block 2)
@@ -69,7 +71,7 @@ The Conclusion block is the final block where the participants realizes whether 
 1) Success: “Congratulations! You have taken the last step on the path to escape. I was glad to meet you, human friends, but it's time to say goodbye” Message from Harriet
 2) Failure: “I'm sure there is still hope! You can start your escape again” Message from Elias
 
-<img src="https://https://github.com/ALLUOS/ALLUOS.github.io/blob/semester_two/assets/images/Block%20Structure.png" alt="Figure 1: Block Structure" width="700">
+<img src="https://github.com/ALLUOS/ALLUOS.github.io/blob/semester_two/assets/images/Block%20Structure.png" alt="Figure 1: Block Structure" width="700">
 
 *Figure 1: Block Structure*
 
