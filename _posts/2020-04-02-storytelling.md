@@ -18,12 +18,15 @@ description: Learn more about the application's storytelling features.
 ---
 
 <div id=“motivation”></div>
+
 ## Motivation
 
 <div id=“characters”></div>
+
 ## Characters
 
 <div id=“story”></div>
+
 ## Plot and storylines
 
 (plot description)
@@ -79,6 +82,7 @@ The Conclusion block is the final block where the participants realizes whether 
 *Figure 1: Block Structure*
 
 <div id=“delivery”></div>
+
 ## Storyline delivery methods
 
 The storytelling features described above are delivered to the users via a mix of textual, visual and audiovisual inputs.
@@ -98,6 +102,7 @@ As a whole, this short introductory sequence is delivered to each user individua
 *Figure 3: Bot personas*
 
 <div id=“outlook”></div>
+
 ## Outlook
 
 After two semesters of work on the project, we have achieved a satisfactory sketch of the narration, and the visual media we presented are effective in guiding users through an introduction to the application and the storyline.
