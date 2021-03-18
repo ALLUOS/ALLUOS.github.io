@@ -16,7 +16,7 @@ sections:
    tag: \#outlook
 description: Learn more about the application's storytelling features.
 ---
-<div id=“motivation”></div>
+<div id="motivation"></div>
 
 ## Motivation for the change in storytelling
 
@@ -31,7 +31,7 @@ In the winter semester’20/21 we decided to make some changes and additions int
 At this point of time we designed three tasks that help users to improve their English level. We decided to introduce such a narrative that will create the impression that all the tasks are connected between each other. Furthermore, we added new characters (Harriet and Elias) to make the storytelling more logical and interesting. There was made a decision to create different versions of a single escapeling session in order to give users an opportunity to use an application for learning a few times, even if the tasks have already been successfully completed. What is more, the use of emojis, an introductory video and pictures help to avoid sending large text messages to the user that makes the interface of the app more user-friendly and the learning process more interesting as it immerse users into the atmosphere of the game.
 
 
-<div id=“characters”></div>
+<div id="characters"></div>
 
 ## Characters
 
@@ -43,7 +43,7 @@ Harriet is a human hacker from the Earth who manages to hack a signal from space
 
 Elias is a sympathetic alien who accompanies humans during their stay on the spaceship and guides users through the tasks. He is trustworthy and always ready to help. Some time ago he lived on the Earth and there learned one human language. He likes human beings and wants to assist to stop the evil plan of other aliens, that is why he helps humans to escape.
 
-<div id=“story”></div>
+<div id="story"></div>
 
 ## Plot and storylines
 
@@ -59,7 +59,7 @@ In addition to the main storyline of the escape scenario, several session varian
 
 The story variants are created to keep the story engaging and interesting for users who have already interacted with the application but want to go on with their learning experience, even for those, who have already successfully escaped.
 
-<div id=“structure”></div>
+<div id="structure"></div>
 
 ## Block Structure
 
@@ -93,27 +93,27 @@ Block two is the interactions of the 2 bot characters, which are a part of the s
 1)	Sympathetic Alien: Elias – He is the guide and the spokesperson for the adaptive learning module. He basically helps in adjusting the difficulty level of the task based on the participants performance. He is also responsible for taking feedback.
 2)	Hacker from Earth: Harriet – She is the Tester and task conductor to assess if they are humans or not.
 The basic concept of the block 2 is to introduce them to the idea of doing tasks in order to escape. The participants start their first task after this block. A sample message from Harriet would look like:
-		“Alright! However, at first, I must check whether you are really humans, not aliens, in order not to put humanity under the threat. In order to prove that you are humans you must complete a few tasks and prove your English knowledge. After successful completion, you’ll get a code to escape”
+		"Alright! However, at first, I must check whether you are really humans, not aliens, in order not to put humanity under the threat. In order to prove that you are humans you must complete a few tasks and prove your English knowledge. After successful completion, you’ll get a code to escape”
 #### Block 3 and 4
 Block 3 and 4 are block which are between task. These blocks depend on the result of the performance of the participants in the previous task. There are 2 possibilities after finishing the tasks are failure or success. The outcomes of the tasks has the following outputs:
 1) Failure: A message from Harriet regarding how she cannot give the password to the participant and better luck next time.
 2) Success (if the task is completed successfully): A message from Harriet to move forward to other task and a suggestion from Elias in respect to the adaptive module.
 #### Conclusion block
 The Conclusion block is the final block where the participants realizes whether they can escape or not. Basically, whether the participants have successfully finished all the tasks in the session. The two possibilities after finishing the task is:
-1) Success: “Congratulations! You have taken the last step on the path to escape. I was glad to meet you, human friends, but it's time to say goodbye” Message from Harriet
-2) Failure: “I'm sure there is still hope! You can start your escape again” Message from Elias
+1) Success: "Congratulations! You have taken the last step on the path to escape. I was glad to meet you, human friends, but it's time to say goodbye” Message from Harriet
+2) Failure: "I'm sure there is still hope! You can start your escape again” Message from Elias
 
 <img src="https://github.com/ALLUOS/ALLUOS.github.io/blob/semester_two/assets/images/Block%20Structure.png" alt="Figure 1: Block Structure" width="700">
 
 *Figure 1: Block Structure*
 
-<div id=“delivery”></div>
+<div id="delivery"></div>
 
 ## Storyline delivery methods
 
 The storytelling features described above are delivered to the users via a mix of textual, visual and audiovisual inputs.
 
-Given its Telegram infrastructure, the default way to interact with the application is via text messages. The users begin their Escapeling journey by sending a simple /start message to the Telegram bot. Given this prompt, the bot is programmed to respond with an introduction to the Escapeling narrative. This introduction is delivered in the form of a second-person narration, beginning with the words “You regain consciousness and find yourself in a strange and unfamiliar place…”. See figure 1 to get a better sense of this first exchange with the bot.
+Given its Telegram infrastructure, the default way to interact with the application is via text messages. The users begin their Escapeling journey by sending a simple /start message to the Telegram bot. Given this prompt, the bot is programmed to respond with an introduction to the Escapeling narrative. This introduction is delivered in the form of a second-person narration, beginning with the words "You regain consciousness and find yourself in a strange and unfamiliar place…”. See figure 1 to get a better sense of this first exchange with the bot.
 
 <img src="https://github.com/ALLUOS/ALLUOS.github.io/blob/9b38a671bf4e6083b1d299d72c4f4168f60b07af/assets/images/StorytellingFig01.png" alt="Figure 2: First exchange with the bot" width="700">
 
@@ -127,7 +127,7 @@ As a whole, this short introductory sequence is delivered to each user individua
 
 *Figure 3: Bot personas*
 
-<div id=“outlook”></div>
+<div id="outlook"></div>
 
 ## Outlook
 

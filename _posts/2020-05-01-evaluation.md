@@ -24,6 +24,8 @@ image: pic04.jpg
 4. Prospects For The Next Semester
 5. References
 
+**Note:** This section primarily describes testing information relevant to the first semester of the project. For information regarding the second semester, please refer to the [User Testing]({{ "" | absolute_url }}/2020/04/04/testS2.html) section.
+
 <div id="strategy"></div>
 ## Test Strategy
 

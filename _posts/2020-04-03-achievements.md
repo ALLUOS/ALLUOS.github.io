@@ -2,9 +2,22 @@
 layout: post
 title: Achievements
 sections:
-
+ - title: Motivation
+   tag: \#motivation
+ - title: Background
+   tag: \#bg
+ - title: MVP Definition
+   tag: \#mvp
+ - title: Implementation
+   tag: \#impl
+ - title: Discussion
+   tag: \#discussion
+ - title: Outlook
+   tag: \#outlook
+ - title: References
+   tag: \#references
 description: Learn more about the application's achievement system.
-image: 
+image:
 ---
 ## Contents
 1. Motivation
@@ -15,27 +28,30 @@ image:
 1. Outlook
 1. References
 
+<div id="motivation"></div>
 ## Motivation
-In an initial design thinking workshop at the start of the second semester of our Escapeling project, multiple students came up with several ideas to facilitate long-term engagement in our application. Thus we decided to combine them into the achievements feature by extracting the core principles of the ideas and using these to lead the realization of a minimum viable product (MVP) for the achievements. 
+In an initial design thinking workshop at the start of the second semester of our Escapeling project, multiple students came up with several ideas to facilitate long-term engagement in our application. Thus we decided to combine them into the achievements feature by extracting the core principles of the ideas and using these to lead the realization of a minimum viable product (MVP) for the achievements.
 
-Our achievements module tackles one of the central problems of learning applications: Low long-term engagement of users. Learning apps rank lowest in the user retention after one month (Pham & Chen, 2019). While Escapeling technically is not a standalone application, we feel that the same challenges also apply here. One key method to increase user retention is to make sure that users have a goal they can work towards inside the application. Achievements can serve as such a goal if their fulfillment criteria are displayed to users transparently. Additionally, achievements can also be utilized to increase other measures of engagement such as session length if their completion criteria are set accordingly. 
+Our achievements module tackles one of the central problems of learning applications: Low long-term engagement of users. Learning apps rank lowest in the user retention after one month (Pham & Chen, 2019). While Escapeling technically is not a standalone application, we feel that the same challenges also apply here. One key method to increase user retention is to make sure that users have a goal they can work towards inside the application. Achievements can serve as such a goal if their fulfillment criteria are displayed to users transparently. Additionally, achievements can also be utilized to increase other measures of engagement such as session length if their completion criteria are set accordingly.
 
 Finally, achievements can also increase learning outcomes in learning games if employed thoughtfully (Blair et al., 2016). They also provide a means for tracking learning goals.
 
+<div id="bg"></div>
 ## Background
 
 Our research on achievements in an educational context provided a direction for the definition of our MVP. First off, displaying learners streaks like the amount of days the played consecutively has shown to help building up a habit of using the application regularly (Janukas & Kapelac, 2020). According to the Fogg behaviour model, hope and fear are key elements in the process of developing motivation (Fogg, 2009). The fear of loosing the streak and the hope of achieving a new goal can motivate students to keep on using the application and therefore choose to continue learning (Fogg, 2009). On the other hand, giving learners some feedback in form of rewards can work as intrinsic incentives by eliciting emotions in the learners like fun or ambitions that would bind them to the application (Silic & Back, 2017).
 
-We decided to determine the amount of days played in a row after which the learners would gain new achievements based on empirical findings. In the language-learning application ‚Doulingo‘ Januakas & Kapelac (2020) found that 32 percent of users kept their longest streak for over one month and 27 percent for one week. To build a habit in using an application, users usually take about 66 days (Lally et al., 2010). We also thought it would be important to use low-treshold milestones for users to get familiar with the achievement system and build up motivation from the beginning. Accordingly, the number of days we chose as milestones were 2, 3, 5, 7, 14, 21, 28, 35, 45, 66, and 100 days. 
+We decided to determine the amount of days played in a row after which the learners would gain new achievements based on empirical findings. In the language-learning application ‚Doulingo‘ Januakas & Kapelac (2020) found that 32 percent of users kept their longest streak for over one month and 27 percent for one week. To build a habit in using an application, users usually take about 66 days (Lally et al., 2010). We also thought it would be important to use low-treshold milestones for users to get familiar with the achievement system and build up motivation from the beginning. Accordingly, the number of days we chose as milestones were 2, 3, 5, 7, 14, 21, 28, 35, 45, 66, and 100 days.
 
 Following the self-determination theory by Deci, Koester & Ryan (2001) it is important to foster student's experienced competence and autonomy for the achievements. This prevents underminining of intrinsic motivation (Friedrich et al., 2020). Therefore it was important not to only have achievements in the form of a streak, but also as a feedback on achieved learning steps to support the intrinsic motivation of the learners. Thus we also included an achievement for the amount of words users collected inside the application and scaffolded the presentation of these as well.
 
+<div id="mvp"></div>
 ## MVP Definition
 We decided on two achievements as our MVP for this semester as this would give us a good starting point to evaluate the overall usefulness through user feedback. It would also allow us to create a framework with a great deal of useful functions, making it easier to extend the module with further achievements in the future.
-In order to allow for a temporal scaling of goals in our achievements, we decided to integrate levels within the achievements. In doing so, the implementation of a single achievement can be customized with multiple thresholds. Low thresholds result in rather easy short-term goals for an early motivation boost whilst larger thresholds mean that an achievemnt can only be completed by putting in significant effort. 
+In order to allow for a temporal scaling of goals in our achievements, we decided to integrate levels within the achievements. In doing so, the implementation of a single achievement can be customized with multiple thresholds. Low thresholds result in rather easy short-term goals for an early motivation boost whilst larger thresholds mean that an achievemnt can only be completed by putting in significant effort.
 Based on the theory of motivation through achievements outlined above, we chose two create the following two achievements:
 
-- The *Code Cracker* achievement, where the user receives badges for a certain number of pieces used to crack the code. The performance on this achievement indicates the time that the user has spent in the application through the number of rounds they have completed. Using fragments of the code rather than full codes allows us to also award this achievement to users who did not manage to fully solve a task in their first playthrough, subsequently motivating them to try again for the next level of this achievement. 
+- The *Code Cracker* achievement, where the user receives badges for a certain number of pieces used to crack the code. The performance on this achievement indicates the time that the user has spent in the application through the number of rounds they have completed. Using fragments of the code rather than full codes allows us to also award this achievement to users who did not manage to fully solve a task in their first playthrough, subsequently motivating them to try again for the next level of this achievement.
 
 - The *Streak counter* gives achievements for certain numbers of consecutive days on which the user opened the app. With this, we can track a user's consistency in returning to the app day after day. In order to make becoming invested in the streak easier, we kept the time intervals between each achievement fairly short early on and gradually increase the distance to make it harder to keep the streak alive later on.
 
@@ -43,6 +59,7 @@ We wanted to be able to display achievements at two points of the application:
 - In a private chat, where an option exists to view all completed and remaining achievements.
 - In the group chat, where newly unlocked achievements will be shown after each completed task. We thought this could motivate users to invest more time in language learning in order to complete achievements and have other people see their progress.
 
+<div id="impl"></div>
 ## Implementation
 In the implementation we focused on creating a framework that allows us to easily integrate new achievements into our application. Thus, we will not focus on the implementaion of individual achievements here but rather explain the framework approach in the context of data stored for achievements as well as the class structure used.
 
@@ -78,15 +95,15 @@ Besides typical getter-functions, the class also holds an important method to ch
 A key method for all achievements which depends on the inherent nature of the achievement type, is the measurement of the progress of the achievement. Since this may vary heavily depending on the kind of achievement, we declared the method `get_progress()` as an `@abstractmethod`, making it necessary to be implemented in the corresponding sub-classes inheriting from the base class.
 
 #### `streaks.py`
-This file contains the class for our _Streak_ or _Crew Rank_ achievement `ConsecutiveDaysStreak(Achievement)` which inherits from the `Achievement` base class. For this achievement we do not need any additional attributes other than the ones we have declared in the base class. 
+This file contains the class for our _Streak_ or _Crew Rank_ achievement `ConsecutiveDaysStreak(Achievement)` which inherits from the `Achievement` base class. For this achievement we do not need any additional attributes other than the ones we have declared in the base class.
 
 However, as stated above, we need to implement the abstract method `get_progress()` in each new achievement sub-class. In this case, this means getting returning the value of `consecutive_days` from the database. But since the progress of this achievement is inherently highly dynamic by its definition (the user is expected to play on consecutive days and gets penalized for breaking the streak), we cannot only perform a database query for the value of `consecutive_days` but also have to check if the streak is still running and adjust or reset the value of `consecutive_days` when necessary. We therefore make use of Python's [_datetime_ module](https://docs.python.org/3/library/datetime.html) to compare the current date with the `last_played` date which is saved and continuously updated in the database.
 
 As mentioned above, the `ConsecutiveDaysStreak` class overrides also the `is_completed()` function from the base class. This is due to the fact that the completion of this achievement is not solely dependent on the current streak, but also the highest streak ever achieved by the student. Otherwise, the student would lose all previously achieved streak achievements when forgetting to use the application just one day. Since we deemed this behaviour extremely undesired, we have overridden the respective `is_completed()` method in a way that the completion for the `ConsecutiveDaysStreak` achievement now depends either on the current streak or the highest streak achieved by the user based on whichever carries the higher value.
 
 #### `codeword_pieces.py`
- 
-This file contains the class of our second achievement, the _Codeword Cracker_ achievement. The corresponding class is called `CodewordPiecesCollected(Achievement)` and again inherits from the `Achievement` base class. 
+
+This file contains the class of our second achievement, the _Codeword Cracker_ achievement. The corresponding class is called `CodewordPiecesCollected(Achievement)` and again inherits from the `Achievement` base class.
 
 The implementation of this achievement follows the implementation of the base class to a higher extent than the streak achievement does. This means we only had to implement the `get_progress()` method which is a simple database query for the data field `codeword_pieces_collected` of the respective student. The definition of achievement completion follows the aforementioned "progress-needs-to-pass-threshold" principle, hence we do not need to override the `is_completed()` method.
 
@@ -95,6 +112,7 @@ This file contains two functions that are used in the context of achievements, n
 
 The former loads all achievements instances that we have currently created in the `achievement_info.json` into the global dictionary`achievement_json`. The latter, `create_all_achievements(student)` creates a list of all achievements from `achievement_json` for the respective `student` and returns the list. This essentially instantiates all achievements for a given user and updates their current status based on the database values. The JSON configuration allows us to easily change the types of achievements and their thresholds without changes to the actual code.
 
+<div id="discussion"></div>
 ## Discussion
 
 From the implementation perspective we are really happy with the results of our MVP. The initial investment into spending more time on creating a framework approach rather than just individual achievements has started to pay off already in the realization of the current two achievements. Throughout the lifespan of our application, this will continue to ease the implementation of coming achievements and therefore hopefully serve a supporting role in the motivation of users and their long-term engagement.
@@ -103,13 +121,13 @@ However, we currently have no measures in place to evaluate any outcomes of inte
 
 This is especially important in the context of achievements since their long-term effects are still unclear. Even though multiple researchers report achievements to be effective in fostering long-term interaction and improving user performance over a span of several weeks to several months, there is almost no evidence on the long term effects of achievements and it needs to be further investigated (Zainuddin et al., 2020). This means we cannot be exactly sure if the initial positive effects will actually be maintained in longer term interaction and can only assume this is the case.
 
-Furthermore, most available studies fail to establish a theoretical framework that would explain the positive effects of achievements or other gamified elements on user performance/motivation. It is also important to notice that some studies have found achievements ineffective in the first place (Zainuddin et al., 2020). Therefore, it might be difficult to assess the role of achievements, when improvements occur in a learning application that has achievements as one of its components. 
+Furthermore, most available studies fail to establish a theoretical framework that would explain the positive effects of achievements or other gamified elements on user performance/motivation. It is also important to notice that some studies have found achievements ineffective in the first place (Zainuddin et al., 2020). Therefore, it might be difficult to assess the role of achievements, when improvements occur in a learning application that has achievements as one of its components.
 
-Another important consideration is that a vast majority of studies were tested on university students whose goals and internal motivation may, strictly speaking, substantially differ from that of school students (Zainuddin et al., 2020). Since our application's target audience are teenagers, some of our theoretical considerations hold only under the assumption that experiences of students at a different education level are in line with those of school students and can be generalized to fit them too. 
+Another important consideration is that a vast majority of studies were tested on university students whose goals and internal motivation may, strictly speaking, substantially differ from that of school students (Zainuddin et al., 2020). Since our application's target audience are teenagers, some of our theoretical considerations hold only under the assumption that experiences of students at a different education level are in line with those of school students and can be generalized to fit them too.
 
 The last major consideration is that achievements might be effective only at boosting extrinsic motivation, i.e. motivation to get the achievements, rather than increasing the more important intrinsic motivation, i.e. the motivation to actually learn from the gamified educational resource (Mekler et al., 2017). For us it could mean that we motivate the students to mechanically earn the achievements rather than to learn and reflect on their study experience.
 
-
+<div id="outlook"></div>
 ## Outlook
 
 To improve the application in the future, we must also look beyond just adding more achievements. In fact, it has been shown that fewer achievements might actually be more effective (Groening & Binnewies, 2019). A possible improvement could be to give the current achievements a more appealing visual representation, e.g. create stickers that will be sent to the user when they view their current achievements. These stickers could be sent to the group chat after successful game rounds too. This will not take too much space in the chat since we have only two achievements right now. If we don't show all the levels for each achievement in retrospect, achievement display will take just two messages and might look more attractive than just a textual/emoji representation.
@@ -118,14 +136,14 @@ Another area for possible improvement is unlockable content, which is another su
 
 Moreover, since we already try to activate social comparison mechanisms via giving users "bragging rights" with their achievements being displayed after game rounds, we could work further in this direction and also display a leaderboard after each game. This could include game statistics, like how many messages/words were posted by each player as a measure of their activity, how many times they gave correct answers, how many code digits they brought to the team as a measure of their performance and how many achievements they got from this game round as a measure of their consistency. This would create space for more comparison and deeper emotional response from players that, in turn, has been reported to be associated with increased engagement and better results (Zainuddin et al., 2020).
 
-Contrarily, although achievements in most applications target single users, we must ask ourselves if such a comparison of individual performances could interfere with the original idea of the application as a group learning experience in which users support each other. 
+Contrarily, although achievements in most applications target single users, we must ask ourselves if such a comparison of individual performances could interfere with the original idea of the application as a group learning experience in which users support each other.
 In this sense, achievements on a group level would be a possible future step. This could reinforce the group feeling and commitment and maybe even encourage groups to plan and regularly schedule further common sessions.
 
-Another way to increase motivation is allowing users to set their own goals (Locke, 1996). We could use the existing acheivements framework to allow user to essentially define their own achievements as both tracker and reward for the self-defined learning goal. In order to do this properly, we must consider how more abstract learning goals can be translated into metrics of our application.  
+Another way to increase motivation is allowing users to set their own goals (Locke, 1996). We could use the existing acheivements framework to allow user to essentially define their own achievements as both tracker and reward for the self-defined learning goal. In order to do this properly, we must consider how more abstract learning goals can be translated into metrics of our application.
 
-To sum up, we could consider improving the existing achievements with more appealing visual representations or integrating new gamification components that will serve the purpose we originally introduced achievements for. This may be more effective than multiplying the achievements themselves. One possibility could be adding leaderboards that display game statistics for each player and encourage them to practice more and better. Additionally, one could introduce the option to define individual learning goals as well as achievements on a group scale. 
+To sum up, we could consider improving the existing achievements with more appealing visual representations or integrating new gamification components that will serve the purpose we originally introduced achievements for. This may be more effective than multiplying the achievements themselves. One possibility could be adding leaderboards that display game statistics for each player and encourage them to practice more and better. Additionally, one could introduce the option to define individual learning goals as well as achievements on a group scale.
 
-
+<div id="references"></div>
 ## References
 Blair, L., Bowers, C., Cannon-Bowers, J., & Gonzalez-Holland, E. (2016). Understanding the Role of Achievements in Game-Based Learning. International Journal of Serious Games, 3. https://doi.org/10.17083/ijsg.v3i4.114
 
