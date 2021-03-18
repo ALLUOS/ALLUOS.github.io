@@ -33,7 +33,7 @@ In this section we will provide a brief overview of the technical architecture t
 
 In general, we used the model-view-controller (MVC) software design pattern to structure the implementation. Figure one gives an overview of the different application elements within this MVC design pattern. It also shows where the associated source code can be found in the repository.
 
-<img src="https://github.com/ALLUOS/ALLUOS.github.io/raw/master/assets/images/software_architecture_overview.png" alt="Figure 1: Overview of Repository Content" width="700">
+<img src="https://github.com/ALLUOS/ALLUOS.github.io/raw/master/assets/images/software_architecture_overview.png" alt="Figure 1: Overview of Repository Content" class="center">
 
 *Figure 1: Overview of Repository Content*
 
@@ -65,7 +65,7 @@ To structure the conversations between the bot and the users we implemented diff
 #### Private Chat Handler
 The interaction between the bot and a user in a private chat is handled by the private chat handler. Its purpose is to register a user for the app, add the user to a group or create a group, and tell the user the beginning of the story. It can also deal with some problems that may occur when creating the group. The handler is started with the */start*-command sent to the bot in a private chat. Afterwards the user is guided through the conversation by the use of reply keyboards sent to the user. Figure 2 shows the general conversation flow of the private chat handler. For simplicity, error handling is not covered in the figure.
 
-<img src="https://github.com/ALLUOS/ALLUOS.github.io/raw/master/assets/images/PrivateChatInteraction.png" alt="Figure 2: Conversation flow of the private chat handler including backend activities" width="700">
+<img src="https://github.com/ALLUOS/ALLUOS.github.io/raw/master/assets/images/PrivateChatInteraction.png" alt="Figure 2: Conversation flow of the private chat handler including backend activities" class="center">
 
 *Figure 2: Conversation flow of the private chat handler including backend activities*
 
@@ -118,8 +118,8 @@ Additionally, to increase difficulty, we implemented a time constraint for this 
 
 ##### DiscussionTask
 
-`Discussion(Task)` is a subclass of `Task(ABC)`, however, unlike the other two tasks, the discussion task is not sequential in nature and therefore does not inherit from `SequentialTask`. Nevertheless, we were still able to reuse a significant part of the methods already implemented in said class. 
-The task always starts off with the presentation of the text, which is retrieved from the database based on the users' proficiency. This is followed by three rounds of discussion. 
+`Discussion(Task)` is a subclass of `Task(ABC)`, however, unlike the other two tasks, the discussion task is not sequential in nature and therefore does not inherit from `SequentialTask`. Nevertheless, we were still able to reuse a significant part of the methods already implemented in said class.
+The task always starts off with the presentation of the text, which is retrieved from the database based on the users' proficiency. This is followed by three rounds of discussion.
 At the start of each round a text-related question is sent and a timer is added to the job queue to determine when the round finishes, at which point a warning is sent, reminding users' to finish their discussion of the question.
 
 Since we don't have to select for a specific user, all user input can be handled in the same `handle_question` state. Word counts and participation for each user are stored in two dictionaries, which are required to satisfy the completion criteria of the task.
@@ -127,7 +127,7 @@ After a message is sent, `update_word_counts(message, user)` is called in order 
 
 Following the third and final discussion round, three polls will be presented using reply keyboards and used along with the dictionaries by the `is_correct(self)` method to determine whether the task was successfully completed or not. Figure 3 shows a flow chart of the task up until the point where the users' have to input the code and choose the subsequent task.
 
-<img src="https://github.com/ALLUOS/ALLUOS.github.io/blob/semester_two/assets/images/DiscussionFlowchart.png" alt="Figure 3: Flow of the discussion task including backend activities" width="500">
+<img src="https://github.com/ALLUOS/ALLUOS.github.io/blob/semester_two/assets/images/DiscussionFlowchart.png" alt="Figure 3: Flow of the discussion task including backend activities" class="center">
 
 *Figure 3: Flow of the discussion task including backend activities*
 
@@ -146,7 +146,7 @@ Our implementation of the adaptive module of the language learning application r
 ### Language Proficiency Model
 The hierarchical model contains two language domains on the first level that reflect the main set of skills: Grammar and vocabulary (cf. Figure 3). The sentence correction tasks focuses on grammar skills whilst the vocabulary guessing task aims to augment the users' vocabulary. On the second level, the domains are subdivided into more granular sub-skills, e.g. relative clauses or gerunds in the grammar domain.
 
-<img src="https://github.com/ALLUOS/ALLUOS.github.io/raw/master/assets/images/difficulty-model.png" alt="Figure 3: Graph visualization of the hierarchical difficulty model." width="700">
+<img src="https://github.com/ALLUOS/ALLUOS.github.io/raw/master/assets/images/difficulty-model.png" alt="Figure 3: Graph visualization of the hierarchical difficulty model." class="center">
 
 *Figure 3: Graph visualization of the hierarchical difficulty model.*
 
@@ -180,7 +180,7 @@ Therefore, we propose to devote more resources towards the adaptive model in the
 ### Introduction
 Given the implementation design, it is necessary to store data for efficient retrieval during application runtime. The bot deals with user data and other essential data from Telegram that we had to store, update, and retrieve in real time. As the data is relational in nature, we structured these relationships in a backend PostgreSQL database. Each table in the database contains records and attributes which may be visualized as rows and columns (cf. Figure 4).
 
-<img src="https://github.com/ALLUOS/ALLUOS.github.io/raw/master/assets/images/sentence_data.png" alt="Figure 4: Sentence Correction Data" width="700">
+<img src="https://github.com/ALLUOS/ALLUOS.github.io/raw/master/assets/images/sentence_data.png" alt="Figure 4: Sentence Correction Data" class="center">
 
 *Figure 4: Sample database table entry from the sentence correction task table.*
 

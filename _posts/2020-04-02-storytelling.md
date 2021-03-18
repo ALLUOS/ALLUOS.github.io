@@ -119,7 +119,11 @@ Given its Telegram infrastructure, the default way to interact with the applicat
 
 *Figure 2: First exchange with the bot*
 
-A focal point of this introduction is the delivery of a short informative video. The purpose of this medium is to immerse the users in the narration by hearing the characters’ voices and getting glimpses of the spaceship they are trapped on. The video is narrated by Harriet, who introduces herself and explains the situation to the users. Click [here](https://youtu.be/qIMSD-m6QaM) to view the video in full.
+A focal point of this introduction is the delivery of a short informative video. The purpose of this medium is to immerse the users in the narration by hearing the characters’ voices and getting glimpses of the spaceship they are trapped on. The video is narrated by Harriet, who introduces herself and explains the situation to the users. You can view the video in full below.
+
+<div style="margin: auto; text-align: center;">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qIMSD-m6QaM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div><br>
 
 As a whole, this short introductory sequence is delivered to each user individually when they first come in contact with the application. Afterwards, the game progresses in iterations of group sessions (see #structure). During these sessions, the bot has three main modes of interaction: a) as a second person narrator; b) as Harriet; c) as Elias. These different bot personas are distinguished through the use of emojis (see figure 2).
 
