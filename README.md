@@ -8,7 +8,7 @@ All structural additions and notes relevant to the documentation
 for the project's second semester are **emboldened** with an
 [S2] tag.
 
----
+----
 
 ### Overview
 
