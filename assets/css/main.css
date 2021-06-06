@@ -1504,7 +1504,7 @@
 		line-height: 1.75em;
 	}
 
-	details {
+	summary {
 		color: #fff;
 		font-weight: 800;
 		letter-spacing: 0.225em;
