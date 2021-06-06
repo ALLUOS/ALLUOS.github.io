@@ -1505,8 +1505,12 @@
 	}
 
 	details {
-		font-size: 1.15em;
-		line-height: 1.75em;
+		color: #fff;
+		font-weight: 800;
+		letter-spacing: 0.225em;
+		line-height: 1em;
+		margin: 0 0 1em 0;
+		text-transform: uppercase;
 	}
 
 		@media screen and (max-width: 736px) {
