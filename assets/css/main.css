@@ -1504,6 +1504,11 @@
 		line-height: 1.75em;
 	}
 
+	details {
+		font-size: 1.15em;
+		line-height: 1.75em;
+	}
+
 		@media screen and (max-width: 736px) {
 
 			h3 {
