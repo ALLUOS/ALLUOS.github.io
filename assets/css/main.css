@@ -1504,19 +1504,6 @@
 		line-height: 1.75em;
 	}
 
-	summary {
-		color: #fff;
-		font-weight: 800;
-		letter-spacing: 0.225em;
-		line-height: 1em;
-		margin: 0 0 1em 0;
-		text-transform: uppercase;
-	}
-
-	details {
-		font-size: 1em;
-	}
-
 		@media screen and (max-width: 736px) {
 
 			h3 {
