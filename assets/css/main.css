@@ -1504,10 +1504,6 @@
 		line-height: 1.75em;
 	}
 
-	details {
-		margin: 0 0 1em 0;
-	}
-
 		@media screen and (max-width: 736px) {
 
 			h3 {
