@@ -2,11 +2,11 @@
 
 ---
 
-### Note for Semester Two
+### Note for Semester Three
 
 All structural additions and notes relevant to the documentation
 for the project's second semester are **emboldened** with an
-[S2] tag.
+[S3] tag.
 
 ----
 
@@ -23,7 +23,7 @@ The documentation alone is the responsibility of project members.
 
 The documentation is structured as follows:
 
-**[S2] Please note semester two additions with suggested
+**[S3] Please note semester two additions with suggested
 responsibilities and word counts below.**
 
 <pre>
@@ -32,7 +32,7 @@ responsibilities and word counts below.**
     |-- Project goals.
     |-- Organization and timeline.
     |-- Additional resources.
-    <b>|-- Semester Two Overview [S2] (Christian) ~500 words</b>
+    <b>|-- Semester Two Overviews</b>
         <b>|-- General goals and achievements.</b>
         <b>|-- Organization and timeline.</b>
         <b>|-- Additional resources, reference to conference.</b>
@@ -40,7 +40,7 @@ responsibilities and word counts below.**
     |-- Problem description.
     |-- Design process.
     |-- Summary of functional requirements.
-    <b>|-- Discussion Task Design [S2] (New Task Group) ~2000 words</b>
+    <b>|-- Discussion Task Design</b>
         <b>|-- Motivation</b>
         <b>|-- Design process</b>
 |-- Implementation
@@ -51,10 +51,10 @@ responsibilities and word counts below.**
     |-- Evaluation. Based on tests, was the application accepted by the target user and did it meet the requirements?
     |-- Summary. General reflection on the applications successes/failures.
     |-- Outlook. Next steps and suggested changes for semester two.
-    <b>|-- Semester Two Evaluations [S2] (Test) ~2000 words</b>
-<b>|-- Adaptive Module [S2] (Adaptive Group) ~1000 words</b>
-<b>|-- Storytelling [S2] (Storytelling Group) ~? words</b>
-<b>|-- Achievements [S2] (Achievements Group) ~1500 words</b>
+    <b>|-- Semester Two Evaluations</b>
+<b>|-- Adaptive Module</b>
+<b>|-- Storytelling</b>
+<b>|-- Achievements</b>
 </pre>
 
 ---
@@ -63,8 +63,8 @@ responsibilities and word counts below.**
 
 Each group is responsible for the above-delegated section and each member must contribute an appropriate number of words for his/her project commitment.
 Study project participants should contribute approximately 750 words each. Interdisciplinary participants should contribute approximately 500 words each.
-Each group must create a new repository branch **from the semester_two feature branch** and collaboratively finish their section. By **15 March 2021** each group must submit a pull request to merge their
-branch with the **semester_two** branch and include in the pull request a comment which details the approximate word-count contributions of each project member. The pull
+Each group must create a new repository branch **from the semester_two feature branch** and collaboratively finish their section. By **15 August 2021** each group must submit a pull request to merge their
+branch with the **semester_three** branch and include in the pull request a comment which details the approximate word-count contributions of each project member. The pull
 requests will then be reviewed and merged. The final site will then be collectively reviewed before grading submission at the end of March.
 
 ### Grading Guidelines
