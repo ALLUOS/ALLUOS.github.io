@@ -32,17 +32,17 @@ responsibilities and word counts below.**
     |-- Project goals.
     |-- Organization and timeline.
     |-- Additional resources.
-    <b>|-- Semester Two Overviews</b>
-        <b>|-- General goals and achievements.</b>
-        <b>|-- Organization and timeline.</b>
-        <b>|-- Additional resources, reference to conference.</b>
+    |-- Semester Two Overviews
+        |-- General goals and achievements.
+        |-- Organization and timeline.
+        |-- Additional resources, reference to conference.
 |-- Design
     |-- Problem description.
     |-- Design process.
     |-- Summary of functional requirements.
-    <b>|-- Discussion Task Design</b>
-        <b>|-- Motivation</b>
-        <b>|-- Design process</b>
+    |-- Discussion Task Design
+        |-- Motivation
+        |-- Design process
 |-- Implementation
     |-- Technical description.
     |-- Additional information.
@@ -51,10 +51,10 @@ responsibilities and word counts below.**
     |-- Evaluation. Based on tests, was the application accepted by the target user and did it meet the requirements?
     |-- Summary. General reflection on the applications successes/failures.
     |-- Outlook. Next steps and suggested changes for semester two.
-    <b>|-- Semester Two Evaluations</b>
-<b>|-- Adaptive Module</b>
-<b>|-- Storytelling</b>
-<b>|-- Achievements</b>
+    |-- Semester Two Evaluations
+|-- Adaptive Module
+|-- Storytelling
+|-- Achievements
 </pre>
 
 ---
