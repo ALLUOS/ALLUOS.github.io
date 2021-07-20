@@ -61,11 +61,10 @@ responsibilities and word counts below.**
 
 ### Submission Guidelines
 
-Each group is responsible for the above-delegated section and each member must contribute an appropriate number of words for his/her project commitment.
+Each group is responsible for the above-delegated section and each member must contribute an appropriate number of words for their project commitment.
 Study project participants should contribute approximately 750 words each. Interdisciplinary participants should contribute approximately 500 words each.
-Each group must create a new repository branch **from the semester_three feature branch** and collaboratively finish their section. By **15 August 2021** each group must submit a pull request to merge their
-branch with the **semester_three** branch and include in the pull request a comment which details the approximate word-count contributions of each project member. The pull
-requests will then be reviewed and merged. The final site will then be collectively reviewed before grading submission at the end of August.
+Please create a new repository branch **from the semester_three feature branch** for each new page of the website (e.g. a `testing` branch for the testing documentation, a `visualizations` branch for the visualizations documentation, and so on). By **15 August 2021** each group must submit a pull request to merge their
+branch with the **semester_three** branch and include in the pull request a comment which details the approximate word-count contributions of each project member. The pull requests will then be reviewed and merged. The final site will then be collectively reviewed before grading submission at the end of August.
 
 ### Grading Guidelines
 
