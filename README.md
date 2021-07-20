@@ -5,7 +5,7 @@
 ### Note for Semester Three
 
 All structural additions and notes relevant to the documentation
-for the project's second semester are **emboldened** with an
+for the project's third semester are **emboldened** with an
 [S3] tag.
 
 ----
@@ -23,7 +23,7 @@ The documentation alone is the responsibility of project members.
 
 The documentation is structured as follows:
 
-**[S3] Please note semester two additions with suggested
+**[S3] Please note semester three additions with suggested
 responsibilities and word counts below.**
 
 <pre>
@@ -63,9 +63,9 @@ responsibilities and word counts below.**
 
 Each group is responsible for the above-delegated section and each member must contribute an appropriate number of words for his/her project commitment.
 Study project participants should contribute approximately 750 words each. Interdisciplinary participants should contribute approximately 500 words each.
-Each group must create a new repository branch **from the semester_two feature branch** and collaboratively finish their section. By **15 August 2021** each group must submit a pull request to merge their
+Each group must create a new repository branch **from the semester_three feature branch** and collaboratively finish their section. By **15 August 2021** each group must submit a pull request to merge their
 branch with the **semester_three** branch and include in the pull request a comment which details the approximate word-count contributions of each project member. The pull
-requests will then be reviewed and merged. The final site will then be collectively reviewed before grading submission at the end of March.
+requests will then be reviewed and merged. The final site will then be collectively reviewed before grading submission at the end of August.
 
 ### Grading Guidelines
 
