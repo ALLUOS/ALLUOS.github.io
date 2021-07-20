@@ -23,38 +23,30 @@ The documentation alone is the responsibility of project members.
 
 The documentation is structured as follows:
 
-**[S3] Please note semester three additions with suggested
-responsibilities and word counts below.**
+**Boldened content denotes semester three additions**
+<ins>Underlined content denotes pages that will be significantly modified during semester three</ins>
+
 
 <pre>
-|-- Overview
-    |-- Introduction to the project.
-    |-- Project goals.
-    |-- Organization and timeline.
-    |-- Additional resources.
-    |-- Semester Two Overviews
-        |-- General goals and achievements.
-        |-- Organization and timeline.
-        |-- Additional resources, reference to conference.
-|-- Design
-    |-- Problem description.
-    |-- Design process.
-    |-- Summary of functional requirements.
-    |-- Discussion Task Design
-        |-- Motivation
-        |-- Design process
-|-- Implementation
-    |-- Technical description.
-    |-- Additional information.
-|-- Summary and Evaluation
-    |-- Test strategy overview.
-    |-- Evaluation. Based on tests, was the application accepted by the target user and did it meet the requirements?
-    |-- Summary. General reflection on the applications successes/failures.
-    |-- Outlook. Next steps and suggested changes for semester two.
-    |-- Semester Two Evaluations
-|-- Adaptive Module
-|-- Storytelling
-|-- Achievements
+|-- Project organization
+    |-- Overview
+    |-- <ins>Design</ins>
+    |-- <ins>Implementation</ins>
+    |-- Testing
+|-- Features
+    |-- Learning experience
+        |-- Adaptive module
+        |-- Achievements
+        |-- **Grammatical error correction**
+    |-- User experience
+        |-- <ins>Storytelling</ins>
+        |-- **Visualizations**
+        |-- **Support**
+|-- Mission tasks
+    |-- Sentence correction
+    |-- Vocabulary guessing
+    |-- <ins>Discussion</ins>
+    |-- **Listening**
 </pre>
 
 ---
