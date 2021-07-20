@@ -37,16 +37,16 @@ The documentation is structured as follows:
     |-- Learning experience
         |-- Adaptive module
         |-- Achievements
-        |-- **Grammatical error correction**
+        |-- <strong>Grammatical error correction</strong>
     |-- User experience
         |-- <ins>Storytelling</ins>
-        |-- **Visualizations**
-        |-- **Support**
+        |-- <strong>Visualizations</strong>
+        |-- <strong>Support</strong>
 |-- Mission tasks
     |-- Sentence correction
     |-- Vocabulary guessing
     |-- <ins>Discussion</ins>
-    |-- **Listening**
+    |-- <strong>Listening</strong>
 </pre>
 
 You can find more details on our site structure on [this Mural board](https://app.mural.co/t/personalvisionboard1357/m/personalvisionboard1357/1626770125380/3c0d3087bdfc4cfc68858027b10f0fd7243591e1?sender=u26177583979c89d370329710). For a detailed overview of our planned contributions for semester three, visit [this Notion page](https://www.notion.so/Documentation-e7ae66bf4eaf47a09cd629d65db8f739).
