@@ -3933,3 +3933,14 @@
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+
+/* Escapeling additions */
+
+	div .FAQ{
+	padding-top: 1em;
+	padding-bottom: 1em;
+	}
+
+	summary .FAQ{
+	padding-bottom: 1em;
+	}
