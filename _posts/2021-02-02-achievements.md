@@ -17,7 +17,7 @@ sections:
  - title: References
    tag: \#references
 description: Learn more about the application's achievement system.
-image:
+image: pic06.jpg
 ---
 ## Contents
 1. Motivation

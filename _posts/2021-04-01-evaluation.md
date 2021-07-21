@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Summary and Evaluation
+title: Testing
 sections:
  - title: Test Strategy
    tag: \#strategy
