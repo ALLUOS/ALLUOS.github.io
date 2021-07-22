@@ -14,7 +14,7 @@ sections:
    tag: \#delivery
  - title: Outlook
    tag: \#outlook
-description: Learn more about the application's storytelling features.
+description: Explore our sci-fi themed escape room narrative.
 ---
 <div id="motivation"></div>
 
