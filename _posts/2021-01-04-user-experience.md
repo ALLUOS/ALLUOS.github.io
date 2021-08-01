@@ -12,4 +12,4 @@ image: pic09.jpg
 
 ## Escapeling's user experience
 
-Our application aims to facilitate English language learning, and we have worked on a number of features that are meant to make this process smooth and enjyable. Find out more about each of these features by navigating through the pages listed here below.
+Our application aims to facilitate English language learning, and we have worked on a number of features that are meant to make this process smooth and enjoyable. Find out more about each of these features by navigating through the pages listed here below.
