@@ -6,7 +6,7 @@ sections:
    tag: \#design
  - title: Implementation process
    tag: \#implementation
-- title: References
+ - title: References
    tag: \#references
 description: Learn more about the discussion task.
 image:
@@ -51,20 +51,20 @@ A final key point in the implementation of a discussion task for our learning en
 
 ### Materials
 
-The idea of a discussion task was based on the assumption that the improvement of existing foreign language skills, as well as the acquisition of new linguistic skills, can be formed as a result of a natural dialogue between the English learners. We believe that initially providing users with a text on a specific topic is the best way to engage them into interaction with each other. Thus, there are two types of data required for the discussion task: texts, that should be informative and interesting enough to spark a discussion, as well as follow-up questions based on the given texts.
+Given the framework we designed described above, there are two types of data required for the discussion task: texts, that should be informative and interesting enough to spark a discussion, as well as follow-up questions based on the given texts.
 
-As the first step, we defined 9 different categories, which can serve as guidelines for collecting texts: Body and soul; Free time; Home and building; Humanities; Nature and science; Society; Technology; Alignment; Economy. Each text should then be a subtopic of one of the stated above categories.
+As the first step, we defined nine different categories which can serve as guidelines for collecting texts: Body and soul; Free time; Home and building; Humanities; Nature and science; Society; Technology; Alignment; Economy. Each text should then be a subtopic of one of the stated above categories.
 
-Since our application is a Telegram chatbot, we assume, it will be used mainly by phone users, which provides a series of other issues that we have to take into consideration. First of all, the size of a phone screen is relevantly small and does not allow for sharing big texts with the users. Secondly, even if this problem can potentially be solved by presenting text in a form of an image, we want to avoid situation, in which users loose access to the chatroom every time they open the picture. Hereby, it was decided to present texts as messages. The ideal size of the text then to be sent to the users was determined to be maximum 120 words.
+Since our application is a Telegram chatbot, we assume it will be used mainly by phone users, which provides a series of other issues that we have to take into consideration. First of all, the size of a phone screen is relatively small and does not allow for sharing big texts with the users. Secondly, even if this problem can potentially be solved by presenting text in form of an image, we want to avoid situations in which users loose access to the chatroom every time they open the picture. Therefore, it was decided to present texts as messages. The ideal size of the text to be sent to the users was then determined to be maximally 120 words.
 
-The data was collected from different Internet sources. The sources varied from Wikipedia pages to blog posts, articles in online magazines and materials posted on online platforms for English courses (see Excel sheet with all relevant information provided). Our next step was then to select a small excerpt from the discovered source that should be of the stated size. Such an excerpt should give an overview of the specific topic, we would like English learners to talk about, as well as present this topic in such a way that enables users to get engaged into conversation easily.
+The data was collected from different Internet sources. The sources varied from Wikipedia pages to blog posts, articles in online magazines and materials posted on online platforms for English courses [see Excel sheet with all relevant information provided](link?). Our next step was to select a small excerpt from the discovered source that should be of the stated size.
 
 Our second step was to review these texts and check if all of them meet the following criteria:
 1. Is this text interesting enough to spark a discussion?
 2. Does this text allow for sharing different opinions?
 Besides, the texts should be appropriate for our target group and grammatically correct. In total, 37 texts were collected.
 
-Since our chatbot should be able to provide users with tasks of different difficulty (namely, levels 1, 2 and 3), our next task was to rate the texts according to the levels of their proficincy. This could be achieved in two different ways: via automatic evaluation and self evaluation, based on the information provided in the scientific literature. The automatic text analyzer by roadtogrammar.comdetermines the text difficulty according to the CEFR levels, not only by looking at average word and sentence length, but also comparing each word to a list of the 10,000 most frequent words in English. This is relevant for evaluating language complexity of the found texts. The more of frequent words is presented in the text, the less difficult this text is rated to be. Text evaluation we did by hand, on contrary, was based on the idea that criteria, used by text analyzer, are only surface features of text complexity and are limited in their capacity to predict text difficulty. These features should be taken into account in combination with the deeper features (ideation, organisation, structure, representational models) and reader's characteristics (background knowledge, motivation and goals of engagement in reading). For example, text difficulty is often dependent on the genre, with non-fiction texts usually presenting more challenges to the readers (Murphy, 2013).
+Since our chatbot should be able to provide users with tasks of different difficulty (namely, levels 1, 2 and 3), our next task was to rate the texts according to the levels of their proficiency. This could be achieved in two different ways: via automatic evaluation and self evaluation, based on the information provided in the scientific literature. The automatic text analyzer by roadtogrammar.com determines the text difficulty according to the CEFR levels, not only by looking at average word and sentence length, but also by comparing each word to a list of the 10,000 most frequent words in English. This is relevant for evaluating language complexity of the found texts. The more frequent words are presented in the text, the less difficult this text is rated to be. Text evaluation we did by hand, on contrary, was based on the idea that criteria, used by text analyzer, are only surface features of text complexity and are limited in their capacity to predict text difficulty. These features should be taken into account in combination with the deeper features (ideation, organisation, structure, representational models) and reader's characteristics (background knowledge, motivation and goals of engagement in reading). For example, text difficulty is often dependent on the genre, with non-fiction texts usually presenting more challenges to the readers (Murphy, 2013).
 
 Having combined both these attitudes towards text evaluation, we ended up in dividing all texts according to three language proficiency levels, that we focus on in this chatbot.
 
@@ -112,9 +112,11 @@ Another additional feature can be corrections and helpful hints by the bot. Mean
 
 Furthermore, vocabulary hints and short descriptions of words which are possibly new to the learners would be a valuable addition. This way probably an even bigger vocabulary learning effect could be achieved.
 
+<div id="implementation"></div>
+## Implementation process
 
 <div id="references"></div>
-### References
+## References
 Barson, J., Frommer, J. & Schwartz, M. (1993). Foreign Language Learning Using E-Mail in a Task-Oriented Perspective: Interuniversity Experiments in Communication and Collaboration. Journal of Education and Technology, 2 (4), 565-584.
 Beauvois, M. H. (1992). Computer-Assisted Classroom Discussion in the Foreign Language Classroom: Conversation in Slow Motion. Foreign Language Annals, 25(5), 455–464. https://doi.org/10.1111/j.1944-9720.1992.tb01128.x
 Finn, A. N., & Schrodt, P. (2016). Teacher discussion facilitation: a new measure and its associations with students’ perceived understanding, interest, and engagement. Communication Education, 65(4), 445–462. https://doi.org/10.1080/03634523.2016.1202997
