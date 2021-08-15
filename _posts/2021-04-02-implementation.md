@@ -264,6 +264,44 @@ To tackle the known bugs which have been mentioned above one approach would have
 During this semester the most notable bugs have been found and fixed so that the game can be completed successfully. Surprisingly one severe bug could be fixed by simply appending parentheses to the statement `sentence_task.is_success`. Without the parentheses python evaluates this statement as a reference to the function object `is_success` instead of calling the function with `is_success()`. Despite the elimination of such bugs, every so often there still occur errors that lead to a crash of the application in the worst case. For example when too many or too long messages are sent in a fast succession a `telegram.error.RetryAfter: Flood control exceeded` error occurs. Furthermore, during a bad internet connection a `telegram.error.NetworkError` can occur or when no messages have been sent for a longer period of time a special case of the NetworkError the `telegram.error.TimedOut` can happen.
 To understand the cause of these errors it is necessary to grasp the underlying architecture of the telegram bot which is already described in the [Telegram Integration](#telegram-integration) section. Just as a short reminder, the [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot) library is a wrapper that handles HTTP requests towards the [Telegram Bot API](https://core.telegram.org/bots/api). The API has some restrictions like the above mentioned message limits that result in a response with an error [status code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes). This error is handled by the library and passed on to be handled in the application. Handling these errors and retrying the last action would be a workaround only treating the symptoms. A better solution would be the usage of a [MessageQueue](https://github.com/python-telegram-bot/python-telegram-bot/wiki/Avoiding-flood-limits). Unfortunately, the `MessageQueue` has [four known bugs](https://github.com/python-telegram-bot/python-telegram-bot/issues/2139) and is therefore already marked as deprecated with no release date of a replacement in sight. Additionally it is noteworthy that such errors can happen in all sorts of places in the code making the implementation challenging. All in all, there is no clear path on how to go about these problems. It might even be a possible approach to completely rewrite the application in a different chat bot technology.
 
+
+## Implementation process and documentation
+
+The study project team this semester consisted mostly of team members who are new to the project. This was the case especially for the implementation team. This yielded a number of different problems: the team had to first understand how to run the code, then understand the code design and structure and more detailed pieces of information e.g. which function should be used in which case, etc. Additionally, the team had to settle down on how to write new code and how to integrate it to the existing code base. This implies the formulations of common code conventions and workflow. First, the team will describe the team’s first contact with the code base and the difficulties encountered. Second, we will describe how the team decided to alleviate those difficulties for the new team members in the upcoming semester. Lastly, we will describe our workflow and the code conventions the team settled for.
+
+### First Contact
+
+At the beginning of this semester, the previous implementation team members kindly gave a presentation about the code base. They described its overall organization and some of the most important functions. In particular, the presentation given was a great help to understand how the Telegram API is used throughout the project. To be able to work on the code, it was key to understand how the individual tasks and chat handlers worked. The given presentation was an important step in getting familiarized with the project and its implementation. Nevertheless, the documentation at hand did not provide enough detailed descriptions to be able to read into the code base without difficulties. Therefore, it was decided to supplement the documentation.
+
+### Improved Documentation
+
+Initially, the documentation provided enough information about how to use and start the bot locally. Additionally, the documentation was focussed on the design choices and decisions that were made in the semester. The team was still facing the problem of lacking a pure technical documentation, which would contain all the information about files, classes, functions, global and local variables, etc. 
+
+**Flow Diagrams**
+
+The previous members of the study project partially documented the codebase by describing the private conversation handler. It was described using a flow diagram, specifying the states and color coding the bot and users actions. The diagram was very detailed but not very readable.
+
+It was decided to create the same kind of documentation for the three task handlers: the discussion task handler, the vocabulary description task handler and the sentence correction task handler. Since the bot uses deterministic states to function, each handler also follows this principle. To be readable, the team decided to make flow diagrams that are similar to a finite state automata: every state is mentioned with an individual within the diagram. The previous diagrams mentioned the states outside the flow diagram, in a table-like structure. The team also settled to document the states, individual function calls, the user’s actions and the bot’s actions using boxes and colors that are similar to the private chat handler diagram. Different branching usually due to if-conditions are described with a question and the outgoing branches describe the actions following different outcomes.
+
+_Detail of Vocabulary Task Handler diagram including the legend_
+
+![Cutout from flow diagram explaining the Vocabulary Task Handler](../_includes/flow-diagram-cutout.png "Cutout from flow diagram explaining the Vocabulary Task Handler")
+
+**Technical documentation**
+
+It would have been possible to generate a technical documentation automatically with the function’s doc-strings, for example by using the python package `pydoc`. Unfortunately, this is not possible because the functions are seldom described with doc-strings. The team decided against adding the missing doc-strings because of the project’s time constraints.
+
+With our additional flow diagrams, we hope that new team members in the next semester have the possibility to read quicker into the code base. This should allow a faster development process and rewarding development experience. The new task we developed still lacks its corresponding flow diagram. 
+
+### Code conventions
+
+During the familiarization with the project’s implementation, it was noticed that the previous developers did not follow some important principles of clean coding. For example, it was  noted that many comments did not follow the DRY (“Don’t repeat yourself”) principle. Also, some variable names were not descriptive enough to be understood efficiently. Therefore, the team decided on code conventions which every new addition to the code should meet. This semester’s developers therefore decided to apply the PEP8 conventions, with the help of the `autopep8` Python package. The team had a meeting to discuss and refresh important principles of coding for making the code more readable for other developers. This semester’s team did some refactoring of the code base: this process will continue throughout next semester if found necessary.
+
+### Workflow
+
+The bot’s implementation is located on a GitHub repository. The team had to decide how to proceed with editing and augmenting the code base during the project. For every new feature or bug, independent of its scope, the developers were urged to create a new branch with a descriptive name. In case of a corresponding GitHub issue, it was favored to add the GitHub issue number for better documentation and explanation of the feature or bug. All developing processes are saved on their corresponding branches. Once finished, the developer creates a pull request to merge changes into the `develop` branch which another developer will review. If the reviewer requests changes, the branch is updated and corrected until the reviewers consider the task as done. The branch is then merged into `develop`. In a final step, reviewers check the `develop` branch: if everything is deemed to be correct, it is then merged into the`main` branch, which constitutes the code in production.
+
+
 <div id="references"></div>
 
 ## References
