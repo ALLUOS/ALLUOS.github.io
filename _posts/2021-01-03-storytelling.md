@@ -138,3 +138,48 @@ As a whole, this short introductory sequence is delivered to each user individua
 After two semesters of work on the project, we have achieved a satisfactory sketch of the narration, and the visual media we presented are effective in guiding users through an introduction to the application and the storyline.
 
 In the future, our wish is to create a more immersive game experience by including more visual and audio-visual content throughout the whole application. Moreover, we hope to give users more agency by providing additional possibilities for interaction, both with the characters and with the game environment. Finally, we intend to devote more time and thought to the further development of a captivating and motivating storyline.
+
+
+## Expanded story pipeline
+
+The sketch of the narration developed in the previous 2 semesters has laid the groundwork for the storytelling. During the 3. Semester, we were able to take one step further towards our goal in achieving a better immersive user experience. Story parts expressed in text and images are combined in an interactive way and used to create a shared vision among the players.
+To improve the user experience, a more sophisticated story pipeline was constructed based on structural framework which determines the flow of the game and links all the elements as a whole. The story decisions present the possibilities of how things could unfold. And letting the users get involved in shaping the story will create an interactive setting which can be highly motivating for the players.
+
+We created a visual board to help illustrating the new story pipeline. (See [Mural board](https://app.mural.co/t/personalvisionboard1357/m/personalvisionboard1357/1622826319810/2a5329e7b27f87c36b8d044575f770bb25e6fa6e?sender=95652543-7e09-45f3-aecb-a531c7efe568))
+[![Bildschirmfoto-2021-08-15-um-18-38-17.png](https://i.postimg.cc/FK9Qcqqy/Bildschirmfoto-2021-08-15-um-18-38-17.png)](https://postimg.cc/87n3gyTc)
+
+## Story decisions between tasks
+
+The story parts are organised in a way that includes clear storylines and essential elements of when, where, what and how. The options are developed in line with the sci-fi background setting and guided by the character-driven design thinking.
+
+As shown in the figure, the new story pipeline allows more flexibility and opens up new possibilities for the user. Between tasks, the players now have the chance to choose an action that they want to take in a given situation.
+
+[![Story-choice.png](https://i.postimg.cc/brQQRHRX/Story-choice.png)](https://postimg.cc/N2j9sXVb)
+Story choice
+
+**Example task 1-2:**
+
+After entering the right password, the users will be shown the following messages:
+
+  *One of the walls starts to crack... A door opens slowly... And you can see a long, empty corridor ahead of you. This is a great chance to escape!\
+  You all walk along the corridor together as slowly and quietly as possible, so that the aliens don’t notice you. There is an elevator in this corridor. It could take you to another floor -maybe a  floor with a shuttle with which you could escape. But maybe you're already on the  floor with a shuttle? The corridor continues past the elevator.*
+
+The users are then asked to make a decision:
+
+  *It's time to make a decision! Do you want to...\
+  -take the elevator up?\
+  -take the elevator down?\
+  -see if the corridor leads somewhere else?*
+
+Depending on the outcome of the previous task(very good - 3/4 or 4/4, good - 1/4 or 2/4, bad 0/4) and the choice they make, the players will be given different text snippets.
+
+Overall, there are three plots where the users are encouraged to choose between different story options. Here a brief overview:
+
+| Block | Scenario | Options |
+| ----- | ----------- | ----------- |
+| Between Task 1-2 | The players are walking along the corridor, there is an elevator which could take them to another floor. | elevator: go up \ elevator: go down \ corridor: look for another escape |
+| Between Task 2-3 | The players have made it halfway down the hallway, suddenly the elevator starts moving again. | hide behind the space shuttle sign \ hide in waiting area \ keep standing in the hall |
+| Between Task 3-4 | The players are trapped in a room, the sound of footsteps coming closer indicates that the aliens are moving in their direction. | fight against the aliens \ shoot the door opener \ run away |
+
+Note that the change of the story pipeline is not fully implemented yet. It is however important to have a clear picture of where we're headed and what we want to achieve.
+
