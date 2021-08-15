@@ -149,6 +149,7 @@ To improve the user experience, a more sophisticated story pipeline was construc
 
 We created a visual board to help illustrating the new story pipeline. (See [Mural board](https://app.mural.co/t/personalvisionboard1357/m/personalvisionboard1357/1622826319810/2a5329e7b27f87c36b8d044575f770bb25e6fa6e?sender=95652543-7e09-45f3-aecb-a531c7efe568))
 [![Bildschirmfoto-2021-08-15-um-18-38-17.png](https://i.postimg.cc/FK9Qcqqy/Bildschirmfoto-2021-08-15-um-18-38-17.png)](https://postimg.cc/87n3gyTc)
+*Figure 4: New story pipeline*
 
 ## Story decisions between tasks
 
@@ -157,7 +158,7 @@ The story parts are organised in a way that includes clear storylines and essent
 As shown in the figure, the new story pipeline allows more flexibility and opens up new possibilities for the user. Between tasks, the players now have the chance to choose an action that they want to take in a given situation.
 
 [![Story-choice.png](https://i.postimg.cc/brQQRHRX/Story-choice.png)](https://postimg.cc/N2j9sXVb)
-Story choice
+*Figure 5: Story choice*
 
 **Example task 1-2:**
 
@@ -182,6 +183,8 @@ Overall, there are three plots where the users are encouraged to choose between 
 | Between Task 1-2 | The players are walking along the corridor, there is an elevator which could take them to another floor. | elevator: go up \ elevator: go down \ corridor: look for another escape |
 | Between Task 2-3 | The players have made it halfway down the hallway, suddenly the elevator starts moving again. | hide behind the space shuttle sign \ hide in waiting area \ keep standing in the hall |
 | Between Task 3-4 | The players are trapped in a room, the sound of footsteps coming closer indicates that the aliens are moving in their direction. | fight against the aliens \ shoot the door opener \ run away |
+
+*Table 1: Overview of story dicisions*
 
 Note that the change of the story pipeline is not fully implemented yet. It is however important to have a clear picture of where we're headed and what we want to achieve.
 
