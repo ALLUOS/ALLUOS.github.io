@@ -140,6 +140,8 @@ After two semesters of work on the project, we have achieved a satisfactory sket
 In the future, our wish is to create a more immersive game experience by including more visual and audio-visual content throughout the whole application. Moreover, we hope to give users more agency by providing additional possibilities for interaction, both with the characters and with the game environment. Finally, we intend to devote more time and thought to the further development of a captivating and motivating storyline.
 
 
+# Semester 3
+
 ## Expanded story pipeline
 
 The sketch of the narration developed in the previous 2 semesters has laid the groundwork for the storytelling. During the 3. Semester, we were able to take one step further towards our goal in achieving a better immersive user experience. Story parts expressed in text and images are combined in an interactive way and used to create a shared vision among the players.
