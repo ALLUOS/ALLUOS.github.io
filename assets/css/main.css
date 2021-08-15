@@ -3937,10 +3937,14 @@
 /* Escapeling additions */
 
 	div .FAQ{
-	padding-top: 1em;
-	padding-bottom: 1em;
+		padding-top: 1em;
+		padding-bottom: 1em;
 	}
 
 	summary .FAQ{
-	padding-bottom: 1em;
+		padding-bottom: 1em;
+	}
+
+	.section{
+		color:rgb(77, 106, 144);
 	}
