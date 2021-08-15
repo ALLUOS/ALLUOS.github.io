@@ -12,11 +12,20 @@ description: Learn more about the discussion task.
 image:
 ---
 
-<div id="design"></div>
+## Contents
+1. [Design process](#design)
+  - [Motivation](#motivation)
+  - [Task flow](#flow)
+  - [Theoretical framework](#theory)
+  - [Materials](#materials)
+  - [Completion metrics](#metrics)
+  - [Outlook](#outlook)
+2. [Implementation process](#implementation)
+3. [References](#references)
 
-##Design process
+## Design process
 
-###Motivation
+### Motivation
 In review of the intermediate results from semester one of the study project, we decided to design and implement one additional task during the second semester, which includes a number of aspects to complement the first two tasks and approaches the aim of the group application further.
 
 Our goals for the application include tasks which benefit from group learning and encourage English communication between learners which is essential for practicing language skills. Therefore, for this task we want to focus on language production and writing skills, as the first two tasks don’t necessarily require users to write in whole sentences.
@@ -27,13 +36,13 @@ For these reasons, the aim for the third task is to stimulate and to guide a dis
 As progress in communicative competence of the learners is the main requested outcome of this third task, the Communicative Approach to language learning, also called Communicative Language Teaching or Functional Approach (Jin, 2008), served as the basis for the design and the idea of the discussion task. An important aspect of the Communicative Approach is the focus on meaning in contrast to structure (Jin, 2008). Learners are emboldened to interact with each other, for example, in dialogues in order to fulfil a task. One important aspect of the task in this framework is, therefore, the function and not the accuracy of language (Jin, 2008). The developed linguistic skills within this functional dynamic can then be recalled by the learners in situations requiring similar abilities with a higher likelihood (Barson, 1993).
 Another important aspect of communication is, nevertheless, correctly using grammatical structures. Therefore, based on the results of previous semesters, in semester three of the project we add an additional learning goal to the discussion task: The users are encouraged to practice some important grammatical rules and are also provided qualitative feedback regarding their language.
 
-The input for the discussion task is a short text with information about a specific topic in different areas which serves as a departure point for content-based language learning. The main idea thereby is to use language as a medium rather than explicitly study it (Lyster, 2018). These areas cover different domains which were already used for the vocabulary subskill categorization during the [vocabulary task]( link to vocab task). After this short input, the users are invited to discuss the topic, guided by three questions.
+The input for the discussion task is a short text with information about a specific topic in different areas which serves as a departure point for content-based language learning. The main idea thereby is to use language as a medium rather than explicitly study it (Lyster, 2018). These areas cover different domains which were already used for the vocabulary subskill categorization during the [vocabulary task]({{ "" | absolute_url }}/2021/03/04/vocabulary/guessing.html). After this short input, the users are invited to discuss the topic, guided by three questions.
 
 ### Task Flow
 
 In the first step, the reading material is presented to the users in a short text. On the one hand, the goal of the text input is to give an introduction to a topic which users might not have been in contact with, yet, and offer background knowledge for the discussion. On the other hand, the text supports the learner’s context-related vocabulary. This way, English learners are already presented with example uses of words and phrases. Additionally, vocabulary learning from context may not be more efficient, but more permanent and stable and is central to most everyday learning settings (Sternberg, 1987). The introductory text is explicitly short to be easily read from a telegram chat and not to be overwhelming for the learners.
 
-Subsequently, a first discussion question is presented to the users. These questions allow for different opinions on the topic and should stimulate the exchange of these. After a time limit is reached, the [completion criteria](link) for the task will be updated and the users will be provided intermediate feedback on their performance. Then, the next question will be prompted to view the topic from another angle. This procedure continues in a loop until the third question is reached. The diversity of questions allows for a bit more reserve from users who might have problems to answer one of them because they can in the following contribute more for another question.
+Subsequently, a first discussion question is presented to the users. These questions allow for different opinions on the topic and should stimulate the exchange of these. After a time limit is reached, the [completion criteria](#metrics) for the task will be updated and the users will be provided intermediate feedback on their performance. Then, the next question will be prompted to view the topic from another angle. This procedure continues in a loop until the third question is reached. The diversity of questions allows for a bit more reserve from users who might have problems to answer one of them because they can in the following contribute more for another question.
 Final feedback on users' participation closes the discussion task.
 
 ### Theoretical framework
@@ -48,7 +57,7 @@ The inclusion of an initial text prompt is meant to address one of the shortcomi
 
 The inclusion of guiding follow-up questions is meant to frame the bot as a discussion facilitator: effective discussion facilitation is one of the key skills required for teachers who want to conduct fruitful discussions in class (Finn & Schrodt, 2016). This is in line with the framework of Guided Participation (Rogoff, 1990) where students socially interact with their peers with guidance from a teacher (in this case, the bot). The guiding questions are also meant to steer the discussion in stimulating and engaging directions, thus avoiding quick stagnation in the opinion exchanging process.
 
-A final key point in the implementation of a discussion task for our learning environment is deciding when and how a discussion can be considered “complete”. This is strictly related to the issue of user performance evaluation. We review our approach in a [section of its own](see completion metrics) and provide greater details of the implementation in the [Gramamtical Error Correction section](link).
+A final key point in the implementation of a discussion task for our learning environment is deciding when and how a discussion can be considered “complete”. This is strictly related to the issue of user performance evaluation. We review our approach in a [section of its own](#metrics) and provide greater details of the implementation in the [Gramamtical Error Correction section]({{ "" | absolute_url }}/2021/02/01/NLP.html).
 
 ### Materials
 
@@ -78,13 +87,13 @@ All questions were written by hand and checked for grammatical correctness after
 
 ### Completion Metrics
 
- The goal of the discussion task is to motivate users to converse and produce sentences around certain topics, to use grammar and vocabulary as well as express their opinions in the second language they are learning (English here). Here, the goal is primarily to make a clear, understandable conversation and be able to understand what others say and express one’s own opinion, while also paying attention to basic grammatical rules, and thus become more proficient in expressing oneself in the second language. So, in short, language comprehension and expression are the goals of the discussion task.
+The goal of the discussion task is to motivate users to converse and produce sentences around certain topics, to use grammar and vocabulary as well as express their opinions in the second language they are learning (English here). Here, the goal is primarily to make a clear, understandable conversation and be able to understand what others say and express one’s own opinion, while also paying attention to basic grammatical rules, and thus become more proficient in expressing oneself in the second language. So, in short, language comprehension and expression are the goals of the discussion task.
 
-With these goals in mind, and since the users’ contributions in this task compared to the previous two [tasks](sentence correction and vocabulary guessing) are less quantifiable, we needed to define a set of metrics to decide when the task is done and whether it is done successfully or not.
-In addition, there is a time limit to the task and each topic question being asked and answered, in order to make it manageable and motivate the users to participate within a limited time frame.
+With these goals in mind, and since the users’ contributions in this task compared to the previous two [tasks]({{ "" | absolute_url }}/#three) are less quantifiable, we needed to define a set of metrics to decide when the task is done and whether it is done successfully or not.
+In addition, there is a time limit to the task and each topic question being asked and answered, in order to make it manageable and motivate the users to participate within a limited time frame. In the previous versions of the application, the completion metrics were rather quantitative: they were based on the number of words each player contributed, as well as the players' own assessment of the quality of the discussion, captured via a poll. However, during the third semester, we decided to update the completion metrics to be more advantageous to the users from a learning experience perspective, and to add a qualitative aspect to the evaluation of the discussion.
 
-Therefore, for the completion metrics of this task, we decided to combine quantitative and qualitative elements. More specifically, we compute several scores which serve as the basis for deciding if the task was passed, and if so, how successfully. On the one hand, individual user scores based on the length and the grammatical quality of each user's contributions in each question are computed. In order to pass the task, each user needs to reach at least a certain score on two of the three questions. On the other hand, a group score is computed, requiring the entire group to reach at least a certain minimal grammar score, reflecting the quality of the contributions in relation to the overall quantity. If the two criteria are met, the group passes the task. To match the storytelling framework, we also define three qualitative levels at which the users can pass the task, depending on their group score: an intermediate, a good, and a very good level. Depending on the level, the users receive different story continuations.   
-For more details on how these two components of the completion metric are defined and computed, please visit the [Grammatical error correction section](link).
+Therefore, for the updated completion metrics of this task, we decided to combine quantitative and qualitative elements. More specifically, we compute two scores which serve as the basis for deciding if the task was passed, and if so, how successfully. On the one hand, *individual user scores* based on the length and the grammatical quality of each user's contributions in each question are computed. In order to pass the task, each user needs to reach at least a certain score on two out of the three discussion questions. On the other hand, a *group score* is computed, requiring the entire group to reach at least a certain minimal grammar score, reflecting the quality of the contributions in relation to the overall quantity. If the two criteria are met, the group passes the task. To match the storytelling framework, we also define three qualitative levels at which the users can pass the task, depending on their group score: an intermediate, a good, and a very good level. Depending on the level, the users receive different story continuations.   
+For more details on how these two components of the completion metric are motivated, defined and computed, please visit the [Grammatical error correction section]({{ "" | absolute_url }}/2021/02/01/NLP.html).
 
 ### Outlook
 
@@ -96,14 +105,12 @@ Another additional feature can be corrections and helpful hints by the bot. Mean
 
 Furthermore, vocabulary hints and short descriptions of words which are possibly new to the learners would be a valuable addition. This way probably an even bigger vocabulary learning effect could be achieved.
 
-<div id="implementation"></div>
-
 ## Implementation process
-Below, the technical side of the discussion task reviewed. As part of our overall bot architecture, the implementation of the discussion task also relies on general modules like the `Task(ABC)` class and the room handler, described in the [implementation section](link). Therefore, only the discussion-specific task handler is described here in detail.
+Below, the technical side of the discussion task reviewed. As part of our overall bot architecture, the implementation of the discussion task also relies on general modules like the `Task(ABC)` class and the room handler, described in the [implementation section]({{ "" | absolute_url }}/2021/04/02/implementation.html). Therefore, only the discussion-specific task handler is described here in detail.
 
 `Discussion(Task)` is a subclass of `Task(ABC)`. However, unlike the sentence correction and the vocabulary guessing tasks, the discussion task is not sequential in nature and, therefore, does not inherit from `SequentialTask`. Nevertheless, we were still able to reuse a significant part of the methods already implemented in said class.
 The task always starts off with the presentation of the text, which is retrieved from the database based on the users' proficiency. This is followed by three rounds of discussion.
-At the start of each round, a text-related question is sent and a timer is added to the job queue to determine when the round finishes, such that [adaptive graphics](link to user experience) can remind users to finish their discussion of the question on time.
+At the start of each round, a text-related question is sent and a timer is added to the job queue to determine when the round finishes, such that [adaptive graphics]({{ "" | absolute_url }}/2021/01/04/user/experience.html) can remind users to finish their discussion of the question on time.
 
 Since we don't have to select for a specific user, all user input can be handled in the same `handle_question` state. Word counts and grammar scores for each user are stored in two dictionaries, which are required to satisfy the completion criteria of the task.
 After a message is sent, `update_word_counts(message, user)` and `grammar_classifier.classify(sentence)` are called in the `evaluate_user_input(update.message.from_user.username, update.message.text, task_no=1)` function. They are called on tokenized and preprocessed input in order to update those dictionaries with the information.
@@ -115,9 +122,6 @@ Finally, the dictionaries with the user information are passed to the `is_correc
 **missing; not sure which image was here before**
 
 *Figure 3: Flow of the discussion task including backend activities*
-
-
-<div id="references"></div>
 
 ## References
 Barson, J., Frommer, J. & Schwartz, M. (1993). Foreign Language Learning Using E-Mail in a Task-Oriented Perspective: Interuniversity Experiments in Communication and Collaboration. Journal of Education and Technology, 2 (4), 565-584.
