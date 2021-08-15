@@ -27,9 +27,15 @@ According to Gilakjani and Sabouri (2016), some of the most common issues for st
 <div id="task_flow"></div>
 ## Task Flow
 
-....TO DO....
+Due to the fact that the game session with three previously implemented tasks already seems to be time intensive as well as requires some sort of perseverance, it was decided to make the new listening task voluntary. Participants are not obliged to do the listening but given a choice after successfully finishing the main part of the game. 
 
+In the following, the description of the task flow will be presented in more detail.
 
+In case the users choose to perform a listening task, they are at first presented with the instructions of what they are expected to do in the following task session. Then, an audio file will be sent to the users so that they can prepare for the upcoming questions. Thus, participants are able to start listening to a clip before actually seeing the related questions. After the audio clip was sent in the chat, the first question together with the three possible answers is being presented to the participants. The chatbot also sends the name of a random player who is selected to designate the group's final choice. Players are given 90 seconds to reflect on the question. They are not prohibited from revisiting the audio clip during this time. Players can either use all the 90 seconds for preparation or answer before the indicated amount of time has elapsed. After the selected player stated their answer, next question is being shown in the chat. Same procedure applies to all questions. In total, each text is assigned four different questions, three of which are being randomly sampled and presented during each game run. 
+
+However, because of the Telegram chosen as a platform for the Escapeling, we have encountered a series of difficulties while designing this task. 
+
+First of all, in the typical classroom scenario the list of questions is presented to the students before the audio task, which in turn is usually played twice. In case of the Telegram, it is impossible to control the amount of times users get exposed to the audio, since we did not manage to come up with a tool that can get the audio file deleted from the chat after a certain amount of times it was played or certain amount of time that has passed after the file was sent to the players. Thus, a new scenario had to be created in such a way, that it both satisfies the learning goals of improving the users' listening skills and seems to be suitable for its implementation in the Telegram. Hence, we concluded that presenting the audio before the questions was the most suitable solution implementation-wise as well as the means to get players interested in the task and better engaged.
 
 <div id="materials"></div>
 ## Materials
