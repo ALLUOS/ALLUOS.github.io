@@ -1,0 +1,14 @@
+## FAQ button design
+Over the course of the project, the Escapeling team has been eager to make the bot transparent to the user. 
+While the bot structure and code were becoming more user-friendly due to the implementation team efforts, 
+we could still afford more user experience improvements.
+Since Escapeling is an autonomous Telegram bot, it was lacking the general welcoming message, permanent support of the tech team, 
+and it left no opportunity for the user to request any clarifications in case issues or questions arose. 
+In order to present the very idea of Escapeling game as well as explain the basic
+‘how-to’ details to the new user, the design team has created the FAQ button. 
+The FAQ button is a segment of the Escapeling supporting site as well as a command within the bot that allows the user 
+to learn about the idea behind the project and its limitations, 
+task content and specifications, general instructions and a list of potential technical problems.
+The FAQ button is a section that is open to constant updating and edits, which are natural to appear as the project evolves. 
+By the end of the third project term we have collected some precise but elaborate answers to the most frequent and challenging questions 
+that the user could have, as well as comments about the developed tasks, technical regulations and the general goal of the project per se.
