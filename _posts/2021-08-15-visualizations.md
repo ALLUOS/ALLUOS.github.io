@@ -49,7 +49,7 @@ The third function of using GIFs in Escapeling, is to provide feedback and motiv
  
 <img src="https://github.com/ALLUOS/ALLUOS.github.io/blob/semester-three/assets/images/visualizationsIMG02.png" alt="Figure 2: Emojis in the private chat selection menu" class="center">
 
-*Figure 2: Emojis in the private chat selection menu*
+*Figure 2: emojis in the private chat selection menu*
 
 Emojis are small graphics that can be in a line with text. They can be emoticons, representing emotions, as well as representing unemotional things. For quicker orientation, for example, emojis were inserted in the private chat selection menu. This additionally made the previously completely text-based selection a bit more colorful, and various studies have proven that colors can stimulate the brain during learning (Ferrari, 2008) (Althouse, 2003).
 
@@ -57,7 +57,7 @@ Emojis are small graphics that can be in a line with text. They can be emoticons
  
 <img src="https://github.com/ALLUOS/ALLUOS.github.io/blob/semester-three/assets/images/visualizationsIMG03.png" alt="Figure 3: Image showing the remaining time for a task" class="center">
 
-*Figure 3: Image showing the remaining time for a task*
+*Figure 3: image showing the remaining time for a task*
 
 In some tasks it is useful to know how much time you have left to complete the task. Since Telegram's API does not allow the implementation of a progress bar, other ways had to be found to implement this. The challenge was solved by sending an image at certain points in time showing the time left to complete the task. 
 
@@ -67,12 +67,12 @@ In some tasks it is useful to know how much time you have left to complete the t
 
 *Figure 4: example sticker of the alien Elias*
 
-Stickers are images that have no background. They are displayed much larger than emojis in Telegram, the messenger service used for Escapeling. To enhance the effects of storytelling, a standalone sticker pack was developed that incorporates various components of storytelling. The full contents of the sticker pack can be seen in Figure number 5. It includes the main characters of the story, Harriet and Elias. Since emotions can be an essential factor for learning and provide a better experience of the story, different emotional states of the main characters were visualized, such as joy, disappointment or sadness.
+Stickers are images that have no background. They are displayed much larger than emojis in Telegram, the messenger service used for Escapeling. To enhance the effects of storytelling, a standalone sticker pack was developed that incorporates various components of storytelling. The full contents of the sticker pack can be seen in Figure number 5. It includes the main characters of the story, Harriet and Elias. Since emotions can be an essential factor for learning and provide a better experience of the story, different emotional states of the main characters were visualized, such as joy, mistrust or sadness.
 Other storytelling elements were also visualized with the help of stickers, such as the code panel, on which the player is supposed to enter a code several times during the game.
  
 <img src="https://github.com/ALLUOS/ALLUOS.github.io/blob/semester-three/assets/images/visualizationsIMG05.png" alt="Figure 5: All stickers belonging to the Escapeling sticker pack" class="center">
 
-*Figure 5: All stickers belonging to the Escapeling sticker pack*
+*Figure 5: all stickers belonging to the Escapeling sticker pack*
 
 ### Achievements
 
@@ -80,7 +80,7 @@ As part of the visual overhaul of the app, the medals awarded in the "Achievemen
 
 <img src="https://github.com/ALLUOS/ALLUOS.github.io/blob/semester-three/assets/images/visualizationsIMG06.png" alt="Figure 6: Image that the user gets when he has reached the status of an Admiral as part of the achievements" class="center">
 
-*Figure 6: Image that the user gets when he has reached the status of an “Admiral” as part of the achievements *
+*Figure 6: image that the user gets when he has reached the status of an “Admiral” as part of the achievements *
 
 
 <div id="implementation"></div>
