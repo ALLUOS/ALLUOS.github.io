@@ -18,12 +18,15 @@ description: Learn more about the application's implementation and technical arc
 image: pic03.jpg
 ---
 ## Contents
-1. Technical Architecture
-1. Telegram Integration
-1. Task Framework
-1. Adaptive Module
-1. Database
-1. References
+
+1. [Technical Architecture](#technical-architecture)
+2. [Telegram Integration](#telegram-integration)
+3. [Task Framework](#task-framework)
+4. [Adaptive Module](#adaptive-module)
+5. [Database](#database)
+6. [Technical Challenges & Development Productivity](#technical-challenges--development-productivity)
+7. [Implementation Process and Documentation](#implementation-process-and-documentation)
+8. [References](#references)
 
 
 <div id="architecture"></div>
@@ -259,7 +262,7 @@ To tackle the known bugs which have been mentioned above one approach would have
 ### Bugs
 
 During this semester the most notable bugs have been found and fixed so that the game can be completed successfully. Surprisingly one severe bug could be fixed by simply appending parentheses to the statement `sentence_task.is_success`. Without the parentheses python evaluates this statement as a reference to the function object `is_success` instead of calling the function with `is_success()`. Despite the elimination of such bugs, every so often there still occur errors that lead to a crash of the application in the worst case. For example when too many or too long messages are sent in a fast succession a `telegram.error.RetryAfter: Flood control exceeded` error occurs. Furthermore, during a bad internet connection a `telegram.error.NetworkError` can occur or when no messages have been sent for a longer period of time a special case of the NetworkError the `telegram.error.TimedOut` can happen.
-To understand the cause of these errors it is necessary to grasp the underlying architecture of the telegram bot which is already described in the [Telegram Integration](/#telegram-integration) section. Just as a short reminder, the [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot) library is a wrapper that handles HTTP requests towards the [Telegram Bot API](https://core.telegram.org/bots/api). The API has some restrictions like the above mentioned message limits that result in a response with an error [status code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes). This error is handled by the library and passed on to be handled in the application. Handling these errors and retrying the last action would be a workaround only treating the symptoms. A better solution would be the usage of a [MessageQueue](https://github.com/python-telegram-bot/python-telegram-bot/wiki/Avoiding-flood-limits). Unfortunately, the `MessageQueue` has [four known bugs](https://github.com/python-telegram-bot/python-telegram-bot/issues/2139) and is therefore already marked as deprecated with no release date of a replacement in sight. Additionally it is noteworthy that such errors can happen in all sorts of places in the code making the implementation challenging. All in all, there is no clear path on how to go about these problems. It might even be a possible approach to completely rewrite the application in a different chat bot technology.
+To understand the cause of these errors it is necessary to grasp the underlying architecture of the telegram bot which is already described in the [Telegram Integration](#telegram-integration) section. Just as a short reminder, the [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot) library is a wrapper that handles HTTP requests towards the [Telegram Bot API](https://core.telegram.org/bots/api). The API has some restrictions like the above mentioned message limits that result in a response with an error [status code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes). This error is handled by the library and passed on to be handled in the application. Handling these errors and retrying the last action would be a workaround only treating the symptoms. A better solution would be the usage of a [MessageQueue](https://github.com/python-telegram-bot/python-telegram-bot/wiki/Avoiding-flood-limits). Unfortunately, the `MessageQueue` has [four known bugs](https://github.com/python-telegram-bot/python-telegram-bot/issues/2139) and is therefore already marked as deprecated with no release date of a replacement in sight. Additionally it is noteworthy that such errors can happen in all sorts of places in the code making the implementation challenging. All in all, there is no clear path on how to go about these problems. It might even be a possible approach to completely rewrite the application in a different chat bot technology.
 
 <div id="references"></div>
 
