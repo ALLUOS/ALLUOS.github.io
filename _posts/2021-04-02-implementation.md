@@ -283,9 +283,11 @@ The previous members of the study project partially documented the codebase by d
 
 It was decided to create the same kind of documentation for the three task handlers: the discussion task handler, the vocabulary description task handler and the sentence correction task handler. Since the bot uses deterministic states to function, each handler also follows this principle. To be readable, the team decided to make flow diagrams that are similar to a finite state automata: every state is mentioned with an individual within the diagram. The previous diagrams mentioned the states outside the flow diagram, in a table-like structure. The team also settled to document the states, individual function calls, the user’s actions and the bot’s actions using boxes and colors that are similar to the private chat handler diagram. Different branching usually due to if-conditions are described with a question and the outgoing branches describe the actions following different outcomes.
 
-_Detail of Vocabulary Task Handler diagram including the legend_
+<a href="{{ '' | absolute_url }}/assets/images/flow-diagram-cutout.png">
+<img class="center" style="width: 100%" src="{{ '' | absolute_url }}/assets/images/flow-diagram-cutout.png" alt="Cutout from flow diagram explaining the Vocabulary Task Handler">
+</a>
 
-![Cutout from flow diagram explaining the Vocabulary Task Handler](../_includes/flow-diagram-cutout.png "Cutout from flow diagram explaining the Vocabulary Task Handler")
+_Figure 6: Detail of Vocabulary Task Handler diagram including the legend_
 
 **Technical documentation**
 
