@@ -89,8 +89,11 @@ The second problem could be addressed by implementing a second timer, which coun
 
 <div id="references"></div>
 ## References
+
 [1] http://www.roadtogrammar.com/textanalysis/ (accessed 29.06.21)
+
 [2] https://cefr.duolingo.com (accessed 29.06.21)
+
 [3] Council of Europe (2020), Common European Framework of Reference for Languages: Learning, teaching, assessment – Companion volume, Council of Europe Publishing, Strasbourg, available at www.coe.int/lang-cefr
 
 Gilakjani, A. P., & Sabouri, N. B. (2016). Learners' Listening Comprehension Difficulties in English Language Learning: A Literature Review. English language teaching, 9(6), 123-133.
