@@ -11,9 +11,44 @@ image:
 ---
 
 ## Contents
-1. Whatever
-1. Whatever
-1. Implementation
+1. Motivation
+2. Task Flow
+3. Materials
+4. Implementation
+
+
+<div id="motivation"></div>
+## Motivation
+
+The first three tasks have been designed to provide practice with core language skills concerned with literacy – the ability to read, write and construct sentences in a foreign language. However, as Renukadevi (2014) suggests, complete language proficiency depends crucially on another skill, namely listening. Being able to comprehend spoken words is necessary for face-to-face communication, which is the most common end goal of studying a foreign language (eg. Morley, 2001) . Not only is it necessary in order to come up with an appropriate response, but importantly it also helps students to acquire the correct pronunciation, word stress and a more confident use of vocabulary and syntax, which all improve the students’ speaking competencies. Yildirim and Yildirim (2016) as well as others have pointed out that ever since school curriculums have transferred to a more communicative approach of foreign language teaching, listening skills have also been gaining in popularity in school environments. For this reason, we decided to create an additional task that can provide users with practice and more exposure to spoken English.
+
+According to Gilakjani and Sabouri (2016), some of the most common issues for students with listening tasks are: quality of the materials, cultural differences, accent, unfamiliar vocabulary, as well as speed and length of the audio input. In order to make the learning experience meaningful for the users, we have taken these into consideration in our data preparation and more details can be found in the Materials section below.
+
+<div id="task_flow"></div>
+## Task Flow
+
+....TO DO....
+
+
+
+<div id="materials"></div>
+## Materials
+
+At the moment, the audio database contains 45 recordings, each centered around a certain topic and labelled according to difficulty level. All files come from publicly available websites which are intended for learners and teachers of English as a foreign language, namely www.listenaminute.com, www.elllo.org and www.esl-lounge.com. We made sure that all sources legally allow the use of their audio materials for non-commercial purposes.
+ 
+The users should be familiar with a task of answering questions related to the heard materials, as this methodology is often used in language learning courses. However, in order to create an experience that resembles the real world rather than a test environment, the users find out the questions after, not before listening. In such cases it can be challenging to catch every detail at first attempt, so we decided to allow them to self-regulate the number of repetitions.
+ 
+Along these lines, to keep the overall length of the task to an appropriate time window even if the users decide to listen more times, we decided to standardize the length of every audio file to approximately one minute. Files of such length are also going to be much easier on the device memory storage of the users, which is certainly an added plus.
+ 
+In order to provide a more authentic learning experience, we aimed to provide a good variety of speakers with regard to their voices and accents, as well as a wide range of everyday topics, for which intermediate learners are expected to have the required core vocabulary. Some examples include Health, Media, French Fries and Job Duties. Unfamiliar accents can severely hinder students’ abilities to understand the spoken words (Gilakjani & Sabouri, 2016), so only speakers of the most common native English accents are included in the final data set.
+ 
+Since the maximum number of players is 4, we have designed 4 questions per audio, each with 3 possible options to choose from where exactly one is correct. The focus of the questions is also diverse. Some require a general understanding of the speaker’s attitude about the topic, others ask for a more detailed-oriented listening or distinguishing between homonyms (equally or similarly sounding words) based on context.
+ 
+In terms of the difficulty level, the main motivation for the division was to eventually accommodate the adaptive module, which assigns a specific question to the users based on their previous performance. There does not seem to be a unified official method for determining the difficulty level of a listening task. Therefore, our process was as follows: the content (in form of a textual transcript) was first evaluated based on the language complexity and vocabulary using a combination of automatic tools ([1], [2]) to indicate a CEFR level [3] of a text. In addition to this indication, the data was also subjectively evaluated for speech qualities such as tempo and clarity, and the final level of difficulty resulted from agreement between three judges.
+ 
+Although our target audience is mainly B1-B2 students, since the intermediate proficiency group tends to be quite heterogeneous in terms of the individuals’ strengths and weaknesses, we also included slightly simpler audios that could theoretically be used with motivated A2 students, too.
+ 
+Each recording was carefully reviewed by at least three people, checking for the sound quality of the recording, correctness of the language and multiple choice questions, flagging of potentially sensitive subjects or unsuitable language, and as mentioned, the indicated level of difficulty.
 
 
 <div id="architecture"></div>
@@ -54,3 +89,14 @@ The second problem could be addressed by implementing a second timer, which coun
 
 <div id="references"></div>
 ## References
+[1] http://www.roadtogrammar.com/textanalysis/ (accessed 29.06.21)
+[2] https://cefr.duolingo.com (accessed 29.06.21)
+[3] Council of Europe (2020), Common European Framework of Reference for Languages: Learning, teaching, assessment – Companion volume, Council of Europe Publishing, Strasbourg, available at www.coe.int/lang-cefr
+
+Gilakjani, A. P., & Sabouri, N. B. (2016). Learners' Listening Comprehension Difficulties in English Language Learning: A Literature Review. English language teaching, 9(6), 123-133.
+
+Morley, J. (2001). Aural Comprehension Instruction: Principles and Practices. In M. Celce-Murcia (Ed.), Teaching English as a Second or Foreign Language (pp. 69-85) Boston: Heinle and Heinle.
+
+Renukadevi, D. (2014). The role of listening in language acquisition; the challenges & strategies in teaching listening. International journal of education and information studies, 4(1), 59-63.
+
+Yildirim, S., & Yildirim, Ö. (2016). The importance of listening in language learning and listening comprehension problems experienced by language learners: A literature review. Abant İzzet Baysal Üniversitesi Eğitim Fakültesi Dergisi, 16(4).
