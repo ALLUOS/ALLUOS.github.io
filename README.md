@@ -29,10 +29,10 @@ The documentation is structured as follows:
 
 <pre>
 |-- Project organization
-    |-- Overview
+    |-- <ins>Overview</ins>
     |-- <ins>Design</ins>
     |-- <ins>Implementation</ins>
-    |-- Testing
+    |-- <ins>Testing</ins>
 |-- Features
     |-- Learning experience
         |-- Adaptive module
