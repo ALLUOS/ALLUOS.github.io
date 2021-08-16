@@ -220,9 +220,9 @@ Contents
 1. Introduction
 2. Literature
 3. Testing Performance
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. Technical Testing and Bug Reports
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. User Acceptance Testing
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i. Evaluation
+3.1. Technical Testing and Bug Reports
+3.2. User Acceptance Testing
+3.2.1. Evaluation
 4. Recommendations 
 5. References
 
