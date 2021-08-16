@@ -213,3 +213,84 @@ Jenkins, N. (2008). A Software Testing Primer: *An Introduction to Software Test
 Nielsen Norman Group. Why You Only Need to Test with 5 Users. Retrieved August 27, 2020, from https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/
 
 Tullis, T., & Albert, B. (2013). Measuring the user experience collecting, analyzing, and presenting usability metrics. Amsterdam, Netherlands: Elsevier.
+
+---
+layout: post
+title: Testing Semester 3
+Contents:
+ - title: Introduction
+   tag: \#intro
+ - title: Literature
+   tag: \#literature
+ - title: Testing Performance
+   tag: \#test
+ - title: Technical Testing and Bug Reports
+   tag: \#techtest
+ - title: User Acceptance Testing
+   tag: \#UAT
+ - title: Evaluation
+   tag: \#evaluation
+ - title: Recommendations
+   tag: \#recommendations
+ - title: References
+   tag: \#references
+---
+Contents
+1. Introduction
+2. Literature
+3. Testing Performance
+    a. Technical Testing and Bug Reports
+    b. User Acceptance Testing
+        i. Evaluation
+4. Recommendations 
+5. References
+
+**Note:**For information regarding the first and the second semester, please refer to the "Testing" and the "User Testing" sections.
+
+<div id="intro"></div>
+### INTRODUCTION
+
+While the Escapeling project opens up many new features, testing does not stand still and adopts appropriate strategies to verify the quality of the added features. In this chapter, you will learn about the concept, organisation and results of our testing framework in the third semester of the project. For information regarding the first and the second semester, please refer to the "Testing" and the "User Testing" sections.
+
+<div id="methods"></div>
+### LITERATURE
+For the correct operation and analysis of the test materials, initially the whole group studied all provided training materials and existing methodology described in the previous chapters on testing. Our strategy adheres to some of the basic principles outlined in Jenkins' work [1]. This is how we initially divided our work into Validation and Verification. 
+Validation testing is also known as dynamic testing, in which we ensure that we have developed a product correctly in terms of design. Most often, it is this side of testing that includes working with potential users and various surveys, e.g. one of the studies that we are using is User acceptance testing (UAT).
+Verification, also known as static testing, allows us to check whether we are developing the right product or not. It also checks whether the developed application meets all the requirements specified in the root of our project. 
+Furthermore, previously collected results from Second semester's User Acceptance Testing were studied. 
+
+### TESTING PERFORMANCE
+
+The purpose of this section is to discuss all of our activities during the semester, as well as the main ideas and limitations of testing as part of software testing.
+
+#### TECHNICAL TESTING / VERIFICATION
+
+The organization of the verification and test management activities should be closely related to the preliminary design. For this, a general testing strategy is initially formulated, including test methods, documentation forms or blanks and test evaluation criteria; therefore, a test plan is drawn up. 
+In addition, a test schedule is drawn up with specific feature development. At the same time, a documenting basis should be established to ensure the quality of the test documentation.
+Weekly, we attended our joint meetings of testers where we were aimed at teaching the basic principles of testing, Q/A discussions and further development.
+
+In addition to organizing testing and creating test cases, that collect all information on tested features, the project itself should be analyzed and investigated for bugs. Session simulation can be used to test the properties of the system structures, design and the interactions of subsystems, developers should use step-by-step design instructions to verify the consistency and logical structure of the system, while the design review should be performed by the testing team.
+
+#### USER ACCEPTANCE TESTING / VALIDATION
+
+During the detailed design, such validation support tools should be selected or developed, and the test procedures themselves should be developed. Test data should be created to validate the main aspects of the Escapeling introduced during the design process, as well as test materials based on the structure of the system. Thus, as software evolves, a more efficient set of test materials is created.
+
+This semester has made a huge impact on the functionality and quality of the application. Since last semester tested the impact of our application on improving knowledge of English, we decided to continue working with participants from previous semesters and conduct a survey on how they like our application improvements. Since some improvements were made precisely according to the survey results with their participation in the past.
+
+When testing the usability of the changes made to the application, we turned to the participants of past tests, since this testing group is as close as possible to the target audience. It is worth noting that some of the changes made were formed precisely on their feedback and grades from the second semester. Considering that no regular classes are required since the adaptive module hasn't changed.
+
+Testers received two sets of material: a) examples of modifying application functions (adaptive graphics, message formulation, and a new assignment) and b) a satisfaction questionnaire.
+
+Examples of modifications and improvements were collected in a presentation and sent out in PDF file format. The usability test concludes with a satisfaction questionnaire that included questions about the quality of the changes in general and their willingness to recommend such an application to their friend. All questionnaires were distributed via Google Forms.
+
+##### EVALUATION
+coming soon
+
+### RECOMMENDATIONS FOR COMING SEMESTER
+- **User Acceptance Testing.** Since the project, presumably, comes to its end next semester, we recommend to conduct the last User Acceptance Testing with participants who are completely unfamiliar with our application and probably unfamiliar with the Telegram platform. We expect it to be a good  demonstration of the quality of the design and interface for users unfamiliar with Telegram.
+- **Bug fixes.** All bugs must be fixed at the right time for the project to be considered complete. Accordingly, before the usability testing stage, there should be no errors left.
+- **UAT participants.** Finding participants to test has always been difficult. If students from the language centre will be considered for the role of participants, we strongly advise you to find them and arrange upcoming sessions as early as possible.
+
+<div id="references"></div>
+### References
+Jenkins, N. (2008). A Software Testing Primer: An Introduction to Software Testing.
