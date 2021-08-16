@@ -214,27 +214,7 @@ Nielsen Norman Group. Why You Only Need to Test with 5 Users. Retrieved August 2
 
 Tullis, T., & Albert, B. (2013). Measuring the user experience collecting, analyzing, and presenting usability metrics. Amsterdam, Netherlands: Elsevier.
 
----
-layout: post
-title: Testing Semester 3
-Contents:
- - title: Introduction
-   tag: \#intro
- - title: Literature
-   tag: \#literature
- - title: Testing Performance
-   tag: \#test
- - title: Technical Testing and Bug Reports
-   tag: \#techtest
- - title: User Acceptance Testing
-   tag: \#UAT
- - title: Evaluation
-   tag: \#evaluation
- - title: Recommendations
-   tag: \#recommendations
- - title: References
-   tag: \#references
----
+# Testing Semester 3
 Contents
 1. Introduction
 2. Literature
