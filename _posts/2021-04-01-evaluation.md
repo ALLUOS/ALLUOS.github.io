@@ -31,7 +31,7 @@ image: pic04.jpg
 
 ## Contents
 
-#### **First Semester**
+## **First Semester**
 
 1. Test Strategy
 2. Usability Test
@@ -39,7 +39,7 @@ image: pic04.jpg
 4. Prospects For The Next Semester
 5. References
 
-#### **Third Semester**
+## **Third Semester**
 
 1. Introduction
 
