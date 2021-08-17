@@ -18,12 +18,6 @@ sections:
    tag: \#liter3
  - title: Testing Performance
    tag: \#testperf3
- - title: Technical Testing and Bug Reports
-   tag: \#techtest3
- - title: User Acceptance Testing
-   tag: \#uat3
- - title: Evaluation
-   tag: \#evaluation3
  - title: Results
    tag: \#res3
  - title: Recommendations
@@ -48,13 +42,19 @@ image: pic04.jpg
 #### **Third Semester**
 
 1. Introduction
+
 2. Literature
+
 3. Testing Performance
+
    3.1. Technical Testing and Bug Reports
    3.2. User Acceptance Testing
    3.2.1. Evaluation
+
 4. Results
+
 5. Recommendations 
+
 6. References
 
 **Note:** This section primarily describes testing information relevant to the first semester and third semester of the project. For information regarding the second semester, please refer to the [User Testing]({{ "" | absolute_url }}/2020/04/04/testS2.html) section.
@@ -253,18 +253,18 @@ Tullis, T., & Albert, B. (2013). Measuring the user experience collecting, analy
 
 
 ## Testing Semester 3
-<div id="intro"></div>
+<div id="intro3"></div>
 
 ### INTRODUCTION
 
-While the Escapeling project opens up many new features, testing does not stand still and adopts appropriate strategies to verify the quality of the added features. In this chapter, you will learn about the concept, organisation and results of our testing framework in the third semester of the project.
+While the Escapeling project opens up many new features, testing does not stand still and adopts appropriate strategies to verify the quality of the added features. In this chapter, you will learn about the concept, organization, and results of our testing framework in the third semester of the project.
 
-<div id="methods"></div>
+<div id="liter3"></div>
+
 ### LITERATURE
-For the correct operation and analysis of the test materials, initially the whole group studied all provided training materials and existing methodology described in the previous chapters on testing. Our strategy adheres to some of the basic principles outlined in Jenkins' work [1]. This is how we initially divided our work into Validation and Verification. 
-Validation testing is also known as dynamic testing, in which we ensure that we have developed a product correctly in terms of design. Most often, it is this side of testing that includes working with potential users and various surveys, e.g. one of the studies that we are using is User acceptance testing (UAT).
-Verification, also known as static testing, allows us to check whether we are developing the right product or not. It also checks whether the developed application meets all the requirements specified in the root of our project. 
-Furthermore, previously collected results from Second semester's User Acceptance Testing were studied. 
+For the correct operation and analysis of the test materials, initially, the whole group studied all provided training materials and existing methodology described in the previous chapters on testing. Our strategy adheres to some of the basic principles outlined in Jenkins' work [1]. This is how we initially divided our work into Validation and Verification.  Validation testing is also known as dynamic testing, in which we ensure that we have developed a product correctly in terms of design. Most often, it is this side of testing that includes working with potential users and various surveys, e.g. one of the studies that we are using is User acceptance testing (UAT). Verification, also known as static testing, allows us to check whether we are developing the right product or not. It also checks whether the developed application meets all the requirements specified at the root of our project.  Furthermore, previously collected results from the Second semester's User Acceptance Testing were studied. 
+
+<div id="testperf3"></div>
 
 ### TESTING PERFORMANCE
 
@@ -272,11 +272,8 @@ The purpose of this section is to discuss all of our activities during the semes
 
 #### TECHNICAL TESTING / VERIFICATION
 
-The organization of the verification and test management activities should be closely related to the preliminary design. For this, a general testing strategy is initially formulated, including test methods, documentation forms or blanks and test evaluation criteria; therefore, a test plan is drawn up. 
-In addition, a test schedule is drawn up with specific feature development. At the same time, a documenting basis should be established to ensure the quality of the test documentation.
-Weekly, we attended our joint meetings of testers where we were aimed at teaching the basic principles of testing, Q/A discussions and further development.
-
-In addition to organizing testing and creating test cases, that collect all information on tested features, the project itself should be analyzed and investigated for bugs. Session simulation can be used to test the properties of the system structures, design and the interactions of subsystems, developers should use step-by-step design instructions to verify the consistency and logical structure of the system, while the design review should be performed by the testing team.
+The organization of the verification and test management activities should be closely related to the preliminary design. For this, a general testing strategy is initially formulated, including test methods, documentation forms or blanks, and test evaluation criteria; therefore, a test plan is drawn up.  In addition, a test schedule is drawn up with specific feature development. At the same time, a documenting basis should be established to ensure the quality of the test documentation. Weekly, we attended our joint meetings of testers where we were aimed at teaching the basic principles of testing, Q/A discussions, and further development.
+In addition to organizing testing and creating test cases, that collect all information on tested features, the project itself should be analyzed and investigated for bugs. Session simulation can be used to test the properties of the system structures, design, and the interactions of subsystems, developers should use step-by-step design instructions to verify the consistency and logical structure of the system, while the design review should be performed by the testing team.
 
 #### USER ACCEPTANCE TESTING / VALIDATION
 
@@ -288,22 +285,40 @@ When testing the usability of the changes made to the application, we turned to 
 
 #### EVALUATION
 
-However, initially we planned to have a simulated session with a trial to complete the task but at some point our group couldn't run the bot due to some technical troubles and we decided to provide out participants with a little different way of demonstration.
+However, initially, we planned to have a simulated session with a trial to complete the "escape" and then fill a satisfaction questionnaire but at some point, our group couldn't run the bot due to some technical errors and it was decided to provide our participants with a little different way of demonstration.
 
-Testers received two sets of material: a) PDF-file with examples of modified application functions collected in presentation style  (adaptive graphics, message formulation, new task, etc.) and b) a feedback questionnaire. 
-A PDF-file consist total of 15 slides of 6 updates (New Sticker Pack, Simplified Text Messages, Getting Ready Step, Approval Gifs, Discussion Task Update, New Task - Listening). 
+Testers received two sets of material: a) PDF file with examples of modified application functions collected in presentation style (adaptive graphics, message formulation, new task, etc.) and b) a feedback questionnaire.  A PDF file consists of a total of 15 slides of 6 updates (New Sticker Pack, Simplified Text Messages, Getting Ready Step, Approval Gifs, Discussion Task Update, New Task - Listening) that illustrate and describe main differences (Pic.1). 
 
-The usability testing concludes with a feedback questionnaire that included questions about the quality of the changes in general and their personal satisfaction on the improvements. All questionnaires were distributed via Google Forms. A questionnaire consist of three questions:
+Picture 1 PDF-slide examples
+
+The usability testing concludes with a feedback questionnaire that included questions about the quality of the changes in general and their satisfaction with the improvements. All questionnaires were distributed via Google Forms. First, participants should find and select their username from a list. Second, they should fill a questionnaire for every update that consists of three questions (Pic.2): 
+
+1. How do you like this improvement?
+2. How much does this improvement help the application performance?
+3. Your thoughts/feedback
+
+Picture 2 Feedback Questionnaire
+
+For Update 6 they also received an additional block with a task goal and a description so it would be clear for them how the task works.
+
+<div id="res3"></div>
 
 ### RESULTS
 
 
 
+<div id="recom3"></div>
+
 ### RECOMMENDATIONS FOR COMING SEMESTER
+
 - **User Acceptance Testing.** Since the project, presumably, comes to its end next semester, we recommend to conduct the last User Acceptance Testing with participants who are completely unfamiliar with our application and probably unfamiliar with the Telegram platform. We expect it to be a good  demonstration of the quality of the design and interface for users unfamiliar with Telegram.
 - **Bug fixes.** All bugs must be fixed at the right time for the project to be considered complete. Accordingly, before the usability testing stage, there should be no errors left.
 - **UAT participants.** Finding participants to test has always been difficult. If students from the language centre will be considered for the role of participants, we strongly advise you to find them and arrange upcoming sessions as early as possible.
 - **New features.** Some of the implemented features were not testing because of the time constrains (e.g. Discussion Task - NLP feature).
 
+<div id="ref3"></div>
+
 ### References
+
 Jenkins, N. (2008). A Software Testing Primer: An Introduction to Software Testing.
+
