@@ -48,7 +48,9 @@ image: pic04.jpg
 3. Testing Performance
 
    3.1. Technical Testing and Bug Reports
+
    3.2. User Acceptance Testing
+
    3.2.1. Evaluation
 
 4. Results
