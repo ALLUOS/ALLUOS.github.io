@@ -12,11 +12,32 @@ sections:
    tag: \#prospects
  - title: References
    tag: \#references
+ - title: Introduction
+   tag: \#intro3
+ - title: Literature
+   tag: \#liter3
+ - title: Testing Performance
+   tag: \#testperf3
+ - title: Technical Testing and Bug Reports
+   tag: \#techtest3
+ - title: User Acceptance Testing
+   tag: \#uat3
+ - title: Evaluation
+   tag: \#evaluation3
+ - title: Results
+   tag: \#res3
+ - title: Recommendations
+   tag: \#recom3
+ - title: References
+   tag: \#ref3
+ 
 description: Learn more about the project's testing strategy and outlook.
 image: pic04.jpg
 ---
 
 ## Contents
+
+#### **First Semester**
 
 1. Test Strategy
 2. Usability Test
@@ -24,7 +45,19 @@ image: pic04.jpg
 4. Prospects For The Next Semester
 5. References
 
-**Note:** This section primarily describes testing information relevant to the first semester of the project. For information regarding the second semester, please refer to the [User Testing]({{ "" | absolute_url }}/2020/04/04/testS2.html) section.
+#### **Third Semester**
+
+1. Introduction
+2. Literature
+3. Testing Performance
+   3.1. Technical Testing and Bug Reports
+   3.2. User Acceptance Testing
+   3.2.1. Evaluation
+4. Results
+5. Recommendations 
+6. References
+
+**Note:** This section primarily describes testing information relevant to the first semester and third semester of the project. For information regarding the second semester, please refer to the [User Testing]({{ "" | absolute_url }}/2020/04/04/testS2.html) section.
 
 <div id="strategy"></div>
 ## Test Strategy
@@ -215,20 +248,13 @@ Nielsen Norman Group. Why You Only Need to Test with 5 Users. Retrieved August 2
 Tullis, T., & Albert, B. (2013). Measuring the user experience collecting, analyzing, and presenting usability metrics. Amsterdam, Netherlands: Elsevier.
 
 
+
+
+
+
 ## Testing Semester 3
-Contents
-1. Introduction
-2. Literature
-3. Testing Performance
-3.1. Technical Testing and Bug Reports
-3.2. User Acceptance Testing
-3.2.1. Evaluation
-4. Recommendations 
-5. References
-
-**Note:**For information regarding the first and the second semester, please refer to the "Testing" and the "User Testing" sections.
-
 <div id="intro"></div>
+
 ### INTRODUCTION
 
 While the Escapeling project opens up many new features, testing does not stand still and adopts appropriate strategies to verify the quality of the added features. In this chapter, you will learn about the concept, organisation and results of our testing framework in the third semester of the project.
@@ -260,18 +286,24 @@ This semester has made a huge impact on the functionality and quality of the app
 
 When testing the usability of the changes made to the application, we turned to the participants of past tests, since this testing group is as close as possible to the target audience. It is worth noting that some of the changes made were formed precisely on their feedback and grades from the second semester. Considering that no regular classes are required since the adaptive module hasn't changed.
 
-Testers received two sets of material: a) examples of modifying application functions (adaptive graphics, message formulation, and a new assignment) and b) a satisfaction questionnaire.
+#### EVALUATION
 
-Examples of modifications and improvements were collected in a presentation and sent out in PDF file format. The usability test concludes with a satisfaction questionnaire that included questions about the quality of the changes in general and their willingness to recommend such an application to their friend. All questionnaires were distributed via Google Forms.
+However, initially we planned to have a simulated session with a trial to complete the task but at some point our group couldn't run the bot due to some technical troubles and we decided to provide out participants with a little different way of demonstration.
 
-##### EVALUATION
-coming soon
+Testers received two sets of material: a) PDF-file with examples of modified application functions collected in presentation style  (adaptive graphics, message formulation, new task, etc.) and b) a feedback questionnaire. 
+A PDF-file consist total of 15 slides of 6 updates (New Sticker Pack, Simplified Text Messages, Getting Ready Step, Approval Gifs, Discussion Task Update, New Task - Listening). 
+
+The usability testing concludes with a feedback questionnaire that included questions about the quality of the changes in general and their personal satisfaction on the improvements. All questionnaires were distributed via Google Forms. A questionnaire consist of three questions:
+
+### RESULTS
+
+
 
 ### RECOMMENDATIONS FOR COMING SEMESTER
 - **User Acceptance Testing.** Since the project, presumably, comes to its end next semester, we recommend to conduct the last User Acceptance Testing with participants who are completely unfamiliar with our application and probably unfamiliar with the Telegram platform. We expect it to be a good  demonstration of the quality of the design and interface for users unfamiliar with Telegram.
 - **Bug fixes.** All bugs must be fixed at the right time for the project to be considered complete. Accordingly, before the usability testing stage, there should be no errors left.
 - **UAT participants.** Finding participants to test has always been difficult. If students from the language centre will be considered for the role of participants, we strongly advise you to find them and arrange upcoming sessions as early as possible.
+- **New features.** Some of the implemented features were not testing because of the time constrains (e.g. Discussion Task - NLP feature).
 
-<div id="references"></div>
 ### References
 Jenkins, N. (2008). A Software Testing Primer: An Introduction to Software Testing.
