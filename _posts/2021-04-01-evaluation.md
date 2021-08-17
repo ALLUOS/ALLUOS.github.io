@@ -231,7 +231,7 @@ Contents
 <div id="intro"></div>
 ### INTRODUCTION
 
-While the Escapeling project opens up many new features, testing does not stand still and adopts appropriate strategies to verify the quality of the added features. In this chapter, you will learn about the concept, organisation and results of our testing framework in the third semester of the project. For information regarding the first and the second semester, please refer to the "Testing" and the "User Testing" sections.
+While the Escapeling project opens up many new features, testing does not stand still and adopts appropriate strategies to verify the quality of the added features. In this chapter, you will learn about the concept, organisation and results of our testing framework in the third semester of the project.
 
 <div id="methods"></div>
 ### LITERATURE
