@@ -274,7 +274,7 @@ The purpose of this section is to discuss all of our activities during the semes
 
 #### TECHNICAL TESTING / VERIFICATION
 
-The organization of the verification and test management activities should be closely related to the preliminary design. For this, a general testing strategy is initially formulated, including test methods, documentation forms or blanks, and test evaluation criteria; therefore, a test plan is drawn up.  In addition, a test schedule is drawn up with specific feature development. At the same time, a documenting basis should be established to ensure the quality of the test documentation. Weekly, we attended our joint meetings of testers where we were aimed at teaching the basic principles of testing, Q/A discussions, and further development.
+The organization of the verification and test management activities should be closely related to the preliminary design. For this, a general testing strategy is initially formulated, including test methods, documentation forms or blanks, and test evaluation criteria. In addition, a test schedule is drawn up with specific feature development. At the same time, a documenting basis should be established to ensure the quality of the test documentation. Weekly, we attended our joint meetings of testers where we were aimed at teaching the basic principles of testing, Q/A discussions, and further development.
 In addition to organizing testing and creating test cases, that collect all information on tested features, the project itself should be analyzed and investigated for bugs. Session simulation can be used to test the properties of the system structures, design, and the interactions of subsystems, developers should use step-by-step design instructions to verify the consistency and logical structure of the system, while the design review should be performed by the testing team.
 
 #### USER ACCEPTANCE TESTING / VALIDATION
@@ -321,23 +321,24 @@ They also liked the idea of simplifying texting along with the integration of st
 
 *"I still feel confused with messages".*
 
-The third update that our participants analyzed was the addition of visual effects when confirming their readiness before completing the first task. The results of this survey indicated that not everyone considers this addition to be necessary in terms of performance and perception. However, most of this change was to their liking, due to the fact that a large amount of text messages quickly becomes boring. Average score for idea 7.9 and implementation 8.2.
+The third update that our participants analyzed was the addition of visual effects when confirming their readiness before the start of the first task. The results of this survey indicated that not everyone considers this addition to be necessary in terms of performance and perception. However, most of this change was to their liking, due to the fact that a large amount of text messages quickly becomes boring. Average score for idea 7.9 and implementation 8.2.
 
 Perhaps the best of all the participants reacted precisely to the GIF files added to different sections of the application. Although one of the participants gave a rather low score of 4 and 3, in the commentary he did not indicate the reason, but rather also emphasized that this update looks *"in principle, cool"*. Accordingly, the rest of the reviews were overwhelmingly positive.
 
 The focus group liked the addition of special identifiers for the remaining time in the third task. Almost everyone indicated that they had missed it earlier.
 
-*"Cool update immediately clear how much time is left to complete"*
+*"Cool update immediately clear how much time is left to complete"*.
 
 The average score for idea and performance for this update was 9.6 and 10. Second best rating among updates.
 
 And our survey ends with an assessment of the new Listening task. Perhaps one of the most important results for us as a development team. All users gave an extremely positive score of 9.8 for the idea and 10 for the application. One of the participants said:
 
-*"listening tasks are very helpful in developing English and speaking easily in the future"*
+*"listening tasks are very helpful in developing English and speaking easily in the future"*.
 
-Overall, user reviews were very positive to all the additions. Children not only enjoyed using the app in the past, but they were able to see and enjoy the development of the app. To check all average score compared look at the Picture 3 and Picture 4.
+Overall, user reviews were very positive to all the additions. Children not only enjoyed using the app in the past, but they were able to see the development of the app. 
+To check all average scores compared look at the Picture 3 and Picture 4.
 
-<img src="https://github.com/ALLUOS/ALLUOS.github.io/blob/semester-three/assets/images/testresul1.png?raw=true" alt="*Average Satisfaction Score*" class="center">
+<img src="https://github.com/ALLUOS/ALLUOS.github.io/blob/semester-three/assets/images/testresult1.png?raw=true" alt="*Average Satisfaction Score*" class="center">
 
 Picture 3 Average Satisfaction Score by update
 
