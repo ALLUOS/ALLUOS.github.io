@@ -291,7 +291,8 @@ However, initially, we planned to have a simulated session with a trial to compl
 
 Testers received two sets of material: a) PDF file with examples of modified application functions collected in presentation style (adaptive graphics, message formulation, new task, etc.) and b) a feedback questionnaire.  A PDF file consists of a total of 15 slides of 6 updates (New Sticker Pack, Simplified Text Messages, Getting Ready Step, Approval Gifs, Discussion Task Update, New Task - Listening) that illustrate and describe main differences (Pic.1).
 
-<img class="center" src="{{ '' | absolute_url }}/assets/images/[testpic1.jpg](https://github.com/ALLUOS/ALLUOS.github.io/blob/semester-three/assets/images/testpic1.jpg)">
+<img class="center" style="width: 80%" src="{{ '' | absolute_url }}/assets/images/testpic1.png">
+
 Picture 1 PDF-slide examples
 
 The usability testing concludes with a feedback questionnaire that included questions about the quality of the changes in general and their satisfaction with the improvements. All questionnaires were distributed via Google Forms. First, participants should find and select their username from a list. Second, they should fill a questionnaire for every update that consists of three questions (Pic.2): 
@@ -300,7 +301,9 @@ The usability testing concludes with a feedback questionnaire that included ques
 2. How much does this improvement help the application performance?
 3. Your thoughts/feedback
 
-Picture 2 Feedback Questionnaire
+<img class="center" style="width: 80%" src="{{ '' | absolute_url }}/assets/images/testpic2w.png">
+
+Picture 2 Update 1 - Feedback Questionnaire
 
 For Update 6 they also received an additional block with a task goal and a description so it would be clear for them how the task works.
 
