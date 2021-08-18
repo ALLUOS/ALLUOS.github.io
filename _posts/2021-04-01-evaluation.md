@@ -287,23 +287,25 @@ When testing the usability of the changes made to the application, we turned to 
 
 #### EVALUATION
 
-However, initially, we planned to have a simulated session with a trial to complete the "escape" and then fill a satisfaction questionnaire but at some point, our group couldn't run the bot due to some technical errors and it was decided to provide our participants with a little different way of demonstration.
+Initially, we planned to have a simulated session with a trial to complete the "escape" and then fill a satisfaction questionnaire, however, at some point, our group couldn't run the bot due to some technical errors and it was decided to provide our participants with a different way of demonstration.
 
 Testers received two sets of material: a) PDF file with examples of modified application functions collected in presentation style (adaptive graphics, message formulation, new task, etc.) and b) a feedback questionnaire.  A PDF file consists of a total of 15 slides of 6 updates (New Sticker Pack, Simplified Text Messages, Getting Ready Step, Approval Gifs, Discussion Task Update, New Task - Listening) that illustrate and describe main differences (Pic.1).
 
-<img class="center" style="width: 80%" src="{{ '' | absolute_url }}/assets/images/testpic1.png">
+<img src="https://github.com/ALLUOS/ALLUOS.github.io/blob/semester-three/assets/images/testpic1.png?raw=true" alt="Picture 1 PDF-slide example" class="center">
 
-Picture 1 PDF-slide examples
+*Picture 1 PDF-slide example*
 
 The usability testing concludes with a feedback questionnaire that included questions about the quality of the changes in general and their satisfaction with the improvements. All questionnaires were distributed via Google Forms. First, participants should find and select their username from a list. Second, they should fill a questionnaire for every update that consists of three questions (Pic.2): 
 
-1. How do you like this improvement?
-2. How much does this improvement help the application performance?
-3. Your thoughts/feedback
+1. How do you like this improvement? Rated by 10-point scale.
+   * The goal of this question is to find out how users like the very concept of this update.
+2. How much does this improvement help the application performance? Rated by 10-point scale.
+   - The purpose of this question is to find out how users rate the quality of performance of this change in our application.
+3. Your thoughts/feedback. Free writing.
 
-<img class="center" style="width: 80%" src="{{ '' | absolute_url }}/assets/images/testpic2w.png">
+<img src="https://github.com/ALLUOS/ALLUOS.github.io/blob/semester-three/assets/images/testpic2w.png?raw=true" alt="*Picture 2 Update 1 - Feedback Questionnaire*" class="center">
 
-Picture 2 Update 1 - Feedback Questionnaire
+*Picture 2 Update 1 - Feedback Questionnaire*
 
 For Update 6 they also received an additional block with a task goal and a description so it would be clear for them how the task works.
 
@@ -311,7 +313,37 @@ For Update 6 they also received an additional block with a task goal and a descr
 
 ### RESULTS
 
+The first update concerning the addition of new stickers was rated by users with an average of 9.6 points for an idea and 8.6 for a performance. Also, thanks to their personal feedback, we can say that adding stickers was a great idea, but still one of the participants showed caution in the amount of their use:
 
+*"I enjoy new design, I like when studying is fun. However, it might appear to me that there could be too much of them. I guess it can take some space from my device memory but still I can simply clean the history :) ".*
+
+They also liked the idea of simplifying texting along with the integration of stickers. So they rated "Simplified Text Messages" at 9.2 for both the idea and the implementation. From past research, it has been noted that the volume of messages is difficult for children to comprehend, so this supplement was presumed to be successful. But besides this, the comment of one of the participants was noted as a negative point:
+
+*"I still feel confused with messages".*
+
+The third update that our participants analyzed was the addition of visual effects when confirming their readiness before completing the first task. The results of this survey indicated that not everyone considers this addition to be necessary in terms of performance and perception. However, most of this change was to their liking, due to the fact that a large amount of text messages quickly becomes boring. Average score for idea 7.9 and implementation 8.2.
+
+Perhaps the best of all the participants reacted precisely to the GIF files added to different sections of the application. Although one of the participants gave a rather low score of 4 and 3, in the commentary he did not indicate the reason, but rather also emphasized that this update looks *"in principle, cool"*. Accordingly, the rest of the reviews were overwhelmingly positive.
+
+The focus group liked the addition of special identifiers for the remaining time in the third task. Almost everyone indicated that they had missed it earlier.
+
+*"Cool update immediately clear how much time is left to complete"*
+
+The average score for idea and performance for this update was 9.6 and 10. Second best rating among updates.
+
+And our survey ends with an assessment of the new Listening task. Perhaps one of the most important results for us as a development team. All users gave an extremely positive score of 9.8 for the idea and 10 for the application. One of the participants said:
+
+*"listening tasks are very helpful in developing English and speaking easily in the future"*
+
+Overall, user reviews were very positive to all the additions. Children not only enjoyed using the app in the past, but they were able to see and enjoy the development of the app. To check all average score compared look at the Picture 3 and Picture 4.
+
+<img src="https://github.com/ALLUOS/ALLUOS.github.io/blob/semester-three/assets/images/testresul1.png?raw=true" alt="*Average Satisfaction Score*" class="center">
+
+Picture 3 Average Satisfaction Score by update
+
+<img src="https://github.com/ALLUOS/ALLUOS.github.io/blob/semester-three/assets/images/testresult2.png?raw=true" alt="*Average Performance Score*" class="center">
+
+Picture 4 Average Performance Score by update
 
 <div id="recom3"></div>
 
@@ -324,7 +356,7 @@ For Update 6 they also received an additional block with a task goal and a descr
 
 <div id="ref3"></div>
 
-### References
+### REFERENCES
 
 Jenkins, N. (2008). A Software Testing Primer: An Introduction to Software Testing.
 
