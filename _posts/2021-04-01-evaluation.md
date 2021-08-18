@@ -42,21 +42,13 @@ image: pic04.jpg
 ## **Third Semester**
 
 1. Introduction
-
 2. Literature
-
 3. Testing Performance
-
-   3.1. Technical Testing and Bug Reports
-
-   3.2. User Acceptance Testing
-
-   3.2.1. Evaluation
-
+   - Technical Testing and Bug Reports
+   - User Acceptance Testing
+   - Evaluation
 4. Results
-
 5. Recommendations 
-
 6. References
 
 **Note:** This section primarily describes testing information relevant to the first semester and third semester of the project. For information regarding the second semester, please refer to the [User Testing]({{ "" | absolute_url }}/2020/04/04/testS2.html) section.
