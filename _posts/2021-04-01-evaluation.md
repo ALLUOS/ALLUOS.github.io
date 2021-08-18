@@ -289,8 +289,9 @@ When testing the usability of the changes made to the application, we turned to 
 
 However, initially, we planned to have a simulated session with a trial to complete the "escape" and then fill a satisfaction questionnaire but at some point, our group couldn't run the bot due to some technical errors and it was decided to provide our participants with a little different way of demonstration.
 
-Testers received two sets of material: a) PDF file with examples of modified application functions collected in presentation style (adaptive graphics, message formulation, new task, etc.) and b) a feedback questionnaire.  A PDF file consists of a total of 15 slides of 6 updates (New Sticker Pack, Simplified Text Messages, Getting Ready Step, Approval Gifs, Discussion Task Update, New Task - Listening) that illustrate and describe main differences (Pic.1). 
+Testers received two sets of material: a) PDF file with examples of modified application functions collected in presentation style (adaptive graphics, message formulation, new task, etc.) and b) a feedback questionnaire.  A PDF file consists of a total of 15 slides of 6 updates (New Sticker Pack, Simplified Text Messages, Getting Ready Step, Approval Gifs, Discussion Task Update, New Task - Listening) that illustrate and describe main differences (Pic.1).
 
+<img class="center" src="{{ '' | absolute_url }}/assets/images/[testpic1.jpg](https://github.com/ALLUOS/ALLUOS.github.io/blob/semester-three/assets/images/testpic1.jpg)">
 Picture 1 PDF-slide examples
 
 The usability testing concludes with a feedback questionnaire that included questions about the quality of the changes in general and their satisfaction with the improvements. All questionnaires were distributed via Google Forms. First, participants should find and select their username from a list. Second, they should fill a questionnaire for every update that consists of three questions (Pic.2): 
