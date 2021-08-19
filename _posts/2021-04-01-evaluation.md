@@ -2,36 +2,23 @@
 layout: post
 title: Testing
 sections:
- - title: Test Strategy
-   tag: \#strategy
- - title: Usability Tests
-   tag: \#usability
- - title: Technical Tests
-   tag: \#technical
- - title: Outlook
-   tag: \#prospects
- - title: References
-   tag: \#references
- - title: Introduction
-   tag: \#intro3
- - title: Literature
-   tag: \#liter3
- - title: Testing Performance
-   tag: \#testperf3
- - title: Results
-   tag: \#res3
- - title: Recommendations
-   tag: \#recom3
- - title: References
-   tag: \#ref3
- 
-description: Learn more about the project's testing strategy and outlook.
+ - title: First semester
+   tag: \#first
+ - title: Second semester
+   tag: \#second
+ - title: Third semester
+   tag: \#third
+description: Learn more about the project's testing strategy.
 image: pic04.jpg
 ---
 
+**Note:** This page contains several sections, each describing testing information relevant to a different semester of the project. Escapeling's testing process has naturally evolved over time, and the information contained on this page is a testament to that. To facilitate navigation, here is an overview of this page's content.
+
+
+
 ## Contents
 
-## **First Semester**
+<span class = "content"><a href = "#first">First Semester</a></span>
 
 1. Test Strategy
 2. Usability Test
@@ -39,19 +26,33 @@ image: pic04.jpg
 4. Prospects For The Next Semester
 5. References
 
-## **Third Semester**
+<span class = "content"><a href = "#second">Second Semester</a></span>
 
 1. Introduction
-2. Literature
-3. Testing Performance
-   - Technical Testing and Bug Reports
-   - User Acceptance Testing
-   - Evaluation
-4. Results
-5. Recommendations 
-6. References
+2. Methods
+3. Quantitative Analysis
+4. Qualitative Analysis
+5. Conclusions
+6. Resources
+7. References
 
-**Note:** This section primarily describes testing information relevant to the first semester and third semester of the project. For information regarding the second semester, please refer to the [User Testing]({{ "" | absolute_url }}/2020/04/04/testS2.html) section.
+<span class = "content"><a href = "#third">Third Semester</a></span>
+
+<hr />
+
+<!-- Semester One -->
+
+<div id="first"></div>
+
+<h2><span class="section">First Semester</span></h2>
+
+## Contents
+
+1. Test Strategy
+2. Usability Test
+3. Technical Testing
+4. Prospects For The Next Semester
+5. References
 
 <div id="strategy"></div>
 ## Test Strategy
@@ -64,7 +65,6 @@ The testing strategy we designed was inspired by the paper *A Software Testing P
 The below section describes the usability testing strategy and results.
 
 ### Usability Test Strategy Overview
-
 
 When testing usability, we aimed to find a testing group resembling the target audience as closely as possible, i.e. schoolchildren in the ages of 14 to 17 with English knowledge between pre-intermediate and upper-intermediate. Our initial idea was to remotely recruit 15 to 25 testers from a group of language course students who almost perfectly matched our ideal testing/target group. Given that no further adjustments between sessions were planned based on the intermediary results, the data from a testing group of this size more than sufficed to assess the application’s usability.
 
@@ -82,7 +82,6 @@ The usability test was concluded with a satisfaction questionnaire that containe
 
 ### Evaluation
 
-
 After the guidance and instructions had been provided to the testing group and a video Q&A session conducted, the usability test began. As a first step, participants were asked to fill in the pre-questionnaire to collect some information about the testing group, including their background and experience in learning foreign languages with the help of apps or e-learning platforms and their experience using Telegram. Then participants, following the instructions, played two rounds of each game (“Sentence Correction” and “Vocabulary guessing”) in the Escapeling app. Testers made screen recordings and provided us with them. Screen recordings were used in order to evaluate the results afterwards. Finally, participants had to fill in the post-questionnaire to evaluate the tasks and rate the app in terms of their satisfaction with the tasks and the Escapeling app in general and their willingness to use this app for further collaborative English language learning.
 
 As Escapeling is designed for collaborative English learning, the tasks are supposed to be played in a group of four people. Participants have the common goal to solve the task and escape the room. Therefore they are allowed to communicate with each other in the group chat, contribute to the task success and thereby help each other progress learning the foreign language. We recruited two groups of four people to conduct the test.
@@ -95,9 +94,7 @@ The success rate of the first task was 8.0/8.0 = 1.0. During the first task (“
 
 Examining the results above, we can conclude that performance results are quite good. The results of the post-questionnaire confirm that as well. Participants were highly satisfied with the app and both tasks. The majority of the group would highly recommend this app to their friends. Based on the tests, the application was accepted by the target user and mostly met the requirements that have been set initially.
 
-
 ### Outlook
-
 
 An important point that we have seen during the test procedure is that it became obvious that participants barely communicated with each other in the group chat, most of the time they were waiting for the messages and instructions from the bot. When they experienced some difficulties to give the correct answer, they were working individually. As the initial idea of the app was collaborative learning, some reminders and encouraging messages from the bot, when the silence in the chat lasts too long, might be helpful to engage users to interact more with each other, as they have a common goal while completing the task. This additional functionality will also help users to practice the language in a more natural way, communicating with their peers.
 
@@ -192,13 +189,11 @@ After conducting the tests we detected approximately 15 defects, some of them we
 * At this stage, for constant remote interaction, a specialist observer is required who can restore the process when a technical error is detected.
 
 <div id="prospects"></div>
-## Prospects For The Next Semester
+## Prospects For The Second Semester
 
 Users of mobile devices can choose from thousands of programs that allow them to learn new languages, including applications designed for audio listening, entire foreign language courses, and even applications with online chat functionality where people can try their communication in English at a new level.
 
 The idea behind the project is unique and the overall goal is to provide a user-friendly application for collaborative group activities. At the moment, the application is already a fairly high-quality product with many useful functions, but it still needs improvement. According to analysis of the usability test survey, participants showed an increase in the interest in receiving remote communication services.  We below summarize some concluding thoughts on the project's successes, shortcomings, and potential next steps.
-
-
 
 #### Successes
 
@@ -206,14 +201,10 @@ The idea behind the project is unique and the overall goal is to provide a user-
 * formation and development of communication skills on the Telegram platform;
 * language acquisition.
 
-
-
 #### Shortcomings
 
 * Participants hardly communicate with each other but prefer to do everything on their own;
 * Difficulties in using the built-in commands and functions of the API Telegram.
-
-
 
 #### Next steps and Opportunities
 
@@ -225,8 +216,6 @@ The idea behind the project is unique and the overall goal is to provide a user-
 * Development of pedagogical technologies (adding the learning side of the project);
 * Methodology for organizing feedback and consultations for application users;
 * Solving problems of assessment and control in group learning.
-
-
 
 In general, all the tasks set during the projects' meetings were achieved. There is no doubt that there is still room for improvement. The development of distance technologies in education is rapidly becoming popular. As a result, it can be noted that all listed possible improvements for distance group learning give an effect not only individually, but also together, which allows us to speak of the application as a qualitatively new form of education.
 
@@ -241,115 +230,156 @@ Nielsen Norman Group. Why You Only Need to Test with 5 Users. Retrieved August 2
 
 Tullis, T., & Albert, B. (2013). Measuring the user experience collecting, analyzing, and presenting usability metrics. Amsterdam, Netherlands: Elsevier.
 
+<hr />
 
+<!-- Semester Two -->
 
+<div id="second"></div>
 
+<h2><span class="section">Second Semester</span></h2>
 
+## Contents
 
-## Testing Semester 3
-<div id="intro3"></div>
+1. Introduction
+2. Methods
+3. Results
+4. Conclusions
+5. Recommendations For Coming Semester
+6. References
 
-### INTRODUCTION
+<div id="intro"></div>
+### Introduction
 
-While the Escapeling project opens up many new features, testing does not stand still and adopts appropriate strategies to verify the quality of the added features. In this chapter, you will learn about the concept, organization, and results of our testing framework in the third semester of the project.
+**Software testing** is the process of analyzing a software tool and related documentation to identify defects and improve product quality. Due to the fact that software testing becomes part of the programming stage, developers have the opportunity to fix bugs already at the initial stage of development. This reduces the risk of defects in the finished product. It is important to find bugs or weaknesses at the initial level, and the earlier the process begins, the easier it will be to make changes to the overall structure of the application.
+Continuing the work of the testing group, we followed a similar strategy. But with some differences. In this semester we divided our strategy into two main dimensions: **Technical Testing** and **User Acceptance Testing**.
 
-<div id="liter3"></div>
+<div id="methods"></div>
+### Methods: Technical Testing
+Technical testing of this and last semester followed a test case-based testing strategy - a formalized approach in which testing is performed based on pre-prepared test cases, test case sets, and other documentation. This method also allows you to achieve maximum completeness of the application research due to the strict systematization of the process. A well-written test case allows you to store information for long-term use and exchange of experience between testers and teams. Thanks to this, we were able to complete unfinished test cases from the last semester without any further questions. This proves once again the importance of correct technical documentation.
 
-### LITERATURE
-For the correct operation and analysis of the test materials, initially, the whole group studied all provided training materials and existing methodology described in the previous chapters on testing. Our strategy adheres to some of the basic principles outlined in Jenkins' work [1]. This is how we initially divided our work into Validation and Verification.  Validation testing is also known as dynamic testing, in which we ensure that we have developed a product correctly in terms of design. Most often, it is this side of testing that includes working with potential users and various surveys, e.g. one of the studies that we are using is User acceptance testing (UAT). Verification, also known as static testing, allows us to check whether we are developing the right product or not. It also checks whether the developed application meets all the requirements specified at the root of our project.  Furthermore, previously collected results from the Second semester's User Acceptance Testing were studied. 
+As mentioned above, the term "test case" can refer to the formal recording of a test case in the form of a technical document. This record has a generally accepted structure, the components of which are called test case attributes. Below is an example of one of the test cases we wrote (Pic.1)
 
-<div id="testperf3"></div>
+<img src="https://user-images.githubusercontent.com/57707401/111073452-06b48780-84df-11eb-886a-c956751c1bb2.png" class="center">
 
-### TESTING PERFORMANCE
+Picture 1 "Test Case Collection" example.
 
-The purpose of this section is to discuss all of our activities during the semester, as well as the main ideas and limitations of testing as part of software testing.
+Along with the tests that were written in the last semester, but were not conducted, we wrote new test cases that relate to the new features of the application: 1) a new adaptive module 2) achievements 3) a third task "Discussion". The new third task developed this semester was tested only at the User Acceptance Testing phase, because the preliminary version of the assignment was made only by the end of the semester. The third task requires the creation of new test cases and the corresponding testing.
+Testing of new application functions was carried out on specially created special branches of the code (discussion_task branch), which, after a certain number of tests, will be added to the main application code.
 
-#### TECHNICAL TESTING / VERIFICATION
+With testing on the Telegram API, there is always a question of which accounts to use for the quality of experiments. For this, as in the last semester, our course was provided with special testing Telegram accounts. All necessary data can be obtained from course tutors or responsible testers.
 
-The organization of the verification and test management activities should be closely related to the preliminary design. For this, a general testing strategy is initially formulated, including test methods, documentation forms or blanks, and test evaluation criteria. In addition, a test schedule is drawn up with specific feature development. At the same time, a documenting basis should be established to ensure the quality of the test documentation. Weekly, we attended our joint meetings of testers where we were aimed at teaching the basic principles of testing, Q/A discussions, and further development.
-In addition to organizing testing and creating test cases, that collect all information on tested features, the project itself should be analyzed and investigated for bugs. Session simulation can be used to test the properties of the system structures, design, and the interactions of subsystems, developers should use step-by-step design instructions to verify the consistency and logical structure of the system, while the design review should be performed by the testing team.
+### Methods: User Acceptance Testing
 
-#### USER ACCEPTANCE TESTING / VALIDATION
+**Acceptance Testing** - formalized testing aimed at checking the application from the point of view of the end-user and making a decision on whether the customer accepts the work from the project team.
 
-During the detailed design, such validation support tools should be selected or developed, and the test procedures themselves should be developed. Test data should be created to validate the main aspects of the Escapeling introduced during the design process, as well as test materials based on the structure of the system. Thus, as software evolves, a more efficient set of test materials is created.
+In this section, we will explain the general principles of this type of testing and the following strategy. In the next sections, you can find more accurate data about the group of end-users (testing participants) and results.
 
-This semester has made a huge impact on the functionality and quality of the application. Since last semester tested the impact of our application on improving knowledge of English, we decided to continue working with participants from previous semesters and conduct a survey on how they like our application improvements. Since some improvements were made precisely according to the survey results with their participation in the past.
+The first stage of testing is a formal explanation to the group of participants the purposes of this testing, especially explaining to them that it is not their knowledge that is being tested, but the quality of our product. Along with this, the subjects are given minimal instructions for how to interact with the bot for the first time. The second important step is to collect information about users so that it might be possible to correctly organize groups by interest, age, and level of knowledge (Pic.2). This information also provides importance for future data analyzes.
 
-When testing the usability of the changes made to the application, we turned to the participants of past tests, since this testing group is as close as possible to the target audience. It is worth noting that some of the changes made were formed precisely on their feedback and grades from the second semester. Considering that no regular classes are required since the adaptive module hasn't changed.
+<img src="https://user-images.githubusercontent.com/57707401/111086708-f4a60980-851d-11eb-8194-cf6cd0fb2ec2.png" class="center">
 
-#### EVALUATION
+Picture 2 Pre-Test Questionnaire
 
-Initially, we planned to have a simulated session with a trial to complete the "escape" and then fill a satisfaction questionnaire, however, at some point, our group couldn't run the bot due to some technical errors and it was decided to provide our participants with a different way of demonstration.
+This testing also carried another function - to check whether the application helps to improve their language skills with consistent use. Initially, the testing requirement was a daily interaction of at least 30 minutes for 2 weeks. However, missed meetings were also allowed, but no more than 2 times a week. After the completion of two weeks, participants must pass a post-test survey to assess the quality of the product and the experience gained, where they can also leave their feedback on any of the parties to the project (Pic.3).
 
-Testers received two sets of material: a) PDF file with examples of modified application functions collected in presentation style (adaptive graphics, message formulation, new task, etc.) and b) a feedback questionnaire.  A PDF file consists of a total of 15 slides of 6 updates (New Sticker Pack, Simplified Text Messages, Getting Ready Step, Approval Gifs, Discussion Task Update, New Task - Listening) that illustrate and describe main differences (Pic.1).
+<img src="https://user-images.githubusercontent.com/57707401/111086946-3daa8d80-851f-11eb-8ff0-f21e17a2312a.png" style="width:70%; margin-left: auto; margin-right: auto; display: block;">
 
-<img src="https://github.com/ALLUOS/ALLUOS.github.io/blob/semester-three/assets/images/testpic1.png?raw=true" alt="Picture 1 PDF-slide example" class="center">
+Picture 3 Post-Test Questionnaire
 
-*Picture 1 PDF-slide example*
+The final step is to pass the so-called quiz, specially compiled on the logs of their answers and the answers of other participants (Pic.4).
 
-The usability testing concludes with a feedback questionnaire that included questions about the quality of the changes in general and their satisfaction with the improvements. All questionnaires were distributed via Google Forms. First, participants should find and select their username from a list. Second, they should fill a questionnaire for every update that consists of three questions (Pic.2): 
+<img src="https://user-images.githubusercontent.com/57707401/111087031-b7db1200-851f-11eb-8974-4de478d7f7e5.png" style="width:70%; margin-left: auto; margin-right: auto; display: block;">
 
-1. How do you like this improvement? Rated by 10-point scale.
-   * The goal of this question is to find out how users like the very concept of this update.
-2. How much does this improvement help the application performance? Rated by 10-point scale.
-   - The purpose of this question is to find out how users rate the quality of performance of this change in our application.
-3. Your thoughts/feedback. Free writing.
+Picture 4 "Proficiency Quiz" Example
 
-<img src="https://github.com/ALLUOS/ALLUOS.github.io/blob/semester-three/assets/images/testpic2w.png?raw=true" alt="*Picture 2 Update 1 - Feedback Questionnaire*" class="center">
+##### Personalized Learning Outcome Post-Tests
 
-*Picture 2 Update 1 - Feedback Questionnaire*
+To gauge if the application has affected individual user's language skills we employ a learning outcome post-test strategy involving personalized langauge skill assessments. As mentioned in the [Adaptive Data]({{ "" | absolute_url }}/2020/04/01/adaptive.html) section, the application periodically collects various user performance metadata which are used both to adjust application difficulty and to inform the aforementioned learning outcome post-test. Given the application's adaptive learning strategy, it is difficult to design a post-test of language skill which can assumedly be compared across all participants in a controlled manner. In light of this, we use the performance metadata to automatically generate personalized skill assessments which aim to, for each participant, test whether items which proved particularly challenging during application use can be successfully answered.
 
-For Update 6 they also received an additional block with a task goal and a description so it would be clear for them how the task works.
+For example, the [sentence correction]({{ "" | absolute_url }}/2020/05/03/design.html#design) task is scored according to the number of task iteration phases which are successfully passed. This allows us to rank users' task iterations by their retrospective challenge, assuming that task iterations with lower scores were more challenging for a student. We then present these task items to the student during the learning outcome post-test. Likewise, we also present customized post-test tasks for the [vocabulary guessing]({{ "" | absolute_url }}/2020/05/03/design.html#design) task, incorporating user-generated descriptions to achieve a matching task following the methodology of Vesselinov (2012). The image below shows an example of such generated vocabulary matching questions.
 
-<div id="res3"></div>
+<img class="center" src="{{ '' | absolute_url }}/assets/images/vocab-quiz-generated.png">
 
-### RESULTS
+### Results: User Acceptance Testing
 
-The first update concerning the addition of new stickers was rated by users with an average of 9.6 points for an idea and 8.6 for a performance. Also, thanks to their personal feedback, we can say that adding stickers was a great idea, but still one of the participants showed caution in the amount of their use:
+The below sections document the analysis and results from the aforementioned user acceptance tests.
 
-*"I enjoy new design, I like when studying is fun. However, it might appear to me that there could be too much of them. I guess it can take some space from my device memory but still I can simply clean the history :) ".*
+#### Test Group Descriptive Statistics
 
-They also liked the idea of simplifying texting along with the integration of stickers. So they rated "Simplified Text Messages" at 9.2 for both the idea and the implementation. From past research, it has been noted that the volume of messages is difficult for children to comprehend, so this supplement was presumed to be successful. But besides this, the comment of one of the participants was noted as a negative point:
+We were starting off with eight students in our testing group, but three of them left after a short amount of time. The five remaining participants were all second language learners. The age of the students was very homogenous, one participant was 13 years old while the all other ones were 14. Accordingly, they were visiting either the seventh or eight grade in school. They all defined their language level as B1- intermediate and therefore met the lower boundaries of our target group, which we defined as either B1 or B2 learners.
+In terms of relevant applications, only one actually had experience with what we would generally define as learning apps, namely Doulingo, Lingualeo and Skyeng. One other user already used a dictionary website as learning support. Regarding language exchange applications, only one of the students already experienced this type of language learning. All participants apart from one already had experience with Telegram, which is fortunate as this is the basis of our application and would therefore allow low barriers. Luckily, all of the users answered that they were interested in using an English learning app for collaborative studying.
 
-*"I still feel confused with messages".*
+<div id="quant"></div>
+#### Quantitative Data Analysis
 
-The third update that our participants analyzed was the addition of visual effects when confirming their readiness before the start of the first task. The results of this survey indicated that not everyone considers this addition to be necessary in terms of performance and perception. However, most of this change was to their liking, due to the fact that a large amount of text messages quickly becomes boring. Average score for idea 7.9 and implementation 8.2.
+Although test group size and testing phase duration are limited so as to constrain the power of any qualitative analysis, we can still derive insights which facilitate an improved understanding of the user-application interaction and suggest avenues for further development which will likely improve the application's usability.
 
-Perhaps the best of all the participants reacted precisely to the GIF files added to different sections of the application. Although one of the participants gave a rather low score of 4 and 3, in the commentary he did not indicate the reason, but rather also emphasized that this update looks *"in principle, cool"*. Accordingly, the rest of the reviews were overwhelmingly positive.
+Superficial investigation of the backend proficiency values used to attune task item selection to student performance validate the adaptive module's approach to gradually adjust task item difficulty. Given that proficiency values increase and decrease relative to student performance, we can observe these values to bootstrap an inference regarding the learning outcomes of the test group and the operation of the adaptive module.  Looking at the overall distribution of final test-period proficiency values irrespective of sub-type, we find a trend towards values greater than 5. Given that all proficiency values are initialized at 5 and increase or decrease depending on performance, this result validates the operation of the adaptive module when cross-referenced with the moving average of the presented task item difficulties (shown below) over the testing period, which shows a positive trend towards higher difficulty (R2 0.48).
 
-The focus group liked the addition of special identifiers for the remaining time in the third task. Almost everyone indicated that they had missed it earlier.
+<img class="center" style="width: 60%" src="{{ '' | absolute_url }}/assets/images/proficiency value density.png">
 
-*"Cool update immediately clear how much time is left to complete"*.
+<img class="center" style="width: 80%" src="{{ '' | absolute_url }}/assets/images/vocab difficulty.png">
 
-The average score for idea and performance for this update was 9.6 and 10. Second best rating among updates.
+Additionally, given that we track [user performance]({{ "" | absolute_url }}/2020/04/01/adaptive.html#data) vis-à-vis various task-specific data points, by visualizing these performance metrics over time we can intuit the behavior of the [adaptive module]({{ "" | absolute_url }}/2020/04/01/adaptive.html) relative to user performance. The figure below shows [sentence correction]({{ "" | absolute_url }}/2020/05/03/design.html#design) task data for one user during the test period, with each unique data point representing a single task iteration, where task items sharing a grammatical sub-type are connected by color-coded lines.
 
-And our survey ends with an assessment of the new Listening task. Perhaps one of the most important results for us as a development team. All users gave an extremely positive score of 9.8 for the idea and 10 for the application. One of the participants said:
+<img class="center" style="width: 80%" src="{{ '' | absolute_url }}/assets/images/task duration over time.png">
 
-*"listening tasks are very helpful in developing English and speaking easily in the future"*.
+This graph makes clear the relative duration of task items over time for this student, demonstrating that many task item sub-types, for example, sub-type 12 (subjunctive, pink line) first require significantly more time than by the end of the testing phase, suggesting that the user was able to improve their performance with this sub-type as measured by task duration. This single-user case study also suggests an avenue for further development, namely that a user be able to focus on a subset of sub-types in order to demonstrate proficiency improvements before moving onto other types of task items. While this user was presented with a variety of task sub-types via the adaptive module, allowing the user to selectively focus on only a few sub-types may improve learning outcomes for selected sub-types.
 
-Overall, user reviews were very positive to all the additions. Children not only enjoyed using the app in the past, but they were able to see the development of the app. 
-To check all average scores compared look at the Picture 3 and Picture 4.
+Regarding the vocabulary guessing task, by visualizing the number of messages sent by non-elected users (i.e., the number of guesses) for words of each task iteration, we can identify those words which proved particularly-challenging for this test group to correctly guess or explain.
 
-<img src="https://github.com/ALLUOS/ALLUOS.github.io/blob/semester-three/assets/images/testresult1.png?raw=true" alt="*Average Satisfaction Score*" class="center">
+<img class="center" style="width: 80%" src="{{ '' | absolute_url }}/assets/images/vocab words num messages.png">
 
-Picture 3 Average Satisfaction Score by update
+Nevertheless, it may be the case that words which required relatively more guesses do not correlate with our difficulty assumptions informing the [adaptive module]({{ "" | absolute_url }}/2020/04/01/adaptive.html), therefore compromising the application's user model and implying that additional attention to user performance may be valuable to properly attune task selection to user proficiency. When visualizing expected word difficulty as determined by [neural network classification]({{ "" | absolute_url }}/2020/05/03/design.html#neural) against number of guesses, we find that many words of expectedly low difficulty required relatively more guesses, and vice-versa. Given that the number of guesses is not incorporated into the adaptive module computations, which presently only consider the correct/incorrect status of a given task iteration, these data suggest that the adaptive module's ability to suggest appropriately-challenging task items could be improved by integrating the number of guesses as a relevant data source.
 
-<img src="https://github.com/ALLUOS/ALLUOS.github.io/blob/semester-three/assets/images/testresult2.png?raw=true" alt="*Average Performance Score*" class="center">
+<img class="center" style="width: 80%" src="{{ '' | absolute_url }}/assets/images/vocab words difficulty.png">
 
-Picture 4 Average Performance Score by update
+Of final note are the aforementioned learning outcome post-tests, which are bespoke to each student based on previously-missed items. For a set of post-tests comprised of 20 questions each (10 sentence correction, 10 vocabulary matching), the median error rate is 1/20, ranging from 1/20 to 0/20. Although extremely limited, this result suggests that participants could make some learning progress relative to questions which were previously-challenging. It may be that the functionality for retrieving previous questions is more valuable to application features emphasizing spaced-repetition learning, which suggest one avenue for future development.
 
-<div id="recom3"></div>
+For additional visualizations and data not mentioned in this section, please refer to the [resources](#resources) below.
 
-### RECOMMENDATIONS FOR COMING SEMESTER
+<div id="qual"></div>
+#### Qualitative Data Analysis
+We asked the learners to provide us some feedback on their experience with the application overall as well as with the individual tasks. Therefore we gave them the opportunity to fill out a questionnaire regarding their usage of the application.
 
-- **User Acceptance Testing.** Since the project, presumably, comes to its end next semester, we recommend to conduct the last User Acceptance Testing with participants who are completely unfamiliar with our application and probably unfamiliar with the Telegram platform. We expect it to be a good  demonstration of the quality of the design and interface for users unfamiliar with Telegram.
-- **Bug fixes.** All bugs must be fixed at the right time for the project to be considered complete. Accordingly, before the usability testing stage, there should be no errors left.
-- **UAT participants.** Finding participants to test has always been difficult. If students from the language centre will be considered for the role of participants, we strongly advise you to find them and arrange upcoming sessions as early as possible.
-- **New features.** Some of the implemented features were not testing because of the time constrains (e.g. Discussion Task - NLP feature).
+The first task, concerning sentence correction, was overall rated at a 6.75/10 by the users. While they liked the idea of the task, they would have wished the examples to be more fitting to what they already learned in school, for example more tasks concerning verb forms. When they hadn’t encountered a certain grammatical form in school yet, it seemed to be challenging to even complete this task. But apart from that, the learning progress they achieved by mastering the complex task was mentioned as a positive point.
 
-<div id="ref3"></div>
+The second task, vocabulary guessing was rated at a 10/10. Accordingly, the feedback was exclusively positive. The focus group enjoyed the experienced autonomy and collaboration as well as the learning of new words. While the learners marked the task being quite easy as a positive point, it might be a take-away to enhance the difficulty to improve the learning process.
 
-### REFERENCES
+The third task, discussion, was rated at a 6.5/10 by the learners. The feedback we gained was mostly focused on the high difficulty of the task for the learners and the need for confidence to participate in the discussion. Apart from that, they appreciated the opportunity to strengthen their language proficiency of this task as it was, in their opinion, the most challenging one.
 
-Jenkins, N. (2008). A Software Testing Primer: An Introduction to Software Testing.
+We specifically asked the users for their feedback on the newly displayed achievements, since this was a new feature we added this semester. The overall response was very positive, with the users seeing this as a fun feature to keep track of their achieved goals. On the other hand, one user felt like the propose of the achievements was not entirely clear to them. This might result from the times of testing being some days apart, so that the users were not able to actually develop a streak. Nonetheless it might be interesting to keep in mind.
 
+The overall feedback from the users was in general very positive. The students did  not only seem to enjoy the usage of the application, but also saw potential in future developments.
+
+Based on these useful remark, we can take multiple ideas into the future development of the application. First off, we should consider to adapt the difficulty of the tasks more to the actual proficiency of the specific user, as the vocabulary guessing seemed to be quite easy while the other two seemed quite challenging. Additionally it might be important to include more explanation on the achievement module.
+
+<div id="conclusions"></div>
+### Conclusions
+Although our evaluations remain limited by the total number of participants, we were able to expand upon our previous semester's test methodologies with more quantitative data sources reflecting user performance, while also receiving additional valuable feedback which will help to improve the application. Notably, it is clear that further attention to application difficulty is needed, particularly the apparent simplicity of the vocabulary guessing task. Some application bugs still persist which can disrupt user experience. Finally, investigation of user performance presents several avenues for future feature development.
+
+### Recommendations for Coming Semester
+From the above analyses and discussion we derive several recommendations valuable to coming project iterations:
+
+- Allow users to focus on a subset of task sub-types by improving the persistence of the path selection module.
+- Integrate the number of vocabulary guessing task iterations guesses as a relevant variable used to adapt task difficulty.
+- Repurpose the automated post-test generation logic for additional application features involving spaced-repetition.
+- Attend to the difficulty of the sentence correction and vocabulary guessing task items to handle a broader range of user proficiencies.
+
+<div id="resources"></div>
+### Resources
+[Final Test Proficiency Distribution for Each Subtype]({{ '' | absolute_url }}/assets/images/hist.zip)
+
+<div id="references"></div>
+### References
+Vesselinov, R., & Grego, J. (2012). Duolingo effectiveness study. *City University of New York, USA,* 1-25
+
+<hr />
+
+<!-- Semester Three -->
+
+<div id="third"></div>
+
+<h2><span class="section">Third Semester</span></h2>
+
+## Contents
