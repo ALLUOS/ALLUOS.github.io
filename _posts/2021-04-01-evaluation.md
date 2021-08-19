@@ -36,6 +36,19 @@ image: pic04.jpg
 6. Resources
 7. References
 
+<span class = "content"><a href = "#third">Third Semester</a></span>
+
+1. Introduction
+2. Literature
+3. Testing Performance
+   - Technical Testing and Bug Reports
+   - User Acceptance Testing
+   - Evaluation
+4. Results
+5. Recommendations 
+6. References
+
+<hr />
 
 <!-- Semester One -->
 
@@ -372,3 +385,128 @@ From the above analyses and discussion we derive several recommendations valuabl
 Vesselinov, R., & Grego, J. (2012). Duolingo effectiveness study. *City University of New York, USA,* 1-25
 
 <hr />
+
+<!-- Semester Three -->
+
+<div id="third"></div>
+
+<h2><span class="section">Third Semester</span></h2>
+
+## Contents
+
+1. Introduction
+2. Literature
+3. Testing Performance
+   - Technical Testing and Bug Reports
+   - User Acceptance Testing
+   - Evaluation
+4. Results
+5. Recommendations 
+6. References
+
+## Testing Semester 3
+<div id="intro3"></div>
+
+### INTRODUCTION
+
+While the Escapeling project opens up many new features, testing does not stand still and adopts appropriate strategies to verify the quality of the added features. In this chapter, you will learn about the concept, organization, and results of our testing framework in the third semester of the project.
+
+<div id="liter3"></div>
+
+### LITERATURE
+For the correct operation and analysis of the test materials, initially, the whole group studied all provided training materials and existing methodology described in the previous chapters on testing. Our strategy adheres to some of the basic principles outlined in Jenkins' work [1]. This is how we initially divided our work into Validation and Verification.  Validation testing is also known as dynamic testing, in which we ensure that we have developed a product correctly in terms of design. Most often, it is this side of testing that includes working with potential users and various surveys, e.g. one of the studies that we are using is User acceptance testing (UAT). Verification, also known as static testing, allows us to check whether we are developing the right product or not. It also checks whether the developed application meets all the requirements specified at the root of our project.  Furthermore, previously collected results from the Second semester's User Acceptance Testing were studied. 
+
+<div id="testperf3"></div>
+
+### TESTING PERFORMANCE
+
+The purpose of this section is to discuss all of our activities during the semester, as well as the main ideas and limitations of testing as part of software testing.
+
+#### TECHNICAL TESTING / VERIFICATION
+
+The organization of the verification and test management activities should be closely related to the preliminary design. For this, a general testing strategy is initially formulated, including test methods, documentation forms or blanks, and test evaluation criteria. In addition, a test schedule is drawn up with specific feature development. At the same time, a documenting basis should be established to ensure the quality of the test documentation. Weekly, we attended our joint meetings of testers where we were aimed at teaching the basic principles of testing, Q/A discussions, and further development.
+In addition to organizing testing and creating test cases, that collect all information on tested features, the project itself should be analyzed and investigated for bugs. Session simulation can be used to test the properties of the system structures, design, and the interactions of subsystems, developers should use step-by-step design instructions to verify the consistency and logical structure of the system, while the design review should be performed by the testing team.
+
+#### USER ACCEPTANCE TESTING / VALIDATION
+
+During the detailed design, such validation support tools should be selected or developed, and the test procedures themselves should be developed. Test data should be created to validate the main aspects of the Escapeling introduced during the design process, as well as test materials based on the structure of the system. Thus, as software evolves, a more efficient set of test materials is created.
+
+This semester has made a huge impact on the functionality and quality of the application. Since last semester tested the impact of our application on improving knowledge of English, we decided to continue working with participants from previous semesters and conduct a survey on how they like our application improvements. Since some improvements were made precisely according to the survey results with their participation in the past.
+
+When testing the usability of the changes made to the application, we turned to the participants of past tests, since this testing group is as close as possible to the target audience. It is worth noting that some of the changes made were formed precisely on their feedback and grades from the second semester. Considering that no regular classes are required since the adaptive module hasn't changed.
+
+#### EVALUATION
+
+Initially, we planned to have a simulated session with a trial to complete the "escape" and then fill a satisfaction questionnaire, however, at some point, our group couldn't run the bot due to some technical errors and it was decided to provide our participants with a different way of demonstration.
+
+Testers received two sets of material: a) PDF file with examples of modified application functions collected in presentation style (adaptive graphics, message formulation, new task, etc.) and b) a feedback questionnaire.  A PDF file consists of a total of 15 slides of 6 updates (New Sticker Pack, Simplified Text Messages, Getting Ready Step, Approval Gifs, Discussion Task Update, New Task - Listening) that illustrate and describe main differences (Pic.1).
+
+<img src="https://github.com/ALLUOS/ALLUOS.github.io/blob/semester-three/assets/images/testpic1.png?raw=true" alt="Picture 1 PDF-slide example" class="center">
+
+*Picture 1 PDF-slide example*
+
+The usability testing concludes with a feedback questionnaire that included questions about the quality of the changes in general and their satisfaction with the improvements. All questionnaires were distributed via Google Forms. First, participants should find and select their username from a list. Second, they should fill a questionnaire for every update that consists of three questions (Pic.2): 
+
+1. How do you like this improvement? Rated by 10-point scale.
+   * The goal of this question is to find out how users like the very concept of this update.
+2. How much does this improvement help the application performance? Rated by 10-point scale.
+   - The purpose of this question is to find out how users rate the quality of performance of this change in our application.
+3. Your thoughts/feedback. Free writing.
+
+<img src="https://github.com/ALLUOS/ALLUOS.github.io/blob/semester-three/assets/images/testpic2w.png?raw=true" alt="*Picture 2 Update 1 - Feedback Questionnaire*" class="center">
+
+*Picture 2 Update 1 - Feedback Questionnaire*
+
+For Update 6 they also received an additional block with a task goal and a description so it would be clear for them how the task works.
+
+<div id="res3"></div>
+
+### RESULTS
+
+The first update concerning the addition of new stickers was rated by users with an average of 9.6 points for an idea and 8.6 for a performance. Also, thanks to their personal feedback, we can say that adding stickers was a great idea, but still one of the participants showed caution in the amount of their use:
+
+*"I enjoy new design, I like when studying is fun. However, it might appear to me that there could be too much of them. I guess it can take some space from my device memory but still I can simply clean the history :) ".*
+
+They also liked the idea of simplifying texting along with the integration of stickers. So they rated "Simplified Text Messages" at 9.2 for both the idea and the implementation. From past research, it has been noted that the volume of messages is difficult for children to comprehend, so this supplement was presumed to be successful. But besides this, the comment of one of the participants was noted as a negative point:
+
+*"I still feel confused with messages".*
+
+The third update that our participants analyzed was the addition of visual effects when confirming their readiness before the start of the first task. The results of this survey indicated that not everyone considers this addition to be necessary in terms of performance and perception. However, most of this change was to their liking, due to the fact that a large amount of text messages quickly becomes boring. Average score for idea 7.9 and implementation 8.2.
+
+Perhaps the best of all the participants reacted precisely to the GIF files added to different sections of the application. Although one of the participants gave a rather low score of 4 and 3, in the commentary he did not indicate the reason, but rather also emphasized that this update looks *"in principle, cool"*. Accordingly, the rest of the reviews were overwhelmingly positive.
+
+The focus group liked the addition of special identifiers for the remaining time in the third task. Almost everyone indicated that they had missed it earlier.
+
+*"Cool update immediately clear how much time is left to complete"*.
+
+The average score for idea and performance for this update was 9.6 and 10. Second best rating among updates.
+
+And our survey ends with an assessment of the new Listening task. Perhaps one of the most important results for us as a development team. All users gave an extremely positive score of 9.8 for the idea and 10 for the application. One of the participants said:
+
+*"listening tasks are very helpful in developing English and speaking easily in the future"*.
+
+Overall, user reviews were very positive to all the additions. Children not only enjoyed using the app in the past, but they were able to see the development of the app. 
+To check all average scores compared look at the Picture 3 and Picture 4.
+
+<img src="https://github.com/ALLUOS/ALLUOS.github.io/blob/semester-three/assets/images/testresult1.png?raw=true" alt="*Average Satisfaction Score*" class="center">
+
+Picture 3 Average Satisfaction Score by update
+
+<img src="https://github.com/ALLUOS/ALLUOS.github.io/blob/semester-three/assets/images/testresult2.png?raw=true" alt="*Average Performance Score*" class="center">
+
+Picture 4 Average Performance Score by update
+
+<div id="recom3"></div>
+
+### RECOMMENDATIONS FOR COMING SEMESTER
+
+- **User Acceptance Testing.** Since the project, presumably, comes to its end next semester, we recommend to conduct the last User Acceptance Testing with participants who are completely unfamiliar with our application and probably unfamiliar with the Telegram platform. We expect it to be a good  demonstration of the quality of the design and interface for users unfamiliar with Telegram.
+- **Bug fixes.** All bugs must be fixed at the right time for the project to be considered complete. Accordingly, before the usability testing stage, there should be no errors left.
+- **UAT participants.** Finding participants to test has always been difficult. If students from the language centre will be considered for the role of participants, we strongly advise you to find them and arrange upcoming sessions as early as possible.
+- **New features.** Some of the implemented features were not testing because of the time constrains (e.g. Discussion Task - NLP feature).
+
+<div id="ref3"></div>
+
+### REFERENCES
+
+Jenkins, N. (2008). A Software Testing Primer: An Introduction to Software Testing.
