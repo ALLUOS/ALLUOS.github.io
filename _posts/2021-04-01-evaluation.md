@@ -15,7 +15,6 @@ image: pic04.jpg
 **Note:** This page contains several sections, each describing testing information relevant to a different semester of the project. Escapeling's testing process has naturally evolved over time, and the information contained on this page is a testament to that. To facilitate navigation, here is an overview of this page's content.
 
 
-
 ## Contents
 
 <span class = "content"><a href = "#first">First Semester</a></span>
@@ -36,6 +35,7 @@ image: pic04.jpg
 6. Resources
 7. References
 
+<hr />
 
 <!-- Semester One -->
 
