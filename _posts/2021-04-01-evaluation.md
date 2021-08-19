@@ -36,9 +36,6 @@ image: pic04.jpg
 6. Resources
 7. References
 
-<span class = "content"><a href = "#third">Third Semester</a></span>
-
-<hr />
 
 <!-- Semester One -->
 
@@ -375,11 +372,3 @@ From the above analyses and discussion we derive several recommendations valuabl
 Vesselinov, R., & Grego, J. (2012). Duolingo effectiveness study. *City University of New York, USA,* 1-25
 
 <hr />
-
-<!-- Semester Three -->
-
-<div id="third"></div>
-
-<h2><span class="section">Third Semester</span></h2>
-
-## Contents
