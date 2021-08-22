@@ -40,7 +40,7 @@ First of all, in the typical classroom scenario the list of questions is present
 <div id="materials"></div>
 ## Materials
 
-At the moment, the audio database contains 45 recordings, each centered around a certain topic and labelled according to difficulty level. All files come from publicly available websites which are intended for learners and teachers of English as a foreign language, namely www.listenaminute.com, www.elllo.org and www.esl-lounge.com. We made sure that all sources legally allow the use of their audio materials for non-commercial purposes.
+At the moment, the audio database contains 45 recordings, each centered around a certain topic and labelled according to a difficulty level. All files come from publicly available websites which are intended for learners and teachers of English as a foreign language, namely [www.listenaminute.com](www.listenaminute.com), [www.elllo.org](www.elllo.org) and [www.esl-lounge.com](www.esl-lounge.com). We made sure that all sources legally allow the use of their audio materials for non-commercial purposes.
  
 The users should be familiar with a task of answering questions related to the heard materials, as this methodology is often used in language learning courses. However, in order to create an experience that resembles the real world rather than a test environment, the users find out the questions after, not before listening. In such cases it can be challenging to catch every detail at first attempt, so we decided to allow them to self-regulate the number of repetitions.
  
