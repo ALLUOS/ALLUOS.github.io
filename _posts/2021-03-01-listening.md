@@ -54,7 +54,7 @@ In terms of the difficulty level, the main motivation for the division was to ev
  
 Although our target audience is mainly B1-B2 students, since the intermediate proficiency group tends to be quite heterogeneous in terms of the individuals’ strengths and weaknesses, we also included slightly simpler audios that could theoretically be used with motivated A2 students, too.
  
-Each recording was carefully reviewed by at least three people, checking for the sound quality of the recording, correctness of the language and multiple choice questions, flagging of potentially sensitive subjects or unsuitable language, and as mentioned, the indicated level of difficulty.
+Each recording was carefully reviewed by at least three people, checking for the sound quality of the recording, correctness of the language and multiple choice questions, flagging potentially sensitive subjects or unsuitable language, and as mentioned, checking the indicated level of difficulty.
 
 
 <div id="architecture"></div>
