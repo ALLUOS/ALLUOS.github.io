@@ -194,7 +194,7 @@ Note that the change of the story pipeline is not fully implemented yet. It is h
 
 ## Performance based outcomes
 
-As part of a new pipeline we also created performance based outcomes. This means that if the group performed well in a task with 0 or only one mistake, next story block of the game will be very positive for the group. If they made 2 or 3 mistakes, they will be presented with a good outcome but the story will develop with some complications. And if the users failed the task, they are presented with a negative outcome.
+As part of a new pipeline, we also created performance based outcomes. This means that if the group performed well in a task with 0 or only one mistake, next story block of the game will be very positive for the group. If they made 2 or 3 mistakes, they will be presented with a good outcome but the story will develop with some complications. And if the users failed the task, they are presented with a negative outcome.
 
 For example, participants can be presented with three different options:
 * to shoot the door opener;
