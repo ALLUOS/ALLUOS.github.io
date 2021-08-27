@@ -202,18 +202,18 @@ For example, in one of the storyblocks participants can be prompted to choose be
 
 If they choose the first option, they will manage to block the door so that this stops the aliens, in case of the very good outcome. In case of the good outcome, they still manage to block the door but with some troubles when the weapons do not work at first. If the users failed the task, a negative outcome will be displayed.
 
-The idea of performance based outcomes applies to the story endings, which depend on the overall performance of the group and as well as on whether users choose to participate in a new task. The endings can be divided into super good ending, good ending and neutral ending, depending on the amount of mistakes the group made during the whole escape mission.
+The idea of performance based outcomes also applies to the story endings, which depend on the overall performance of the group as well as on whether users choose to participate in a new task. The endings can be divided into super good ending, good ending and neutral ending, depending on the amount of mistakes the group made during the whole escape mission.
 
 In case users choose to participate in the task and accomplish it succesfully, all endings show them that they managed to take Elias together with them. In case they did not choose the task or failed it, the endings do not mention Elias being saved. 
 
 ## Restart scenarios
 
-In the initial story structure players had to pass all the tasks in order to reach the end of the game. In case users failed a given task, the whole mission would be considered as failed and they had to start from the very beginning. According to the results, obtained by the testing team in the second semester, we concluded that this scenario does not seem to be efficient and, after a certain amount of failed trials, demotivates players from finishing the game. Thus, we came up with an idea of restart scenarios. 
+In the initial story structure players had to pass all the tasks in order to reach the end of the game. In case the users failed a given task, the whole mission would be considered as failed and they had to start from the very beginning. According to the results, obtained by the testing team in the second semester, we concluded that this scenario does not seem to be efficient and, after a certain amount of failed trials, demotivates players from finishing the game. Thus, we came up with an idea of restart scenarios. 
 
 If the participants fail the task only once, they would now have a choice of either repeating the same task, choosing a different task or restarting the whole mission. However, if the users fail the same task twice, they fail the whole mission and can only restart the game.
 
 ## Completion metrics
 
-Thereby, the overall completion metrics of the group depend on their performance in each of the given tasks. Participants are now allowed to fail each of the tasks, with each task, however, being failed not more than once. Nevertheless, they have to complete each of the tasks in order to finish the game. Besides, the overall game session results will depend on the amount of mistakes players made in each of the tasks. 
+Thereby, the overall completion metrics of the group depend on their performance in each of the given tasks. Participants are now allowed to fail the given tasks, with each task, however, being failed not more than once. Nevertheless, they have to complete all the tasks in order to finish the game. Besides, the overall game results will depend on the amount of mistakes players made in each of the tasks. 
 
 ### Note that the described above changes of the story pipeline are not fully implemented yet. It is however important to have a clear picture of where we are headed and what we want to achieve.
