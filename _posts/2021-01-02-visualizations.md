@@ -94,7 +94,7 @@ Emojis are handled by tags like “:alien:”. These tags where transformed to t
 
 ### Stickers
 
-Stickers in telegram are handled by using so called IDs. If you upload a sticker to telegram an ID is created. To send out a sticker, get_sticker_id() is called to retrieve the ID out of a .json-file, based on a name. This improves readability and centralizes the organization of the stickers in the .json file.
+Stickers in telegram are handled by using so called IDs. If you upload a sticker to telegram an ID is created. To send a sticker, get_sticker_id() is called to retrieve the ID from a .json file, based on the name of the particular sticker. This improves readability and centralizes the organization of the stickers in the .json file.
 The Escapeling sticker pack was created by freehand drawings on an iPad using Adobe Fresco software. To turn these drawings into a Telegram sticker pack, they were sent to a Telegram bot called @Stickers.
 
 ### GIFS
