@@ -200,7 +200,7 @@ For example, in one of the storyblocks participants can be prompted to choose be
 * to fight against the aliens;
 * to run away. 
 
-If they choose the first option, they will manage to block the door so that this stops the aliens, in case of the very good outcome. In case of the good outcome, they still manage to block the door but with some troubles when the weapons do not work at first. If the users failed the task, a nehative outcome will be displayed.
+If they choose the first option, they will manage to block the door so that this stops the aliens, in case of the very good outcome. In case of the good outcome, they still manage to block the door but with some troubles when the weapons do not work at first. If the users failed the task, a negative outcome will be displayed.
 
 The idea of performance based outcomes applies to the story endings, which depend on the overall performance of the group and as well as on whether users choose to participate in a new task. The endings can be divided into super good ending, good ending and neutral ending, depending on the amount of mistakes the group made during the whole escape mission.
 
