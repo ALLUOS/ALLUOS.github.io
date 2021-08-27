@@ -32,9 +32,9 @@ image: pic03.jpg
 <div id="architecture"></div>
 ## Technical Architecture
 
-In this section we will provide a brief overview of the technical architecture that we relied on to build our application. All of our code is hosted in a GitHub repository which also includes a step-by-step guide on starting the application.
+In this section we will provide a brief overview of the technical architecture that we relied on to build our application. All of our code is hosted in a private GitHub repository which also includes a step-by-step guide on how to start the application.
 
-In general, the structure of the implementation was inspired by the model-view-controller (MVC) software design pattern. Figure one gives an overview of the different application elements within this MVC design pattern. It also shows where the associated source code can be found in the repository.
+In general, the structure of the implementation was inspired by the model-view-controller (MVC) software design pattern. Figure 1 gives an overview of the different application elements within this MVC design pattern. It also shows where the associated source code can be found in the repository.
 
 <img src="https://github.com/ALLUOS/ALLUOS.github.io/raw/master/assets/images/software_architecture_overview.png" alt="Figure 1: Overview of Repository Content" class="center">
 
@@ -76,7 +76,7 @@ The interaction between the bot and a user in a private chat is handled by the p
 The room handlers’ purpose is to lead the users from one task to the next task. This handler is also started with the */start* command but only if the command is sent in a group chat. After starting the bot checks whether enough players are currently available and which tasks they can solve next. After the users have selected a task the related nested task handler is called.
 
 #### Task Handlers
-To handle the users interaction with the bot during the different tasks, i.e. the sentence correction task and the vocabulary guessing task, we created a task handler for each task. Both task handlers lead the users in a similar way through the conversation. First, they send a message to one of the active users containing the task they have to perform. Then, the handlers wait for the response of either a group member or the selected user. The answer is evaluated upon reception. Depending on the outcome, the users can correct their answer, move on to the next subtask, or, if the task is completed, the next user is selected. This procedure is continued until the task is fully finished. After finishing the complete task, control is returned to the room handler.
+To handle the users interaction with the bot during the different tasks, e.g. the sentence correction task and the vocabulary guessing task, we created a task handler for each task. Both task handlers lead the users in a similar way through the conversation. First, they send a message to one of the active users containing the task they have to perform. Then, the handlers wait for the response of either a group member or the selected user. The answer is evaluated upon reception. Depending on the outcome, the users can correct their answer, move on to the next subtask, or, if the task is completed, the next user is selected. This procedure is continued until the task is fully finished. After finishing the complete task, control is returned to the room handler.
 
 The only way a task handler can be entered is through the room handler. In order to ensure that a task handler is not entered with an insufficient number of users we developed a custom filter to prevent this.
 
@@ -253,7 +253,7 @@ Another goal was to improve the development productivity. It was noticeable that
 
 ### Debug mode
 
-This debug mode allows a developer to play through the vocabulary guessing and sentence correction task much faster because only one iteration is played instead of three. This means instead of the usual three required answers per group member, only one answer is required. In addition, the discussion task is accelerated by shortening the duration in which answers are allowed. Moreover, hints or solutions to the task at hand are now printed to the console, so that a progression through the tasks takes less effort. Also, the sentence correction task can be played by a single developer in the debug mode. The debug mode can be activated by a developer by setting a debug option in the bot config file to `true`. All in all, the new debug mode reduced the time of a full play-through of the game from around 30 minutes to 10 minutes.
+This debug mode allows a developer to play through the vocabulary guessing and sentence correction task much faster because only one iteration is played instead of three. This means instead of the usual three required answers per group member, only one answer is required. In addition, the discussion task is accelerated by shortening the duration in which answers are allowed. Moreover, hints or solutions to the task at hand are now printed to the console, so that a progression through the tasks takes less effort and eventual incorrect utterances of the bot can be spotted more easily. Also, the sentence correction task can be played by a single developer in the debug mode. The debug mode can be activated by a developer by setting a debug option in the bot config file to `true`. All in all, the new debug mode reduced the time of a full play-through of the game from around 30 minutes to 10 minutes.
 
 ### Rejection of Automated Testing
 
@@ -275,7 +275,7 @@ At the beginning of this semester, the previous implementation team members kind
 
 ### Improved Documentation
 
-Initially, the documentation provided enough information about how to use and start the bot locally. Additionally, the documentation was focussed on the design choices and decisions that were made in the semester. The team was still facing the problem of lacking a pure technical documentation, which would contain all the information about files, classes, functions, global and local variables, etc. 
+Initially, the documentation provided enough information about how to use and start the bot locally. Additionally, the documentation was focussed on the design choices and decisions that were made in the semester. The team was still facing the problem of lacking a pure technical documentation, which would contain all the information about files, classes, functions, global and local variables, etc.
 
 **Flow Diagrams**
 
@@ -293,7 +293,7 @@ _Figure 6: Detail of Vocabulary Task Handler diagram including the legend_
 
 It would have been possible to generate a technical documentation automatically with the function’s doc-strings, for example by using the python package `pydoc`. Unfortunately, this is not possible because the functions are seldom described with doc-strings. The team decided against adding the missing doc-strings because of the project’s time constraints.
 
-With our additional flow diagrams, we hope that new team members in the next semester have the possibility to read quicker into the codebase. This should allow a faster development process and rewarding development experience. The new task we developed still lacks its corresponding flow diagram. 
+With our additional flow diagrams, we hope that new team members in the next semester have the possibility to read quicker into the codebase. This should allow a faster development process and rewarding development experience. The new task we developed still lacks its corresponding flow diagram.
 
 ### Code conventions
 
