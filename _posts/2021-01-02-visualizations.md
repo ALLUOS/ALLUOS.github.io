@@ -99,7 +99,7 @@ The Escapeling sticker pack was created by freehand drawings on an iPad using Ad
 
 ### GIFS
 
-Since Telegram does not support an ID system for GIFs we used URLs from GIPHY, a website that collects GIFs. These URLs to the GIFs are organized based on Keywords in a .json file structure, which can be accessed by using get_gif_link(). GIFS can be sent into the chat with send_animation().
+Since Telegram does not support an ID system for GIFs we used URLs from GIPHY, a website that collects GIFs. These URLs are organized based on keywords in a .json file, which can be accessed by using the function `get_gif_link()`. GIFs can be sent into the chat with `send_animation()`.
 
 ### Images
 
