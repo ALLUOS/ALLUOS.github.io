@@ -103,7 +103,7 @@ Since Telegram does not support an ID system for GIFs we used URLs from GIPHY, a
 
 ### Images
 
-The different achievement-images have been created using GIMP 2.10. In the future it could be possible to display additional Achievement-information as additional layers over the current pictures, resulting in one picture depicting all achievements at once. This could be done by using the python image library (PIL). They can be sent into the chat using send_image().
+The various achievement images were created with GIMP 2.10. In the future it might be possible to put additional information about the achievements as additional layers over the current images, so that one image shows all achievements at once. This could be done using the Python Image Library (PIL). They can be sent to the chat with `send_image()`.
 
 
 <div id="discussion"></div>
