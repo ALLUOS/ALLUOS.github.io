@@ -21,7 +21,7 @@ image: pic11.jpg
 ## Motivation
  
 Visualizations play a central role in the field of user experience. Because of their great potential, they were included in Escapeling. Firstly, in the previous semester's report it can be found in the outlook that the application should contain more visualizations. Secondly, this semester the idea of visualizations especially for the adaptive and situational elements was brought forth. Visualizations can be simple emojis, as well as situational gifs or adaptive images.
-The usefulness of visualizations in a learning environment has been proven in many ways. Our app is explicitly not about visualizing vocabulary using images, for example, as is common in beginner courses. Rather, different types of visualizations have been used as supporting elements to both enhance the user experience and maximize learning.
+The usefulness of visualizations in a learning environment has been proven in many ways. Our app is explicitly not about visualizing vocabulary using images, for example, as is common in beginner courses. Rather, different types of visualizations have been used as supporting elements to both enhance the user experience and maximize learning. For example, the main characters of our story have been given a face by creating stickers of them that are sent to the user.
 
 <div id="background"></div>
 ## Theoretical Background
@@ -42,8 +42,8 @@ The selection of the type and manner of visualization elements was based on both
 *Figure 1: GIF showing the view out of the spaceship after escaping the aliens* 
 
 GIFs are short, constantly repeating videos. On the one hand, they can have a pictorial character, such as a GIF shown at the end of the Escapeling story, where the player flies back to Earth in a spaceship, seeing the Earth approaching him. This view is shown in a GIF. 
-Furthermore, a GIF can be used to draw focus to important learning sections. According to a study by Zallio (2018) "it is possible to confirm that it is easier for students to better understand certain topics after showing emoticons or GIFs. (...). This is an element that highly stimulates the attention and by levering on emotions, students are more likely to focus their attention after the given emotional stimul[us]". For this reason, each of the learning tasks is introduced with a GIF. This marks the intersection between the previous storytelling and the subsequent task, which again fully demands the user's attention.
-The third function of using GIFs in Escapeling, is to provide feedback and motivate. For example, a GIF can be sent in response to a correct answer, or to repeated failure when guessing a word in the vocabulary guessing task (link).
+Furthermore, a GIF can be used to draw focus to important learning sections. According to a study by Zallio (2018) "it is possible to confirm that it is easier for students to better understand certain topics after showing emoticons or GIFs. (...). This is an element that highly stimulates the attention and by levering on emotions, students are more likely to focus their attention after the given emotional stimul[us]". For this reason, each of the learning tasks is introduced with a GIF. This marks the intersection between the previous [storytelling](https://alluos.github.io/2021/01/03/storytelling.html) and the subsequent task, which again fully demands the user's attention.
+The third function of using GIFs in Escapeling, is to provide feedback and motivate. For example, a GIF can be sent in response to a correct answer, or to repeated failure when guessing a word in [the vocabulary guessing task](https://alluos.github.io/2021/03/04/vocabulary-guessing.html).
 
 ### Emojis
  
@@ -67,7 +67,7 @@ In some tasks it is useful to know how much time you have left to complete the t
 
 *Figure 4: example sticker of the alien Elias*
 
-Stickers are images that have no background. They are displayed much larger than emojis in Telegram, the platform used for Escapeling. To enhance the effects of storytelling (link), a standalone sticker pack was developed that incorporates various components of storytelling. The full content of the sticker pack can be seen in Fig. 5. It includes the main characters of the story, Harriet and Elias. Since emotions can be an essential factor for learning and provide a better experience of the story, different emotional states of the main characters such as joy, mistrust or sadness are visualized.
+Stickers are images that have no background. They are displayed much larger than emojis in Telegram, the platform used for Escapeling. To enhance the effects of storytelling, a standalone sticker pack was developed that incorporates various components of storytelling. The full content of the sticker pack can be seen in Fig. 5. It includes the main characters of the story, Harriet and Elias. Since emotions can be an essential factor for learning and provide a better experience of the story, different emotional states of the main characters such as joy, mistrust or sadness are visualized.
 Other storytelling elements were also visualized with the help of stickers, such as the code panel, on which the player is supposed to enter a code several times during the game.
  
 <img src="https://github.com/ALLUOS/ALLUOS.github.io/blob/semester-three/assets/images/visualizationsIMG05.png" alt="Figure 5: All stickers belonging to the Escapeling sticker pack" class="center">
