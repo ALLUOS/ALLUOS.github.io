@@ -76,7 +76,7 @@ Other storytelling elements were also visualized with the help of stickers, such
 
 ### Achievements
 
-As part of the visual overhaul of the app, the medals awarded in the "Achievements" section have also been visualized. You get these for playing Escapeling frequently, for example. Previously, these were purely text-based, but now the player gets a picture of their current status sent to them.   
+As part of the visual overhaul of the app, the medals awarded in the "Achievements" section have also been visualized. You get these for playing Escapeling frequently, for example. Previously, achievements were purely text-based, but now the player receives a picture of their current status.   
 
 <img src="https://github.com/ALLUOS/ALLUOS.github.io/blob/semester-three/assets/images/visualizationsIMG06.png" alt="Figure 6: Image that the user gets when he has reached the status of an Admiral as part of the achievements" class="center">
 
