@@ -208,9 +208,9 @@ In case users choose to participate in the task and accomplish it succesfully, a
 
 ## Restart scenarios
 
-In the initial story structure players had to pass all the tasks in order to reach the end of the game. In case the users failed a given task, the whole mission would be considered as failed and they had to start from the very beginning. According to the results, obtained by the testing team in the second semester, we concluded that this scenario does not seem to be efficient and, after a certain amount of failed trials, demotivates players from finishing the game. Thus, we came up with an idea of restart scenarios. 
+In the initial story structure players had to pass all the tasks in order to reach the end of the game. In case the users failed a given task, the whole mission would be considered as failed and they would have to start from the very beginning. According to the results, obtained by the testing team in the second semester, we concluded that this scenario does not seem to be efficient and, after a certain amount of failed trials, demotivates players from finishing the game. Thus, we came up with an idea of restart scenarios. 
 
-If the participants fail the task only once, they would now have a choice of either repeating the same task, choosing a different task or restarting the whole mission. However, if the users fail the same task twice, they fail the whole mission and can only restart the game.
+If the participants fail the task, they would now have a choice of either repeating the same task, choosing a different task or restarting the whole mission. However, if the users fail the same task twice, they fail the whole mission and can only restart the game.
 
 ## Completion metrics
 
