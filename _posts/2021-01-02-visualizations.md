@@ -110,7 +110,7 @@ The various achievement images were created with GIMP 2.10. In the future it mig
 ## Outlook And Discussion
 
 The visualizations received very positive feedback after initial user tests, which is why it can be assumed that they achieved their goal of enhancing the user experience. In future implementations of further tasks and changes to storytelling elements, care must be taken to select suitable visualization elements or to adapt existing elements.
-One point that should not be ignored, however, is that too many graphics could distract learners more than focus them (Zallio 2018). In addition, especially GIFs and emojis could lower the seriousness of the application (Zallio 2018). While it is desired to break away from what is often perceived as a strict school learning environment and also to convey the joy of learning, Escapeling should also not be perceived as chat game without a serious English learning intention. 
+One point that should not be ignored, however, is that too many graphics could distract learners more than focus them (Zallio, 2018). In addition, especially GIFs and emojis could lower the seriousness of the application (Zallio, 2018). While it is desired to break away from what is often perceived as a strict school learning environment and also to convey the joy of learning, Escapeling should also not be perceived as chat game without a serious English learning intention. 
 In order to avoid these effects, it was important not to include too many visualizations at once and to use GIFs and emojis in a well-dosed way. Further user tests will show whether this was successful.
 
 <div id="references"></div>
