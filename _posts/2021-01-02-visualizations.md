@@ -21,19 +21,20 @@ image: pic11.jpg
 ## Motivation
  
 Visualizations play a central role in the field of user experience. Because of their great potential, they were included in Escapeling. Firstly, in the previous semester's report it can be found in the outlook that the application should contain more visualizations. Secondly, this semester the idea of visualizations especially for the adaptive and situational elements was brought forth. Visualizations can be simple emojis, as well as situational gifs or adaptive images.
-The usefulness of visualizations in a learning environment has been proven in many ways. Our app is explicitly not about visualizing vocabulary using images, for example, as is common in beginner courses. Rather, different types of visualizations have been used as supporting elements to both enhance the user experience and maximize learning. For example, the main characters of our story have been given a face by creating stickers of them that are sent to the user.
+The usefulness of visualizations in a learning environment has been proven in many ways. Our app is explicitly not about visualizing vocabulary using images, for example, as is common in beginner courses. Rather, different types of visualizations have been used as supporting elements to both enhance the user experience and maximize learning. For example, the main characters of our [story](https://alluos.github.io/2021/01/03/storytelling.html) have been given a face by creating stickers of them that are sent to the user.
 
 <div id="background"></div>
 ## Theoretical Background
 
 Visualizations "displayed in online interactive e-learning (...) represent a critical aspect in teaching and learning" (Jusoh, 2019). Among other things, the study shows that visualizations in e-learning increase the interest in the subject matter (Jusoh, 2019). Furthermore, visual stimuli can help to focus on the learning content as well as to remember what has been learned (Jusoh, 2019; Zallio, 2018).
-The emotional aspect of emojis and GIFs as facilitators in learning should also not be underestimated. According to ISO 9241-210, the user's emotions are also part of the user experience. In a study by Zallio (2018) that examined the use of emojis and GIFs to promote student engagement, these visualizations were used "in order to stimulate the emotions such as hilarious and ironic feelings among young students". This is consistent with other findings highlighting the role of emotions in learning processes. For example, it “is known that long-term memory retention is greatly aided by the emotional associations of that memory" (Zallio, 2018).
+The emotional aspect of emojis and GIFs as facilitators in learning should also not be underestimated. According to ISO 9241-210 (2019), the user's emotions are also part of the user experience. In a study by Zallio & Damon (2018) that examined the use of emojis and GIFs to promote student engagement, these visualizations were used "in order to stimulate the emotions such as hilarious and ironic feelings among young students". This is consistent with other findings highlighting the role of emotions in learning processes. For example, it “is known that long-term memory retention is greatly aided by the emotional associations of that memory" (Zallio, 2018).
 Finally, visualizations also contribute to an appealing design of the learning application. According to Don Norman, a professor well known in the field of design, attractively designed applications are evaluated as more usable by the user than unattractive ones. To a large extent, this is due to the influence of emotions (Norman, 2005). This could improve the user's subjective evaluation of the learning app, as well as their feelings about the app's usefulness.
 
 <div id="conception"></div>
 ## Conception
 
-The selection of the type and manner of visualization elements was based on both the use of these elements by our target audience -- mostly 15-year-old teenagers -- and the functionalities of our app. The visualization elements include GIFs, emojis, stickers and adaptive images. 
+Previously, the app contained very few visualizations. These consisted of one single video, one image and three different emojis indicating which character is speaking. Our goal was to make visualizations a vibrant part of the storytelling and task support throughout the game.
+The selection of the type and manner of visualization elements was based on both the use of these elements by our target audience -- mostly 15-year-old teenagers -- and the functionalities of our app. These two points led us to a specific selection of the following media: GIFs, emojis, stickers and adaptive images. 
 
 ### GIFs
 
@@ -42,7 +43,7 @@ The selection of the type and manner of visualization elements was based on both
 *Figure 1: GIF showing the view out of the spaceship after escaping the aliens* 
 
 GIFs are short, constantly repeating videos. On the one hand, they can have a pictorial character, such as a GIF shown at the end of the Escapeling story, where the player flies back to Earth in a spaceship, seeing the Earth approaching him. This view is shown in a GIF. 
-Furthermore, a GIF can be used to draw focus to important learning sections. According to a study by Zallio (2018) "it is possible to confirm that it is easier for students to better understand certain topics after showing emoticons or GIFs. (...). This is an element that highly stimulates the attention and by levering on emotions, students are more likely to focus their attention after the given emotional stimul[us]". For this reason, each of the learning tasks is introduced with a GIF. This marks the intersection between the previous [storytelling](https://alluos.github.io/2021/01/03/storytelling.html) and the subsequent task, which again fully demands the user's attention.
+Furthermore, a GIF can be used to draw focus to important learning sections. According to a study by Zallio & Damon (2018) "it is possible to confirm that it is easier for students to better understand certain topics after showing emoticons or GIFs. (...). This is an element that highly stimulates the attention and by levering on emotions, students are more likely to focus their attention after the given emotional stimul[us]". For this reason, each of the learning tasks is introduced with a GIF. This marks the intersection between the previous [storytelling](https://alluos.github.io/2021/01/03/storytelling.html) and the subsequent task, which again fully demands the user's attention.
 The third function of using GIFs in Escapeling, is to provide feedback and motivate. For example, a GIF can be sent in response to a correct answer, or to repeated failure when guessing a word in [the vocabulary guessing task](https://alluos.github.io/2021/03/04/vocabulary-guessing.html).
 
 ### Emojis
@@ -76,7 +77,7 @@ Other storytelling elements were also visualized with the help of stickers, such
 
 ### Achievements
 
-As part of the visual overhaul of the app, the medals awarded in the "Achievements" section have also been visualized. You get these for playing Escapeling frequently, for example. Previously, achievements were purely text-based, but now the player receives a picture of their current status.   
+As part of the visual overhaul of the app, the medals awarded in the "[Achievements](https://alluos.github.io/2021/02/02/achievements.html)" section have also been visualized. You get these for playing Escapeling frequently, for example. Previously, achievements were purely text-based, but now the player receives a picture of their current status.   
 
 <img src="https://github.com/ALLUOS/ALLUOS.github.io/blob/semester-three/assets/images/visualizationsIMG06.png" alt="Figure 6: Image that the user gets when he has reached the status of an Admiral as part of the achievements" class="center">
 
