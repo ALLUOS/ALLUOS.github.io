@@ -20,7 +20,7 @@ image: pic11.jpg
 <div id="motivation"></div>
 ## Motivation
  
-Visualizations play a central role in the field of user experience. Because of their great potential, they were included in Escapeling. Not only in the previous semester's report it can be found in the outlook that the application should contain more visualizations, but also this semester the idea was brought forth, especially regarding adaptive and situational elements. Visualizations can be simple emojis, as well as situational gifs or adaptive images.
+Visualizations play a central role in the field of user experience. Because of their great potential, they were included in Escapeling. Firstly, in the previous semester's report it can be found in the outlook that the application should contain more visualizations. Secondly, this semester the idea of visualizations especially for the adaptive and situational elements was brought forth. Visualizations can be simple emojis, as well as situational gifs or adaptive images.
 The usefulness of visualizations in a learning environment has been proven in many ways. Our app is explicitly not about visualizing vocabulary using images, for example, as is common in beginner courses. Rather, different types of visualizations have been used as supporting elements to both enhance the user experience and maximize learning.
 
 <div id="background"></div>
