@@ -67,7 +67,7 @@ In some tasks it is useful to know how much time you have left to complete the t
 
 *Figure 4: example sticker of the alien Elias*
 
-Stickers are images that have no background. They are displayed much larger than emojis in Telegram, the messenger service used for Escapeling. To enhance the effects of storytelling, a standalone sticker pack was developed that incorporates various components of storytelling. The full content of the sticker pack can be seen in figure number 5. It includes the main characters of the story, Harriet and Elias. Since emotions can be an essential factor for learning and provide a better experience of the story, different emotional states of the main characters were visualized, such as joy, mistrust or sadness.
+Stickers are images that have no background. They are displayed much larger than emojis in Telegram, the platform used for Escapeling. To enhance the effects of storytelling (link), a standalone sticker pack was developed that incorporates various components of storytelling. The full content of the sticker pack can be seen in Fig. 5. It includes the main characters of the story, Harriet and Elias. Since emotions can be an essential factor for learning and provide a better experience of the story, different emotional states of the main characters such as joy, mistrust or sadness are visualized.
 Other storytelling elements were also visualized with the help of stickers, such as the code panel, on which the player is supposed to enter a code several times during the game.
  
 <img src="https://github.com/ALLUOS/ALLUOS.github.io/blob/semester-three/assets/images/visualizationsIMG05.png" alt="Figure 5: All stickers belonging to the Escapeling sticker pack" class="center">
