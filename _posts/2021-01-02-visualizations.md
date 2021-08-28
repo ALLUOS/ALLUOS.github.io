@@ -33,7 +33,7 @@ Finally, visualizations also contribute to an appealing design of the learning a
 <div id="conception"></div>
 ## Conception
 
-The selection of the type and manner of visualization elements was based on both the use of the same by our target audience, mostly 15-year-old teenagers, and the functionalities of our app. The visualization elements include GIFs, emojis, stickers and adaptive images. 
+The selection of the type and manner of visualization elements was based on both the use of these elements by our target audience -- mostly 15-year-old teenagers -- and the functionalities of our app. The visualization elements include GIFs, emojis, stickers and adaptive images. 
 
 ### GIFs
 
