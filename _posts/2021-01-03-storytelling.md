@@ -138,3 +138,82 @@ As a whole, this short introductory sequence is delivered to each user individua
 After two semesters of work on the project, we have achieved a satisfactory sketch of the narration, and the visual media we presented are effective in guiding users through an introduction to the application and the storyline.
 
 In the future, our wish is to create a more immersive game experience by including more visual and audio-visual content throughout the whole application. Moreover, we hope to give users more agency by providing additional possibilities for interaction, both with the characters and with the game environment. Finally, we intend to devote more time and thought to the further development of a captivating and motivating storyline.
+
+
+# Semester 3
+
+## Language simplification
+
+By the beginning of the third project term the functional version of the Escapeling bot had already been launched, however there was still much room for improvement not only in terms of implementing new features and code updates, but also concerning the story design. The Escapeling had a main working plot, adopted a specific storytelling style, and the communication with the user was built on a certain tone of voice. While the materials provided by the initiating team have set the core direction of the story pipeline, the specifics of the third semester work plan allowed us to develop a more detailed general story framework. It has been a joint decision to process the existing text and develop an updated refined version the plot. One of the first tasks of the design team was to simplify the storytelling language in order to make the story text (and hence, all the communication with the bot) more accessible and inviting for the (pre-) intermediate English speakers. While studying the text we have found that while expressive and exciting, some of the story details were too elaborate, the tone of communication with the user was seldom consistent, and certain passages involved complex upper-intermediate (or advanced) grammar structures or employed compound wording. During Sprint 1 the extensive group work included independent comment entry and joint contribution review over the course of two weeks, which proved to be practical and efficient technique of text processing. The design team managed to adapt and improve the storytelling language using the a number of resources such as Thesaurus, Cambridge and Merriam-Webster dictionaries and Rewordify tool that allowed enriching the text while keeping it understandable. As a result, the text was more readable for a general intermediate audience, inadequate phrasing cases were eliminated or simplified, which did not, however, result in the decline of the text quality. This activity has acquainted the design team with all the text materials that existed in the project and allowed to pave the way towards more drastic but helpful changes to the storytelling pipeline and the game plot.
+
+## Expanded story pipeline
+
+The sketch of the narration developed in the previous 2 semesters has laid the groundwork for the storytelling. During the 3. Semester, we were able to take one step further towards our goal in achieving a better immersive user experience. Story parts expressed in text and images are combined in an interactive way and used to create a shared vision among the players.
+To improve the user experience, a more sophisticated story pipeline was constructed based on structural framework which determines the flow of the game and links all the elements as a whole. The story decisions present the possibilities of how things could unfold. And letting the users get involved in shaping the story will create an interactive setting which can be highly motivating for the players.
+
+We created a visual board to help illustrating the new story pipeline. (See [Mural board](https://app.mural.co/t/personalvisionboard1357/m/personalvisionboard1357/1622826319810/2a5329e7b27f87c36b8d044575f770bb25e6fa6e?sender=95652543-7e09-45f3-aecb-a531c7efe568))
+[![Bildschirmfoto-2021-08-15-um-18-38-17.png](https://i.postimg.cc/FK9Qcqqy/Bildschirmfoto-2021-08-15-um-18-38-17.png)](https://postimg.cc/87n3gyTc)
+*Figure 4: New story pipeline*
+
+## Story decisions between tasks
+
+The story parts are organised in a way that includes clear storylines and essential elements of when, where, what and how. The options are developed in line with the sci-fi background setting and guided by the character-driven design thinking.
+
+As shown in the figure, the new story pipeline allows more flexibility and opens up new possibilities for the user. Between tasks, the players now have the chance to choose an action that they want to take in a given situation.
+
+[![Story-choice.png](https://i.postimg.cc/brQQRHRX/Story-choice.png)](https://postimg.cc/N2j9sXVb)
+*Figure 5: Story choice*
+
+**Example task 1-2:**
+
+After entering the right password, the users will be shown the following messages:
+
+  *One of the walls starts to crack... A door opens slowly... And you can see a long, empty corridor ahead of you. This is a great chance to escape!\
+  You all walk along the corridor together as slowly and quietly as possible, so that the aliens don’t notice you. There is an elevator in this corridor. It could take you to another floor -maybe a  floor with a shuttle with which you could escape. But maybe you're already on the  floor with a shuttle? The corridor continues past the elevator.*
+
+The users are then asked to make a decision:
+
+  *It's time to make a decision! Do you want to...\
+  -take the elevator up?\
+  -take the elevator down?\
+  -see if the corridor leads somewhere else?*
+
+Depending on the outcome of the previous task(very good - 3/4 or 4/4, good - 1/4 or 2/4, bad 0/4) and the choice they make, the players will be given different text snippets.
+
+Overall, there are three plots where the users are encouraged to choose between different story options. Here a brief overview:
+
+| Block | Scenario | Options |
+| ----- | ----------- | ----------- |
+| Between Task 1-2 | The players are walking along the corridor, there is an elevator which could take them to another floor. | elevator: go up \ elevator: go down \ corridor: look for another escape |
+| Between Task 2-3 | The players have made it halfway down the hallway, suddenly the elevator starts moving again. | hide behind the space shuttle sign \ hide in waiting area \ keep standing in the hall |
+| Between Task 3-4 | The players are trapped in a room, the sound of footsteps coming closer indicates that the aliens are moving in their direction. | fight against the aliens \ shoot the door opener \ run away |
+
+*Table 1: Overview of story dicisions*
+
+
+## Performance based outcomes
+
+As part of a new pipeline, we also created performance based outcomes. This means that if the group performed well in a task with 0 or only 1 mistake, next story block of the game will be very positive for the group. If they made 2 or 3 mistakes, they will be presented with a good outcome but the story will develop with some complications. And if the users failed the task, they are presented with a negative outcome.
+
+For example, in one of the storyblocks participants can be prompted to choose between three different options:
+* to shoot the door opener;
+* to fight against the aliens;
+* to run away. 
+
+If they choose the first option, they will manage to block the door so that this stops the aliens, in case of the very good outcome. In case of the good outcome, they still manage to block the door but with some troubles when the weapons do not work at first. If the users failed the task, a negative outcome will be displayed.
+
+The idea of performance based outcomes also applies to the story endings, which depend on the overall performance of the group as well as on whether users choose to participate in a new task. The endings can be divided into super good ending, good ending and neutral ending, depending on the amount of mistakes the group made during the whole escape mission.
+
+In case users choose to participate in the task and accomplish it succesfully, all endings show them that they managed to take Elias together with them. In case they did not choose the task or failed it, the endings do not mention Elias being saved. 
+
+## Restart scenarios
+
+In the initial story structure players had to pass all the tasks in order to reach the end of the game. In case the users failed a given task, the whole mission would be considered as failed and they would have to start from the very beginning. According to the results, obtained by the testing team in the second semester, we concluded that this scenario does not seem to be efficient and, after a certain amount of failed trials, demotivates players from finishing the game. Thus, we came up with an idea of restart scenarios. 
+
+If the participants fail the task, they would now have a choice of either repeating the same task, choosing a different task or restarting the whole mission. However, if the users fail the same task twice, they fail the whole mission and can only restart the game.
+
+## Completion metrics
+
+Thereby, the overall completion metrics of the group depend on their performance in each of the given tasks. Participants are now allowed to fail the given tasks, with each task, however, being failed not more than once. Nevertheless, they have to complete all the tasks in order to finish the game. Besides, the overall game results will depend on the amount of mistakes players made in each of the tasks. 
+
+### Note that the described above changes of the story pipeline are not fully implemented yet. It is however important to have a clear picture of where we are headed and what we want to achieve.
