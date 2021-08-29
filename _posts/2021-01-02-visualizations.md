@@ -59,7 +59,7 @@ The selection of the type and manner of visualization elements was based on both
 
 ### GIFs
 
-<img src="https://github.com/ALLUOS/ALLUOS.github.io/blob/semester-three/assets/images/visualizationsIMG01.png" alt="Figure 1: GIF showing the view out of the spaceship after escaping the aliens" class="center">
+<img src="{{ "" | relative_url }}/assets/images/visualizationsIMG01.png" alt="Figure 1: GIF showing the view out of the spaceship after escaping the aliens" class="center">
 
 *Figure 1: GIF showing the view out of the spaceship after escaping the aliens* 
 
@@ -69,7 +69,7 @@ The third function of using GIFs in Escapeling, is to provide feedback and motiv
 
 ### Emojis
  
-<img src="https://github.com/ALLUOS/ALLUOS.github.io/blob/semester-three/assets/images/visualizationsIMG02.png" alt="Figure 2: Emojis in the private chat selection menu" class="center">
+<img src="{{ "" | relative_url }}/assets/images/visualizationsIMG02.png" alt="Figure 2: Emojis in the private chat selection menu" class="center">
 
 *Figure 2: emojis in the private chat selection menu*
 
@@ -77,7 +77,7 @@ Emojis are small graphics that can be in a line with text. They can be emoticons
 
 ### Situation Dependent Images
  
-<img src="https://github.com/ALLUOS/ALLUOS.github.io/blob/semester-three/assets/images/visualizationsIMG03.png" alt="Figure 3: Image showing the remaining time for a task" class="center">
+<img src="{{ "" | relative_url }}/assets/images/visualizationsIMG03.png" alt="Figure 3: Image showing the remaining time for a task" class="center">
 
 *Figure 3: image showing the remaining time for a task*
 
@@ -85,14 +85,14 @@ In some tasks it is useful to know how much time you have left to complete the t
 
 ### Stickers
  
-<img src="https://github.com/ALLUOS/ALLUOS.github.io/blob/semester-three/assets/images/visualizationsIMG04.png" alt="Figure 4: example sticker of the alien Elias" class="center">
+<img src="{{ "" | relative_url }}/assets/images/visualizationsIMG04.png" alt="Figure 4: example sticker of the alien Elias" class="center">
 
 *Figure 4: example sticker of the alien Elias*
 
 Stickers are images that have no background. They are displayed much larger than emojis in Telegram, the platform used for Escapeling. To enhance the effects of storytelling, a standalone sticker pack was developed that incorporates various components of storytelling. The full content of the sticker pack can be seen in Fig. 5. It includes the main characters of the story, Harriet and Elias. Since emotions can be an essential factor for learning and provide a better experience of the story, different emotional states of the main characters such as joy, mistrust or sadness are visualized.
 Other storytelling elements were also visualized with the help of stickers, such as the code panel, on which the player is supposed to enter a code several times during the game.
  
-<img src="https://github.com/ALLUOS/ALLUOS.github.io/blob/semester-three/assets/images/visualizationsIMG05.png" alt="Figure 5: All stickers belonging to the Escapeling sticker pack" class="center">
+<img src="{{ "" | relative_url }}/assets/images/visualizationsIMG05.png" alt="Figure 5: All stickers belonging to the Escapeling sticker pack" class="center">
 
 *Figure 5: all stickers belonging to the Escapeling sticker pack*
 
@@ -100,7 +100,7 @@ Other storytelling elements were also visualized with the help of stickers, such
 
 As part of the visual overhaul of the app, the medals awarded in the "[Achievements](https://alluos.github.io/2021/02/02/achievements.html)" section have also been visualized. You get these for playing Escapeling frequently, for example. Previously, achievements were purely text-based, but now the player receives a picture of their current status.   
 
-<img src="https://github.com/ALLUOS/ALLUOS.github.io/blob/semester-three/assets/images/visualizationsIMG06.png" alt="Figure 6: Image that the user gets when he has reached the status of an Admiral as part of the achievements" class="center">
+<img src="{{ "" | relative_url }}/assets/images/visualizationsIMG06.png" alt="Figure 6: Image that the user gets when he has reached the status of an Admiral as part of the achievements" class="center">
 
 *Figure 6: image that the user gets when he has reached the status of an “Admiral” as part of the achievements*
 
@@ -133,7 +133,7 @@ The various achievement images were created with GIMP 2.10. In the future it mig
 ## Outlook And Discussion
 
 The visualizations received very positive feedback after initial user tests, which is why it can be assumed that they achieved their goal of enhancing the user experience. In future implementations of further tasks and changes to storytelling elements, care must be taken to select suitable visualization elements or to adapt existing elements.
-One point that should not be ignored, however, is that too many graphics could distract learners more than focus them (Zallio, 2018). In addition, especially GIFs and emojis could lower the seriousness of the application (Zallio, 2018). While it is desired to break away from what is often perceived as a strict school learning environment and also to convey the joy of learning, Escapeling should also not be perceived as chat game without a serious English learning intention. 
+One point that should not be ignored, however, is that too many graphics could distract learners more than focus them (Zallio, 2018). In addition, especially GIFs and emojis could lower the seriousness of the application (Zallio, 2018). While it is desired to break away from what is often perceived as a strict school learning environment and also to convey the joy of learning, Escapeling should also not be perceived as chat game without a serious English learning intention.  
 In order to avoid these effects, it is important not to include too many visualizations at once and to use GIFs and emojis in a well-dosed way. Further user tests will show whether the current implementation is successful.
 
 <hr />

@@ -184,7 +184,9 @@ The sketch of the narration developed in the previous 2 semesters has laid the g
 To improve the user experience, a more sophisticated story pipeline was constructed based on structural framework which determines the flow of the game and links all the elements as a whole. The story decisions present the possibilities of how things could unfold. And letting the users get involved in shaping the story will create an interactive setting which can be highly motivating for the players.
 
 We created a visual board to help illustrating the new story pipeline. (See [Mural board](https://app.mural.co/t/personalvisionboard1357/m/personalvisionboard1357/1622826319810/2a5329e7b27f87c36b8d044575f770bb25e6fa6e?sender=95652543-7e09-45f3-aecb-a531c7efe568))
-[![Bildschirmfoto-2021-08-15-um-18-38-17.png](https://i.postimg.cc/FK9Qcqqy/Bildschirmfoto-2021-08-15-um-18-38-17.png)](https://postimg.cc/87n3gyTc)
+
+<img class="center" style="width: 100%" src="{{ '' | absolute_url }}/assets/images/mission-pipeline-final.png">
+
 *Figure 4: New story pipeline*
 
 ## Story decisions between tasks
@@ -193,7 +195,7 @@ The story parts are organised in a way that includes clear storylines and essent
 
 As shown in the figure, the new story pipeline allows more flexibility and opens up new possibilities for the user. Between tasks, the players now have the chance to choose an action that they want to take in a given situation.
 
-[![Story-choice.png](https://i.postimg.cc/brQQRHRX/Story-choice.png)](https://postimg.cc/N2j9sXVb)
+<img class="center" src="{{ '' | absolute_url }}/assets/images/story-choice.png">
 *Figure 5: Story choice*
 
 **Example task 1-2:**
@@ -248,4 +250,4 @@ If the participants fail the task, they would now have a choice of either repeat
 
 Thereby, the overall completion metrics of the group depend on their performance in each of the given tasks. Participants are now allowed to fail the given tasks, with each task, however, being failed not more than once. Nevertheless, they have to complete all the tasks in order to finish the game. Besides, the overall game results will depend on the amount of mistakes players made in each of the tasks. 
 
-### Note that the described above changes of the story pipeline are not fully implemented yet. It is however important to have a clear picture of where we are headed and what we want to achieve.
+**Note:** the described above changes of the story pipeline are not fully implemented yet. It is however important to have a clear picture of where we are headed and what we want to achieve.
