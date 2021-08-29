@@ -3515,6 +3515,25 @@
 		position: relative;
 		text-align: center;
 	}
+		#banner div.inner * {
+			position: relative;
+		}
+
+		#banner .actions {
+			margin-top: 1.5em;
+		}
+		
+		#banner div > ul.actions > li > a{
+			margin-bottom: 3em;
+		}
+
+		#banner h2 {
+			text-shadow: 4px 3px 2px #00000080;
+		}
+
+		#banner p {
+			text-shadow: 2px 2px 3px black;
+		}
 
 		#banner h2 {
 			-moz-transform: scale(1);
@@ -3586,7 +3605,7 @@
 			bottom: 0;
 			color: inherit;
 			font-size: 0.8em;
-			height: 8.5em;
+			height: 5.0em; /* height: 8.5em; */
 			left: 50%;
 			letter-spacing: 0.225em;
 			margin-left: -8.5em;
@@ -3605,7 +3624,7 @@
 				background-position: center;
 				background-repeat: no-repeat;
 				background-size: contain;
-				bottom: 4em;
+				bottom: 1em; /* bottom: 4em; */
 				content: '';
 				display: block;
 				height: 1.5em;
@@ -3931,4 +3950,34 @@
 
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
+	}
+
+/* Escapeling additions */
+
+	div .FAQ{
+		padding-top: 1em;
+		padding-bottom: 1em;
+	}
+
+	summary .FAQ{
+		padding-bottom: 1em;
+	}
+
+	.section{
+		color:rgb(77, 106, 144);
+	}
+
+	.content-overview{
+		font-weight: normal;
+		letter-spacing: 0.225em;
+		line-height: 1em;
+		margin: 0 0 1em 0;
+		text-transform: uppercase;
+		color: rgb(77, 106, 144);
+		display: block;
+		font-size: 1.2em;
+		margin-block-start: 0.83em;
+		margin-block-end: 0.83em;
+		margin-inline-start: 0px;
+		margin-inline-end: 0px;
 	}

@@ -2,11 +2,11 @@
 
 ---
 
-### Note for Semester Two
+### Note for Semester Three
 
 All structural additions and notes relevant to the documentation
-for the project's second semester are **emboldened** with an
-[S2] tag.
+for the project's third semester are **emboldened** with an
+[S3] tag.
 
 ----
 
@@ -23,49 +23,42 @@ The documentation alone is the responsibility of project members.
 
 The documentation is structured as follows:
 
-**[S2] Please note semester two additions with suggested
-responsibilities and word counts below.**
+**Boldened content denotes semester three additions**  
+<ins>Underlined content denotes pages that will be significantly modified during semester three</ins>
+
 
 <pre>
-|-- Overview
-    |-- Introduction to the project.
-    |-- Project goals.
-    |-- Organization and timeline.
-    |-- Additional resources.
-    <b>|-- Semester Two Overview [S2] (Christian) ~500 words</b>
-        <b>|-- General goals and achievements.</b>
-        <b>|-- Organization and timeline.</b>
-        <b>|-- Additional resources, reference to conference.</b>
-|-- Design
-    |-- Problem description.
-    |-- Design process.
-    |-- Summary of functional requirements.
-    <b>|-- Discussion Task Design [S2] (New Task Group) ~2000 words</b>
-        <b>|-- Motivation</b>
-        <b>|-- Design process</b>
-|-- Implementation
-    |-- Technical description.
-    |-- Additional information.
-|-- Summary and Evaluation
-    |-- Test strategy overview.
-    |-- Evaluation. Based on tests, was the application accepted by the target user and did it meet the requirements?
-    |-- Summary. General reflection on the applications successes/failures.
-    |-- Outlook. Next steps and suggested changes for semester two.
-    <b>|-- Semester Two Evaluations [S2] (Test) ~2000 words</b>
-<b>|-- Adaptive Module [S2] (Adaptive Group) ~1000 words</b>
-<b>|-- Storytelling [S2] (Storytelling Group) ~? words</b>
-<b>|-- Achievements [S2] (Achievements Group) ~1500 words</b>
+|-- Project organization
+    |-- <ins>Overview</ins>
+    |-- <ins>Design</ins>
+    |-- <ins>Implementation</ins>
+    |-- <ins>Testing</ins>
+|-- Features
+    |-- Learning experience
+        |-- Adaptive module
+        |-- Achievements
+        |-- <strong>Grammatical error correction</strong>
+    |-- User experience
+        |-- <ins>Storytelling</ins>
+        |-- <strong>Visualizations</strong>
+        |-- <strong>Support</strong>
+|-- Mission tasks
+    |-- Sentence correction
+    |-- Vocabulary guessing
+    |-- <ins>Discussion</ins>
+    |-- <strong>Listening</strong>
 </pre>
+
+You can find more details on our site structure on [this Mural board](https://app.mural.co/t/personalvisionboard1357/m/personalvisionboard1357/1626770125380/3c0d3087bdfc4cfc68858027b10f0fd7243591e1?sender=u26177583979c89d370329710). For a detailed overview of our planned contributions for semester three, visit [this Notion page](https://www.notion.so/Documentation-e7ae66bf4eaf47a09cd629d65db8f739).
 
 ---
 
 ### Submission Guidelines
 
-Each group is responsible for the above-delegated section and each member must contribute an appropriate number of words for his/her project commitment.
+Each group is responsible for the above-delegated section and each member must contribute an appropriate number of words for their project commitment.
 Study project participants should contribute approximately 750 words each. Interdisciplinary participants should contribute approximately 500 words each.
-Each group must create a new repository branch **from the semester_two feature branch** and collaboratively finish their section. By **15 March 2021** each group must submit a pull request to merge their
-branch with the **semester_two** branch and include in the pull request a comment which details the approximate word-count contributions of each project member. The pull
-requests will then be reviewed and merged. The final site will then be collectively reviewed before grading submission at the end of March.
+Please create a new repository branch **from the semester_three feature branch** for each new page of the website (e.g. a `testing` branch for the testing documentation, a `visualizations` branch for the visualizations documentation, and so on). By **15 August 2021** each group must submit a pull request to merge their
+branch with the **semester_three** branch and include in the pull request a comment which details the approximate word-count contributions of each project member. The pull requests will then be reviewed and merged. The final site will then be collectively reviewed before grading submission at the end of August.
 
 ### Grading Guidelines
 

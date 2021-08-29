@@ -14,19 +14,24 @@
                     {% endif %}
                     <div id="menu">
                         <ul>
-                            {% for page in site.pages %} {% if page.layout == "default" %}
-                            <li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
-                            {% endif %} {% endfor %} {% for page in site.pages %} {% if page.layout == "page" %}
-                            <li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
-                            {% endif %} {% endfor %}
-                            {% for post in site.posts %}{% if site.tiles-source == 'posts' %}
-                            <li><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></li>
-                            {% if post.title == page.title %}
+                            <li><a href="{{ "" | absolute_url }}">Home</a></li>
+                            <li><a href="{{ "" | absolute_url }}/2021/04/04/overview.html">Overview</a></li>
+                            <li><a href="{{ "" | absolute_url }}/2021/04/03/design.html">Design</a></li>
+                            <li><a href="{{ "" | absolute_url }}/2021/04/02/implementation.html">Implementation</a></li>
+                            <li><a href="{{ "" | absolute_url }}/2021/04/01/evaluation.html">Testing</a></li>
+                            <li><a href="{{ "" | absolute_url }}/#three">Language practice tasks</a></li>
+                            <li><a href="{{ "" | absolute_url }}/2021/02/04/learning-experience.html">Learning experience</a></li>
+                            <li><a href="{{ "" | absolute_url }}/2021/01/04/user-experience.html">User experience</a></li>
+                            <li><a href="{{ "" | absolute_url }}/2020/02/03/FAQ.html">FAQ</a></li>
+                            <li><a href="{{ "" | absolute_url }}/2020/02/02/media.html">Media</a></li>
+                            <li><a href="{{ "" | absolute_url }}/2020/02/01/contact.html">Contact</a></li>
+                            {% for post in site.posts %}{% if post.title == page.title %}
+                            <li>Contents on this page</li>
                             {% for section in page.sections %}
                             <li><a href="{{ post.url | append:section.tag | remove_first:'\'}}">- {{ section.title }}</a></li>
                             {% endfor %}
                             {% endif %}
-                            {% endif %} {% endfor %}
+                            {% endfor %}
                         </ul>
                     </div>
                 </li>
