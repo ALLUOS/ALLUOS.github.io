@@ -118,7 +118,7 @@ Furthermore, vocabulary hints and short descriptions of words which are possibly
 <div id="implementation"></div>
 
 ## Implementation process
-Here, we present the technical details of the implementation of this task. As part of our overall bot architecture, the implementation of the discussion task also relies on general modules like the `Task(ABC)` class and the room handler, described in the [implementation section]({{ "" | absolute_url }}/2021/04/02/implementation.html). Therefore, only the discussion-specific task handler is described here in detail.
+Here, we present the technical details of the implementation of this task. As part of our overall bot architecture, the implementation of the discussion task also relies on general modules like the `Task(ABC)` class and the room handler, described in the [implementation section]({{ "" | absolute_url }}/2021/04/02/implementation.html#framework). Therefore, only the discussion-specific task handler is described here in detail.
 
 `Discussion(Task)` is a subclass of `Task(ABC)`. However, unlike the sentence correction and the vocabulary guessing tasks, the discussion task is not sequential in nature and, therefore, does not inherit from `SequentialTask`. Nevertheless, we were still able to reuse a significant part of the methods already implemented in said class.
 The task always starts off with the presentation of the text, which is retrieved from the database based on the users' proficiency. This is followed by three rounds of discussion.
