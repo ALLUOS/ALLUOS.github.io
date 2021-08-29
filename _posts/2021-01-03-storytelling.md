@@ -10,12 +10,41 @@ sections:
    tag: \#story
  - title: Structure
    tag: \#structure
- - title: delivery methods
+ - title: Delivery methods
    tag: \#delivery
  - title: Outlook
    tag: \#outlook
 description: Explore our sci-fi themed escape room narrative.
 ---
+
+## Contents
+
+<span class = "content-overview"><a href = "#second">Second Semester</a></span>
+
+1. Motivation
+2. Characters
+3. Plot and storylines
+4. Structure
+5. Delivery methods
+6. Outlook
+
+<span class = "content-overview"><a href = "#third">Third Semester</a></span>
+
+1. Language simplification
+2. Expanded story pipeline
+3. Story decisions between tasks
+4. Performance based outcomes
+5. Restart scenarios
+6. Completion metrics
+
+<hr />
+
+<!-- Semester Two -->
+
+<div id="second"></div>
+
+<h2><span class="section">Second semester</span></h2>
+
 <div id="motivation"></div>
 
 ## Motivation for the change in storytelling
@@ -29,7 +58,6 @@ In the summer semester’20 we chose a narrative scenario as one of the methods 
 In the winter semester’20/21 we decided to make some changes and additions into the existing concept, preserving the idea of escape room in the collaborative learning scenario, however, we made a decision to improve narrative, introduce new characters, create different versions of a single escapeling session and add more visual material.
 
 At this point of time we designed three tasks that help users to improve their English level. We decided to introduce such a narrative that will create the impression that all the tasks are connected between each other. Furthermore, we added new characters (Harriet and Elias) to make the storytelling more logical and interesting. There was made a decision to create different versions of a single escapeling session in order to give users an opportunity to use an application for learning a few times, even if the tasks have already been successfully completed. What is more, the use of emojis, an introductory video and pictures help to avoid sending large text messages to the user that makes the interface of the app more user-friendly and the learning process more interesting as it immerse users into the atmosphere of the game.
-
 
 <div id="characters"></div>
 
@@ -62,7 +90,6 @@ The story variants are created to keep the story engaging and interesting for us
 <div id="structure"></div>
 
 ## Block Structure
-
 
 The structure of the story was divided into blocks. This was done in order to integrate the story with the tasks that are to be completed by the participants. The block is the representation of the stage of the escape the participants are in. The story right now is based on 5 blocks which allows the participants to take part in 3 tasks before they finish the learning process. The block flowchart basically shows the flow of the blocks and the blocks which are completed, and which are not.
 The blocks that are completed:
@@ -139,8 +166,13 @@ After two semesters of work on the project, we have achieved a satisfactory sket
 
 In the future, our wish is to create a more immersive game experience by including more visual and audio-visual content throughout the whole application. Moreover, we hope to give users more agency by providing additional possibilities for interaction, both with the characters and with the game environment. Finally, we intend to devote more time and thought to the further development of a captivating and motivating storyline.
 
+<hr />
 
-# Semester 3
+<!-- Semester Three -->
+
+<div id="three"></div>
+
+<h2><span class="section">Third semester</span></h2>
 
 ## Language simplification
 

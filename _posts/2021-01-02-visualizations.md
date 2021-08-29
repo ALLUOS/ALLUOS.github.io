@@ -17,11 +17,30 @@ sections:
 description: Learn more about the design and implementation of our application's visual elements.
 image: pic11.jpg
 ---
+
+## Contents
+
+<span class = "content-overview"><a href = "#motivation">Motivation</a></span>
+
+<span class = "content-overview"><a href = "#background">Theoretical background</a></span>
+
+<span class = "content-overview"><a href = "#conception">Conception</a></span>
+
+<span class = "content-overview"><a href = "#implementation">Implementation</a></span>
+
+<span class = "content-overview"><a href = "#discussion">Outlook and Discussion</a></span>
+
+<span class = "content-overview"><a href = "#references">References</a></span>
+
+<hr />
+
 <div id="motivation"></div>
 ## Motivation
  
 Visualizations play a central role in the field of user experience. Because of their great potential, they were included in Escapeling. Firstly, in the previous semester's report it can be found in the outlook that the application should contain more visualizations. Secondly, this semester the idea of visualizations especially for the adaptive and situational elements was brought forth. Visualizations can be simple emojis, as well as situational gifs or adaptive images.
 The usefulness of visualizations in a learning environment has been proven in many ways. Our app is explicitly not about visualizing vocabulary using images, for example, as is common in beginner courses. Rather, different types of visualizations have been used as supporting elements to both enhance the user experience and maximize learning. For example, the main characters of our [story](https://alluos.github.io/2021/01/03/storytelling.html) have been given a face by creating stickers of them that are sent to the user.
+
+<hr />
 
 <div id="background"></div>
 ## Theoretical Background
@@ -29,6 +48,8 @@ The usefulness of visualizations in a learning environment has been proven in ma
 Visualizations "displayed in online interactive e-learning (...) represent a critical aspect in teaching and learning" (Jusoh, 2019). Among other things, the study shows that visualizations in e-learning increase the interest in the subject matter (Jusoh, 2019). Furthermore, visual stimuli can help to focus on the learning content as well as to remember what has been learned (Jusoh, 2019; Zallio, 2018).
 The emotional aspect of emojis and GIFs as facilitators in learning should also not be underestimated. According to ISO 9241-210 (2019), the user's emotions are also part of the user experience. In a study by Zallio & Damon (2018) that examined the use of emojis and GIFs to promote student engagement, these visualizations were used "in order to stimulate the emotions such as hilarious and ironic feelings among young students". This is consistent with other findings highlighting the role of emotions in learning processes. For example, it “is known that long-term memory retention is greatly aided by the emotional associations of that memory" (Zallio, 2018).
 Finally, visualizations also contribute to an appealing design of the learning application. According to Don Norman, a professor well known in the field of design, attractively designed applications are evaluated as more usable by the user than unattractive ones. To a large extent, this is due to the influence of emotions (Norman, 2005). This could improve the user's subjective evaluation of the learning app, as well as their feelings about the app's usefulness.
+
+<hr />
 
 <div id="conception"></div>
 ## Conception
@@ -106,6 +127,7 @@ Since Telegram does not support an ID system for GIFs we used URLs from GIPHY, a
 
 The various achievement images were created with GIMP 2.10. In the future it might be possible to put additional information about the achievements as additional layers over the current images, so that one image shows all achievements at once. This could be done using the Python Image Library (PIL). They can be sent to the chat with `send_image()`.
 
+<hr />
 
 <div id="discussion"></div>
 ## Outlook And Discussion
@@ -113,6 +135,8 @@ The various achievement images were created with GIMP 2.10. In the future it mig
 The visualizations received very positive feedback after initial user tests, which is why it can be assumed that they achieved their goal of enhancing the user experience. In future implementations of further tasks and changes to storytelling elements, care must be taken to select suitable visualization elements or to adapt existing elements.
 One point that should not be ignored, however, is that too many graphics could distract learners more than focus them (Zallio, 2018). In addition, especially GIFs and emojis could lower the seriousness of the application (Zallio, 2018). While it is desired to break away from what is often perceived as a strict school learning environment and also to convey the joy of learning, Escapeling should also not be perceived as chat game without a serious English learning intention. 
 In order to avoid these effects, it is important not to include too many visualizations at once and to use GIFs and emojis in a well-dosed way. Further user tests will show whether the current implementation is successful.
+
+<hr />
 
 <div id="references"></div>
 ## References
@@ -128,8 +152,3 @@ Jusoh, S., Almajali, S., & Abualbasal, A.M. (2019). A study of user experience f
 Norman, D. A. (2005). Emotional Design: Why We Love (or Hate) Everyday Things. Basic Books.
 
 Zallio, M., & Damon, B. (2018). Computer Aided Drawing software delivered through Emotional Learning. The use of Emoticons and GIFs as a tool for increasing student engagement. 1-4. 10.14236/ewic/HCI2018.75.
-
-
-
-
-

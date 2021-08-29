@@ -2,20 +2,37 @@
 layout: post
 title: Listening task
 sections:
- - title: Design process
-   tag: \#design
- - title: Implementation process
+ - title: Motivation
+   tag: \#motivation
+ - title: Task flow
+   tag: \#task-flow
+ - title: Materials
+   tag: \#materials
+ - title: Implementation
    tag: \#implementation
+ - title: References
+   tag: \#references
 description: Learn more about the listening task.
 image:
 ---
 
 ## Contents
-1. Motivation
-2. Task Flow
-3. Materials
-4. Implementation
 
+<span class = "content-overview"><a href = "#motivation">Motivation</a></span>
+
+<span class = "content-overview"><a href = "#task-flow">Task Flow</a></span>
+
+<span class = "content-overview"><a href = "#materials">Materials</a></span>
+
+<span class = "content-overview"><a href = "#implementation">Implementation</a></span>
+
+1. Inline-Keyboards
+2. Access to the Audio-files
+3. Possible Exploitations
+
+<span class = "content-overview"><a href = "#references">References</a></span>
+
+<hr />
 
 <div id="motivation"></div>
 ## Motivation
@@ -24,7 +41,7 @@ The first three tasks have been designed to provide practice with core language 
 
 According to Gilakjani and Sabouri (2016), some of the most common issues for students with listening tasks are: quality of the materials, cultural differences, accent, unfamiliar vocabulary, as well as speed and length of the audio input. In order to make the learning experience meaningful for the users, we have taken these into consideration in our data preparation and more details can be found in the Materials section below.
 
-<div id="task_flow"></div>
+<div id="task-flow"></div>
 ## Task Flow
 
 Simultaneously listening to and comprehending information that is being presented is one of the most challenging parts when it comes to learning a foreign language. Listening is usually considered to be more difficult than grammar or discussion tasks, previously designed by us in this application. Since a single escape mission with three already implemented tasks already seems to be time intensive as well as requires perseverance, it was decided to make the new listening task voluntary. Participants are not obliged to do the listening but are given a choice after successfully finishing the main part of the game. Thus, this new task was in the first place meant for the most motivated students. However, in order to encourage users doing this task, it was decided to include it in a storyline in such a way, that in case of a successful completion of the task a new story content would be unlocked. Users will see a story block with them saving Elias and setting him free. 
@@ -34,7 +51,6 @@ In the following, the description of the task flow will be presented in more det
 In case users choose to perform a listening task, they are at first presented with the instructions of what they are expected to do in the following task session. Then, an audio file will be sent to the users so that they can prepare for the upcoming questions. Thus, participants are able to start listening to a clip before actually seeing the related questions (the reasoning for this will be explained further below). All audio files lay within the same time range of one minute, so that the game experience is fair for all participating groups.  After the audio clip was sent in the chat, the first question together with the three possible answers will be presented to the participants. The chatbot also sends the name of a random player who is selected to designate the group's final choice. Players are given 90 seconds to reflect on the question. They are not prohibited from revisiting the audio clip during this time. Players can either use all the 90 seconds for preparation or answer before the indicated amount of time has elapsed. After the selected player states their answer, the next question is shown in the chat. The same procedure applies to all questions. In total, each audio clip is assigned four different questions, three of which are being randomly sampled and presented during each game run.
 
 Because Telegram was chosen as a platform for the application, we have encountered a series of difficulties while designing this task. First of all, in the typical classroom scenario the list of questions is presented to the students before the audio task, with an audio clip usually being played twice. In case of Telegram, it is impossible to control the amount of times users get exposed to the audio, since we did not manage to come up with a tool that can get the audio file deleted from the chat. (This can be done depending on 2 conditions. For example, after a certain amount of times the audio was played. Or after a certain amount of time that has passed since the file was sent to the players.) Thus, a new scenario had to be created in such a way, that it both satisfies the learning goals of improving the users' listening skills and seems to be suitable for its implementation in Telegram. Hence, we concluded that presenting the audio before the questions was the most suitable solution implementation-wise as well as the means to get players interested in the task and better engaged.
-
 
 <div id="materials"></div>
 ## Materials
@@ -55,9 +71,8 @@ Although our target audience is mainly B1-B2 students, since the intermediate pr
  
 Each recording was carefully reviewed by at least three people, checking for the sound quality of the recording, correctness of the language and multiple choice questions, flagging potentially sensitive subjects or unsuitable language, and as mentioned, checking the indicated level of difficulty.
 
-
-<div id="architecture"></div>
-## Technical Architecture
+<div id="implementation"></div>
+## Implementation
 
 In the following we will describe how the suggested task flow is achieved from a technical point of view. 
 The task consists of two loops that wrap the answering function. The first loop is the “Iteration-Loop”. In there the topic of the next audio file is selected and the matching audio file is sent, using the newly implemented `send_audio`-function. After sending the file, the questioning-loop is started. In there a question, regarding the audio file, is selected from a group of up to 4 different questions. Additional to that, the answering options are presented, and a user is announced who is supposed to answer. Now the users have 90 seconds to discuss the given answering options. To check for these 90 seconds, the function `time_is_up()` is being called to be executed in 90 seconds. If they have found a solution earlier, they can additionally press a button in the previous message, to skip their discussion time. Since the `time_is_up()` function is called only after a certain period of time has passed, it can not return anyhing and therefore can not change the state. This is resolved by adding a second type of state: the answer-mode. Whether a group is in answer-mode is saved in the instance of the task. While the answer-mode is deactivated all the chat-messages are still reaching the `evaluate_answer()`-function, but they are not evaluated, but discarded as part of the discussion. If either the `time_is_up()`-function is called or the button is pressed, the answer-mode is activated. This causes the bot to evaluate the next answer which is given by the earlier announced user. After the user gives the answer, the answer-mode is deactivated again. If the answer is correct the group gets a point. Otherwise, they do not. This process is repeated until each user in the group had one question regarding this topic. This closes the questioning-loop. If the questioning-loop is completed a new topic begins and a new iteration begins. The complete task consists of three iterations. If they were able to collect more than two thirds of the points, they were successful. To get a better overview over the flow of the task have a look at figure one.
@@ -67,7 +82,8 @@ The task consists of two loops that wrap the answering function. The first loop 
 *Figure 1: Flow-Diagram for the listening task*
 
 <div id="InlineKeyboard"></div>
-## Inline-Keyboards:
+### Inline-Keyboards
+
 Since the users are allowed to discuss for 90 seconds, but additionaly are allowed to answer earlier, we had to think of a possibility to either change the state after an appropriate amount of time, or to allow the users to induce this change of state. Therefore we decided to use the so called Inline-Keyboards. In this particular case it is used in the form of a button that says “I want to answer now”. When the button is pressed a CallbackQueryHandler is called, which in turn calls the `time_is_up` function. This function sends out the answering options and thereby stops the discussion. A picture of the Inline-Keyboard can be seen in Figure two.
 
 <img src="https://github.com/ALLUOS/ALLUOS.github.io/raw/master/assets/images/inline_keyboard_example.jpg" alt="Figure 2: Example of the inline-keyboard used for this task" class="center">
@@ -75,16 +91,15 @@ Since the users are allowed to discuss for 90 seconds, but additionaly are allow
 *Figure 2: Example of the inline-keyboard used for this task*
 
 <div id="AccesToAudio"></div>
-## Access to the Audio-files
+### Access to the Audio-files
 To give the design team easier access to the questions a decision was made to collect the different topics in a json-file. The file consisted of multiple topics, which followed the structure, as can be seen in the image below. One Topic contained the filename of the mp3 that gets played, the proficiency level needed, as well as four or more questions and their answers.
 
 <img src="https://github.com/ALLUOS/ALLUOS.github.io/raw/master/assets/images/audio_file_dict_scheme.jpg" alt="Figure 3: Example of a typical topic-structure for the listening-task." class="center">
 
 *Figure 3: Example of the inline-keyboard used for this task*
 
-
 <div id="exploits"></div>
-## Possible Exploitations
+### Possible Exploitations
 There are two possible exploitations in this task.
 The first being that anyone in the group could press the “I want to answer now”-Button, not only the one who is supposed to answer. This could lead to pressure from the other students and cutting short the discussion time.
 The second possible Exploitation is, that, after the time runs out or the button is pressed, the game waits for the answer of the player who got selected. This is not timed in any way, which could potentially lead to the user waiting forever until he answers. In addition to that, all other students can still write, potentially giving tips, even after the 90 seconds.
@@ -92,7 +107,6 @@ The second possible Exploitation is, that, after the time runs out or the button
 These two problems could not be solved completely, due to time constraints and the shortage of manpower for the implementation of the task.
 The first problem could be solved by checking who clicked the button and only calling the `time_is_up`-function when the right player clicks.
 The second problem could be addressed by implementing a second timer, which counts down from ten.
-
 
 <div id="references"></div>
 ## References

@@ -4,7 +4,7 @@ title: Implementation
 sections:
  - title: Technical Architecture
    tag: \#architecture
- - title: Telegram
+ - title: Telegram integration
    tag: \#telegram
  - title: Task Framework
    tag: \#framework
@@ -12,19 +12,70 @@ sections:
    tag: \#adaptive
  - title: Database
    tag: \#database
+ - title: Technical Challenges & Development Productivity
+   tag: \#bugs
+ - title: Implementation process and documentation
+   tag: \#documentation
  - title: References
    tag: \#references
 description: Learn more about the application's implementation and technical architecture.
 image: pic03.jpg
 ---
-## Contents
-1. Technical Architecture
-1. Telegram Integration
-1. Task Framework
-1. Adaptive Module
-1. Database
-1. References
 
+## Contents
+
+<span class = "content-overview"><a href = "#architecture">Technical architecture</a></span>
+
+<span class = "content-overview"><a href = "#telegram">Telegram integration</a></span>
+
+1. Python-telegram-bot for Bot-user-interactions
+2. Telethon for Group Handling
+3. Conversation Handlers
+  * Private chat handler
+  * Room handler
+  * Task handlers
+
+<span class = "content-overview"><a href = "#framework">Task framework</a></span>
+
+1. RoomManager
+2. Tasks
+  * SequentialTask
+  * Non-sequential tasks
+3. Outlook
+
+<span class = "content-overview"><a href = "#adaptive">Adaptive module</a></span>
+
+1. Language proficiency model
+2. Proficiency updates
+3. Task selection
+4. Evaluation
+
+<span class = "content-overview"><a href = "#database">Database</a></span>
+
+1. Introduction
+2. SQL features
+3. Tables Created for the Project
+4. Database Operators for Entities
+5. Database Connection Class
+6. Entity Classes
+
+<span class = "content-overview"><a href = "#database">Technical Challenges & Development Productivity</a></span>
+
+1. Actual state evaluation & Goals
+2. Debug mode
+3. Rejection of Automated Testing
+4. Bugs
+
+<span class = "content-overview"><a href = "#database">Implementation process and documentation</a></span>
+
+1. First contact
+2. Improved Documentation
+3. Code conventions
+4. Workflow
+
+<span class = "content-overview"><a href = "#references">References</a></span>
+
+<hr />
 
 <div id="architecture"></div>
 ## Technical Architecture

@@ -14,11 +14,9 @@ image: pic04.jpg
 
 **Note:** This page contains several sections, each describing testing information relevant to a different semester of the project. Escapeling's testing process has naturally evolved over time, and the information contained on this page is a testament to that. To facilitate navigation, here is an overview of this page's content.
 
-
-
 ## Contents
 
-<span class = "content"><a href = "#first">First Semester</a></span>
+<span class = "content-overview"><a href = "#first">First Semester</a></span>
 
 1. Test Strategy
 2. Usability Test
@@ -26,7 +24,7 @@ image: pic04.jpg
 4. Prospects For The Next Semester
 5. References
 
-<span class = "content"><a href = "#second">Second Semester</a></span>
+<span class = "content-overview"><a href = "#second">Second Semester</a></span>
 
 1. Introduction
 2. Methods
@@ -36,7 +34,7 @@ image: pic04.jpg
 6. Resources
 7. References
 
-<span class = "content"><a href = "#third">Third Semester</a></span>
+<span class = "content-overview"><a href = "#third">Third Semester</a></span>
 
 1. Introduction
 2. Literature

@@ -13,15 +13,23 @@ image:
 ---
 
 ## Contents
-1. [Design process](#design)
-  - [Motivation](#motivation)
-  - [Task flow](#flow)
-  - [Theoretical framework](#theory)
-  - [Materials](#materials)
-  - [Completion metrics](#metrics)
-  - [Outlook](#outlook)
-2. [Implementation process](#implementation)
-3. [References](#references)
+
+<span class = "content-overview"><a href = "#design">Design process</a></span>
+
+1. Introduction
+2. Task flow
+3. Theoretical framework
+4. Materials
+5. Completion metrics
+6. Outlook 
+
+<span class = "content-overview"><a href = "#implementation">Implementation process</a></span>
+
+<span class = "content-overview"><a href = "#references">References</a></span>
+
+<hr />
+
+<div id="design"></div>
 
 ## Design process
 
@@ -107,6 +115,8 @@ Another additional feature can be corrections and helpful hints by the bot. Mean
 
 Furthermore, vocabulary hints and short descriptions of words which are possibly new to the learners would be a valuable addition. This way probably an even bigger vocabulary learning effect could be achieved.
 
+<div id="implementation"></div>
+
 ## Implementation process
 Here, we present the technical details of the implementation of this task. As part of our overall bot architecture, the implementation of the discussion task also relies on general modules like the `Task(ABC)` class and the room handler, described in the [implementation section]({{ "" | absolute_url }}/2021/04/02/implementation.html). Therefore, only the discussion-specific task handler is described here in detail.
 
@@ -124,6 +134,8 @@ Finally, the dictionaries with the user information are passed to the `is_correc
 <img src="{{ "" | relative_url }}/assets/images/DiscussionFlowchartS3.png" alt="Figure 3: Flow of the discussion task including backend activities" class="center">
 
 *Figure 3: Flow of the discussion task including backend activities*
+
+<div id="references"></div>
 
 ## References
 Barson, J., Frommer, J. & Schwartz, M. (1993). Foreign Language Learning Using E-Mail in a Task-Oriented Perspective: Interuniversity Experiments in Communication and Collaboration. Journal of Education and Technology, 2 (4), 565-584.

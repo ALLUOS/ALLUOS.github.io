@@ -9,3 +9,13 @@ sections:
 description: Learn more about the vocabulary guessing task.
 image:
 ---
+
+## Contents
+
+<span class = "content-overview"><a href = "#design">Design process</a></span>
+
+<span class = "content-overview"><a href = "#implementation">Implementation process</a></span>
+
+<span class = "content-overview"><a href = "#references">References</a></span>
+
+<hr />
