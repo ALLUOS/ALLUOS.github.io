@@ -77,6 +77,7 @@ image: pic03.jpg
 
 <hr />
 
+
 <div id="architecture"></div>
 ## Technical Architecture
 
@@ -124,70 +125,52 @@ The interaction between the bot and a user in a private chat is handled by the p
 The room handlers’ purpose is to lead the users from one task to the next task. This handler is also started with the */start* command but only if the command is sent in a group chat. After starting the bot checks whether enough players are currently available and which tasks they can solve next. After the users have selected a task the related nested task handler is called.
 
 #### Task Handlers
-To handle the users interaction with the bot during the different tasks, e.g. the sentence correction task and the vocabulary guessing task, we created a task handler for each task. Both task handlers lead the users in a similar way through the conversation. First, they send a message to one of the active users containing the task they have to perform. Then, the handlers wait for the response of either a group member or the selected user. The answer is evaluated upon reception. Depending on the outcome, the users can correct their answer, move on to the next subtask, or, if the task is completed, the next user is selected. This procedure is continued until the task is fully finished. After finishing the complete task, control is returned to the room handler.
+To handle the users interaction with the bot during [the different tasks]({{ "" | absolute_url }}/#three), we created a task handler for each task. The task handlers for the first two tasks ([vocabulary guessing]({{ "" | absolute_url }}/2021/03/04/vocabulary-guessing.html) and [sentence correction]({{ "" | absolute_url }}/2021/03/03/sentence-correction.html)) lead the users in a similar way through the conversation. First, they send a message to one of the active users containing the task they have to perform. Then, the handlers wait for the response of either a group member or the selected user. The answer is evaluated upon reception. Depending on the outcome, the users can correct their answer, move on to the next subtask, or, if the task is completed, the next user is selected. This procedure is continued until the task is fully finished. After finishing the complete task, control is returned to the room handler.
 
 The only way a task handler can be entered is through the room handler. In order to ensure that a task handler is not entered with an insufficient number of users we developed a custom filter to prevent this.
 
-
 <div id="framework"></div>
 ## Task Framework
-This section aims to explain the implementation decisions and to describe the resulting components that have been implemented for the application’s task framework. In the next sections, we will cover the role and necessity of a `RoomManager`, as well as the structure and idea of different task classes, especially the `SequentialTask`. Lastly, this section concludes with an outlook subsection, which discusses the current limitations of and possible additions to the task framework.
+This section aims to explain the implementation decisions and to describe the resulting components that have been implemented for the application’s task framework.
 
-It should be noted, that this part of the documentation solely documents the tasks of the application from a technical point of view. For a more detailed, conceptual description of the tasks, please refer to the [Design](/2021/04/03/design.html) section.
+It should be noted that this section only contains general information about the overarching task framework of our application. More details on the implementation [the different tasks]({{ "" | absolute_url }}/#three) can be found on their respective pages:
+* [Vocabulary guessing task page]({{ "" | absolute_url }}/2021/03/04/vocabulary-guessing.html)
+* [Sentence correction task page]({{ "" | absolute_url }}/2021/03/03/sentence-correction.html)
+* [Discussion task page]({{ "" | absolute_url }}/2021/03/02/discussion.html)
+* [Listening task page]({{ "" | absolute_url }}/2021/03/01/listening.html)
+
+In the next sections, we will cover the role and necessity of a `RoomManager`, as well as the structure and idea of different task classes. Lastly, this section concludes with an outlook subsection, which presents our plans for further improvements to the task framework.
 
 ### RoomManager
 The `RoomManager` is thought of as a host for the group of players. Since we decided on having some instance that controls the general task and game flow, we created the `RoomManager` class. Each game session gets assigned exactly one `RoomManager`
-instance, that handles the session. An object of the `RoomManager` class captures important meta information about the group of players, such as the number and names of active players (stored in `self._full_student_list`), the minimum amount of time after starting the bot (`self._min_time_for_students_to_join_in_sec`) , and the minimum number of players needed to start the game (`self._min_number_of_students`), as well as a check, if all actively participating students have given their consent to start the game (`can_execution_start()`).
+instance that handles the session. An object of the `RoomManager` class captures important meta information about the group of players, such as the number and names of active players (stored in `self._full_student_list`), the minimum amount of time after starting the bot (`self._min_time_for_students_to_join_in_sec`) , and the minimum number of players needed to start the game (`self._min_number_of_students`), as well as a check that all actively participating students have given their consent to start the game (`can_execution_start()`).
 
 ### Tasks
-During the design phase of our application, we were able to pin down a few requirements for the technical implementation of the tasks for our prototype. These main requirements include:
-
+During the design phase of our application, we were able to pin down a few requirements for the technical implementation of the tasks for our prototype. These requirements include:
 
 1. The enablement of collaborative task solving
 1. The ensuring of participation of each player
 1. An adaptive module that controls for user-specific task difficulty
 1. A winning condition
 
-Since we decided to aim for one to two different tasks as the first milestone of the project, we chose to create an [abstract base class](https://docs.python.org/3/library/abc.html) `Task` for the tasks, which then can be further expanded depending on the type of task. The abstract base class `Task(ABC)` defines through abstract methods which minimal properties and functions every task to follow should inherit, such as getting the instructions for the respective task (`get_task_instructions()`). To capture the requirements 1-4 defined above, we implemented a subclass that inherits from `Task(ABC)`, namely the `SequentialTask(Task)`.
+Since this project features several tasks, we chose to create an [abstract base class](https://docs.python.org/3/library/abc.html) `Task`, which then can be further expanded depending on the type of task.
+
+The abstract base class `Task(ABC)` defines, through abstract methods, which minimal properties and functions every task to follow should inherit, such as getting the instructions for the respective task (`get_task_instructions()`). The *discussion* and *listening* tasks inherit from this class (see **Non-sequential tasks**).
+
+To capture the requirements 1-4 defined above, we implemented a subclass that inherits from `Task(ABC)`, namely the `SequentialTask(Task)`. The *vocabulary guessing* and *sentence correction* tasks inherit from this class (see **SequentialTask**).
+
+For the implementation of requirement 3 (the adaptive module) please refer to the section **Adaptive Module** below.
 
 #### SequentialTask
-`SequentialTask(Task)` is a subclass of `Task(ABC)` which in turn is a superclass of various tasks, that all follow a sequential manner. As stated above, to ensure requirements 1) and 2), we created a sequential task scaffolding. This means, that each task consists of multiple rounds, in which each player takes the active role of solving the main task exactly once, during which time the other players take a slightly more passive role, e.g. by assisting the active player to solve the task. Each `SequentialTask` has properties such as `self.all_users`, `self.remaining_users` and `self.selected_user`. Those properties enable the sequential handling of a task, in which each player gets the active role at least once.
+`SequentialTask(Task)` is a subclass of `Task(ABC)` which in turn is a superclass of our two sequential tasks: [vocabulary guessing]({{ "" | absolute_url }}/2021/03/04/vocabulary-guessing.html) and [sentence correction]({{ "" | absolute_url }}/2021/03/03/sentence-correction.html). As stated above, to ensure requirements 1) and 2), we created a sequential task scaffolding. This means that each task consists of multiple rounds, in which each player takes the active role of solving the main task exactly once, during which time the other players take a slightly more passive role, e.g. by assisting the active player to solve the task. Each `SequentialTask` has properties such as `self.all_users`, `self.remaining_users` and `self.selected_user`. Those properties enable the sequential handling of a task, in which each player gets the active role at least once.
 
 After having successfully completed a round, the group gets awarded with one piece of the codeword `self.code`. This code word consists of a series of random digits, the number of which corresponds to the number of rounds played. This covers the winning condition in requirement 4). Additionally, after completing the whole task, the corresponding user proficiencies and the group’s proficiencies get updated according to the performance with the call of the function `update_proficiencies(correct)`.
 
-For the implementation of requirement 3), the adaptive module, please refer to the section _Adaptive Module_ below.
-
-##### SentenceCorrection
-The `SentenceCorrection` class inherits from its superclass `SequentialTask`, in order to have all the sequential features. Since this class also has the property `self.selected_user`, it is trivial to implement turn-taking for this task. The function `select_sentence()` selects a sentence from the corpus, based on the selected user’s proficiency `self.selected_user.get_grammar_proficiency()`. When the sentence gets send to the group, only answers of the selected user will be evaluated. This allows the other players to contribute by assisting the selected user, e.g. by giving hints to identify the error.
-
-##### VocabularyDescription
-Similar to the `SentenceCorrection` class, the `VocabularyDescription` class also inherits from `SequentialTask` and selects the word to be described for the selected user based on their proficiency with the call of `select_word()`.
-
-In contrast to the task above, now answers will only be evaluated by non-selected users. However, to prevent cheating, if the `self.selected_user` mentions the word itself in their description, they will receive a warning through the call of `get_word_warning()`.
-
-Additionally, to increase difficulty, we implemented a time constraint for this task. Upon start, `set_time_reminders()` will initiate the reminders, that will be sent to the group regularly by the call of `get_time_info()`.
-
-##### DiscussionTask
-
-`Discussion(Task)` is a subclass of `Task(ABC)`, however, unlike the other two tasks, the discussion task is not sequential in nature and therefore does not inherit from `SequentialTask`. Nevertheless, we were still able to reuse a significant part of the methods already implemented in said class.
-The task always starts off with the presentation of the text, which is retrieved from the database based on the users' proficiency. This is followed by three rounds of discussion.
-At the start of each round a text-related question is sent and a timer is added to the job queue to determine when the round finishes, at which point a warning is sent, reminding users' to finish their discussion of the question.
-
-Since we don't have to select for a specific user, all user input can be handled in the same `handle_question` state. Word counts and participation for each user are stored in two dictionaries, which are required to satisfy the completion criteria of the task.
-After a message is sent, `update_word_counts(message, user)` is called in order to update those dictionaries with the new word counts.
-
-Following the third and final discussion round, two polls will be presented using reply keyboards and used along with the dictionaries by the `is_correct(self)` method to determine whether the task was successfully completed or not. Figure 3 shows a flow chart of the task up until the point where the users' have to input the code and choose the subsequent task.
-
-<img src="https://github.com/ALLUOS/ALLUOS.github.io/raw/semester-three/assets/images/DiscussionFlowchart.png" alt="Figure 3: Flow of the discussion task including backend activities" class="center">
-
-*Figure 3: Flow of the discussion task including backend activities*
-
+#### Non-sequential tasks
+After the first semester of work on the project, we decided that we wanted to feature a more diverse portfolio of language practice tasks, because featuring exclusively sequential tasks was proving too repetitive for the users. Therefore, we implemented the non-sequential [discussion]({{ "" | absolute_url }}/2021/03/02/discussion.html) and [listening]({{ "" | absolute_url }}/2021/03/01/listening.html) tasks, which simply inherit from the abstract base class `Task(ABC)`.
 
 ### Outlook
-With our implementation of the `SequentialTask`, we set a very flexible code foundation for additional tasks, that are designed in the same manner. However, having to fit new tasks in this pattern might limit us in the conceptual designing of new tasks. To create more flexibility in the addition of new tasks and to broaden the scope of task patterns, we are going to try to implement another kind of task in the next semester, which not necessarily follows the sequential pattern.
-
-Additionally, we will be working on embedding the tasks more into the escape room scenario. Thus far, due to the lack of alternatives, we are stuck with two tasks which can be repeated as desired until the codeword is reached. After reaching and successfully entering the correct codeword, we return to the task selection screen, which initiates a new round. Thus, we will also work on an overall win-condition, which completes the escape room scenario.
-
+Over the course of three semesters, our application has come to feature a diverse portfolio of [language practice tasks]({{ "" | absolute_url }}/#three). Significant effort has also been made to connect these tasks to our [underlying escape-room narrative]({{ "" | absolute_url }}/2021/01/03/storytelling.html). Next semester, we plan on implementing further improvements to ensure that our application's gamified and learning aspects are more seamlessly integrated with one another.
 
 <div id="adaptive"></div>
 ## Adaptive Module
@@ -315,7 +298,7 @@ To understand the cause of these errors it is necessary to grasp the underlying 
 
 ## Implementation process and documentation
 
-The study project team this semester consisted mostly of team members who are new to the project. This was the case especially for the implementation team. This yielded a number of different problems: the team had to first understand how to run the code, then understand the code design and structure and more detailed pieces of information e.g. which function should be used in which case, etc. Additionally, the team had to decide on how to write new code and how to integrate it to the existing codebase. This implies the formulations of common code conventions and workflows. First, we will describe the team’s first contact with the codebase and the difficulties encountered. Second, we will describe how the team decided to alleviate those difficulties for the new team members in the upcoming semester. Lastly, we will describe our workflow and the code conventions the team settled for.
+The study project team this semester consisted mostly of team members who are new to the project. This was the case especially for the implementation team. This yielded a number of different problems: the team had to first understand how to run the code, then understand the code design and structure and more detailed pieces of information e.g. which function should be used in which case, etc. Additionally, the team had to settle down on how to write new code and how to integrate it to the existing codebase. This implies the formulations of common code conventions and workflow. First, the team will describe the team’s first contact with the codebase and the difficulties encountered. Second, we will describe how the team decided to alleviate those difficulties for the new team members in the upcoming semester. Lastly, we will describe our workflow and the code conventions the team settled for.
 
 ### First Contact
 
@@ -323,13 +306,13 @@ At the beginning of this semester, the previous implementation team members kind
 
 ### Improved Documentation
 
-Initially, the documentation provided enough information about how to use and start the bot locally. Additionally, the documentation was focussed on the design choices and decisions that were made during the second semester. The team was still facing the problem of lacking a pure technical documentation, which would contain all the information about files, classes, functions, global and local variables, etc.
+Initially, the documentation provided enough information about how to use and start the bot locally. Additionally, the documentation was focussed on the design choices and decisions that were made in the semester. The team was still facing the problem of lacking a pure technical documentation, which would contain all the information about files, classes, functions, global and local variables, etc.
 
 **Flow Diagrams**
 
 The previous members of the study project partially documented the codebase by describing the private conversation handler. It was described using a flow diagram, specifying the states and color coding the bot and users actions. The diagram was very detailed but not very readable.
 
-It was decided to create the same kind of documentation for the three task handlers: the discussion task handler, the vocabulary description task handler and the sentence correction task handler. Since the bot uses deterministic states to function, each handler also follows this principle. To be readable, the team decided to make flow diagrams that are similar to a finite state automata: every state is mentioned with an individual text-box with the state's name in capital letters within the diagram. The previous diagrams mentioned the states outside the flow diagram, in a table-like structure. The team also settled to document the states, individual function calls, the user’s actions and the bot’s actions using boxes and colors that are similar to the private chat handler diagram. Branchings, usually due to if-conditions, are described with a question and the outgoing branches describe the actions following different outcomes.
+It was decided to create the same kind of documentation for the three task handlers: the discussion task handler, the vocabulary description task handler and the sentence correction task handler. Since the bot uses deterministic states to function, each handler also follows this principle. To be readable, the team decided to make flow diagrams that are similar to a finite state automata: every state is mentioned with an individual within the diagram. The previous diagrams mentioned the states outside the flow diagram, in a table-like structure. The team also settled to document the states, individual function calls, the user’s actions and the bot’s actions using boxes and colors that are similar to the private chat handler diagram. Different branching usually due to if-conditions are described with a question and the outgoing branches describe the actions following different outcomes.
 
 <a href="{{ '' | absolute_url }}/assets/images/flow-diagram-cutout.png">
 <img class="center" style="width: 100%" src="{{ '' | absolute_url }}/assets/images/flow-diagram-cutout.png" alt="Cutout from flow diagram explaining the Vocabulary Task Handler">
