@@ -183,7 +183,7 @@ By the beginning of the third project term the functional version of the Escapel
 The sketch of the narration developed in the previous 2 semesters has laid the groundwork for the storytelling. During the 3. Semester, we were able to take one step further towards our goal in achieving a better immersive user experience. Story parts expressed in text and images are combined in an interactive way and used to create a shared vision among the players.
 To improve the user experience, a more sophisticated story pipeline was constructed based on structural framework which determines the flow of the game and links all the elements as a whole. The story decisions present the possibilities of how things could unfold. And letting the users get involved in shaping the story will create an interactive setting which can be highly motivating for the players.
 
-We created a visual board to help illustrating the new story pipeline. (See [Mural board](https://app.mural.co/t/personalvisionboard1357/m/personalvisionboard1357/1622826319810/2a5329e7b27f87c36b8d044575f770bb25e6fa6e?sender=95652543-7e09-45f3-aecb-a531c7efe568))
+We created a visual board to help illustrating the new story pipeline. (See [Mural board](https://app.mural.co/t/personalvisionboard1357/m/personalvisionboard1357/1622826319810/2a5329e7b27f87c36b8d044575f770bb25e6fa6e?sender=95652543-7e09-45f3-aecb-a531c7efe568) for better definition)
 
 <img class="center" style="width: 100%" src="{{ '' | absolute_url }}/assets/images/mission-pipeline-final.png">
 
