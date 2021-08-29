@@ -121,7 +121,7 @@ In the first and the second discussion rounds, additionally to evaluating user i
 In the third and final discussion round, instead of intermediate feedback the final grammatical feedback is presented via calling `send_final_feedback()`.
 Finally, the dictionaries with the user information are passed to the `is_correct(self)` method to determine whether the task was successfully completed or not, and if so, at which level. Figure 3 shows a flow chart of the task up until the point where the users' have to input the code and choose the subsequent task.
 
-**missing; not sure which image was here before**
+<img src="{{ "" | relative_url }}/assets/images/DiscussionFlowchartS3.png" alt="Figure 3: Flow of the discussion task including backend activities" class="center">
 
 *Figure 3: Flow of the discussion task including backend activities*
 
