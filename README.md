@@ -4,9 +4,9 @@
 
 ### Note for Semester Three
 
-All structural additions and notes relevant to the documentation
-for the project's third semester are **emboldened** with an
-[S3] tag.
+The `master` branch is now updated up to the third semester of work on this project. The documentation site is currently being deployed from that branch.
+
+For current and future reference, there are two archive branches: `semester-two-archive` and `semester-three-archive`.
 
 ----
 
@@ -38,7 +38,7 @@ The documentation is structured as follows:
         |-- Adaptive module
         |-- Achievements
         |-- <strong>Grammatical error correction</strong>
-    |-- <strong>User experienc</strong>
+    |-- <strong>User experience</strong>
         |-- <ins>Storytelling</ins>
         |-- <strong>Visualizations</strong>
         |-- <strong>Support</strong>
