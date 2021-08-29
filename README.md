@@ -34,17 +34,17 @@ The documentation is structured as follows:
     |-- <ins>Implementation</ins>
     |-- <ins>Testing</ins>
 |-- Features
-    |-- Learning experience
+    |-- <strong>Learning experience</strong>
         |-- Adaptive module
         |-- Achievements
         |-- <strong>Grammatical error correction</strong>
-    |-- User experience
+    |-- <strong>User experienc</strong>
         |-- <ins>Storytelling</ins>
         |-- <strong>Visualizations</strong>
         |-- <strong>Support</strong>
-|-- Mission tasks
-    |-- Sentence correction
-    |-- Vocabulary guessing
+|-- <strong>Mission tasks</strong>
+    |-- <ins>Sentence correction</ins>
+    |-- <ins>Vocabulary guessing</ins>
     |-- <ins>Discussion</ins>
     |-- <strong>Listening</strong>
 </pre>
