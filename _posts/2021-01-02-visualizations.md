@@ -100,7 +100,7 @@ Other storytelling elements were also visualized with the help of stickers, such
 
 As part of the visual overhaul of the app, the medals awarded in the "[Achievements](https://alluos.github.io/2021/02/02/achievements.html)" section have also been visualized. You get these for playing Escapeling frequently, for example. Previously, achievements were purely text-based, but now the player receives a picture of their current status.   
 
-<img src="{{ "" | relative_url }}/assets/images/visualizationsIMG06.png" alt="Figure 6: Image that the user gets when he has reached the status of an Admiral as part of the achievements" class="center" style="width: 50%>
+<img src="{{ "" | relative_url }}/assets/images/visualizationsIMG06.png" alt="Figure 6: Image that the user gets when he has reached the status of an Admiral as part of the achievements" class="center" style="width: 50%">
 
 *Figure 6: image that the user gets when he has reached the status of an “Admiral” as part of the achievements*
 
