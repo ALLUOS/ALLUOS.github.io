@@ -59,7 +59,7 @@ The selection of the type and manner of visualization elements was based on both
 
 ### GIFs
 
-<img src="{{ "" | relative_url }}/assets/images/visualizationsIMG01.png" alt="Figure 1: GIF showing the view out of the spaceship after escaping the aliens" class="center">
+<img src="{{ "" | relative_url }}/assets/images/visualizationsIMG01.png" alt="Figure 1: GIF showing the view out of the spaceship after escaping the aliens" class="center" style="width: 30%">
 
 *Figure 1: GIF showing the view out of the spaceship after escaping the aliens* 
 
@@ -69,7 +69,7 @@ The third function of using GIFs in Escapeling, is to provide feedback and motiv
 
 ### Emojis
  
-<img src="{{ "" | relative_url }}/assets/images/visualizationsIMG02.png" alt="Figure 2: Emojis in the private chat selection menu" class="center">
+<img src="{{ "" | relative_url }}/assets/images/visualizationsIMG02.png" alt="Figure 2: Emojis in the private chat selection menu" class="center" style="width: 40%">
 
 *Figure 2: emojis in the private chat selection menu*
 
@@ -85,7 +85,7 @@ In some tasks it is useful to know how much time you have left to complete the t
 
 ### Stickers
  
-<img src="{{ "" | relative_url }}/assets/images/visualizationsIMG04.png" alt="Figure 4: example sticker of the alien Elias" class="center" style="width: 50%">
+<img src="{{ "" | relative_url }}/assets/images/visualizationsIMG04.png" alt="Figure 4: example sticker of the alien Elias" class="center" style="width: 20%">
 
 *Figure 4: example sticker of the alien Elias*
 
@@ -100,7 +100,7 @@ Other storytelling elements were also visualized with the help of stickers, such
 
 As part of the visual overhaul of the app, the medals awarded in the "[Achievements](https://alluos.github.io/2021/02/02/achievements.html)" section have also been visualized. You get these for playing Escapeling frequently, for example. Previously, achievements were purely text-based, but now the player receives a picture of their current status.   
 
-<img src="{{ "" | relative_url }}/assets/images/visualizationsIMG06.png" alt="Figure 6: Image that the user gets when he has reached the status of an Admiral as part of the achievements" class="center" style="width: 50%">
+<img src="{{ "" | relative_url }}/assets/images/visualizationsIMG06.png" alt="Figure 6: Image that the user gets when he has reached the status of an Admiral as part of the achievements" class="center" style="width: 20%">
 
 *Figure 6: image that the user gets when he has reached the status of an “Admiral” as part of the achievements*
 
