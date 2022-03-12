@@ -2,11 +2,11 @@
 
 ---
 
-### Note for Semester Three
+### Note for Semester Four
 
-The `master` branch is now updated up to the third semester of work on this project. The documentation site is currently being deployed from that branch.
+The `master` branch is now updated up to the fourth semester of work on this project. The documentation site is currently being deployed from that branch.
 
-For current and future reference, there are two archive branches: `semester-two-archive` and `semester-three-archive`.
+For current and future reference, there are three archive branches: `semester-two-archive` and `semester-three-archive` and 'semester-four'
 
 ----
 
