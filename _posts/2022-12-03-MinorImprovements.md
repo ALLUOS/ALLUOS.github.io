@@ -35,7 +35,7 @@ Finally, we will talk about what's left to improve, what future works could and 
 
 <div id="bugs"></div>
 ## Bug Fixes
-This section is about errors that were made the code. It describes, how the bug influenced the game, what caused it and how we solved it.
+This section is about errors that were made in the code. It describes, how the bug influenced the game, what caused it and how we solved it.
 
 ### The flood-error
 
@@ -86,9 +86,9 @@ _Problem description:_ Especially people who never worked with a bot on telegram
 _How it should be:_ The bot should show, how to open the answering options.
 _Solution:_ The first thing the bot sends to the user now, is a small explanation of how to open the answering options.
 
-### fixes for the deployment of the bot on the server (Janosch)
+### fixes for the deployment of the bot on the server
 
-TODO @Janosh
+The Escapeling bot was deployed on a Linux server of the University of Osnabrück. A remote connection to this server can be established via the network communication protocol secure shell (SSH). Compared to other legacy login protocols, SSH offers password or public-key authentication to establish a connection, as well as end-to-end encryption, which provides a secure connection over an unsecured network. As the process that runs the Escapling bot needs to continue running even if the SSH connection has ended, the terminal multiplexer tmux was used. Due to the client-server concept of tmux, a server is created in the background when a new terminal session is started. This server ensures that processes running in a specific session remain alive after the client detaches from the tmux session and killed the SSH connection. Compared to other methods, e.g. the ‘nohup’ command, tmux does not dump the output of the script that is run to ‘/dev/null’ and thus allows for better maintenance.
 
 ### Github-fixes?
 
@@ -98,5 +98,7 @@ _Solution:_ The solution was to put these files into an external drive, where th
 
 <div id="outlook"></div>
 ## Outlook
-- installer für 
-TODO @ Frederik
+Although we already changed a lot during the last semester, a lot still has to change in order to really get a perfect, polished outcome. The most pressing Issues were completed, but there are still features missing.
+Features like an Installer for people who want to run the bot on their computer, that automatically downloads the big files from a Server and helps with the setup would be important. In addition, the possibility to save games mid-play would help for groups to play.
+The Interviews also revealed that it should be possible for teachers to influence what exactly the questions for the students are or even implement their own tasks.
+Furthermore, there are still some bugs, that could not be reproduced, that should be fixed.
