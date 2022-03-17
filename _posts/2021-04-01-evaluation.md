@@ -8,6 +8,8 @@ sections:
    tag: \#second
  - title: Third semester
    tag: \#third
+ - title: Fourth semester
+   tag: \#fourth
 description: Learn more about the project's testing strategy.
 image: pic04.jpg
 ---
@@ -45,6 +47,18 @@ image: pic04.jpg
 4. Results
 5. Recommendations 
 6. References
+
+<span class = "content-overview"><a href="#fourth">Fourth Semester</a></span>
+
+1. Motivation & Evaluation Plan
+2. ESL Student Interviews
+   - Interview Structure
+   - Results
+3. User Tests @ Uni Osnabrück
+   - Test Structure
+   - Results
+4. Summary of Results
+5. References
 
 <hr />
 
@@ -507,3 +521,60 @@ Picture 4 Average Performance Score by update
 ### REFERENCES
 
 Jenkins, N. (2008). A Software Testing Primer: An Introduction to Software Testing.
+
+<!--- Semester Four--->
+
+<div id="fourth"></div>
+
+<h2><span class="section">Fourth Semester</span></h2>
+
+## Contents
+
+1. Motivation & Evaluation Plan
+2. ESL Student Interviews
+   - Interview Structure
+   - Results
+3. User Tests @ Uni Osnabrück
+   - Test Structure
+   - Results
+4. Summary of Results
+5. References
+
+<div id="motivation4"></div>
+
+## Motivation & Evaluation Plan
+
+To evaluate the improvements of Escapeling implemented in the fourth semester of the project, our original plan was to conduct classroom testing with schoolchildren, so as to test the app with users of target age and proficiency. To this end, the children were supposed to receive tablets with preinstalled Telegram from the school. However, we had no other choice but to change our plan due to COVID-19 because the target school was closed before the children received the tablets. Therefore, we came up with two alternative evaluation possibilities which address two main aspects of the Escapeling developments: the pedagogical value and the user experience of the app. 
+We conducted semi-structured interviews with ESL-teachers-in-training at the University of Osnabrück to estimate the pedagogical value of Escapeling in a German secondary school setting. Also, we conducted user tests with Cognitive Science students and from related fields who came from the same university to collect more user feedback.
+We think that these evaluations are a viable alternative to the field class room setting, even though the average age of the participants is higher than our target user groups.
+All participants participated voluntarily and were not reimbursed.
+
+<div id="interviews"></div>
+
+## ESL Student Interviews
+
+### Interview Structure
+We conducted semi-structured interviews with 3 university students who study ESL education at the University of Osnabrück: Mia, Hannah, Sofia. The interviews contained questions surrounding five major themes: target audience, contexts of application, gamification and visualization, adaptability, and potential improvements. As all of them are being trained to become ESL teachers in Germany, the results in this evaluation reflect the use of Escapeling when applied to the German school system.
+
+### Results
+
+Target audience
+When the interviewees were asked which age group and proficiency group would benefit most from playing Escapeling, all of them agreed that the difficulty of the tasks in Escapeling is suitable for students in their 10th grades or above. Hannah and Mia also suggested that in the vocabulary guessing task, if the words chosen are in an appropriate level, the game can also be played with 6th graders.
+
+Contexts of Application
+All interviewees reported that they would not use Escapeling as a main teaching tool, but might use it as a supplementary tool. They also suggested that it might be a good idea to enable teachers to have access to the data of how the students perform in this game, as teachers will then know in which particular areas students are weaker and so they can address these areas in class. But all of them emphasize the entertaining aspect of Escapeling and it should not be used as a formal assessment.
+
+Gamification and visualization
+All interviewees described Escapeling as an enjoyable game. Mia was particularly impressed by the colorful and lively visuals in Escapeling, as suggested that they would also be appealing to younger learners. Sofia commented that the up-to-date GIFs and memes in Escapeling could enable young learners to connect English learning and their daily life, “they sometimes also know the GIFs. I think it would be a great motivational force to be like ‘oh yeah, It’s fun. It’s [not just] learning, but also entertaining.’”
+
+Adaptability
+One of the main features of Escapeling is that the difficulty of the tasks are constantly modified to suit the English proficiency of the learners, so that the effectiveness of learning can be maximized. Sofia praised the hints giving system in the vocabulary guessing game, and she commented that “giving out cues is really important […] from a didactic point of view. Statements are not given at the beginning, but they are slowly represented. I think they are great points.”
+
+
+Potential improvements
+
+Overall, all interviewees suggested that flexibility in Escapeling for teachers to choose their own materials would make it pedagogically more valuable, as Hannah and Mia suggested that if it could be linked to the English lessons in the classroom, Escapeling would become a more complementary tool in the existing English subject curriculum. For example, Mia suggested that it would be good if the teacher can decide the discussion topic concerning a newspaper article studied in the class.
+
+<div id="usertests"></div>
+
+## User Tests at Uni Osnabrück
