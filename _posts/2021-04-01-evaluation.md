@@ -58,7 +58,6 @@ image: pic04.jpg
    - Test Structure
    - Results
 4. Summary of Results
-5. References
 
 <hr />
 
@@ -538,14 +537,14 @@ Jenkins, N. (2008). A Software Testing Primer: An Introduction to Software Testi
    - Test Structure
    - Results
 4. Summary of Results
-5. References
 
-<div id="motivation4"></div>
+<div id="motivation"></div>
 
 ## Motivation & Evaluation Plan
 
-To evaluate the improvements of Escapeling implemented in the fourth semester of the project, our original plan was to conduct classroom testing with schoolchildren, so as to test the app with users of target age and proficiency. To this end, the children were supposed to receive tablets with preinstalled Telegram from the school. However, we had no other choice but to change our plan due to COVID-19 because the target school was closed before the children received the tablets. Therefore, we came up with two alternative evaluation possibilities which address two main aspects of the Escapeling developments: the pedagogical value and the user experience of the app. 
-We conducted semi-structured interviews with ESL-teachers-in-training at the University of Osnabrück to estimate the pedagogical value of Escapeling in a German secondary school setting. Also, we conducted user tests with Cognitive Science students and from related fields who came from the same university to collect more user feedback.
+To evaluate the improvements of Escapeling implemented in the fourth semester of the project, our original plan was to conduct classroom testing with schoolchildren, so as to test the app with users of target age and proficiency. To this end, the children were supposed to receive tablets with preinstalled Telegram from the school. However, we had no other choice but to change our plan due to COVID-19 because the target school was closed before the children received the tablets. Therefore, we came up with two alternative evaluation possibilities which address two main aspects of the Escapeling developments: the pedagogical value and the user experience of the app. The structure of the evaluations was also guided by the data requirements for the [paper]({{ "" | absolute_url }}/2022/17/03/overview.html) submitted to the Learning Ideas Conference. 
+
+We conducted semi-structured interviews with ESL-teachers-in-training at the University of Osnabrück to estimate the pedagogical value of Escapeling in a German secondary school setting. Additionally, we conducted user tests with Cognitive Science students and from related fields who came from the same university to collect more user feedback.
 We think that these evaluations are a viable alternative to the field class room setting, even though the average age of the participants is higher than our target user groups.
 All participants participated voluntarily and were not reimbursed.
 
@@ -554,27 +553,51 @@ All participants participated voluntarily and were not reimbursed.
 ## ESL Student Interviews
 
 ### Interview Structure
-We conducted semi-structured interviews with 3 university students who study ESL education at the University of Osnabrück: Mia, Hannah, Sofia. The interviews contained questions surrounding five major themes: target audience, contexts of application, gamification and visualization, adaptability, and potential improvements. As all of them are being trained to become ESL teachers in Germany, the results in this evaluation reflect the use of Escapeling when applied to the German school system.
+We conducted semi-structured interviews with 3 university students who study ESL education at the University of Osnabrück: Mia, Hannah, Sofia (for data protection reasons, these are pseudonyms). The interviews contained questions surrounding five major themes: target audience, contexts of application, gamification and visualization, adaptability, and potential improvements. As all of them are being trained to become ESL teachers in Germany, the results in this evaluation reflect the use of Escapeling when applied to the German school system.
 
 ### Results
 
-Target audience
+__Target audience__
+
 When the interviewees were asked which age group and proficiency group would benefit most from playing Escapeling, all of them agreed that the difficulty of the tasks in Escapeling is suitable for students in their 10th grades or above. Hannah and Mia also suggested that in the vocabulary guessing task, if the words chosen are in an appropriate level, the game can also be played with 6th graders.
 
-Contexts of Application
-All interviewees reported that they would not use Escapeling as a main teaching tool, but might use it as a supplementary tool. They also suggested that it might be a good idea to enable teachers to have access to the data of how the students perform in this game, as teachers will then know in which particular areas students are weaker and so they can address these areas in class. But all of them emphasize the entertaining aspect of Escapeling and it should not be used as a formal assessment.
+__Contexts of Application__ 
 
-Gamification and visualization
+All interviewees reported that they would not use Escapeling as a main teaching tool, but might use it as a supplementary tool. They also suggested that it might be a good idea to enable teachers to have access to the data of how the students perform in this game, as teachers will then know in which particular areas students are weaker and so they can address these areas in class. But all of them emphasized the entertaining aspect of Escapeling and it should not be used as a formal assessment.
+
+__Gamification and visualization__
+
 All interviewees described Escapeling as an enjoyable game. Mia was particularly impressed by the colorful and lively visuals in Escapeling, as suggested that they would also be appealing to younger learners. Sofia commented that the up-to-date GIFs and memes in Escapeling could enable young learners to connect English learning and their daily life, “they sometimes also know the GIFs. I think it would be a great motivational force to be like ‘oh yeah, It’s fun. It’s [not just] learning, but also entertaining.’”
 
-Adaptability
+__Adaptability__
+
 One of the main features of Escapeling is that the difficulty of the tasks are constantly modified to suit the English proficiency of the learners, so that the effectiveness of learning can be maximized. Sofia praised the hints giving system in the vocabulary guessing game, and she commented that “giving out cues is really important […] from a didactic point of view. Statements are not given at the beginning, but they are slowly represented. I think they are great points.”
 
 
-Potential improvements
+__Potential improvements__
 
-Overall, all interviewees suggested that flexibility in Escapeling for teachers to choose their own materials would make it pedagogically more valuable, as Hannah and Mia suggested that if it could be linked to the English lessons in the classroom, Escapeling would become a more complementary tool in the existing English subject curriculum. For example, Mia suggested that it would be good if the teacher can decide the discussion topic concerning a newspaper article studied in the class.
+Overall, all interviewees suggested that flexibility in Escapeling for teachers to choose their own materials would make it pedagogically more valuable, as Hannah and Mia suggested that if it could be linked to the English lessons in the classroom, Escapeling would become a more complementary tool in the existing English subject curriculum. For example, Mia suggested that it would be good if the teacher can decide the discussion topic concerning a newspaper article studied in the class for the discussion task.
 
 <div id="usertests"></div>
 
 ## User Tests at Uni Osnabrück
+
+In the final evaluation round, we recruited students of Cognitive Science and related fields at the Osnabrück University instead of recruiting secondary school students for reasons explained above. The goal of this testing was to further evaluate the end user experience with our bot. 
+
+### Test Structure
+
+To this end, participants were invited to play the game and fill out a short online questionnaire. They received an email through private contacts and an email sent to the Cognitive Science mailing lists. This email linked to the bot, the lobby platform and the online questionnaire, explaining how to find a group, enter the game and asking to fill out the questionnaire upon completing the game.
+
+Participants responded to the evaluation questions via free typing, multiple choice or 5-point Likert-scale ratings. Participants answered questions about the pedagogical value of the different tasks, their enjoyment of the single tasks and the game overall, the UX value of the visualizations and whether they would play the game again and recommend it to other English learners. They could also optionally provide some demographic information.
+
+### Results
+
+Data from 14 participants was collected (71% Osnabrück University Cognitive Science students, average English proficiency: B2-C1, aaverage age: 22.7 years). 
+
+78% of participants reported that they would recommend the app to other English learners, and more than 90% would likely play the game again. On average, they indicated that they could best improve their general communication, reading and listening skills with Escapeling. The new lobby platform was rated with 3.3 average points. Furthermore, participants stated that the improved visualizations were very important for their enjoyment of the game, providing an average score of 4.3. Finally, they reported high satisfaction with Escapeling compared to other educational apps they used, providing an average score of 4.3. 
+
+<div id="summary"></div>
+
+## Summary of Results
+
+Overall, these results indicate the success of the UX and learning experience improvements introduced in the third and fourth semesters of the study project. The interview results as well as the high enjoyability ratings from the user questionnaires confirm the efficacy of including visualizations, improving the storyline and enhancing the user experience overall. The interviewee statements about the adaptability of the bot indicate the success of the learning experience improvements. Given these results, we think that the final version of the bot contributes a valuable proof of concept for a gamified AI-powered collaborative language learning application.
