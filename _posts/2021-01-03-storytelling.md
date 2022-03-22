@@ -37,6 +37,12 @@ description: Explore our sci-fi themed escape room narrative.
 5. Restart scenarios
 6. Completion metrics
 
+<span class = "content-overview"><a href = "#four">Fourth Semester</a></span>
+
+1. Idea and Motivation
+2. Implementation
+3. Outlook to more storytelling improvements
+
 <hr />
 
 <!-- Semester Two -->
@@ -251,3 +257,37 @@ If the participants fail the task, they would now have a choice of either repeat
 Thereby, the overall completion metrics of the group depend on their performance in each of the given tasks. Participants are now allowed to fail the given tasks, with each task, however, being failed not more than once. Nevertheless, they have to complete all the tasks in order to finish the game. Besides, the overall game results will depend on the amount of mistakes players made in each of the tasks. 
 
 **Note:** the described above changes of the story pipeline are not fully implemented yet. It is however important to have a clear picture of where we are headed and what we want to achieve.
+
+<!-- Semester Four -->
+
+<div id="four"></div>
+
+<h2><span class="section">Fourth semester</span></h2>
+
+## Idea and Motivation
+
+Our goal in the final semester of the project was to have a functioning version of the game that could be played from start to finish without significant difficulties. With this in mind, we also wanted to implement the story pipeline ideas designed in the previous semester (see above/here-link for more details on design as well as main motivation for these changes). Based on the experience from the previous semester, we expected some practical challenges, but we nevertheless wanted to make sure that, even if the complete design could not be implemented within the remaining time-frame of the project, we could still achieve some improvements to the user experience and the game would be working and playable. We therefore decided to break down the process into several smaller steps, to be tackled by sprints:
+
+1. enable repetition of the same task if failed
+2. keep track of the number of fails per task and limit them to two (i.e., allow one repetition)
+3. implement task evaluation at a group level
+4. incorporate story variation and decision polls based on group performance
+5. 
+We eventually succeeded in implementing the first two steps. The implementation approach as well as some challenges are explained in more detail below. 
+
+## Implementation
+
+We completed the implementation of the first two steps because we deem these most important for the replayability of the game and a more fair experience within the storyline for the users. In particular, in the previous story pipeline, if players succeeded with all tasks and then, for instance, failed the last one, they lost all their progress and immediately failed their escape mission. Such an abrupt end of the game might demotivate learners, so they wouldn’t try to restart the escape. Yet, to keep an incentive for the users to try their best in each task and hinder the reliance on an infinite number of retries for the tasks, we decided to only allow for a limited number of repetitions upon failure. 
+The implementation of the repeatability of the tasks is carried by several components. First, we created a global counter attribute `_reps_counter` for the room manager object, which keeps track of the number of times each of the mandatory tasks has already been played. Each time one of those tasks (i.e., discussion, sentence correction or vocabulary guessing task) has ended, the counter is incremented. If the respective task was failed, the global task counter `_current_task_count` is decreased by one, essentially resetting the players’ progress through the storyline to the state before attempting the task. Secondly, if the maximal number of allowed repetitions of the respective task is not surpassed yet (i.e., is smaller than two), the task is added to the global queue of tasks available for the next round (`_available tasks`), tracked by the room manager instance. This is achieved in each respective task handler function (discussion_handler, sen_corr_handler, vocab_desc_handler), by checking if the task was finished and then triggering the counter increment and possibly task appending, respectively.
+
+If a task was failed for a second time and, therefore, the entire mission was failed, and the players choose to restart it, the `_reps_counter` attribute of the room manager is reset to 0. 
+
+Implementing other storyline decision points on top of the repeatability was outside the scope of work for the final semester because these different storylines would depend on individual user and group-level scores per task. As these require implementing novel task completion metrics, coding these would require a major restructuring of the database, the task classes and handlers. Therefore, we consider the completed implementation of the task repeatability a good compromise and improvement of the current game flow.
+
+## Outlook to more storytelling improvements
+
+There is still room for improvement in the story pipeline, which would make the game more interesting to be engaged in. In order to apply the different story stream, we can first calculate score of whole group and divide it into 3 categories. 
+
+To categorize the score, we calculate how many mistakes does the group make in total and normalize that to score out of 4. Given score 1 out of 4 we provide story branch one. With score 2 or 3 out of 4, we  go to branch 2 of the story. And finally with score 4 out of 4 we follow the story Pipeline 4. 
+In addition to this splitting and choosing of the story pipeline in between each task, we also had the idea to give a different ending at the end  of the game depending on the choice they make and total score they get. We accumulate the scores of each task, which are normalized to the highest score of 4 and take the mean of all tasks completed, including the listening task (if the group decided to complete that task as well). As we will also have an option of deciding to Escape with “Elias” the friendly alien or without him, we can first divide the story into 2 parts. And after that depending on the total mean score we can divide story ending to 3 parts, giving us total 6 different story endings.
+
