@@ -272,7 +272,7 @@ Our goal in the final semester of the project was to have a functioning version 
 2. keep track of the number of fails per task and limit them to two (i.e., allow one repetition)
 3. implement task evaluation at a group level
 4. incorporate story variation and decision polls based on group performance
-5. 
+ 
 We eventually succeeded in implementing the first two steps. The implementation approach as well as some challenges are explained in more detail below. 
 
 ## Implementation
