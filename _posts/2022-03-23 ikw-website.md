@@ -13,7 +13,7 @@ sections:
 ## Contents
 
 1. Motivation
-1. Struture of new site
+1. Struture of new website
 1. Motivation behind template
 
 <div id="motivation"></div>
