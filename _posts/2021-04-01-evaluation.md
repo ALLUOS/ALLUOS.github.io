@@ -10,6 +10,8 @@ sections:
    tag: \#third
 description: Learn more about the project's testing strategy.
 image: pic04.jpg
+is-on-home-page: yesplease
+is-on-home-page-order: 4
 ---
 
 **Note:** This page contains several sections, each describing testing information relevant to a different semester of the project. Escapeling's testing process has naturally evolved over time, and the information contained on this page is a testament to that. To facilitate navigation, here is an overview of this page's content.
