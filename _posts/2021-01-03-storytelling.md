@@ -2,8 +2,14 @@
 layout: post
 title: Storytelling
 sections:
+ - title: Second Semester
+   tag: \#second
+ - title: Third Semester
+   tag: \#third
+ - title: Fourth Semester
+   tag: \#fourth
  - title: Motivation
-   tag: \#motivation
+ - tag: \#motivation
  - title: Characters
    tag: \#characters
  - title: Plot and storylines
@@ -37,7 +43,7 @@ description: Explore our sci-fi themed escape room narrative.
 5. Restart scenarios
 6. Completion metrics
 
-<span class = "content-overview"><a href = "#four">Fourth Semester</a></span>
+<span class = "content-overview"><a href = "#fourth">Fourth Semester</a></span>
 
 1. Idea and Motivation
 2. Implementation
@@ -176,7 +182,7 @@ In the future, our wish is to create a more immersive game experience by includi
 
 <!-- Semester Three -->
 
-<div id="three"></div>
+<div id="third"></div>
 
 <h2><span class="section">Third semester</span></h2>
 
@@ -258,15 +264,17 @@ Thereby, the overall completion metrics of the group depend on their performance
 
 **Note:** the described above changes of the story pipeline are not fully implemented yet. It is however important to have a clear picture of where we are headed and what we want to achieve.
 
+<hr />
+
 <!-- Semester Four -->
 
-<div id="four"></div>
+<div id="fourth"></div>
 
 <h2><span class="section">Fourth semester</span></h2>
 
 ## Idea and Motivation
 
-Our goal in the final semester of the project was to have a functioning version of the game that could be played from start to finish without significant difficulties. With this in mind, we also wanted to implement the story pipeline ideas designed in the previous semester (see above/here-link for more details on design as well as main motivation for these changes). Based on the experience from the previous semester, we expected some practical challenges, but we nevertheless wanted to make sure that, even if the complete design could not be implemented within the remaining time-frame of the project, we could still achieve some improvements to the user experience and the game would be working and playable. We therefore decided to break down the process into several smaller steps, to be tackled by sprints:
+Our goal in the final semester of the project was to have a functioning version of the game that could be played from start to finish without significant difficulties. With this in mind, we also wanted to implement the story pipeline ideas designed in the [third semester]({{ "" | absolute_url }}/2021/01/03/storytelling.html#third). Based on the experience from the previous semester, we expected some practical challenges. Nevertheless, we wanted to make sure that, even if the complete design could not be implemented within the remaining time-frame of the project, we could still achieve some improvements to the user experience and the game would be working and playable. We therefore decided to break down the process into several smaller steps, to be tackled by sprints:
 
 1. enable repetition of the same task if failed
 2. keep track of the number of fails per task and limit them to two (i.e., allow one repetition)
