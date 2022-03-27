@@ -38,7 +38,7 @@ image: pic11.jpg
 ## Motivation
  
 Visualizations play a central role in the field of user experience. Because of their great potential, they were included in Escapeling. Firstly, in the previous semester's report it can be found in the outlook that the application should contain more visualizations. Secondly, this semester the idea of visualizations especially for the adaptive and situational elements was brought forth. Visualizations can be simple emojis, as well as situational gifs or adaptive images.
-The usefulness of visualizations in a learning environment has been proven in many ways. Our app is explicitly not about visualizing vocabulary using images, for example, as is common in beginner courses. Rather, different types of visualizations have been used as supporting elements to both enhance the user experience and maximize learning. For example, the main characters of our [story](https://alluos.github.io/2021/01/03/storytelling.html) have been given a face by creating stickers of them that are sent to the user.
+The usefulness of visualizations in a learning environment has been proven in many ways. Our app is explicitly not about visualizing vocabulary using images, for example, as is common in beginner courses. Rather, different types of visualizations have been used as supporting elements to both enhance the user experience and maximize learning. For example, the main characters of our [story](/2021/01/03/storytelling.html) have been given a face by creating stickers of them that are sent to the user.
 
 <hr />
 
@@ -64,8 +64,8 @@ The selection of the type and manner of visualization elements was based on both
 *Figure 1: GIF showing the view out of the spaceship after escaping the aliens* 
 
 GIFs are short, constantly repeating videos. On the one hand, they can have a pictorial character, such as a GIF shown at the end of the Escapeling story, where the player flies back to Earth in a spaceship, seeing the Earth approaching him. This view is shown in a GIF. 
-Furthermore, a GIF can be used to draw focus to important learning sections. According to a study by Zallio & Damon (2018) "it is possible to confirm that it is easier for students to better understand certain topics after showing emoticons or GIFs. (...). This is an element that highly stimulates the attention and by levering on emotions, students are more likely to focus their attention after the given emotional stimul[us]". For this reason, each of the learning tasks is introduced with a GIF. This marks the intersection between the previous [storytelling](https://alluos.github.io/2021/01/03/storytelling.html) and the subsequent task, which again fully demands the user's attention.
-The third function of using GIFs in Escapeling, is to provide feedback and motivate. For example, a GIF can be sent in response to a correct answer, or to repeated failure when guessing a word in [the vocabulary guessing task](https://alluos.github.io/2021/03/04/vocabulary-guessing.html).
+Furthermore, a GIF can be used to draw focus to important learning sections. According to a study by Zallio & Damon (2018) "it is possible to confirm that it is easier for students to better understand certain topics after showing emoticons or GIFs. (...). This is an element that highly stimulates the attention and by levering on emotions, students are more likely to focus their attention after the given emotional stimul[us]". For this reason, each of the learning tasks is introduced with a GIF. This marks the intersection between the previous [storytelling](/2021/01/03/storytelling.html) and the subsequent task, which again fully demands the user's attention.
+The third function of using GIFs in Escapeling, is to provide feedback and motivate. For example, a GIF can be sent in response to a correct answer, or to repeated failure when guessing a word in [the vocabulary guessing task](/2021/03/04/vocabulary-guessing.html).
 
 ### Emojis
  
@@ -98,7 +98,7 @@ Other storytelling elements were also visualized with the help of stickers, such
 
 ### Achievements
 
-As part of the visual overhaul of the app, the medals awarded in the "[Achievements](https://alluos.github.io/2021/02/02/achievements.html)" section have also been visualized. You get these for playing Escapeling frequently, for example. Previously, achievements were purely text-based, but now the player receives a picture of their current status.   
+As part of the visual overhaul of the app, the medals awarded in the "[Achievements](/2021/02/02/achievements.html)" section have also been visualized. You get these for playing Escapeling frequently, for example. Previously, achievements were purely text-based, but now the player receives a picture of their current status.   
 
 <img src="{{ "" | relative_url }}/assets/images/visualizationsIMG06.png" alt="Figure 6: Image that the user gets when he has reached the status of an Admiral as part of the achievements" class="center" style="width: 20%">
 
