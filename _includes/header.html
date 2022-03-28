@@ -3,7 +3,7 @@
 
     <!-- Header -->
     <header id="header" {% if page.layout == 'default' %} class="alt" {% endif %}>
-        <h1><a href="{{ "" | absolute_url }}/">Escapeling</a></h1>
+        <h1><a href="{{ "" | absolute_url }}">Escapeling</a></h1>
         <nav id="nav">
             <ul>
                 <li class="special">
@@ -14,24 +14,44 @@
                     {% endif %}
                     <div id="menu">
                         <ul>
+                            {% for post in site.posts %}
+                                {% if post.title == page.title %}
+                                    <li><strong style="font-weight: 700;">Contents on this page</strong></li>
+                                    {% for section in page.sections %}
+                                        <li><a href="{{ post.url | append:section.tag | remove_first:'\'}}">- {{ section.title }}</a></li>
+                                    {% endfor %}
+                                {% endif %}
+                            {% endfor %}
+                            <li><span style="visibility: hidden;">invisible<!--quick n dirty spacing lol--></span></li>
+                            
+                            <li><strong style="font-weight: 700;">Navigation</strong></li>
                             <li><a href="{{ "" | absolute_url }}">Home</a></li>
-                            <li><a href="{{ "" | absolute_url }}/2021/04/04/overview.html">Overview</a></li>
-                            <li><a href="{{ "" | absolute_url }}/2021/04/03/design.html">Design</a></li>
-                            <li><a href="{{ "" | absolute_url }}/2021/04/02/implementation.html">Implementation</a></li>
-                            <li><a href="{{ "" | absolute_url }}/2021/04/01/evaluation.html">Testing</a></li>
-                            <li><a href="{{ "" | absolute_url }}/#three">Language practice tasks</a></li>
-                            <li><a href="{{ "" | absolute_url }}/2021/02/04/learning-experience.html">Learning experience</a></li>
-                            <li><a href="{{ "" | absolute_url }}/2021/01/04/user-experience.html">User experience</a></li>
-                            <li><a href="{{ "" | absolute_url }}/2020/02/03/FAQ.html">FAQ</a></li>
-                            <li><a href="{{ "" | absolute_url }}/2020/02/02/media.html">Media</a></li>
-                            <li><a href="{{ "" | absolute_url }}/2020/02/01/contact.html">Contact</a></li>
-                            {% for post in site.posts %}{% if post.title == page.title %}
-                            <li>Contents on this page</li>
-                            {% for section in page.sections %}
-                            <li><a href="{{ post.url | append:section.tag | remove_first:'\'}}">- {{ section.title }}</a></li>
-                            {% endfor %}
-                            {% endif %}
-                            {% endfor %}
+                            <li><a href="{{ "" | absolute_url }}2021/04/04/overview.html">Overview</a></li>
+                            <li><a href="{{ "" | absolute_url }}2021/04/03/design.html">Design</a></li>
+                            <li><a href="{{ "" | absolute_url }}2021/04/02/implementation.html">Implementation</a></li>
+                            <li><a href="{{ "" | absolute_url }}2021/04/01/evaluation.html">Testing</a></li>
+                            <li><a href="{{ "" | absolute_url }}2022/03/17/outcomes.html">Project Outcomes</a></li>
+                            <li><a href="{{ "" | absolute_url }}#three">Language Practice Tasks</a></li>
+                            <li><a href="{{ "" | absolute_url }}2021/02/04/learning-experience.html">Learning experience</a></li>
+                            <li>
+                                <ul style="margin: 0; font-size: 0.72em;">
+                                    <li class="sub-menu"><a href="{{ "" | absolute_url }}2021/02/03/adaptive.html">Adaptive Module</a></li>
+                                    <li class="sub-menu"><a href="{{ "" | absolute_url }}2021/02/02/achievements.html">Achievements</a></li>
+                                    <li class="sub-menu"><a href="{{ "" | absolute_url }}2021/02/01/GEC.html">Grammatical Error Correction</a></li>                                    
+                                </ul>
+                            </li>
+                            <li><a href="{{ "" | absolute_url }}2021/01/04/user-experience.html">User Experience</a></li>
+                            <li>
+                                <ul style="margin: 0; font-size: 0.72em;">
+                                    <li class="sub-menu"><a href="{{ "" | absolute_url }}2021/01/03/storytelling.html">Storytelling</a></li>
+                                    <li class="sub-menu"><a href="{{ "" | absolute_url }}2021/01/02/visualizations.html">Visualizations</a></li>
+                                    <li class="sub-menu"><a href="{{ "" | absolute_url }}2021/01/01/support.html">Support</a></li>                                    
+                                    <li class="sub-menu"><a href="{{ "" | absolute_url }}2022/03/12/MinorImprovements.html">Further Improvements</a></li>                                    
+                                </ul>
+                            </li>
+                            <li><a href="{{ "" | absolute_url }}2022/03/17/lobby.html">Lobby Platform</a></li>
+                            <li><a href="{{ "" | absolute_url }}2020/02/03/FAQ.html">FAQ</a></li>                            
+                            <li><a href="{{ "" | absolute_url }}2020/02/01/contact.html">Contact</a></li>                
                         </ul>
                     </div>
                 </li>

@@ -20,6 +20,8 @@ sections:
    tag: \#references
 description: Learn more about the application's implementation and technical architecture.
 image: pic03.jpg
+is-on-home-page: yesplease
+is-on-home-page-order: 3
 ---
 
 ## Contents
