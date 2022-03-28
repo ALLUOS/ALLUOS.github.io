@@ -8,20 +8,6 @@ sections:
    tag: \#third
  - title: Fourth Semester
    tag: \#fourth
- - title: Motivation
- - tag: \#motivation
- - title: Characters
-   tag: \#characters
- - title: Plot and storylines
-   tag: \#story
- - title: Structure
-   tag: \#structure
- - title: Delivery methods
-   tag: \#delivery
- - title: Outlook
-   tag: \#outlook
- - title: Expanded story pipeline
-   tag: \#story_pipeline
    
 description: Explore our sci-fi themed escape room narrative.
 ---
@@ -30,27 +16,27 @@ description: Explore our sci-fi themed escape room narrative.
 
 <span class = "content-overview"><a href = "#second">Second Semester</a></span>
 
-1. Motivation
-2. Characters
-3. Plot and storylines
-4. Structure
-5. Delivery methods
-6. Outlook
+1. [Motivation](#motivation)
+2. [Characters](#characters)
+3. [Plot and storylines](#story)
+4. [Structure](#structure)
+5. [Delivery methods](#delivery)
+6. [Outlook](#outlook)
 
 <span class = "content-overview"><a href = "#third">Third Semester</a></span>
 
-1. Language simplification
-2. Expanded story pipeline
-3. Story decisions between tasks
-4. Performance based outcomes
-5. Restart scenarios
-6. Completion metrics
+1. [Language simplification](#language_simplification)
+2. [Expanded story pipeline](#story_pipeline)
+3. [Story decisions between tasks](#story_decisions)
+4. [Performance based outcomes](#performance)
+5. [Restart scenarios](#restart)
+6. [Completion metrics](#metrics)
 
 <span class = "content-overview"><a href = "#fourth">Fourth Semester</a></span>
 
-1. Idea and Motivation
-2. Implementation
-3. Outlook to more storytelling improvements
+1. [Idea and Motivation](#idea_motivation)
+2. [Implementation](#implementation)
+3. [Outlook to more storytelling improvements](#outlook_more)
 
 <hr />
 
@@ -189,6 +175,8 @@ In the future, our wish is to create a more immersive game experience by includi
 
 <h2><span class="section">Third semester</span></h2>
 
+<div id="language_simplification"></div>
+
 ## Language simplification
 
 By the beginning of the third project term the functional version of the Escapeling bot had already been launched, however there was still much room for improvement not only in terms of implementing new features and code updates, but also concerning the story design. The Escapeling had a main working plot, adopted a specific storytelling style, and the communication with the user was built on a certain tone of voice. While the materials provided by the initiating team have set the core direction of the story pipeline, the specifics of the third semester work plan allowed us to develop a more detailed general story framework. It has been a joint decision to process the existing text and develop an updated refined version the plot. One of the first tasks of the design team was to simplify the storytelling language in order to make the story text (and hence, all the communication with the bot) more accessible and inviting for the (pre-) intermediate English speakers. While studying the text we have found that while expressive and exciting, some of the story details were too elaborate, the tone of communication with the user was seldom consistent, and certain passages involved complex upper-intermediate (or advanced) grammar structures or employed compound wording. During Sprint 1 the extensive group work included independent comment entry and joint contribution review over the course of two weeks, which proved to be practical and efficient technique of text processing. The design team managed to adapt and improve the storytelling language using the a number of resources such as Thesaurus, Cambridge and Merriam-Webster dictionaries and Rewordify tool that allowed enriching the text while keeping it understandable. As a result, the text was more readable for a general intermediate audience, inadequate phrasing cases were eliminated or simplified, which did not, however, result in the decline of the text quality. This activity has acquainted the design team with all the text materials that existed in the project and allowed to pave the way towards more drastic but helpful changes to the storytelling pipeline and the game plot.
@@ -205,6 +193,8 @@ We created a visual board to help illustrating the new story pipeline. (See [Mur
 <img class="center" style="width: 100%" src="{{ '' | absolute_url }}/assets/images/mission-pipeline-final.png">
 
 *Figure 4: New story pipeline*
+
+<div id="story_decisions"></div>
 
 ## Story decisions between tasks
 
@@ -241,6 +231,7 @@ Overall, there are three plots where the users are encouraged to choose between 
 
 *Table 1: Overview of story dicisions*
 
+<div id="performance"></div>
 
 ## Performance based outcomes
 
@@ -257,11 +248,15 @@ The idea of performance based outcomes also applies to the story endings, which 
 
 In case users choose to participate in the task and accomplish it succesfully, all endings show them that they managed to take Elias together with them. In case they did not choose the task or failed it, the endings do not mention Elias being saved. 
 
+<div id="restart"></div>
+
 ## Restart scenarios
 
 In the initial story structure players had to pass all the tasks in order to reach the end of the game. In case the users failed a given task, the whole mission would be considered as failed and they would have to start from the very beginning. According to the results, obtained by the testing team in the second semester, we concluded that this scenario does not seem to be efficient and, after a certain amount of failed trials, demotivates players from finishing the game. Thus, we came up with an idea of restart scenarios. 
 
 If the participants fail the task, they would now have a choice of either repeating the same task, choosing a different task or restarting the whole mission. However, if the users fail the same task twice, they fail the whole mission and can only restart the game.
+
+<div id="metrics"></div>
 
 ## Completion metrics
 
@@ -277,9 +272,11 @@ Thereby, the overall completion metrics of the group depend on their performance
 
 <h2><span class="section">Fourth semester</span></h2>
 
+<div id="idea_motivation"></div>
+
 ## Idea and Motivation
 
-Our goal in the final semester of the project was to have a functioning version of the game that could be played from start to finish without significant difficulties. With this in mind, we also wanted to implement the story pipeline ideas designed in the [third semester]({{ "" | absolute_url }}/2021/01/03/storytelling.html#third). Based on the experience from the previous semester, we expected some practical challenges. Nevertheless, we wanted to make sure that, even if the complete design could not be implemented within the remaining time-frame of the project, we could still achieve some improvements to the user experience and the game would be working and playable. We therefore decided to break down the process into several smaller steps, to be tackled by sprints:
+Our goal in the final semester of the project was to have a functioning version of the game that could be played from start to finish without significant difficulties. With this in mind, we also wanted to implement the story pipeline ideas designed in the [third semester](#story_pipeline). Based on the experience from the previous semester, we expected some practical challenges. Nevertheless, we wanted to make sure that, even if the complete design could not be implemented within the remaining time-frame of the project, we could still achieve some improvements to the user experience and the game would be working and playable. We therefore decided to break down the process into several smaller steps, to be tackled by sprints:
 
 1. enable repetition of the same task if failed
 2. keep track of the number of fails per task and limit them to two (i.e., allow one repetition)
@@ -287,6 +284,8 @@ Our goal in the final semester of the project was to have a functioning version 
 4. incorporate story variation and decision polls based on group performance
  
 We eventually succeeded in implementing the first two steps. The implementation approach as well as some challenges are explained in more detail below. 
+
+<div id="implementation"></div>
 
 ## Implementation
 
@@ -296,6 +295,8 @@ The implementation of the repeatability of the tasks is carried by several compo
 If a task was failed for a second time and, therefore, the entire mission was failed, and the players choose to restart it, the `_reps_counter` attribute of the room manager is reset to 0. 
 
 Implementing other storyline decision points on top of the repeatability was outside the scope of work for the final semester because these different storylines would depend on individual user and group-level scores per task. As these require implementing novel task completion metrics, coding these would require a major restructuring of the database, the task classes and handlers. Therefore, we consider the completed implementation of the task repeatability a good compromise and improvement of the current game flow.
+
+<div id="outlook_more"></div>
 
 ## Outlook to more storytelling improvements
 
