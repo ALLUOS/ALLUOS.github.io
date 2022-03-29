@@ -44,7 +44,7 @@ According to Gilakjani and Sabouri (2016), some of the most common issues for st
 <div id="task-flow"></div>
 ## Task Flow
 
-Simultaneously listening to and comprehending information that is being presented is one of the most challenging parts when it comes to learning a foreign language. Listening is usually considered to be more difficult than grammar or discussion tasks, previously designed by us in this application. Since a single escape mission with three already implemented tasks already seems to be time intensive as well as requires perseverance, it was decided to make the new listening task voluntary. Participants are not obliged to do the listening but are given a choice after successfully finishing the main part of the game. Thus, this new task was in the first place meant for the most motivated students. However, in order to encourage users doing this task, it was decided to include it in a storyline in such a way, that in case of a successful completion of the task a new story content would be unlocked. Users will see a story block with them saving Elias and setting him free. 
+Simultaneously listening to and comprehending information that is being presented is one of the most challenging parts when it comes to learning a foreign language. Listening is usually considered to be more difficult than grammar or discussion tasks, previously designed by us in this application. Since a single escape mission with three already implemented tasks already seems to be time intensive as well as requires perseverance, it was decided to make the new listening task voluntary. Participants are not obliged to do the listening but are given a choice after successfully finishing the main part of the game. Thus, this new task was in the first place meant for the most motivated students. However, in order to encourage users doing this task, it was decided to include it in a storyline in such a way, that in case of a successful completion of the task a new story content would be unlocked. Users will see a story block with them saving Elias and setting him free.
 
 In the following, the description of the task flow will be presented in more detail.
 
@@ -56,25 +56,25 @@ Because Telegram was chosen as a platform for the application, we have encounter
 ## Materials
 
 At the moment, the audio database contains 45 recordings, each centered around a certain topic and labelled according to a difficulty level. All files come from publicly available websites which are intended for learners and teachers of English as a foreign language, namely [www.listenaminute.com](www.listenaminute.com), [www.elllo.org](www.elllo.org) and [www.esl-lounge.com](www.esl-lounge.com). We made sure that all sources legally allow the use of their audio materials for non-commercial purposes.
- 
+
 The users should be familiar with a task of answering questions related to the heard materials, as this methodology is often used in language learning courses. However, in order to create an experience that resembles the real world rather than a test environment, the users find out the questions after, not before listening. In such cases it can be challenging to catch every detail at first attempt, so we decided to allow them to self-regulate the number of repetitions.
- 
+
 Along these lines, to keep the overall length of the task to an appropriate time window even if the users decide to listen multiple times, we decided to standardize the length of every audio file to approximately one minute. Files of such length are also going to be much easier on the device memory storage of the users, which is certainly an added plus.
- 
+
 In order to provide a more authentic learning experience, we aimed to provide a good variety of speakers with regard to their voices and accents, as well as a wide range of everyday topics, for which intermediate learners are expected to have the required core vocabulary. Some examples include Health, Media, French Fries and Job Duties. Unfamiliar accents can severely hinder students’ abilities to understand the spoken words (Gilakjani & Sabouri, 2016), so only speakers of the most common native English accents are included in the final data set.
- 
+
 Since the maximum number of players is four, we have designed four questions per audio, each with three possible options to choose from where exactly one is correct. The focus of the questions is also diverse. Some require a general understanding of the speaker’s attitude about the topic, others ask for a more detail-oriented listening or distinguishing between homonyms (equally or similarly sounding words) based on context.
- 
+
 In terms of the difficulty level, the main motivation for the division was to eventually accommodate the adaptive module, which assigns a specific question to the users based on their previous performance. There does not seem to be a unified official method for determining the difficulty level of a listening task. Therefore, our process was as follows: the content (in form of a textual transcript) was first evaluated based on the language complexity and vocabulary using a combination of automatic tools ([1](http://www.roadtogrammar.com/textanalysis/), [2](https://cefr.duolingo.com)) to indicate a CEFR level [3] of a text. In addition to this indication, the data was also subjectively evaluated for speech qualities such as tempo and clarity, and the final level of difficulty resulted from agreement between three judges.
- 
+
 Although our target audience is mainly B1-B2 students, since the intermediate proficiency group tends to be quite heterogeneous in terms of the individuals’ strengths and weaknesses, we also included slightly simpler audios that could theoretically be used with motivated A2 students, too.
- 
+
 Each recording was carefully reviewed by at least three people, checking for the sound quality of the recording, correctness of the language and multiple choice questions, flagging potentially sensitive subjects or unsuitable language, and as mentioned, checking the indicated level of difficulty.
 
 <div id="implementation"></div>
 ## Implementation
 
-In the following we will describe how the suggested task flow is achieved from a technical point of view. 
+In the following we will describe how the suggested task flow is achieved from a technical point of view.
 The task consists of two loops that wrap the answering function. The first loop is the “Iteration-Loop”. In there the topic of the next audio file is selected and the matching audio file is sent, using the newly implemented `send_audio`-function. After sending the file, the questioning-loop is started. In there a question, regarding the audio file, is selected from a group of up to 4 different questions. Additional to that, the answering options are presented, and a user is announced who is supposed to answer. Now the users have 90 seconds to discuss the given answering options. To check for these 90 seconds, the function `time_is_up()` is being called to be executed in 90 seconds. If they have found a solution earlier, they can additionally press a button in the previous message, to skip their discussion time. Since the `time_is_up()` function is called only after a certain period of time has passed, it can not return anyhing and therefore can not change the state. This is resolved by adding a second type of state: the answer-mode. Whether a group is in answer-mode is saved in the instance of the task. While the answer-mode is deactivated all the chat-messages are still reaching the `evaluate_answer()`-function, but they are not evaluated, but discarded as part of the discussion. If either the `time_is_up()`-function is called or the button is pressed, the answer-mode is activated. This causes the bot to evaluate the next answer which is given by the earlier announced user. After the user gives the answer, the answer-mode is deactivated again. If the answer is correct the group gets a point. Otherwise, they do not. This process is repeated until each user in the group had one question regarding this topic. This closes the questioning-loop. If the questioning-loop is completed a new topic begins and a new iteration begins. The complete task consists of three iterations. If they were able to collect more than two thirds of the points, they were successful. To get a better overview over the flow of the task have a look at figure one.
 
 <img src="https://github.com/ALLUOS/ALLUOS.github.io/raw/master/assets/images/listening_task_flow.png" alt="Figure 1: Flow-Diagram for the listening task" class="center" style="width: 100%">
@@ -111,9 +111,9 @@ The second problem could be addressed by implementing a second timer, which coun
 <div id="references"></div>
 ## References
 
-[1] http://www.roadtogrammar.com/textanalysis/ (accessed 29.06.21)
+[1] <http://www.roadtogrammar.com/textanalysis/> (accessed 29.06.21)
 
-[2] https://cefr.duolingo.com (accessed 29.06.21)
+[2] <https://cefr.duolingo.com> (accessed 29.06.21)
 
 [3] Council of Europe (2020), Common European Framework of Reference for Languages: Learning, teaching, assessment – Companion volume, Council of Europe Publishing, Strasbourg, available at www.coe.int/lang-cefr
 

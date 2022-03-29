@@ -20,6 +20,7 @@ description: Learn more about the application's achievement system.
 image: pic07.jpg
 ---
 ## Contents
+
 1. Motivation
 1. Background
 1. MVP Definition
@@ -56,6 +57,7 @@ Based on the theory of motivation through achievements outlined above, we chose 
 - The *Streak counter* gives achievements for certain numbers of consecutive days on which the user opened the app. With this, we can track a user's consistency in returning to the app day after day. In order to make becoming invested in the streak easier, we kept the time intervals between each achievement fairly short early on and gradually increase the distance to make it harder to keep the streak alive later on.
 
 We wanted to be able to display achievements at two points of the application:
+
 - In a private chat, where an option exists to view all completed and remaining achievements.
 - In the group chat, where newly unlocked achievements will be shown after each completed task. We thought this could motivate users to invest more time in language learning in order to complete achievements and have other people see their progress.
 
@@ -64,6 +66,7 @@ We wanted to be able to display achievements at two points of the application:
 In the implementation we focused on creating a framework that allows us to easily integrate new achievements into our application. Thus, we will not focus on the implementaion of individual achievements here but rather explain the framework approach in the context of data stored for achievements as well as the class structure used.
 
 ### Achievement Data
+
 In order to tracks user progress along for achievements, we need to track all relevant pieces of information. Because we want to employ a framework approach that allows for quick implementation of future achievements, we need a data structure with high flexibility for different data types. Additionally, this data also needs to be persistent across multiple sessions to enable long-term goals. It must also not be lost if the backend of the application is shut down.
 
 We achieve flexibility regarding different data types by creating a simple python dictionary in the student object that contains the achievement data for that student in the form of key-value pairs. In addition to an interface to set values using the key, we also created a function to increment values easily. We expect many achievements to rely on data that is incremental in nature (e.g. the number of codeword pieces collected). These interfaces are then used to update the achievement data at a given point in the application (e.g. incrementing the codeword piece counter after the group managed to unlock a piece for each student in the group).
@@ -88,6 +91,7 @@ Similar to our task framework our achievement framework is designed in a way to 
 In the next paragraphs, we will give an overview of the different components of the achievement framework, including the currently implemented types of achievements.
 
 #### `achievements.py`
+
 This file holds the abstract base class `Achievement` from which all subsequent achievement implementations shall inherit. The base class defines certain attributes in its constructor, which are thought to be shared across all achievement types. Those attributes include for example a name (`self.name`), a text that is displayed upon completion (`self.completion_text`), a text which displays the user progress of the achievement (`self.progress_text`), a corresponding emoji (`self.emoji`), a threshold which means completing the achievement when progressing beyond (`self.threshold`), a corresponding student (`self.student`) and a boolean value whether the achievement has been completed (`self.completed`).
 
 Besides typical getter-functions, the class also holds an important method to check whether the achievement has been completed by the student (`is_completed()`). This function checks if the progress of the achievement has passed the `self.threshold` and sets and returns `self.completed` accordingly. This method has been implemented in the base class since we thought that all achievements usually follow what we call the "progress-needs-to-pass-threshold" principle. We will see later that modifications can and have been made to certain achievements by overriding the `is_completed()` method.
@@ -95,7 +99,8 @@ Besides typical getter-functions, the class also holds an important method to ch
 A key method for all achievements which depends on the inherent nature of the achievement type, is the measurement of the progress of the achievement. Since this may vary heavily depending on the kind of achievement, we declared the method `get_progress()` as an `@abstractmethod`, making it necessary to be implemented in the corresponding sub-classes inheriting from the base class.
 
 #### `streaks.py`
-This file contains the class for our _Streak_ or _Crew Rank_ achievement `ConsecutiveDaysStreak(Achievement)` which inherits from the `Achievement` base class. For this achievement we do not need any additional attributes other than the ones we have declared in the base class.
+
+This file contains the class for our *Streak* or *Crew Rank* achievement `ConsecutiveDaysStreak(Achievement)` which inherits from the `Achievement` base class. For this achievement we do not need any additional attributes other than the ones we have declared in the base class.
 
 However, as stated above, we need to implement the abstract method `get_progress()` in each new achievement sub-class. In this case, this means getting returning the value of `consecutive_days` from the database. But since the progress of this achievement is inherently highly dynamic by its definition (the user is expected to play on consecutive days and gets penalized for breaking the streak), we cannot only perform a database query for the value of `consecutive_days` but also have to check if the streak is still running and adjust or reset the value of `consecutive_days` when necessary. We therefore make use of Python's [_datetime_ module](https://docs.python.org/3/library/datetime.html) to compare the current date with the `last_played` date which is saved and continuously updated in the database.
 
@@ -108,6 +113,7 @@ This file contains the class of our second achievement, the _Codeword Cracker_ a
 The implementation of this achievement follows the implementation of the base class to a higher extent than the streak achievement does. This means we only had to implement the `get_progress()` method which is a simple database query for the data field `codeword_pieces_collected` of the respective student. The definition of achievement completion follows the aforementioned "progress-needs-to-pass-threshold" principle, hence we do not need to override the `is_completed()` method.
 
 #### `all_achievements.py`
+
 This file contains two functions that are used in the context of achievements, namely `set_achievement_list(filepath)` and `create_all_achievements(student)`.
 
 The former loads all achievements instances that we have currently created in the `achievement_info.json` into the global dictionary`achievement_json`. The latter, `create_all_achievements(student)` creates a list of all achievements from `achievement_json` for the respective `student` and returns the list. This essentially instantiates all achievements for a given user and updates their current status based on the database values. The JSON configuration allows us to easily change the types of achievements and their thresholds without changes to the actual code.
@@ -163,9 +169,8 @@ Locke, E. A. (1996). Motivation through conscious goal setting. Applied and prev
 
 Mekler, E. D., Brühlmann, F., Tuch, A. N., Opwis, K. (2017). Towards understanding the effects of individual gamification elements on intrinsic motivation and performance. Computers in Human Behavior, 71, 525-534. doi:10.1016/j.chb.2015.08.048
 
-Pham, X. L., & Chen, G. D. (2019). PACARD: A New Interface to Increase Mobile Learning App Engagement, Distributed Through App Stores. Journal of Educational Computing Research, 57(3), 618–645. https://doi.org/10.1177/0735633118756298
+Pham, X. L., & Chen, G. D. (2019). PACARD: A New Interface to Increase Mobile Learning App Engagement, Distributed Through App Stores. Journal of Educational Computing Research, 57(3), 618–645. <https://doi.org/10.1177/0735633118756298>
 
 Silic, M., & Back, A. (2017). Impact of gamification on user's knowledge-sharing practices: Relationships between work motivation, performance expectancy and work engagement. In Proceedings of the 50th Hawaii International Conference on System Sciences.
 
 Zainuddin, Z., Chu, S. K., Shujahat, M., &amp; Perera, C. J. (2020). The impact of gamification on learning and instruction: A systematic review of empirical evidence. Educational Research Review, 30, 100326. doi:10.1016/j.edurev.2020.100326
-

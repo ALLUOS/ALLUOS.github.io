@@ -36,7 +36,7 @@ image: pic11.jpg
 
 <div id="motivation"></div>
 ## Motivation
- 
+
 Visualizations play a central role in the field of user experience. Because of their great potential, they were included in Escapeling. Firstly, in the previous semester's report it can be found in the outlook that the application should contain more visualizations. Secondly, this semester the idea of visualizations especially for the adaptive and situational elements was brought forth. Visualizations can be simple emojis, as well as situational gifs or adaptive images.
 The usefulness of visualizations in a learning environment has been proven in many ways. Our app is explicitly not about visualizing vocabulary using images, for example, as is common in beginner courses. Rather, different types of visualizations have been used as supporting elements to both enhance the user experience and maximize learning. For example, the main characters of our [story](/2021/01/03/storytelling.html) have been given a face by creating stickers of them that are sent to the user.
 
@@ -55,20 +55,20 @@ Finally, visualizations also contribute to an appealing design of the learning a
 ## Conception
 
 Previously, the app contained very few visualizations. These consisted of one single video, one image and three different emojis indicating which character is speaking. Our goal was to make visualizations a vibrant part of the storytelling and task support throughout the game.
-The selection of the type and manner of visualization elements was based on both the use of these elements by our target audience -- mostly 15-year-old teenagers -- and the functionalities of our app. These two points led us to a specific selection of the following media: GIFs, emojis, stickers and adaptive images. 
+The selection of the type and manner of visualization elements was based on both the use of these elements by our target audience -- mostly 15-year-old teenagers -- and the functionalities of our app. These two points led us to a specific selection of the following media: GIFs, emojis, stickers and adaptive images.
 
 ### GIFs
 
 <img src="{{ "" | relative_url }}/assets/images/visualizationsIMG01.png" alt="Figure 1: GIF showing the view out of the spaceship after escaping the aliens" class="center" style="width: 30%">
 
-*Figure 1: GIF showing the view out of the spaceship after escaping the aliens* 
+*Figure 1: GIF showing the view out of the spaceship after escaping the aliens*
 
-GIFs are short, constantly repeating videos. On the one hand, they can have a pictorial character, such as a GIF shown at the end of the Escapeling story, where the player flies back to Earth in a spaceship, seeing the Earth approaching him. This view is shown in a GIF. 
+GIFs are short, constantly repeating videos. On the one hand, they can have a pictorial character, such as a GIF shown at the end of the Escapeling story, where the player flies back to Earth in a spaceship, seeing the Earth approaching him. This view is shown in a GIF.
 Furthermore, a GIF can be used to draw focus to important learning sections. According to a study by Zallio & Damon (2018) "it is possible to confirm that it is easier for students to better understand certain topics after showing emoticons or GIFs. (...). This is an element that highly stimulates the attention and by levering on emotions, students are more likely to focus their attention after the given emotional stimul[us]". For this reason, each of the learning tasks is introduced with a GIF. This marks the intersection between the previous [storytelling](/2021/01/03/storytelling.html) and the subsequent task, which again fully demands the user's attention.
 The third function of using GIFs in Escapeling, is to provide feedback and motivate. For example, a GIF can be sent in response to a correct answer, or to repeated failure when guessing a word in [the vocabulary guessing task](/2021/03/04/vocabulary-guessing.html).
 
 ### Emojis
- 
+
 <img src="{{ "" | relative_url }}/assets/images/visualizationsIMG02.png" alt="Figure 2: Emojis in the private chat selection menu" class="center" style="width: 40%">
 
 *Figure 2: emojis in the private chat selection menu*
@@ -76,34 +76,33 @@ The third function of using GIFs in Escapeling, is to provide feedback and motiv
 Emojis are small graphics that can be in a line with text. They can be emoticons, representing emotions, as well as representing unemotional things. For quicker orientation, for example, emojis were inserted in the private chat selection menu. This additionally made the previously completely text-based selection a bit more colorful, and various studies have proven that colors can stimulate the brain during learning (Ferrari, 2008) (Althouse, 2003).
 
 ### Situation Dependent Images
- 
+
 <img src="{{ "" | relative_url }}/assets/images/visualizationsIMG03.png" alt="Figure 3: Image showing the remaining time for a task" class="center">
 
 *Figure 3: image showing the remaining time for a task*
 
-In some tasks it is useful to know how much time you have left to complete the task. Since Telegram's API does not allow the implementation of a progress bar, other ways had to be found to implement this. The challenge was solved by sending an image at certain points in time showing the time left to complete the task. 
+In some tasks it is useful to know how much time you have left to complete the task. Since Telegram's API does not allow the implementation of a progress bar, other ways had to be found to implement this. The challenge was solved by sending an image at certain points in time showing the time left to complete the task.
 
 ### Stickers
- 
+
 <img src="{{ "" | relative_url }}/assets/images/visualizationsIMG04.png" alt="Figure 4: example sticker of the alien Elias" class="center" style="width: 20%">
 
 *Figure 4: example sticker of the alien Elias*
 
 Stickers are images that have no background. They are displayed much larger than emojis in Telegram, the platform used for Escapeling. To enhance the effects of storytelling, a standalone sticker pack was developed that incorporates various components of storytelling. The full content of the sticker pack can be seen in Fig. 5. It includes the main characters of the story, Harriet and Elias. Since emotions can be an essential factor for learning and provide a better experience of the story, different emotional states of the main characters such as joy, mistrust or sadness are visualized.
 Other storytelling elements were also visualized with the help of stickers, such as the code panel, on which the player is supposed to enter a code several times during the game.
- 
+
 <img src="{{ "" | relative_url }}/assets/images/visualizationsIMG05.png" alt="Figure 5: All stickers belonging to the Escapeling sticker pack" class="center">
 
 *Figure 5: all stickers belonging to the Escapeling sticker pack*
 
 ### Achievements
 
-As part of the visual overhaul of the app, the medals awarded in the "[Achievements](/2021/02/02/achievements.html)" section have also been visualized. You get these for playing Escapeling frequently, for example. Previously, achievements were purely text-based, but now the player receives a picture of their current status.   
+As part of the visual overhaul of the app, the medals awarded in the "[Achievements](/2021/02/02/achievements.html)" section have also been visualized. You get these for playing Escapeling frequently, for example. Previously, achievements were purely text-based, but now the player receives a picture of their current status.
 
 <img src="{{ "" | relative_url }}/assets/images/visualizationsIMG06.png" alt="Figure 6: Image that the user gets when he has reached the status of an Admiral as part of the achievements" class="center" style="width: 20%">
 
 *Figure 6: image that the user gets when he has reached the status of an “Admiral” as part of the achievements*
-
 
 <div id="implementation"></div>
 ## Implementation
@@ -112,7 +111,7 @@ The changes mentioned above have been implemented as follows:
 
 ### Emojis
 
-Emojis are handled by tags like “:alien:”. These tags where transformed to the correct emoji by using the [emoji-package for python (Kim and Wurster, 2021)](https://pypi.org/project/emoji/). 
+Emojis are handled by tags like “:alien:”. These tags where transformed to the correct emoji by using the [emoji-package for python (Kim and Wurster, 2021)](https://pypi.org/project/emoji/).
 
 ### Stickers
 

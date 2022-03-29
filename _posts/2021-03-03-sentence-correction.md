@@ -61,8 +61,8 @@ The `SentenceCorrection` class inherits from its superclass `SequentialTask` in 
 
 Chen, Xiaobin & Meurers, Detmar. (2016). Characterizing Text Difficulty with Word Frequencies. 84-94. 10.18653/v1/W16-0509.
 
-Leroy, G., & Kauchak, D. (2014). The effect of word familiarity on actual and perceived text difficulty. Journal of the American Medical Informatics Association : JAMIA, 21(e1), e169–e172. https://doi.org/10.1136/amiajnl-2013-002172
+Leroy, G., & Kauchak, D. (2014). The effect of word familiarity on actual and perceived text difficulty. Journal of the American Medical Informatics Association : JAMIA, 21(e1), e169–e172. <https://doi.org/10.1136/amiajnl-2013-002172>
 
 Medero, Julie & Ostendorf, Mari. (2009). Analysis of vocabulary difficulty using Wiktionary. SLaTE: 61-64
 
-Rudell, A. P. (1993). Frequency of word usage and perceived word difficulty: Ratings of Kučera and Francis words. Behavior Research Methods, Instruments & Computers, 25(4), 455–   463. https://doi.org/10.3758/BF03204543  
+Rudell, A. P. (1993). Frequency of word usage and perceived word difficulty: Ratings of Kučera and Francis words. Behavior Research Methods, Instruments & Computers, 25(4), 455–   463. <https://doi.org/10.3758/BF03204543>

@@ -94,40 +94,51 @@ The story variants are created to keep the story engaging and interesting for us
 
 The structure of the story was divided into blocks. This was done in order to integrate the story with the tasks that are to be completed by the participants. The block is the representation of the stage of the escape the participants are in. The story right now is based on 5 blocks which allows the participants to take part in 3 tasks before they finish the learning process. The block flowchart basically shows the flow of the blocks and the blocks which are completed, and which are not.
 The blocks that are completed:
-1)	Introduction (Block 1)
-2)	Before Task 1 (Block 2)
-3)	Between Task 1-2 (Block 3)
-4)	Between Task 2-3 (Block 4)
-5)	Conclusion Escape (Block 5)
 
+1) Introduction (Block 1)
+2) Before Task 1 (Block 2)
+3) Between Task 1-2 (Block 3)
+4) Between Task 2-3 (Block 4)
+5) Conclusion Escape (Block 5)
 
 The Blocks that are to be implemented in the coming semester:
-1)	Before task 4 (Block 6)
-2)	Before task 5 (Block 7)
+
+1) Before task 4 (Block 6)
+2) Before task 5 (Block 7)
 
 The signs that are denoting Success Message and Failure Message in other words are messages from the Elias and/or Harriet whether the participants have successful completed their tasks or not and the further steps to be taken in each case. The participants will be participating the different task before block 3, 4 and 5. After every completion of the task further steps would be indicated and the final escape is possible at block 5.
-	Keeping in mind the Adaptive learning module and the possibilities of task list being increased we have devised a flow in such a way that allows the expansion of more blocks before the participants can escape. This would mean that the participants will have to take part in more than 3 tasks in a session. For now, we have shown 2 more block which indicates that the participants will have to do 5 tasks and not 3 to escape. This gives the participants the option to escape after 3 escapes or do 2 more tasks. In this case they do not have to start a new session and start with the introduction block all over again.
+ Keeping in mind the Adaptive learning module and the possibilities of task list being increased we have devised a flow in such a way that allows the expansion of more blocks before the participants can escape. This would mean that the participants will have to take part in more than 3 tasks in a session. For now, we have shown 2 more block which indicates that the participants will have to do 5 tasks and not 3 to escape. This gives the participants the option to escape after 3 escapes or do 2 more tasks. In this case they do not have to start a new session and start with the introduction block all over again.
 
 ### Block Description
 
 This section we will talk about what every block will describes and what stage of story we are in during the sessions.
 
 #### Block 1
+
 Is the introduction block. This block covers the overall plot and the backstory. It gives the basic understanding of the storyline to the participants. The summary of what is included in the introduction block is:
 The users of our app are a part of the group of humans who was tricked into joining the aliens on one of their spaceships. They thought they would be entering into a collaboration with the aliens, but they realized they’ve been tricked. Now, they must find their way out of the spaceship
 Also, Block 1 is presented to the participants in their personal chats. And all other blocks are in the groups joined by the participants.
+
 #### Block 2
+
 Block two is the interactions of the 2 bot characters, which are a part of the storyline, with the participants. The two bot personas are:
-1)	Sympathetic Alien: Elias – He is the guide and the spokesperson for the adaptive learning module. He basically helps in adjusting the difficulty level of the task based on the participants performance. He is also responsible for taking feedback.
-2)	Hacker from Earth: Harriet – She is the Tester and task conductor to assess if they are humans or not.
+
+1) Sympathetic Alien: Elias – He is the guide and the spokesperson for the adaptive learning module. He basically helps in adjusting the difficulty level of the task based on the participants performance. He is also responsible for taking feedback.
+2) Hacker from Earth: Harriet – She is the Tester and task conductor to assess if they are humans or not.
 The basic concept of the block 2 is to introduce them to the idea of doing tasks in order to escape. The participants start their first task after this block. A sample message from Harriet would look like:
-		"Alright! However, at first, I must check whether you are really humans, not aliens, in order not to put humanity under the threat. In order to prove that you are humans you must complete a few tasks and prove your English knowledge. After successful completion, you’ll get a code to escape”
+  "Alright! However, at first, I must check whether you are really humans, not aliens, in order not to put humanity under the threat. In order to prove that you are humans you must complete a few tasks and prove your English knowledge. After successful completion, you’ll get a code to escape”
+
 #### Block 3 and 4
+
 Block 3 and 4 are block which are between task. These blocks depend on the result of the performance of the participants in the previous task. There are 2 possibilities after finishing the tasks are failure or success. The outcomes of the tasks has the following outputs:
+
 1) Failure: A message from Harriet regarding how she cannot give the password to the participant and better luck next time.
 2) Success (if the task is completed successfully): A message from Harriet to move forward to other task and a suggestion from Elias in respect to the adaptive module.
+
 #### Conclusion block
+
 The Conclusion block is the final block where the participants realizes whether they can escape or not. Basically, whether the participants have successfully finished all the tasks in the session. The two possibilities after finishing the task is:
+
 1) Success: "Congratulations! You have taken the last step on the path to escape. I was glad to meet you, human friends, but it's time to say goodbye” Message from Harriet
 2) Failure: "I'm sure there is still hope! You can start your escape again” Message from Elias
 
@@ -238,21 +249,22 @@ Overall, there are three plots where the users are encouraged to choose between 
 As part of a new pipeline, we also created performance based outcomes. This means that if the group performed well in a task with 0 or only 1 mistake, next story block of the game will be very positive for the group. If they made 2 or 3 mistakes, they will be presented with a good outcome but the story will develop with some complications. And if the users failed the task, they are presented with a negative outcome.
 
 For example, in one of the storyblocks participants can be prompted to choose between three different options:
+
 * to shoot the door opener;
 * to fight against the aliens;
-* to run away. 
+* to run away.
 
 If they choose the first option, they will manage to block the door so that this stops the aliens, in case of the very good outcome. In case of the good outcome, they still manage to block the door but with some troubles when the weapons do not work at first. If the users failed the task, a negative outcome will be displayed.
 
 The idea of performance based outcomes also applies to the story endings, which depend on the overall performance of the group as well as on whether users choose to participate in a new task. The endings can be divided into super good ending, good ending and neutral ending, depending on the amount of mistakes the group made during the whole escape mission.
 
-In case users choose to participate in the task and accomplish it succesfully, all endings show them that they managed to take Elias together with them. In case they did not choose the task or failed it, the endings do not mention Elias being saved. 
+In case users choose to participate in the task and accomplish it succesfully, all endings show them that they managed to take Elias together with them. In case they did not choose the task or failed it, the endings do not mention Elias being saved.
 
 <div id="restart"></div>
 
 ## Restart scenarios
 
-In the initial story structure players had to pass all the tasks in order to reach the end of the game. In case the users failed a given task, the whole mission would be considered as failed and they would have to start from the very beginning. According to the results, obtained by the testing team in the second semester, we concluded that this scenario does not seem to be efficient and, after a certain amount of failed trials, demotivates players from finishing the game. Thus, we came up with an idea of restart scenarios. 
+In the initial story structure players had to pass all the tasks in order to reach the end of the game. In case the users failed a given task, the whole mission would be considered as failed and they would have to start from the very beginning. According to the results, obtained by the testing team in the second semester, we concluded that this scenario does not seem to be efficient and, after a certain amount of failed trials, demotivates players from finishing the game. Thus, we came up with an idea of restart scenarios.
 
 If the participants fail the task, they would now have a choice of either repeating the same task, choosing a different task or restarting the whole mission. However, if the users fail the same task twice, they fail the whole mission and can only restart the game.
 
@@ -260,7 +272,7 @@ If the participants fail the task, they would now have a choice of either repeat
 
 ## Completion metrics
 
-Thereby, the overall completion metrics of the group depend on their performance in each of the given tasks. Participants are now allowed to fail the given tasks, with each task, however, being failed not more than once. Nevertheless, they have to complete all the tasks in order to finish the game. Besides, the overall game results will depend on the amount of mistakes players made in each of the tasks. 
+Thereby, the overall completion metrics of the group depend on their performance in each of the given tasks. Participants are now allowed to fail the given tasks, with each task, however, being failed not more than once. Nevertheless, they have to complete all the tasks in order to finish the game. Besides, the overall game results will depend on the amount of mistakes players made in each of the tasks.
 
 **Note:** the described above changes of the story pipeline are not fully implemented yet. It is however important to have a clear picture of where we are headed and what we want to achieve.
 
@@ -282,17 +294,17 @@ Our goal in the final semester of the project was to have a functioning version 
 2. keep track of the number of fails per task and limit them to two (i.e., allow one repetition)
 3. implement task evaluation at a group level
 4. incorporate story variation and decision polls based on group performance
- 
-We eventually succeeded in implementing the first two steps. The implementation approach as well as some challenges are explained in more detail below. 
+
+We eventually succeeded in implementing the first two steps. The implementation approach as well as some challenges are explained in more detail below.
 
 <div id="implementation"></div>
 
 ## Implementation
 
-We completed the implementation of the first two steps because we deem these most important for the replayability of the game and a more fair experience within the storyline for the users. In particular, in the previous story pipeline, if players succeeded with all tasks and then, for instance, failed the last one, they lost all their progress and immediately failed their escape mission. Such an abrupt end of the game might demotivate learners, so they wouldn’t try to restart the escape. Yet, to keep an incentive for the users to try their best in each task and hinder the reliance on an infinite number of retries for the tasks, we decided to only allow for a limited number of repetitions upon failure. 
+We completed the implementation of the first two steps because we deem these most important for the replayability of the game and a more fair experience within the storyline for the users. In particular, in the previous story pipeline, if players succeeded with all tasks and then, for instance, failed the last one, they lost all their progress and immediately failed their escape mission. Such an abrupt end of the game might demotivate learners, so they wouldn’t try to restart the escape. Yet, to keep an incentive for the users to try their best in each task and hinder the reliance on an infinite number of retries for the tasks, we decided to only allow for a limited number of repetitions upon failure.
 The implementation of the repeatability of the tasks is carried by several components. First, we created a global counter attribute `_reps_counter` for the room manager object, which keeps track of the number of times each of the mandatory tasks has already been played. Each time one of those tasks (i.e., discussion, sentence correction or vocabulary guessing task) has ended, the counter is incremented. If the respective task was failed, the global task counter `_current_task_count` is decreased by one, essentially resetting the players’ progress through the storyline to the state before attempting the task. Secondly, if the maximal number of allowed repetitions of the respective task is not surpassed yet (i.e., is smaller than two), the task is added to the global queue of tasks available for the next round (`_available tasks`), tracked by the room manager instance. This is achieved in each respective task handler function (discussion_handler, sen_corr_handler, vocab_desc_handler), by checking if the task was finished and then triggering the counter increment and possibly task appending, respectively.
 
-If a task was failed for a second time and, therefore, the entire mission was failed, and the players choose to restart it, the `_reps_counter` attribute of the room manager is reset to 0. 
+If a task was failed for a second time and, therefore, the entire mission was failed, and the players choose to restart it, the `_reps_counter` attribute of the room manager is reset to 0.
 
 Implementing other storyline decision points on top of the repeatability was outside the scope of work for the final semester because these different storylines would depend on individual user and group-level scores per task. As these require implementing novel task completion metrics, coding these would require a major restructuring of the database, the task classes and handlers. Therefore, we consider the completed implementation of the task repeatability a good compromise and improvement of the current game flow.
 
@@ -300,8 +312,7 @@ Implementing other storyline decision points on top of the repeatability was out
 
 ## Outlook to more storytelling improvements
 
-There is still room for improvement in the story pipeline, which would make the game more interesting to be engaged in. In order to apply the different story stream, we can first calculate score of whole group and divide it into 3 categories. 
+There is still room for improvement in the story pipeline, which would make the game more interesting to be engaged in. In order to apply the different story stream, we can first calculate score of whole group and divide it into 3 categories.
 
-To categorize the score, we calculate how many mistakes does the group make in total and normalize that to score out of 4. Given score 1 out of 4 we provide story branch one. With score 2 or 3 out of 4, we  go to branch 2 of the story. And finally with score 4 out of 4 we follow the story Pipeline 4. 
+To categorize the score, we calculate how many mistakes does the group make in total and normalize that to score out of 4. Given score 1 out of 4 we provide story branch one. With score 2 or 3 out of 4, we  go to branch 2 of the story. And finally with score 4 out of 4 we follow the story Pipeline 4.
 In addition to this splitting and choosing of the story pipeline in between each task, we also had the idea to give a different ending at the end  of the game depending on the choice they make and total score they get. We accumulate the scores of each task, which are normalized to the highest score of 4 and take the mean of all tasks completed, including the listening task (if the group decided to complete that task as well). As we will also have an option of deciding to Escape with “Elias” the friendly alien or without him, we can first divide the story into 2 parts. And after that depending on the total mean score we can divide story ending to 3 parts, giving us total 6 different story endings.
-

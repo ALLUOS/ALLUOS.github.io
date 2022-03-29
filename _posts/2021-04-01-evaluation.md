@@ -47,7 +47,7 @@ is-on-home-page-order: 4
    - User Acceptance Testing
    - Evaluation
 4. Results
-5. Recommendations 
+5. Recommendations
 6. References
 
 <span class = "content-overview"><a href="#fourth">Fourth Semester</a></span>
@@ -150,12 +150,13 @@ In our project we kept to this industry standard, as it is a straight forward wa
 The first step of this strategy is to analyze the software and detect important and vulnerable parts of the software as software dimensions. Typical categories, that help detecting software dimensions are functionality, code structure, user interface elements, internal and external interfaces, the input and output space, the data, the environment and use case scenarios. Important for us were the functionality in form of the technical specifications, the code structure as communicated by the development team, the environment in form of Telegram and different operating systems, and the use case of a group learning scenario. We did not test the data structure or internal and external interfaces, as our project is still rather small and lacks a complicated data structure or internal and external interfaces.
 
 The dimensions we identified were:
-* Group handling functionality
-* AI adaption
-* Sentence production
-* Operating systems (Windows, Android)
-* Telegram UI
-* Requirement functionalities of the two tasks
+
+- Group handling functionality
+- AI adaption
+- Sentence production
+- Operating systems (Windows, Android)
+- Telegram UI
+- Requirement functionalities of the two tasks
 
 ### Test Cases
 
@@ -163,32 +164,34 @@ While the test dimensions span the space of defects, that might occur in a softw
 
 A test case consists out of a description of what part of the error space it tries to cover, how it tries to achieve this and what is needed in order to do so. In our case the test cases contained following information:
 
-* Involved software modules
-* Tested requirements
-* Test case description including test goals and procedure
-* Step-by-step instructions for the test case
-* Conditions which must be met to realize the test case
-* Data required for the test case
-* Expected result
+- Involved software modules
+- Tested requirements
+- Test case description including test goals and procedure
+- Step-by-step instructions for the test case
+- Conditions which must be met to realize the test case
+- Data required for the test case
+- Expected result
 
 ### Test Instructions
 
 The test instructions are derived from the test cases such that the software testing can be conducted with them. Rather than being a one-to-one mapping of test cases, test instructions can cover multiple test cases or a test case can be divided between several test instructions. Nevertheless the test instructions are created in such a way that all selected test cases are covered and thus the test space is covered as well. Test instructions utilized in the project include:
-* A group handling test, trying to detect defects during the creation and management of the bots group creation and group joining, as well as the task start-up
-* A combined UI and task progress handling test, that required playing the tasks of the application to their end and detecting any defect within the task flow or the Telegram UI elements
-* A difficulty adaption test, verifying, that the difficulty adaption module does work as specified in the requirements
-* A sentence handling test, trying to detect defects with the message handler during the tasks execution
+
+- A group handling test, trying to detect defects during the creation and management of the bots group creation and group joining, as well as the task start-up
+- A combined UI and task progress handling test, that required playing the tasks of the application to their end and detecting any defect within the task flow or the Telegram UI elements
+- A difficulty adaption test, verifying, that the difficulty adaption module does work as specified in the requirements
+- A sentence handling test, trying to detect defects with the message handler during the tasks execution
 
 ### Defects
 
 All defects that we detected were reported in a table containing the following dimensions:
-* Summary of the defect
-* Detailed description of what happened
-* Instructions on how to replicate the defect
-* Expected behavior of the application
-* Actual behavior of the application
-* Attachments and additional remarks
-* Severity of the defect for the application
+
+- Summary of the defect
+- Detailed description of what happened
+- Instructions on how to replicate the defect
+- Expected behavior of the application
+- Actual behavior of the application
+- Attachments and additional remarks
+- Severity of the defect for the application
 
 The severity of a defect was decided by a simple matrix which had a value of zero or one for the two dimensions *frequency* and *impact*. The defect was treated of low severity if both dimension were of value zero, of medium if one dimension was of value one, and high if both had a value of one. For each defect a corresponding GitHub issue was created. This issue was then used by the development team to fix the defect. This issue contained the same information as the defect table entry of the defect.
 
@@ -198,18 +201,18 @@ After conducting the tests we detected approximately 15 defects, some of them we
 
 #### Positive
 
-* Conducting technical testing allows us to detect defects and bugs of the program and helps to prevent their occurrence in future development.
-* The use of freely distributed products makes it possible to use technologies for remote interaction of subjects of the educational process among all interested users.
-* The idea of remote interaction of all participants in the educational process, laid in the basis of the project, allows to reduce the time spent on staying in special institutions, which is especially important for additional improvement of language skills.
-* Additional acquisition of skills in working with computer and electronic communication technologies by users.
-* Optimization in volume and significant improvement in the quality of educational and methodological materials through the use of electronic media and constant updating of information.
-* More effective use of technical and organizational capabilities for the implementation of a flexible individual approach to training.
+- Conducting technical testing allows us to detect defects and bugs of the program and helps to prevent their occurrence in future development.
+- The use of freely distributed products makes it possible to use technologies for remote interaction of subjects of the educational process among all interested users.
+- The idea of remote interaction of all participants in the educational process, laid in the basis of the project, allows to reduce the time spent on staying in special institutions, which is especially important for additional improvement of language skills.
+- Additional acquisition of skills in working with computer and electronic communication technologies by users.
+- Optimization in volume and significant improvement in the quality of educational and methodological materials through the use of electronic media and constant updating of information.
+- More effective use of technical and organizational capabilities for the implementation of a flexible individual approach to training.
 
 #### Negative
 
-* The lack of a stable high-speed Internet leads to high time costs to ensure effective remote interaction.
-* Incomplete provision of the necessary computer skills by users, which can lead to disruption of the task.
-* At this stage, for constant remote interaction, a specialist observer is required who can restore the process when a technical error is detected.
+- The lack of a stable high-speed Internet leads to high time costs to ensure effective remote interaction.
+- Incomplete provision of the necessary computer skills by users, which can lead to disruption of the task.
+- At this stage, for constant remote interaction, a specialist observer is required who can restore the process when a technical error is detected.
 
 <div id="prospects"></div>
 ## Prospects For The Second Semester
@@ -220,25 +223,25 @@ The idea behind the project is unique and the overall goal is to provide a user-
 
 #### Successes
 
-* stimulating interest and enhancing the cognitive and communicative activity of students in the mainstream of the educational process;
-* formation and development of communication skills on the Telegram platform;
-* language acquisition.
+- stimulating interest and enhancing the cognitive and communicative activity of students in the mainstream of the educational process;
+- formation and development of communication skills on the Telegram platform;
+- language acquisition.
 
 #### Shortcomings
 
-* Participants hardly communicate with each other but prefer to do everything on their own;
-* Difficulties in using the built-in commands and functions of the API Telegram.
+- Participants hardly communicate with each other but prefer to do everything on their own;
+- Difficulties in using the built-in commands and functions of the API Telegram.
 
 #### Next steps and Opportunities
 
-* Study, analysis, and application of didactic capabilities, properties, and functions of Telegram;
-* Development of a model for remote interaction of all participants;
-* Selection, organization, and structuring of the content of instructions in conjunction with the application;
-* Development of requirements for the creation of tasks;
-* Study of the psychological characteristics of the interaction of all subjects of the educational process in conditions of distance interaction;
-* Development of pedagogical technologies (adding the learning side of the project);
-* Methodology for organizing feedback and consultations for application users;
-* Solving problems of assessment and control in group learning.
+- Study, analysis, and application of didactic capabilities, properties, and functions of Telegram;
+- Development of a model for remote interaction of all participants;
+- Selection, organization, and structuring of the content of instructions in conjunction with the application;
+- Development of requirements for the creation of tasks;
+- Study of the psychological characteristics of the interaction of all subjects of the educational process in conditions of distance interaction;
+- Development of pedagogical technologies (adding the learning side of the project);
+- Methodology for organizing feedback and consultations for application users;
+- Solving problems of assessment and control in group learning.
 
 In general, all the tasks set during the projects' meetings were achieved. There is no doubt that there is still room for improvement. The development of distance technologies in education is rapidly becoming popular. As a result, it can be noted that all listed possible improvements for distance group learning give an effect not only individually, but also together, which allows us to speak of the application as a qualitatively new form of education.
 
@@ -249,7 +252,7 @@ Diah, N. M., Ismail, M., Ahmad, S., & Dahari, M. K. (2010). Usability testing fo
 
 Jenkins, N. (2008). A Software Testing Primer: *An Introduction to Software Testing*.
 
-Nielsen Norman Group. Why You Only Need to Test with 5 Users. Retrieved August 27, 2020, from https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/
+Nielsen Norman Group. Why You Only Need to Test with 5 Users. Retrieved August 27, 2020, from <https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/>
 
 Tullis, T., & Albert, B. (2013). Measuring the user experience collecting, analyzing, and presenting usability metrics. Amsterdam, Netherlands: Elsevier.
 
@@ -315,7 +318,7 @@ The final step is to pass the so-called quiz, specially compiled on the logs of 
 
 Picture 4 "Proficiency Quiz" Example
 
-##### Personalized Learning Outcome Post-Tests
+#### Personalized Learning Outcome Post-Tests
 
 To gauge if the application has affected individual user's language skills we employ a learning outcome post-test strategy involving personalized langauge skill assessments. As mentioned in the [Adaptive Data]({{ "" | absolute_url }}/2021/02/03/adaptive.html) section, the application periodically collects various user performance metadata which are used both to adjust application difficulty and to inform the aforementioned learning outcome post-test. Given the application's adaptive learning strategy, it is difficult to design a post-test of language skill which can assumedly be compared across all participants in a controlled manner. In light of this, we use the performance metadata to automatically generate personalized skill assessments which aim to, for each participant, test whether items which proved particularly challenging during application use can be successfully answered.
 
@@ -382,6 +385,7 @@ Based on these useful remark, we can take multiple ideas into the future develop
 Although our evaluations remain limited by the total number of participants, we were able to expand upon our previous semester's test methodologies with more quantitative data sources reflecting user performance, while also receiving additional valuable feedback which will help to improve the application. Notably, it is clear that further attention to application difficulty is needed, particularly the apparent simplicity of the vocabulary guessing task. Some application bugs still persist which can disrupt user experience. Finally, investigation of user performance presents several avenues for future feature development.
 
 ### Recommendations for Coming Semester
+
 From the above analyses and discussion we derive several recommendations valuable to coming project iterations:
 
 - Allow users to focus on a subset of task sub-types by improving the persistence of the path selection module.
@@ -414,19 +418,22 @@ Vesselinov, R., & Grego, J. (2012). Duolingo effectiveness study. *City Universi
    - User Acceptance Testing
    - Evaluation
 4. Results
-5. Recommendations 
+5. Recommendations
 6. References
 
 ## Testing Semester 3
+
 <div id="intro3"></div>
 
 ### INTRODUCTION
+
 Since the Escapeling project develops many new features, testing is constantly in progress, adopting the appropriate strategies to verify the quality of the added changes. In this chapter, you will learn about the concept, organization, and results of our testing framework in the third semester of the project.
 
 <div id="liter3"></div>
 
 ### LITERATURE
-For the correct operation and analysis of the test materials, initially, the project team studied all provided training materials and existing methodology on testing, described in the previous chapters. Our strategy adheres to some of the basic principles outlined in Jenkins' work [1]. Based on the review of the material, we divided our work into Validation and Verification. Validation testing is also known as dynamic testing, in which we ensure that we have developed a product correctly in terms of design. Most often, it is this approach of testing that includes working with potential users and various surveys. Verification, also known as static testing, allows us to check whether we are developing the right product or not. It also checks whether the developed application meets all the requirements specified at the root of our project.  Furthermore, previously collected results from the second semester's User Acceptance Testing were studied. 
+
+For the correct operation and analysis of the test materials, initially, the project team studied all provided training materials and existing methodology on testing, described in the previous chapters. Our strategy adheres to some of the basic principles outlined in Jenkins' work [1]. Based on the review of the material, we divided our work into Validation and Verification. Validation testing is also known as dynamic testing, in which we ensure that we have developed a product correctly in terms of design. Most often, it is this approach of testing that includes working with potential users and various surveys. Verification, also known as static testing, allows us to check whether we are developing the right product or not. It also checks whether the developed application meets all the requirements specified at the root of our project.  Furthermore, previously collected results from the second semester's User Acceptance Testing were studied.
 
 <div id="testperf3"></div>
 
@@ -457,10 +464,10 @@ Testers received two sets of material: a) PDF file with examples of modified app
 
 *Picture 1 PDF-slide example*
 
-The usability testing concludes with a feedback questionnaire that included questions about the quality of the changes in general and their satisfaction with the improvements. All questionnaires were distributed via Google Forms. First, participants should find and select their username from a list. Second, they should fill a questionnaire for every update that consists of three questions (Pic.2): 
+The usability testing concludes with a feedback questionnaire that included questions about the quality of the changes in general and their satisfaction with the improvements. All questionnaires were distributed via Google Forms. First, participants should find and select their username from a list. Second, they should fill a questionnaire for every update that consists of three questions (Pic.2):
 
 1. How do you like this improvement? Rated by a 10-point scale.
-   * The goal of this question is to estimate how users like the very concept of this update.
+   - The goal of this question is to estimate how users like the very concept of this update.
 2. How much does this improvement help the application performance? Rated by a 10-point scale.
    - The purpose of this question is to estimate how users rate the quality of performance of this change in our application.
 3. Your thoughts/feedback. Free writing.
@@ -497,7 +504,7 @@ Finally, our survey ends with an assessment of the new Listening task. Perhaps o
 
 *"listening tasks are very helpful in developing English and speaking easily in the future"*.
 
-Overall, user reviews were very positive to all the additions. Children not only enjoyed using the app in the past, but they were able to see the development of the app. 
+Overall, user reviews were very positive to all the additions. Children not only enjoyed using the app in the past, but they were able to see the development of the app.
 To check all average scores see: Picture 3 and Picture 4.
 
 <img src="https://github.com/ALLUOS/ALLUOS.github.io/blob/semester-three/assets/images/testresult1.png?raw=true" alt="*Average Satisfaction Score*" class="center">
@@ -544,7 +551,7 @@ Jenkins, N. (2008). A Software Testing Primer: An Introduction to Software Testi
 
 ## Motivation & Evaluation Plan
 
-To evaluate the improvements of Escapeling implemented in the fourth semester of the project, our original plan was to conduct classroom testing with schoolchildren, so as to test the app with users of target age and proficiency. To this end, the children were supposed to receive tablets with preinstalled Telegram from the school. However, we had no other choice but to change our plan due to COVID-19 because the target school was closed before the children received the tablets. Therefore, we came up with two alternative evaluation possibilities which address two main aspects of the Escapeling developments: the pedagogical value and the user experience of the app. The structure of the evaluations was also guided by the data requirements for the [paper]({{ "" | absolute_url }}/2022/17/03/overview.html) submitted to the Learning Ideas Conference. 
+To evaluate the improvements of Escapeling implemented in the fourth semester of the project, our original plan was to conduct classroom testing with schoolchildren, so as to test the app with users of target age and proficiency. To this end, the children were supposed to receive tablets with preinstalled Telegram from the school. However, we had no other choice but to change our plan due to COVID-19 because the target school was closed before the children received the tablets. Therefore, we came up with two alternative evaluation possibilities which address two main aspects of the Escapeling developments: the pedagogical value and the user experience of the app. The structure of the evaluations was also guided by the data requirements for the [paper]({{ "" | absolute_url }}/2022/17/03/overview.html) submitted to the Learning Ideas Conference.
 
 We conducted semi-structured interviews with ESL-teachers-in-training at the University of Osnabrück to estimate the pedagogical value of Escapeling in a German secondary school setting. Additionally, we conducted user tests with Cognitive Science students and from related fields who came from the same university to collect more user feedback.
 We think that these evaluations are a viable alternative to the field class room setting, even though the average age of the participants is higher than our target user groups.
@@ -555,28 +562,28 @@ All participants participated voluntarily and were not reimbursed.
 ## ESL Student Interviews
 
 ### Interview Structure
+
 We conducted semi-structured interviews with 3 university students who study ESL education at the University of Osnabrück: Mia, Hannah, Sofia (for data protection reasons, these are pseudonyms). The interviews contained questions surrounding five major themes: target audience, contexts of application, gamification and visualization, adaptability, and potential improvements. As all of them are being trained to become ESL teachers in Germany, the results in this evaluation reflect the use of Escapeling when applied to the German school system.
 
 ### Results
 
-__Target audience__
+#### Target audience
 
 When the interviewees were asked which age group and proficiency group would benefit most from playing Escapeling, all of them agreed that the difficulty of the tasks in Escapeling is suitable for students in their 10th grades or above. Hannah and Mia also suggested that in the vocabulary guessing task, if the words chosen are in an appropriate level, the game can also be played with 6th graders.
 
-__Contexts of Application__ 
+#### Contexts of Application
 
 All interviewees reported that they would not use Escapeling as a main teaching tool, but might use it as a supplementary tool. They also suggested that it might be a good idea to enable teachers to have access to the data of how the students perform in this game, as teachers will then know in which particular areas students are weaker and so they can address these areas in class. But all of them emphasized the entertaining aspect of Escapeling and it should not be used as a formal assessment.
 
-__Gamification and visualization__
+#### Gamification and visualization
 
 All interviewees described Escapeling as an enjoyable game. Mia was particularly impressed by the colorful and lively visuals in Escapeling, as suggested that they would also be appealing to younger learners. Sofia commented that the up-to-date GIFs and memes in Escapeling could enable young learners to connect English learning and their daily life, “they sometimes also know the GIFs. I think it would be a great motivational force to be like ‘oh yeah, It’s fun. It’s [not just] learning, but also entertaining.’”
 
-__Adaptability__
+#### Adaptability
 
 One of the main features of Escapeling is that the difficulty of the tasks are constantly modified to suit the English proficiency of the learners, so that the effectiveness of learning can be maximized. Sofia praised the hints giving system in the vocabulary guessing game, and she commented that “giving out cues is really important […] from a didactic point of view. Statements are not given at the beginning, but they are slowly represented. I think they are great points.”
 
-
-__Potential improvements__
+#### Potential improvements
 
 Overall, all interviewees suggested that flexibility in Escapeling for teachers to choose their own materials would make it pedagogically more valuable, as Hannah and Mia suggested that if it could be linked to the English lessons in the classroom, Escapeling would become a more complementary tool in the existing English subject curriculum. For example, Mia suggested that it would be good if the teacher can decide the discussion topic concerning a newspaper article studied in the class for the discussion task.
 
@@ -584,7 +591,7 @@ Overall, all interviewees suggested that flexibility in Escapeling for teachers 
 
 ## User Tests at Uni Osnabrück
 
-In the final evaluation round, we recruited students of Cognitive Science and related fields at the Osnabrück University instead of recruiting secondary school students for reasons explained above. The goal of this testing was to further evaluate the end user experience with our bot. 
+In the final evaluation round, we recruited students of Cognitive Science and related fields at the Osnabrück University instead of recruiting secondary school students for reasons explained above. The goal of this testing was to further evaluate the end user experience with our bot.
 
 ### Test Structure
 
@@ -594,9 +601,9 @@ Participants responded to the evaluation questions via free typing, multiple cho
 
 ### Results
 
-Data from 14 participants was collected (71% Osnabrück University Cognitive Science students, average English proficiency: B2-C1, aaverage age: 22.7 years). 
+Data from 14 participants was collected (71% Osnabrück University Cognitive Science students, average English proficiency: B2-C1, aaverage age: 22.7 years).
 
-78% of participants reported that they would recommend the app to other English learners, and more than 90% would likely play the game again. On average, they indicated that they could best improve their general communication, reading and listening skills with Escapeling. The new lobby platform was rated with 3.3 average points. Furthermore, participants stated that the improved visualizations were very important for their enjoyment of the game, providing an average score of 4.3. Finally, they reported high satisfaction with Escapeling compared to other educational apps they used, providing an average score of 4.3. 
+78% of participants reported that they would recommend the app to other English learners, and more than 90% would likely play the game again. On average, they indicated that they could best improve their general communication, reading and listening skills with Escapeling. The new lobby platform was rated with 3.3 average points. Furthermore, participants stated that the improved visualizations were very important for their enjoyment of the game, providing an average score of 4.3. Finally, they reported high satisfaction with Escapeling compared to other educational apps they used, providing an average score of 4.3.
 
 <div id="summary"></div>
 
