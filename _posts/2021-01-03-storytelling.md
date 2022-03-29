@@ -264,6 +264,8 @@ In case users choose to participate in the task and accomplish it succesfully, a
 
 <div id="restart"></div>
 
+<div id="restart"></div>
+
 ## Restart scenarios
 
 In the initial story structure players had to pass all the tasks in order to reach the end of the game. In case the users failed a given task, the whole mission would be considered as failed and they would have to start from the very beginning. According to the results, obtained by the testing team in the second semester, we concluded that this scenario does not seem to be efficient and, after a certain amount of failed trials, demotivates players from finishing the game. Thus, we came up with an idea of restart scenarios.
@@ -298,6 +300,8 @@ Our goal in the final semester of the project was to have a functioning version 
 4. incorporate story variation and decision polls based on group performance
 
 We eventually succeeded in implementing the first two steps. The implementation approach as well as some challenges are explained in more detail below.
+
+<div id="implementation"></div>
 
 <div id="implementation"></div>
 
