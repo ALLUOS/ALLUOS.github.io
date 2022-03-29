@@ -45,7 +45,7 @@ This section is about errors that were made in the code. It describes, how the b
 _problematic Behaviour:_ After sending many messages, the bot stopped sending messages for a while. This often leads to omitted prompts and questions.
 
 _intended Behaviour:_ The Bot should send every message.
-*Explanation: Our code sends out requests to the telegram API. This API is responsible for sending and receiving messages. Since this API is running on the servers of Telegram FC-LLC and is available for free, access to it is somewhat restricted. Part of these restrictions is, that only 20 requests per minute are answered. Every other request is answered with the `telegram.error.RetryAfter` exception.
+\*Explanation: Our code sends out requests to the telegram API. This API is responsible for sending and receiving messages. Since this API is running on the servers of Telegram FC-LLC and is available for free, access to it is somewhat restricted. Part of these restrictions is, that only 20 requests per minute are answered. Every other request is answered with the `telegram.error.RetryAfter` exception.
 
 _Solution:_ To solve this bug, we decided, to catch the exception and resend the same request after 15 seconds. This leads to the user having to wait for a moment, but is still a better solution, than missing out on possibly important messages.
 An alternative solution would have been the 'telegram.ext.MessageQueue'. Sadly it is being deprecated, which is why we ultimately decided against using it.
@@ -105,11 +105,14 @@ _How it should be:_ The bot should show, how to open the answering options.
 
 _Solution:_ The first thing the bot sends to the user now, is a small explanation of how to open the answering options.
 
-### fixes for the deployment of the bot on the server
+### fixes for the deployment of the bot on the server/pc
 
+_Problem description:_ For many newcomers it was hard to get the bot running on their computers. There
+_How it should be:_ It should be easy to run the bot on your pc or on an server.
+_Solution:_ An detailed instruction has been writen for both processes. One fundamental mechanism for the Telegram Bot to work is the creation of new Telegram groups, which only works if the Telegram-API authentification was configured correctly. If the Telegram Bot wasn't set up properly, the bot does not have permission to create new Escapeling Missions. The underlying problem here is, that creation of new groups is only prohibited by non-bot entities. This problem was solved by registering a smartphone number, which is used to create new rooms, instead of letting the bot create new groups itself. Three important steps are necessary to fulfill the authentification requirements. First, the phone number specified in the bot.config.json file (see: 'telegram_api[phone_number]' in the config file) must be a smartphone number that is registered as an active Telegram account and you have access to. Second, after the Telegram bot program was started, the program asks for a phone number. Enter the one that was specified in the bot.config.json file mentioned before and paste the Telegram Login Code you received for that specified number. If these instructions were followed correctly, the Telegram Bot can create new Escapeling Missions and does not throw errors related to this issue.
 The Escapeling bot was deployed on a Linux server of the University of Osnabrück. A remote connection to this server can be established via the network communication protocol secure shell (SSH). Compared to other legacy login protocols, SSH offers password or public-key authentication to establish a connection, as well as end-to-end encryption, which provides a secure connection over an unsecured network. As the process that runs the Escapling bot needs to continue running even if the SSH connection has ended, the terminal multiplexer tmux was used. Due to the client-server concept of tmux, a server is created in the background when a new terminal session is started. This server ensures that processes running in a specific session remain alive after the client detaches from the tmux session and killed the SSH connection. Compared to other methods, e.g. the ‘nohup’ command, tmux does not dump the output of the script that is run to ‘/dev/null’ and thus allows for better maintenance.
 
-### Github-fixes?
+### Github-fixes
 
 _Problem description:_ At the beginning of the Semester multiple people had the problem, that their GitHub refused to correctly pull the current branch.
 
