@@ -80,3 +80,16 @@ but if you would like to modify the site template please raise this issue during
 
 This GitHub pages site is based off the free template 'Spectral,' created by HTML5 UP and Andrew Banchich.
 Further information on this theme can be found [here](https://github.com/andrewbanchich/spectral-jekyll-theme).
+
+### Installation
+
+Installation on Linux is straightforward and well-enough explained on the official Jekyll site.
+
+Windows
+- Install ruby (devkit)
+- Download msys from [https://www.msys2.org/](https://www.msys2.org/). Then follow the instructions to install the tools make, gcc and g++.
+- Once the tools are installed, add the path to ruby and tools to your PATH (environment variables)
+  - C:\msys64\mingw64\bin
+  - C:\Ruby31-x64\bin
+- You should be able to run `gcc -v`, `g++ -v`, and `make -v` successfully
+- gem file needs to contain: `gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]` and `gem "webrick"`

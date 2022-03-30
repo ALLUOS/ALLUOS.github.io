@@ -21,7 +21,7 @@ image:
 3. Theoretical framework
 4. Materials
 5. Completion metrics
-6. Outlook 
+6. Outlook
 
 <span class = "content-overview"><a href = "#implementation">Implementation process</a></span>
 
@@ -34,6 +34,7 @@ image:
 ## Design process
 
 ### Motivation
+
 In review of the intermediate results from semester one of the study project, we decided to design and implement one additional task during the second semester, which includes a number of aspects to complement the first two tasks and approaches the aim of the group application further.
 
 Our goals for the application include tasks which benefit from group learning and encourage English communication between learners which is essential for practicing language skills. Therefore, for this task we want to focus on language production and writing skills, as the first two tasks don’t necessarily require users to write in whole sentences.
@@ -78,6 +79,7 @@ Since our application is a Telegram chatbot, we assume it will be used mainly by
 The data was collected from different Internet sources. The sources varied from Wikipedia pages to blog posts, articles in online magazines and materials posted on online platforms for English courses [see Excel sheet with all relevant information provided](https://docs.google.com/spreadsheets/d/1KUcZjonfur634mxBIwzeS82leIVBgmHkNo6XWFHeiIg/edit?usp=sharing). Our next step was to select a small excerpt from the discovered source that should be of the stated size.
 
 Our second step was to review these texts and check if all of them meet the following criteria:
+
 1. Is this text interesting enough to spark a discussion?
 2. Does this text allow for sharing different opinions?
 Besides, the texts should be appropriate for our target group and grammatically correct. In total, 37 texts were collected.
@@ -87,6 +89,7 @@ Since our chatbot should be able to provide users with tasks of different diffic
 Having combined both these attitudes towards text evaluation, we ended up dividing all texts according to three language proficiency levels that we focus on in this chatbot.
 
 Further, the next step was to provide texts with three different questions each. Our goal was to avoid questions on text comprehension, but find those that can encourage users to share their thoughts and opinions. Below you can see an example, illustrating questions we came up with for the text about Christmas Shopping (Category: Economy):
+
 1. Where do you personally prefer to buy your Christmas presents?
 2. What are the advantages and disadvantages of shopping on the internet?
 3. What is better: giving or receiving gifts? Why?
@@ -102,7 +105,7 @@ The goal of the discussion task is to motivate users to converse and produce sen
 With these goals in mind, and since the users’ contributions in this task compared to the previous two [tasks]({{ "" | absolute_url }}/#three) are less quantifiable, we needed to define a set of metrics to decide when the task is done and whether it is done successfully or not.
 In addition, the time during which each topic question is discussed is limited. This way, the task is more manageable and motivates the users to participate within a limited time frame. In the previous versions of the application, the completion metrics were rather quantitative: they were based on the number of words each player contributed, as well as the players' own assessment of the quality of the discussion, captured via a poll. However, during the third semester, we decided to update the completion metrics to be more advantageous to the users from a learning experience perspective, and to add a qualitative aspect to the evaluation of the discussion.
 
-Therefore, for the updated completion metrics of this task, we decided to combine quantitative and qualitative elements. More specifically, we compute two scores which serve as the basis for deciding if the task was passed, and if so, how successfully. On the one hand, *individual user scores* are computed based on the length and the grammatical quality of each user's contributions in each question. In order to pass the task, each user needs to reach at least a certain score in two out of the three discussion questions. On the other hand, a *group score* is computed, requiring the entire group to reach at least a certain minimal grammar score, reflecting the quality of the contributions in relation to the overall quantity. If the two criteria are met, the group passes the task. Furthermore, in order to improve the learning experience of the task, users receive intermediate feedback during the discussion regarding their participation and performance in general. They also receive more detailed grammatical feedback at the end of the task. To match the [storytelling framework]({{ "" | absolute_url }}/2021/01/03/storytelling.html), we also define three qualitative levels at which the users can pass the task, depending on their group score: an intermediate, a good, and a very good level. Depending on the level, the users receive different story continuations.   
+Therefore, for the updated completion metrics of this task, we decided to combine quantitative and qualitative elements. More specifically, we compute two scores which serve as the basis for deciding if the task was passed, and if so, how successfully. On the one hand, *individual user scores* are computed based on the length and the grammatical quality of each user's contributions in each question. In order to pass the task, each user needs to reach at least a certain score in two out of the three discussion questions. On the other hand, a *group score* is computed, requiring the entire group to reach at least a certain minimal grammar score, reflecting the quality of the contributions in relation to the overall quantity. If the two criteria are met, the group passes the task. Furthermore, in order to improve the learning experience of the task, users receive intermediate feedback during the discussion regarding their participation and performance in general. They also receive more detailed grammatical feedback at the end of the task. To match the [storytelling framework]({{ "" | absolute_url }}/2021/01/03/storytelling.html), we also define three qualitative levels at which the users can pass the task, depending on their group score: an intermediate, a good, and a very good level. Depending on the level, the users receive different story continuations.
 For more details on how these two components of the overall completion metric are motivated, defined and computed, please visit the [Grammatical error correction section]({{ "" | absolute_url }}/2021/02/01/GEC.html).
 
 ### Outlook
@@ -118,6 +121,7 @@ Furthermore, vocabulary hints and short descriptions of words which are possibly
 <div id="implementation"></div>
 
 ## Implementation process
+
 Here, we present the technical details of the implementation of this task. As part of our overall bot architecture, the implementation of the discussion task also relies on general modules like the `Task(ABC)` class and the room handler, described in the [implementation section]({{ "" | absolute_url }}/2021/04/02/implementation.html#framework). Therefore, only the discussion-specific task handler is described here in detail.
 
 `Discussion(Task)` is a subclass of `Task(ABC)`. However, unlike the sentence correction and the vocabulary guessing tasks, the discussion task is not sequential in nature and, therefore, does not inherit from `SequentialTask`. Nevertheless, we were still able to reuse a significant part of the methods already implemented in said class.
@@ -138,11 +142,12 @@ Finally, the dictionaries with the user information are passed to the `is_correc
 <div id="references"></div>
 
 ## References
+
 Barson, J., Frommer, J. & Schwartz, M. (1993). Foreign Language Learning Using E-Mail in a Task-Oriented Perspective: Interuniversity Experiments in Communication and Collaboration. Journal of Education and Technology, 2 (4), 565-584.
 
-Beauvois, M. H. (1992). Computer-Assisted Classroom Discussion in the Foreign Language Classroom: Conversation in Slow Motion. Foreign Language Annals, 25(5), 455–464. https://doi.org/10.1111/j.1944-9720.1992.tb01128.x
+Beauvois, M. H. (1992). Computer-Assisted Classroom Discussion in the Foreign Language Classroom: Conversation in Slow Motion. Foreign Language Annals, 25(5), 455–464. <https://doi.org/10.1111/j.1944-9720.1992.tb01128.x>
 
-Finn, A. N., & Schrodt, P. (2016). Teacher discussion facilitation: a new measure and its associations with students’ perceived understanding, interest, and engagement. Communication Education, 65(4), 445–462. https://doi.org/10.1080/03634523.2016.1202997
+Finn, A. N., & Schrodt, P. (2016). Teacher discussion facilitation: a new measure and its associations with students’ perceived understanding, interest, and engagement. Communication Education, 65(4), 445–462. <https://doi.org/10.1080/03634523.2016.1202997>
 
 Han, E. (2007). Academic Discussion Tasks: A Study of EFL Students’ Perspectives. Asian EFL Journal, 9(1), 8–21.
 
@@ -156,9 +161,9 @@ Lyster, R. (2018). Content-Based Language Teaching. New York: Routledge.
 
 Murphy, S. (2013). Assessing text difficulty for students. In: What Works? Research into Practices. Ontario.
 
-Oliva, M., & Pollastrini, Y. (1995). Internet Resources and Second Language Acquisition: An Evaluation of Virtual Immersion. Foreign Language Annals, 28(4), 551–563. https://doi.org/10.1111/j.1944-9720.1995.tb00828.x
+Oliva, M., & Pollastrini, Y. (1995). Internet Resources and Second Language Acquisition: An Evaluation of Virtual Immersion. Foreign Language Annals, 28(4), 551–563. <https://doi.org/10.1111/j.1944-9720.1995.tb00828.x>
 
-Puspitasari, E. (2016). Classroom Activities in Content and Language Integrated Learning. Journal of Foreign Language Teaching and Learning, 1(2), 1-13. doi:https://doi.org/10.18196/ftl.129
+Puspitasari, E. (2016). Classroom Activities in Content and Language Integrated Learning. Journal of Foreign Language Teaching and Learning, 1(2), 1-13. doi:<https://doi.org/10.18196/ftl.129>
 
 Rogoff, B. (1990). Apprenticeship in Thinking: Cognitive Development in Social Context. New York: Oxford University Press.
 

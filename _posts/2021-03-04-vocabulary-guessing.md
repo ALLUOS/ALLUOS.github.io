@@ -67,7 +67,7 @@ Additionally, to increase difficulty, we implemented a time constraint for this 
 <div id="references"></div>
 ## References  
 
-Balderas, I. and Guillén Cuamatzi, P. (2018). Self and Peer Correction to Improve College Students’ Writing Skills. In Profile: Issues Teachers’ Professional Development 20(2) (pp. 179-194). https://doi.org/10.15446/profile.v20n2.67095  
+Balderas, I. and Guillén Cuamatzi, P. (2018). Self and Peer Correction to Improve College Students’ Writing Skills. In Profile: Issues Teachers’ Professional Development 20(2) (pp. 179-194). <https://doi.org/10.15446/profile.v20n2.67095>  
 
 Chujo, K., Oghigian, K. and Akasegawa, S. (2015). A corpus and grammatical browsing system for remedial EFL learners. In A. Leńko-Szymańska and A. Boulton (eds.), Multiple Affordances of Language Corpora for Data-driven Learning (pp. 109-128). Amsterdam: John Benjamins.
 
@@ -75,4 +75,4 @@ Dörnyei, Z. and Malderez, A. (1999). The role of group dynamics in foreign lang
 
 Ellis, R. et al. (2009). Implicit and Explicit Knowledge inSecond Language Learning, Testing and Teaching. Bristol: Multilingual Matters.  
 
-Pawlak, M. (2014). Error Correction in the Foreign Language Classroom. Reconsidering the Issues. Springer-Verlag Berlin Heidelberg.  
+Pawlak, M. (2014). Error Correction in the Foreign Language Classroom. Reconsidering the Issues. Springer-Verlag Berlin Heidelberg.
