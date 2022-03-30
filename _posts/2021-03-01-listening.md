@@ -77,7 +77,7 @@ Each recording was carefully reviewed by at least three people, checking for the
 In the following we will describe how the suggested task flow is achieved from a technical point of view.
 The task consists of two loops that wrap the answering function. The first loop is the “Iteration-Loop”. In there the topic of the next audio file is selected and the matching audio file is sent, using the newly implemented `send_audio`-function. After sending the file, the questioning-loop is started. In there a question, regarding the audio file, is selected from a group of up to 4 different questions. Additional to that, the answering options are presented, and a user is announced who is supposed to answer. Now the users have 90 seconds to discuss the given answering options. To check for these 90 seconds, the function `time_is_up()` is being called to be executed in 90 seconds. If they have found a solution earlier, they can additionally press a button in the previous message, to skip their discussion time. Since the `time_is_up()` function is called only after a certain period of time has passed, it can not return anyhing and therefore can not change the state. This is resolved by adding a second type of state: the answer-mode. Whether a group is in answer-mode is saved in the instance of the task. While the answer-mode is deactivated all the chat-messages are still reaching the `evaluate_answer()`-function, but they are not evaluated, but discarded as part of the discussion. If either the `time_is_up()`-function is called or the button is pressed, the answer-mode is activated. This causes the bot to evaluate the next answer which is given by the earlier announced user. After the user gives the answer, the answer-mode is deactivated again. If the answer is correct the group gets a point. Otherwise, they do not. This process is repeated until each user in the group had one question regarding this topic. This closes the questioning-loop. If the questioning-loop is completed a new topic begins and a new iteration begins. The complete task consists of three iterations. If they were able to collect more than two thirds of the points, they were successful. To get a better overview over the flow of the task have a look at figure one.
 
-<img src="https://github.com/ALLUOS/ALLUOS.github.io/raw/master/assets/images/listening_task_flow.png" alt="Figure 1: Flow-Diagram for the listening task" class="center" style="width: 100%">
+<img src="/assets/images/listening_task_flow.png" alt="Figure 1: Flow-Diagram for the listening task" class="center" style="width: 100%">
 
 *Figure 1: Flow-Diagram for the listening task*
 
@@ -86,7 +86,7 @@ The task consists of two loops that wrap the answering function. The first loop 
 
 Since the users are allowed to discuss for 90 seconds, but additionaly are allowed to answer earlier, we had to think of a possibility to either change the state after an appropriate amount of time, or to allow the users to induce this change of state. Therefore we decided to use the so called Inline-Keyboards. In this particular case it is used in the form of a button that says “I want to answer now”. When the button is pressed a CallbackQueryHandler is called, which in turn calls the `time_is_up` function. This function sends out the answering options and thereby stops the discussion. A picture of the Inline-Keyboard can be seen in Figure two.
 
-<img src="https://github.com/ALLUOS/ALLUOS.github.io/raw/master/assets/images/inline_keyboard_example.jpg" alt="Figure 2: Example of the inline-keyboard used for this task" class="center">
+<img src="/assets/images/inline_keyboard_example.jpg" alt="Figure 2: Example of the inline-keyboard used for this task" class="center">
 
 *Figure 2: Example of the inline-keyboard used for this task*
 
@@ -94,7 +94,7 @@ Since the users are allowed to discuss for 90 seconds, but additionaly are allow
 ### Access to the Audio-files
 To give the design team easier access to the questions a decision was made to collect the different topics in a json-file. The file consisted of multiple topics, which followed the structure, as can be seen in the image below. One Topic contained the filename of the mp3 that gets played, the proficiency level needed, as well as four or more questions and their answers.
 
-<img src="https://github.com/ALLUOS/ALLUOS.github.io/raw/master/assets/images/audio_file_dict_scheme.jpg" alt="Figure 3: Example of a typical topic-structure for the listening-task." class="center">
+<img src="/assets/images/audio_file_dict_scheme.jpg" alt="Figure 3: Example of a typical topic-structure for the listening-task." class="center">
 
 *Figure 3: Example of the inline-keyboard used for this task*
 

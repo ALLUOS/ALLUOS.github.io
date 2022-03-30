@@ -460,7 +460,7 @@ Initially, we planned to have a simulated session with a trial to complete the "
 
 Testers received two sets of material: a) PDF file with examples of modified application functions collected in presentation style (adaptive graphics, message formulation, new task, etc.) and b) a feedback questionnaire.  A PDF file consists of a total of 15 slides of 6 updates (New Sticker Pack, Simplified Text Messages, Getting Ready Step, Approval Gifs, Discussion Task Update, New Task - Listening) that illustrate and describe main differences (Pic.1).
 
-<img src="https://github.com/ALLUOS/ALLUOS.github.io/blob/semester-three/assets/images/testpic1.png?raw=true" alt="Picture 1 PDF-slide example" class="center">
+<img src="/assets/images/testpic1.png?raw=true" alt="Picture 1 PDF-slide example" class="center">
 
 *Picture 1 PDF-slide example*
 
@@ -472,7 +472,7 @@ The usability testing concludes with a feedback questionnaire that included ques
    - The purpose of this question is to estimate how users rate the quality of performance of this change in our application.
 3. Your thoughts/feedback. Free writing.
 
-<img src="https://github.com/ALLUOS/ALLUOS.github.io/blob/semester-three/assets/images/testpic2w.png?raw=true" alt="*Picture 2 Update 1 - Feedback Questionnaire*" class="center">
+<img src="/assets/images/testpic2w.png?raw=true" alt="*Picture 2 Update 1 - Feedback Questionnaire*" class="center">
 
 *Picture 2 Update 1 - Feedback Questionnaire*
 
@@ -507,11 +507,11 @@ Finally, our survey ends with an assessment of the new Listening task. Perhaps o
 Overall, user reviews were very positive to all the additions. Children not only enjoyed using the app in the past, but they were able to see the development of the app.
 To check all average scores see: Picture 3 and Picture 4.
 
-<img src="https://github.com/ALLUOS/ALLUOS.github.io/blob/semester-three/assets/images/testresult1.png?raw=true" alt="*Average Satisfaction Score*" class="center">
+<img src="/assets/images/testresult1.png?raw=true" alt="*Average Satisfaction Score*" class="center">
 
 Picture 3 Average Satisfaction Score by update
 
-<img src="https://github.com/ALLUOS/ALLUOS.github.io/blob/semester-three/assets/images/testresult2.png?raw=true" alt="*Average Performance Score*" class="center">
+<img src="/assets/images/testresult2.png?raw=true" alt="*Average Performance Score*" class="center">
 
 Picture 4 Average Performance Score by update
 

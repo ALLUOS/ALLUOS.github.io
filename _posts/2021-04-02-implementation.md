@@ -86,7 +86,7 @@ In this section we will provide a brief overview of the technical architecture t
 
 In general, the structure of the implementation was inspired by the model-view-controller (MVC) software design pattern. Figure 1 gives an overview of the different application elements within this MVC design pattern. It also shows where the associated source code can be found in the repository.
 
-<img src="https://github.com/ALLUOS/ALLUOS.github.io/raw/master/assets/images/software_architecture_overview.png" alt="Figure 1: Overview of Repository Content" class="center">
+<img src="/assets/images/software_architecture_overview.png" alt="Figure 1: Overview of Repository Content" class="center">
 
 *Figure 1: Overview of Repository Content*
 
@@ -121,7 +121,7 @@ To structure the conversations between the bot and the users we implemented diff
 
 The interaction between the bot and a user in a private chat is handled by the private chat handler. Its purpose is to register a user for the app, add the user to a group or create a group, and tell the user the beginning of the story. It can also deal with some problems that may occur when creating the group. The handler is started with the */start*-command sent to the bot in a private chat. Afterwards the user is guided through the conversation by the use of reply keyboards sent to the user. Figure 2 shows the general conversation flow of the private chat handler. For simplicity, error handling is not covered in the figure.
 
-<img src="https://github.com/ALLUOS/ALLUOS.github.io/raw/master/assets/images/PrivateChatInteraction.png" alt="Figure 2: Conversation flow of the private chat handler including backend activities" class="center">
+<img src="/assets/images/PrivateChatInteraction.png" alt="Figure 2: Conversation flow of the private chat handler including backend activities" class="center">
 
 *Figure 2: Conversation flow of the private chat handler including backend activities*
 
@@ -193,7 +193,7 @@ Our implementation of the adaptive module of the language learning application r
 
 The hierarchical model contains two language domains on the first level that reflect the main set of skills: Grammar and vocabulary (cf. Figure 4). The sentence correction tasks focuses on grammar skills whilst the vocabulary guessing task aims to augment the users' vocabulary. On the second level, the domains are subdivided into more granular sub-skills, e.g. relative clauses or gerunds in the grammar domain.
 
-<img src="https://github.com/ALLUOS/ALLUOS.github.io/raw/master/assets/images/difficulty-model.png" alt="Figure 4: Graph visualization of the hierarchical difficulty model." class="center">
+<img src="/assets/images/difficulty-model.png" alt="Figure 4: Graph visualization of the hierarchical difficulty model." class="center">
 
 *Figure 4: Graph visualization of the hierarchical difficulty model.*
 
@@ -230,7 +230,7 @@ At the end of the first semester it was proposed to devote more resources toward
 
 Given the implementation design, it is necessary to store data for efficient retrieval during application runtime. The bot deals with user data and other essential data from Telegram that we had to store, update, and retrieve in real time. As the data is relational in nature, we structured these relationships in a backend PostgreSQL database. Each table in the database contains records and attributes which may be visualized as rows and columns (cf. Figure 5).
 
-<img src="https://github.com/ALLUOS/ALLUOS.github.io/raw/master/assets/images/sentence_data.png" alt="Figure 5: Sentence Correction Data" class="center">
+<img src="/assets/images/sentence_data.png" alt="Figure 5: Sentence Correction Data" class="center">
 
 *Figure 5: Sample database table entry from the sentence correction task table.*
 
