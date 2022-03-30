@@ -573,7 +573,7 @@ When the interviewees were asked which age group and proficiency group would ben
 
 #### Contexts of Application
 
-All interviewees reported that they would not use Escapeling as a main teaching tool, but might use it as a supplementary tool. They also suggested that it might be a good idea to enable teachers to have access to the data of how the students perform in this game, as teachers will then know in which particular areas students are weaker and so they can address these areas in class. But all of them emphasized the entertaining aspect of Escapeling and it should not be used as a formal assessment.
+All interviewees reported that they would not use Escapeling as the main teaching tool but might use it as a supplementary tool. They also suggested that it might be a good idea to enable teachers to access the data of how the students perform in this game. Teachers would then know in which particular areas students are weaker, so that they can address these areas in class. Also, all of them emphasized the entertaining aspect of Escapeling, though it should not be used for formal assessment.
 
 #### Gamification and visualization
 
@@ -601,7 +601,7 @@ Participants responded to the evaluation questions via free typing, multiple cho
 
 ### Results
 
-Data from 14 participants was collected (71% Osnabrück University Cognitive Science students, average English proficiency: B2-C1, aaverage age: 22.7 years).
+Data from 14 participants was collected (71% Osnabrück University Cognitive Science students, average English proficiency: B2-C1, average age: 22.7 years).
 
 78% of participants reported that they would recommend the app to other English learners, and more than 90% would likely play the game again. On average, they indicated that they could best improve their general communication, reading and listening skills with Escapeling. The new lobby platform was rated with 3.3 average points. Furthermore, participants stated that the improved visualizations were very important for their enjoyment of the game, providing an average score of 4.3. Finally, they reported high satisfaction with Escapeling compared to other educational apps they used, providing an average score of 4.3.
 
